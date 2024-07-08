@@ -6,7 +6,7 @@ Liste des participants :
 
     Lorenzo ROMEO
     Bilal YOUSFI
-    Antoine LEMARIGNER
+    Antoine LEMARIGNIER
     Mateo GOMEZ
     Nathan BAINARD
     Ewan ZHARA
