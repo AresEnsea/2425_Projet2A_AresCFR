@@ -1,25 +1,17 @@
-Liste des trucs à faire cet tété
+# Liste des devoirs pour cet été :
 
-PCB description :
-L'objectif final du PCB est de faire une carte mere (arrondie ?) pour le 
-robot du projet.
+## Description du PCB :
+L'objectif final du PCB est de réaliser une carte mère (arrondie ?) pour le robot du projet.
 
-La carte mere permet l'alimentation et la laison des périphériques (capteurs, actionneurs...) 
-au microcontrolleur (STM32H7xxxx) les commandants et permet également à la stm32 de communiquer
-avec un raspberry pi qui ferait du traitement d'information ainsi que la communication vers l'extérieur 
-via le WIFI.
+La carte mère permet l'alimentation et la liaison des périphériques (capteurs, actionneurs...) au microcontrolleur (STM32H7xxxx) les commandant et permettant également à la stm32 de communiquer avec un Raspberry Pi (ou NVidia Jetson) qui ferait du traitement d'information (Images ou LiDAR) ainsi que la communication vers l'extérieur via le WIFI (ordi relié à 4 caméras aux coins de la table).
 
-L'alimentation des périphériques serait faite avec la tension d'alimentation du PCB mère pour minimiser
-les pertes et serait donc adaptée sur les cartes de drivers que l'on doit également designer.
+L'alimentation des périphériques se fera avec la tension d'alimentation du PCB mère pour minimiser les pertes et serait donc adaptée sur les cartes de drivers que l'on doit également projeter avec un convertisseur buck boost.
 
 Pour l'instant l'idée est de faires des cartes auxiliaires différentes pour chaque actionneur.
-Les cartes auxiliaires sont composée de drivers pour les différents capteurs et actionneurs si nécessaire
-et d'un microcontrolleur STM32. Le tout serait lié à la carte mère via un faisceau contenant  :
-  - une alimentation 14,4V (Tension la plus élevée pour minimiser les pertes dans la longueur de cable)
-  - Deux fils torsadés pour assurler la liason I2C (voir la vitesse en fonction des capacités des microcontrolleur)
-  - Un fil ground (pour la partie puissance vérifier les épaisseur de cable en fonction  de ce que tirent les actionneurs
-en terme de courant.)
+Les cartes auxiliaires sont composée de drivers pour les différents capteurs et actionneurs si nécessaire et d'un microcontrolleur STM32. Le tout sera lié à la carte mère via un faisceau contenant :
+  - une alimentation 14,4V (tension la plus élevée pour minimiser les pertes dans la longueur de cable)
+  - Deux fils torsadés pour assurer la liason I2C (voir la vitesse en fonction des capacités des microcontrolleur)
+  - Un fil GND (pour la partie puissance vérifier l'épaisseur de cable en fonction du courant que tirent les actionneurs)
 
-Avec ce système on peut avoir un nombre modulable d'appareils sur une même ligne I2C et ne ce soucier que de connecter 
-les différents modules externes à la carte mère de la même manière que l'on ne se soucie que de brancher sa clef usb.
+Avec ce système nous pouvons avoir un nombre modulable d'appareils sur une même ligne I2C et ne se soucier que de connecter les différents modules externes à la carte mère de la même manière que l'on ne se soucie que de brancher sa clé USB.
 
