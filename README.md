@@ -25,9 +25,8 @@ Github de la Coupe de France de Robotique, objectif arriver premier et humilier 
 - [ ] Rapberry Pi 5 (Possibilité d'une Pi 4 pour les bibliothèques?)
 - [ ] STM32 a clarifier (photo illisible)
 - [ ] Quelque chose d'illisible (surement Wifi?)
-      
-[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_fr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fousmane%5Fthiongane%5Fensea%5Ffr%2FDocuments%2FRecord%5FR%C3%A9union%5FCFR%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec861fb71%2D2026%2D41c4%2D8537%2Dba26ca0c9958] 
 
+Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_fr/_layouts/15/stream.aspx?id=%2Fpersonal%2Fousmane%5Fthiongane%5Fensea%5Ffr%2FDocuments%2FRecord%5FR%C3%A9union%5FCFR%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec861fb71%2D2026%2D41c4%2D8537%2Dba26ca0c9958
 
 ## PCBs auxiliaires :
 - [ ] steppers
