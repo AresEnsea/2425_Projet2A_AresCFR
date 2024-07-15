@@ -7,7 +7,7 @@ La carte mère permet l'alimentation et la liaison des périphériques (capteurs
 
 L'alimentation des périphériques se fera avec la tension d'alimentation du PCB mère pour minimiser les pertes et serait donc adaptée sur les cartes de drivers que l'on doit également projeter avec un convertisseur buck boost.
 
-Pour l'instant l'idée est de faires des cartes auxiliaires différentes pour chaque actionneur.
+Pour l'instant l'idée est de faire des cartes auxiliaires différentes pour chaque actionneur.
 Les cartes auxiliaires sont composée de drivers pour les différents capteurs et actionneurs si nécessaire et d'un microcontrolleur STM32. Le tout sera lié à la carte mère via un faisceau contenant :
   - une alimentation 14,4V (tension la plus élevée pour minimiser les pertes dans la longueur de cable)
   - Deux fils torsadés pour assurer la liason UART 
