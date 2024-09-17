@@ -56,3 +56,11 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 ## Règlement (experts) :
 - [ ] Rémi
 - [ ] Fannie
+
+
+Séance 1 :
+-Github (ajout de tous les membres)
+-Répartition des rôles en 4 grand pôle : PCB, Traitement d'image, Méca, ROS
+-Commande composants (dont Jetson)
+
+
