@@ -1,0 +1,403 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "6efb9aa2-c304-47cb-bf47-2a5d20e826bc")
+	(paper "A4")
+	(title_block
+		(title "Main Board")
+		(date "ETE2024")
+		(rev "0.1")
+		(company "Ares ENSEA")
+		(comment 1 "Kenny Saint Fleur")
+	)
+	(lib_symbols)
+	(junction
+		(at 31.5 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4180f4d1-7c9f-429a-aca7-d4e71950f68b")
+	)
+	(wire
+		(pts
+			(xy 31.75 88.9) (xy 31.5 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36b555a7-5622-40d9-8bb2-833222cb6eac")
+	)
+	(wire
+		(pts
+			(xy 26.67 88.9) (xy 26.67 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7067015b-c1cd-49da-95f1-f7f1efed5f80")
+	)
+	(wire
+		(pts
+			(xy 27.94 91.44) (xy 27.94 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94c6d62e-4c79-473c-b042-30ff3fcf597c")
+	)
+	(wire
+		(pts
+			(xy 26.67 91.44) (xy 27.94 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aabb064b-a0dc-406e-9e42-4609d15dda53")
+	)
+	(wire
+		(pts
+			(xy 49.53 88.9) (xy 55.88 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e52fbe40-85d2-4ac9-a194-0cc90372eb7b")
+	)
+	(wire
+		(pts
+			(xy 31.5 88.9) (xy 26.67 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f800b4d0-55ce-442f-bf9f-08ffe4ad3534")
+	)
+	(global_label "5.1V"
+		(shape input)
+		(at 55.88 88.9 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1886354c-24b3-4e8d-bb89-073fb6e0baef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.9776 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(sheet
+		(at 31.5 86)
+		(size 18 6)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "26d4398e-0944-4bb2-b6fd-d788547aa7d2")
+		(property "Sheetname" "Buck5.1"
+			(at 31.5 85.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "buck5V.kicad_sch"
+			(at 31.5 92.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "Vin" input
+			(at 31.5 88.9 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "e60f990e-6e6a-43f0-b32f-e205ea39dd66")
+		)
+		(pin "Vout" input
+			(at 49.5 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "cb16456b-c529-437f-b37d-1af1e5f0c8f6")
+		)
+		(instances
+			(project "test1"
+				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 211.5 75)
+		(size 46.5 32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2fd9541a-92b0-473b-862d-d3788646db00")
+		(property "Sheetname" "Alimentation"
+			(at 211.5 74.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Alim.kicad_sch"
+			(at 211.5 107.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Champ2" ""
+			(at 211.5 75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "test1"
+				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 207 30)
+		(size 49.5 32.5)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4b47bf12-cc1f-4e46-8ad3-4a8a5279f0b0")
+		(property "Sheetname" "Conn_ext"
+			(at 207 29.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "conn_ext.kicad_sch"
+			(at 207 63.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "test1"
+				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 26.07 21.95)
+		(size 60.93 48.05)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ac8eed5a-b2d4-46c3-bdbf-5a3e44fdfc1c")
+		(property "Sheetname" "RaspberryPi4"
+			(at 26.07 21.2384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Rpi.kicad_sch"
+			(at 26.07 70.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "test1"
+				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.5 96.5)
+		(size 21.5 5.5)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "cad709d9-2085-46d3-9191-e70c9b6c1eb6")
+		(property "Sheetname" "Buck7.4"
+			(at 31.5 95.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "buck7.4V.kicad_sch"
+			(at 31.5 102.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "test1"
+				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 119.19 20.94)
+		(size 58.81 50.06)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ecae0a39-68aa-40d8-81be-c52fae22502f")
+		(property "Sheetname" "STM32H735"
+			(at 119.19 20.2284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "stm32.kicad_sch"
+			(at 119.19 71.5846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "test1"
+				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 106.5 108)
+		(size 52 31.5)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fb6fb547-93c5-42d2-9971-7755273dc259")
+		(property "Sheetname" "Nvidia_Jetson_Orin_nano"
+			(at 106.5 107.2884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "nvidiaJetson.kicad_sch"
+			(at 106.5 140.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "test1"
+				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
