@@ -9,7 +9,7 @@ Github de la Coupe de France de Robotique, objectif arriver premier et humilier 
 - Ewan ZHARA
 - Khalid ZOUHAIR
 - Abderhamane EL-FELSOUFI 
-- Mohamed EL-KOURMIS 
+- Mohamed EL KOURMISS 
 - Sammy GROS 
 - Matis GARBEZ
 - Remi WEILDE
