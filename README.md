@@ -57,6 +57,35 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - [ ] Rémi
 - [ ] Fannie
 
+# 1-Répartition par tâche :
+## ROS2 :
+- Antoine
+- Mateo
+- Sammy
+- Nathan (poly)
+- Matis (poly)
+
+## 2-Traitement Image
+- Khalid
+- Nathan (poly)
+- Mohamed
+- Abderahmane
+
+## 3-PCB 
+- Kenny
+- Ewan
+
+## 4-Mécanique 
+- Lorenzo 
+- Bilal
+- Sammy (poly)
+
+## 5-Réseaux
+- Kenny ?
+
+## 6-Planification 
+- Mateo
+- Antoine 
 
 # Compte rendu séance par séance:
 
