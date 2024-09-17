@@ -3,19 +3,17 @@ Github de la Coupe de France de Robotique, objectif arriver premier et humilier 
 
 ## Liste des participants :
 - Lorenzo ROMEO
-- Bilal YOUSFI
 - Antoine LEMARIGNER
 - Mateo GOMEZ
 - Nathan BAINARD
 - Ewan ZHARA
 - Khalid ZOUHAIR
-- Abderhamane EL-FELSOUFI ~
-- Mohamed EL-KOURMIS ~
-- Sammy GROS ~
+- Abderhamane EL-FELSOUFI 
+- Mohamed EL-KOURMIS 
+- Sammy GROS 
 - Matis GARBEZ
 - Remi WEILDE
-- Fannie BICHEMIN ~
-- Kenny ST FLEUR
+- Kenny SAINT FLEUR
 
 ## PCB MOTHERBOARD :
 - [ ] alimentation + connecteurs universels :
