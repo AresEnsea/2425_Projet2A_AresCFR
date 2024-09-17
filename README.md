@@ -1,5 +1,5 @@
 # CDF-2025
-Github de la Coupe de France de Robotique, objectif arriver premier et humilier INSA Lyon !!!!!!!!
+Github de la Coupe de France de Robotique, objectif arriver premier et humilier INSA Lyon !!!!!!!!!
 
 ## Liste des participants :
 - Lorenzo ROMEO
@@ -13,7 +13,7 @@ Github de la Coupe de France de Robotique, objectif arriver premier et humilier 
 - Sammy GROS 
 - Matis GARBEZ
 - Remi WEILDE
-- Kenny SAINT FLEUR
+- Kenny SAINT FLEUR 
 
 ## PCB MOTHERBOARD :
 - [ ] alimentation + connecteurs universels :
