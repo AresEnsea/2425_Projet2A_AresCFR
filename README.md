@@ -8,7 +8,7 @@ Github de la Coupe de France de Robotique, objectif arriver premier et humilier 
 - Nathan BAINARD
 - Ewan ZAHRA-THENAULT
 - Khalid ZOUHAIR
-- Abderhamane EL-FELSOUFI 
+- Abderhamane EL FELSOUFI 
 - Mohamed EL KOURMISS 
 - Sammy GROS
 - Matis GARBEZ
