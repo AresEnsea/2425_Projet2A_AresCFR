@@ -1,5 +1,5 @@
 |Composant|Prix|Qté|Total|Lien|
-|:----:|:---:|:--:|:---:|:--:|
+|:----:|:---:|:---:|:---:|:---:|
 |Moteur Maxon 272768|253.89€|2|507.78€|A demander à RS|
 |Reducteur Maxon 166937|213.36€|2|426.72€|A demander à RS|
 |Codeur 1024imp.N RS422 499361|104.1€|2|208.2€|A demander à RS|
