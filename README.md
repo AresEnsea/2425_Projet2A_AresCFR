@@ -1,6 +1,10 @@
 # CDF-2025
 Github de la Coupe de France de Robotique, objectif arriver premier et humilier INSA Lyon !!!!!!!!!
 
+#DIAPO 
+https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/Eb2eWKZeK-NNrEKdino8REcB281sSVFofJ1WQgk0IBzqbg?e=ZdGJZ5
+
+
 ## Liste des participants :
 - Lorenzo ROMEO
 - Antoine LEMARIGNER
