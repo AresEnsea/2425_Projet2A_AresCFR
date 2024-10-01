@@ -1207,6 +1207,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 63.5) (xy 83.82 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b2687d7-e39d-4012-aad2-490fa5c948d8")
+	)
+	(wire
+		(pts
 			(xy 133.35 115.57) (xy 133.35 116.586)
 		)
 		(stroke
@@ -1294,16 +1304,6 @@
 			(type default)
 		)
 		(uuid "56b9d1ec-9ede-477b-b389-9e2448df5ec6")
-	)
-	(wire
-		(pts
-			(xy 76.2 63.5) (xy 83.82 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5f730c4c-808b-4120-a4f0-f035cfac142d")
 	)
 	(wire
 		(pts
@@ -1611,7 +1611,7 @@
 	)
 	(hierarchical_label "Vin"
 		(shape input)
-		(at 76.2 63.5 180)
+		(at 72.39 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1619,7 +1619,17 @@
 			)
 			(justify right)
 		)
-		(uuid "89e3b27f-fb4f-4c4d-8038-b379706054fa")
+		(uuid "096a0059-9abe-430d-89d9-ac42b1ec3b69")
+		(property "14.4V" ""
+			(at 72.39 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
 	)
 	(hierarchical_label "Vout"
 		(shape input)

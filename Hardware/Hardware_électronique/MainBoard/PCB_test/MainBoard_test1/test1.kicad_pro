@@ -79,6 +79,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -610,10 +611,6 @@
     [
       "ac8eed5a-b2d4-46c3-bdbf-5a3e44fdfc1c",
       "RaspberryPi4"
-    ],
-    [
-      "fb6fb547-93c5-42d2-9971-7755273dc259",
-      "Nvidia_Jetson_Orin_nano"
     ],
     [
       "4b47bf12-cc1f-4e46-8ad3-4a8a5279f0b0",
