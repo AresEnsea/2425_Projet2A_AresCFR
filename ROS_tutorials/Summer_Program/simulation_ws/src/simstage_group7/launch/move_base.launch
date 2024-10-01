@@ -1,0 +1,10 @@
+<launch>
+
+  <!-- Launch the move_base node -->
+  <node pkg="move_base" type="move_base" name="move_base" output="screen">
+    <param name="base_global_planner" value="navfn/NavfnROS"/>
+    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
+    <rosparam file="$(find stage_tutorial)/param/move_base_params.yaml" command="load"/>
+  </node>
+
+</launch>
