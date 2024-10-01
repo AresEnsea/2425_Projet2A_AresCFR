@@ -4,6 +4,9 @@ Github de la Coupe de France de Robotique, objectif arriver premier et humilier 
 #DIAPO 
 [https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/Eb2eWKZeK-NNrEKdino8REcB281sSVFofJ1WQgk0IBzqbg?e=ZdGJZ5](https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/ESafam9fs7ZCg727WFCmVboB-b12O3MPg7kT_spCKCZYLA?e=d9OOJI)
 
+#CAD
+https://cad.onshape.com/documents/0660e9ca9b1f8b033e2a222d/w/57a99b497fd5cc0ea63ad9cb/e/31934202ad887f779924d0c8?renderMode=0&uiState=66fbe7c5db3a68199b1bfef0
+
 
 ## Liste des participants :
 - Lorenzo ROMEO
