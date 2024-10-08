@@ -764,39 +764,15 @@
   "sheets": [
     [
       "5e6c1e3f-0815-454a-8acb-8e3e2d064875",
-      "Racine"
+      "Root"
     ],
     [
-      "9da1d24f-0210-4c44-b691-d03fb3165448",
-      "Arm_IRF540NBbF"
-    ],
-    [
-      "c44552c8-6743-4bce-b187-ccb6744e5f40",
-      "pwrSupply"
-    ],
-    [
-      "68381f6c-5b48-4aca-8792-bde0d1e54d5e",
-      "Vbus_Sense"
-    ],
-    [
-      "98f7f190-4cd6-4f5a-9ea2-2a00e81dec72",
-      "MCU_STM32G474"
-    ],
-    [
-      "3abd505c-2b96-4cc2-9359-42e0642ca937",
-      "pwrSupplyFiltering"
-    ],
-    [
-      "0b985e44-a899-450b-ad0b-0a3b30205c67",
-      "FAN"
+      "fbaaf7ce-bae7-41f7-a7d1-9e6954b2dbcf",
+      "MCU_STM32G475"
     ],
     [
       "a4ba4eec-6121-4bfb-a54c-f6a373ea9f8b",
       "tempSensor"
-    ],
-    [
-      "87a0b05d-eb73-4ec5-96b2-26eaaa89ad6c",
-      "encoderMotor"
     ]
   ],
   "text_variables": {}
