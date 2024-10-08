@@ -10,6 +10,191 @@
 		(company "ENSEA")
 	)
 	(lib_symbols
+		(symbol "173010542_5V_Buck:173010542"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -6.35 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Value" "173010542"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+				)
+			)
+			(property "Footprint" "CONN3_10542_WRE"
+				(at -1.27 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "173010542"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "173010542"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CONN3_10542_WRE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "173010542_0_1"
+				(polyline
+					(pts
+						(xy -6.35 -3.81) (xy 6.35 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 3.81) (xy -6.35 -3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 -3.81) (xy 6.35 3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 6.35 3.81) (xy -6.35 3.81)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "173010542_1_1"
+				(pin power_in line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -6.35 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 8.89 1.27 180)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector:Conn_01x02_Pin"
 			(pin_names
 				(offset 1.016) hide)
@@ -1580,16 +1765,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 36.83) (xy 125.73 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "020c72da-1cee-4765-bd2b-efab9eefdf8f")
-	)
-	(wire
-		(pts
 			(xy 74.93 60.96) (xy 74.93 63.5)
 		)
 		(stroke
@@ -1670,6 +1845,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 48.26) (xy 135.89 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ffa65e4-32f5-49a1-b484-9b06cf7fe2f8")
+	)
+	(wire
+		(pts
 			(xy 77.47 39.37) (xy 77.47 40.64)
 		)
 		(stroke
@@ -1687,6 +1872,16 @@
 			(type default)
 		)
 		(uuid "1a6fd9d3-6862-4a5e-941e-f2f67295d1ac")
+	)
+	(wire
+		(pts
+			(xy 144.78 40.64) (xy 149.86 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a962f77-65a1-47da-9ef4-32589b3e884d")
 	)
 	(wire
 		(pts
@@ -1747,6 +1942,16 @@
 			(type default)
 		)
 		(uuid "3c3da3a6-c8e7-4528-8020-499a63e1a03e")
+	)
+	(wire
+		(pts
+			(xy 123.19 40.64) (xy 127 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53e51767-36d6-45ca-9c95-502f0579e458")
 	)
 	(wire
 		(pts
@@ -1910,16 +2115,6 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 36.83) (xy 148.59 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91fbcc06-d5c6-491f-8eca-9984616006eb")
-	)
-	(wire
-		(pts
 			(xy 66.04 107.95) (xy 67.31 107.95)
 		)
 		(stroke
@@ -2067,16 +2262,6 @@
 			(type default)
 		)
 		(uuid "cb320668-77da-48a9-906a-2000b56fbc5d")
-	)
-	(wire
-		(pts
-			(xy 137.16 46.99) (xy 137.16 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cbaf86a1-1f35-49b6-8528-124b920a7687")
 	)
 	(wire
 		(pts
@@ -2285,8 +2470,8 @@
 		(uuid 70ec278c-6957-4d46-9f43-1c076f160e26)
 	)
 	(rectangle
-		(start 105.41 13.97)
-		(end 179.07 66.04)
+		(start 107.95 17.78)
+		(end 172.72 63.5)
 		(stroke
 			(width 0)
 			(type default)
@@ -2294,7 +2479,18 @@
 		(fill
 			(type none)
 		)
-		(uuid a7340db8-9cd8-42a7-8d12-b7e15f65482d)
+		(uuid 886ab9ca-9ebb-409f-a1e1-ec3f552b1ae8)
+	)
+	(text "LDO Regalator\nBased on Wurth 173010542\n5V for LIDAR\nVin : 7V-42V\nVout : 5V\nMax : 1A"
+		(exclude_from_sim no)
+		(at 117.856 30.988 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37f4204b-0df3-4358-a2fe-3c54f9a2b2b7")
 	)
 	(text "Max output current : 800mA\n-> uC\n-> hall sensors"
 		(exclude_from_sim no)
@@ -2306,17 +2502,6 @@
 			(justify left bottom)
 		)
 		(uuid "7d40ece3-b58a-4410-a0ca-13c9985d740b")
-	)
-	(text "Max output current : 1A"
-		(exclude_from_sim no)
-		(at 106.172 17.78 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e977285a-32d4-4441-b84c-a89de2593d4f")
 	)
 	(global_label "ISO_GRND"
 		(shape input)
@@ -2352,18 +2537,6 @@
 		)
 		(uuid "081fb47b-1398-40c2-a5dd-f636778334a1")
 	)
-	(hierarchical_label "ISO_5V"
-		(shape input)
-		(at 151.13 36.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "24c9a7ad-a716-423f-99d2-5f802137cfb9")
-	)
 	(hierarchical_label "ISO_GND"
 		(shape input)
 		(at 68.58 99.06 0)
@@ -2375,18 +2548,6 @@
 			(justify left)
 		)
 		(uuid "3d9c2425-129f-4ce3-a9b9-632d73dfd4f6")
-	)
-	(hierarchical_label "ISO_15V"
-		(shape input)
-		(at 123.19 36.83 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "489eb1d5-8295-4771-a757-c3343f741483")
 	)
 	(hierarchical_label "ISO_15V"
 		(shape input)
@@ -2411,18 +2572,6 @@
 			(justify left)
 		)
 		(uuid "5ab7b19f-27c2-48ef-b6e0-95d3a57a97f1")
-	)
-	(hierarchical_label "ISO_GND"
-		(shape input)
-		(at 137.16 46.99 270)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6a72bb17-c8d9-429e-bd35-50ffe281bc52")
 	)
 	(hierarchical_label "ISO_5V"
 		(shape input)
@@ -2471,6 +2620,42 @@
 			(justify right)
 		)
 		(uuid "9de4d93d-c8d7-4cea-8b7b-604c6369419a")
+	)
+	(hierarchical_label "ISO_5V"
+		(shape input)
+		(at 149.86 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9ee7f63f-d15f-41f2-be13-053b05d2f59f")
+	)
+	(hierarchical_label "ISO_GND"
+		(shape input)
+		(at 135.89 50.8 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "df24d5f8-ee8c-495c-91a9-cae9b1562e12")
+	)
+	(hierarchical_label "ISO_15V"
+		(shape input)
+		(at 123.19 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e19f3e24-6aa4-48b3-b809-e865e8280349")
 	)
 	(hierarchical_label "ISO_3V3"
 		(shape input)
@@ -3581,6 +3766,88 @@
 			(project "Inverter_KiCAD"
 				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/c44552c8-6743-4bce-b187-ccb6744e5f40"
 					(reference "C501")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "173010542_5V_Buck:173010542")
+		(at 135.89 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "906bb788-3ea9-4bef-ace4-d9389debe0bb")
+		(property "Reference" "J5"
+			(at 135.89 33.02 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "173010542"
+			(at 135.89 35.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "Buck_5V_173010542:173010542"
+			(at 134.62 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/173010542.pdf"
+			(at 135.89 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 135.89 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "173010542"
+			(at 135.89 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e90ba887-dd1b-4d41-ab56-822c125d39bb")
+		)
+		(pin "2"
+			(uuid "08617111-16e1-47e6-bfd9-e0fb1093a586")
+		)
+		(pin "3"
+			(uuid "98897311-392a-40d7-8cc9-d3c860f2a92a")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/c44552c8-6743-4bce-b187-ccb6744e5f40"
+					(reference "J5")
 					(unit 1)
 				)
 			)
