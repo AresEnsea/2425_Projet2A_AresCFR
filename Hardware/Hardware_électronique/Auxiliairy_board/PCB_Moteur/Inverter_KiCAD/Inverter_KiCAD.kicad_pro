@@ -764,19 +764,11 @@
   "sheets": [
     [
       "5e6c1e3f-0815-454a-8acb-8e3e2d064875",
-      "Root"
+      "Racine"
     ],
     [
       "9da1d24f-0210-4c44-b691-d03fb3165448",
       "Arm_IRF540NBbF"
-    ],
-    [
-      "7e6a23ff-8591-450f-995d-37af863aff63",
-      "Arm_IRF540NBbF1"
-    ],
-    [
-      "9544454d-ec1d-4fae-9228-d7a31bd25ddf",
-      "Arm_IRF540NBbF2"
     ],
     [
       "c44552c8-6743-4bce-b187-ccb6744e5f40",
@@ -787,16 +779,8 @@
       "Vbus_Sense"
     ],
     [
-      "57f5e783-d2a3-41bb-a15a-37a099f233e7",
-      "pwrSupply_5V"
-    ],
-    [
       "98f7f190-4cd6-4f5a-9ea2-2a00e81dec72",
       "MCU_STM32G474"
-    ],
-    [
-      "63722f1b-78db-4d3b-ade4-7dd7cc6c956f",
-      "break"
     ],
     [
       "3abd505c-2b96-4cc2-9359-42e0642ca937",
@@ -813,10 +797,6 @@
     [
       "87a0b05d-eb73-4ec5-96b2-26eaaa89ad6c",
       "encoderMotor"
-    ],
-    [
-      "f6f2a29f-f026-4c21-995d-91977554a240",
-      "V_Power_LED"
     ]
   ],
   "text_variables": {}

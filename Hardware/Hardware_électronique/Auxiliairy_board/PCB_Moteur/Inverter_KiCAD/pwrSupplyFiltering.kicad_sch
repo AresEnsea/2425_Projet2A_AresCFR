@@ -10,6 +10,214 @@
 		(company "ENSEA")
 	)
 	(lib_symbols
+		(symbol "Custom:17791063215"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 7.62 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "17791063215"
+				(at 0 8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 8.89 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.we-online.com/components/products/datasheet/17791063215.pdf"
+				(at 2.54 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "17791063215_0_1"
+				(polyline
+					(pts
+						(xy -10.16 -7.62) (xy 10.16 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -10.16 7.62) (xy -10.16 -7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -7.62) (xy 10.16 7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 7.62) (xy -10.16 7.62)
+					)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "17791063215_1_1"
+				(pin power_in line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "Vin_GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -12.7 5.08 0)
+					(length 2.54)
+					(name "Vin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 0 0)
+					(length 2.54)
+					(name "Ctrl"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 12.7 5.08 180)
+					(length 2.54)
+					(name "Vout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -5.08 180)
+					(length 2.54)
+					(name "Vout_Gnd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 0 180)
+					(length 2.54)
+					(name "FB"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Polarized"
 			(pin_numbers hide)
 			(pin_names
@@ -168,6 +376,303 @@
 				)
 			)
 		)
+		(symbol "Device:LED"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 156.21 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d005a0a-8099-4af9-8839-ee4be632d120")
 	)
 	(junction
 		(at 147.32 68.58)
@@ -200,6 +705,12 @@
 		(uuid "9410c34d-d4eb-493b-a1f4-eeadb54a4492")
 	)
 	(junction
+		(at 146.05 143.51)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d122458-c786-4fb2-bfc9-493be6d81b1d")
+	)
+	(junction
 		(at 124.46 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -226,6 +737,16 @@
 			(type default)
 		)
 		(uuid "01c7a85e-edbf-407b-a762-7c3f8da524dc")
+	)
+	(wire
+		(pts
+			(xy 146.05 143.51) (xy 146.05 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09152431-9ee8-437a-a1f1-0975a23497bd")
 	)
 	(wire
 		(pts
@@ -269,6 +790,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 143.51) (xy 146.05 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2038ec0d-9dfd-43bd-a2da-5f9e51727b80")
+	)
+	(wire
+		(pts
 			(xy 147.32 68.58) (xy 158.75 68.58)
 		)
 		(stroke
@@ -276,6 +807,16 @@
 			(type default)
 		)
 		(uuid "2d21f671-7600-4d66-9dda-58381e252aab")
+	)
+	(wire
+		(pts
+			(xy 152.4 106.68) (xy 156.21 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "337dc872-3116-4a73-b960-4652236101a7")
 	)
 	(wire
 		(pts
@@ -329,6 +870,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 101.6) (xy 154.94 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5857b1ec-e777-479b-a49f-71b1f1789789")
+	)
+	(wire
+		(pts
 			(xy 158.75 58.42) (xy 170.18 58.42)
 		)
 		(stroke
@@ -349,6 +900,26 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 134.62) (xy 146.05 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6056aa0d-adcb-492a-9107-b6c8f99a6b6e")
+	)
+	(wire
+		(pts
+			(xy 137.16 143.51) (xy 139.7 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73cc967a-8add-4fcd-844e-2d234cffd7ca")
+	)
+	(wire
+		(pts
 			(xy 170.18 59.69) (xy 170.18 58.42)
 		)
 		(stroke
@@ -356,6 +927,16 @@
 			(type default)
 		)
 		(uuid "743f2211-819e-49ba-9d3a-913cb9127775")
+	)
+	(wire
+		(pts
+			(xy 137.16 134.62) (xy 139.7 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78b4cc7b-6fbe-476e-a57c-8f95d93a0ae4")
 	)
 	(wire
 		(pts
@@ -417,6 +998,100 @@
 		)
 		(uuid "c20d78cc-0bf6-4861-894a-935f23d2b0d1")
 	)
+	(wire
+		(pts
+			(xy 156.21 113.03) (xy 156.21 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea413583-f99f-4cb1-9e9e-8f790e9f0598")
+	)
+	(wire
+		(pts
+			(xy 152.4 111.76) (xy 156.21 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb237336-d8ac-45d1-8b7c-663dce185163")
+	)
+	(wire
+		(pts
+			(xy 146.05 143.51) (xy 147.32 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f10cbd12-b971-4727-9ec7-6ee069eb291a")
+	)
+	(wire
+		(pts
+			(xy 146.05 134.62) (xy 146.05 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4e294b5-7daa-4b59-8207-5fcd6ce9c546")
+	)
+	(wire
+		(pts
+			(xy 137.16 152.4) (xy 139.7 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9332bbf-3ae9-4c87-b486-f168940a2e21")
+	)
+	(wire
+		(pts
+			(xy 144.78 152.4) (xy 146.05 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb05a1c2-d97b-4f94-b1ca-af0819d3aa25")
+	)
+	(rectangle
+		(start 105.41 129.54)
+		(end 167.64 160.02)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d219dd54-8398-45a1-8e74-ec22010cd4e8)
+	)
+	(rectangle
+		(start 105.41 88.9)
+		(end 167.64 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f63580a4-2abb-4e49-8a02-e66e6563980b)
+	)
+	(text "V_Power_LED\n"
+		(exclude_from_sim no)
+		(at 112.268 131.064 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "22d8d688-f69c-4be3-b91a-dbe264806874")
+	)
 	(text "Wurth Capacitor : 861011086027\n1.5mF / 200V"
 		(exclude_from_sim no)
 		(at 104.14 54.61 0)
@@ -427,6 +1102,40 @@
 			(justify left bottom)
 		)
 		(uuid "87df2983-fa5c-4021-9785-396fb7652e33")
+	)
+	(text "Vout = (82.5k + Rfb)/Rfb*1.24V\n"
+		(exclude_from_sim no)
+		(at 113.03 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9014b50d-8964-4382-814d-3808b2142daf")
+	)
+	(text "Isolated power Supply \n5V / 200mA"
+		(exclude_from_sim no)
+		(at 106.68 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a774f050-e9fe-4376-89c1-66fda1d79745")
+	)
+	(hierarchical_label "ISO_GND"
+		(shape input)
+		(at 127 111.76 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "068986c0-b2a5-4f67-b4b5-52236c9630a0")
 	)
 	(hierarchical_label "VSupply"
 		(shape input)
@@ -440,6 +1149,78 @@
 		)
 		(uuid "3728e2ff-f0f3-4c96-8531-763337c7d4b7")
 	)
+	(hierarchical_label "PwrEn"
+		(shape input)
+		(at 127 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53bc0762-e178-423b-a7bf-247299e627a2")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 156.21 113.03 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c815bdc-b9d5-48bb-9451-305ecd703c13")
+	)
+	(hierarchical_label "VSupply_AB"
+		(shape input)
+		(at 129.54 143.51 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "88d392c2-5d5b-47d2-84d8-b24da1689022")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 147.32 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9331c626-f011-468c-bdf7-eea62ea0dc0c")
+	)
+	(hierarchical_label "5V"
+		(shape input)
+		(at 154.94 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ac3e25e8-8075-4ddd-ab5c-3352adaacce8")
+	)
+	(hierarchical_label "VSupply_BB"
+		(shape input)
+		(at 129.54 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cb4f75af-a9c0-41d6-98b4-527a427fe468")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 109.22 68.58 180)
@@ -451,6 +1232,448 @@
 			(justify right)
 		)
 		(uuid "d799ce0f-6311-4859-9a0e-a3702d769e27")
+	)
+	(hierarchical_label "Vbus"
+		(shape input)
+		(at 129.54 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dccc3467-3e8f-46bf-bb07-92cb024c60f2")
+	)
+	(hierarchical_label "ISO_15V"
+		(shape input)
+		(at 127 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fd3c9942-91a0-4d89-9a1b-8cf6cf200b3e")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 142.24 152.4 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2dd1f6db-6025-466f-9de0-5ff7ffb9d434")
+		(property "Reference" "R6"
+			(at 142.24 154.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 142.24 157.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 142.24 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Fournisseur" "Farnell"
+			(at 142.24 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "CRCW0402390RFKEDC"
+			(at 142.24 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Ref" "4177482"
+			(at 142.24 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70ef2f58-388c-4823-8273-a07a84651dbd")
+		)
+		(pin "2"
+			(uuid "6ab600b5-786c-41c8-b9be-dfcd711bc818")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 142.24 143.51 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40b031d2-3243-41ae-93f4-801e251c18c7")
+		(property "Reference" "R5"
+			(at 142.24 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 142.24 148.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Fournisseur" "Stock"
+			(at 142.24 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de4e8219-a182-4eff-9536-252092d9a80c")
+		)
+		(pin "2"
+			(uuid "0b9a6289-5aab-429c-9fea-6204fed1ea20")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 156.21 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "59684ace-c058-4889-8191-76b426ae6193")
+		(property "Reference" "R2"
+			(at 157.48 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "27k"
+			(at 157.48 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 156.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 156.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Fournisseur" "Stock"
+			(at 156.21 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4489019c-0932-4dd3-8a06-01d9aba176c3")
+		)
+		(pin "2"
+			(uuid "7fe0febe-93ce-4baa-83b6-b4c4d241e314")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 133.35 134.62 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "626862be-ea06-43e9-96ec-76301f69e180")
+		(property "Reference" "D2"
+			(at 133.35 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red LED"
+			(at 133.35 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 133.35 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Fournisseur" "Wurth"
+			(at 133.35 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "150 060 RS5 504 0"
+			(at 133.35 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c61b599-953c-4bac-b365-dd69ad4aa3e6")
+		)
+		(pin "2"
+			(uuid "ef438610-1a5d-4677-a540-f74ede67b962")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 133.35 152.4 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b298983-6a78-412a-a823-272203b6f7b2")
+		(property "Reference" "D6"
+			(at 133.35 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red LED"
+			(at 133.35 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 133.35 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Fournisseur" "Wurth"
+			(at 133.35 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "150 060 RS5 504 0"
+			(at 133.35 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "712d0898-91b2-4e6b-8347-341046ede615")
+		)
+		(pin "2"
+			(uuid "537f17d0-7b3b-4136-8b86-37afbefa7b95")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
@@ -886,6 +2109,265 @@
 			(project "Inverter_KiCAD"
 				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
 					(reference "C1001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 133.35 143.51 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d606ba4c-b5a4-4b3a-ae9e-4d098af8af1c")
+		(property "Reference" "D3"
+			(at 133.35 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Red LED"
+			(at 133.35 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 133.35 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 133.35 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 133.35 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Fournisseur" "Wurth"
+			(at 133.35 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "150 060 RS5 504 0"
+			(at 133.35 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e0fde01-0abc-4916-9291-7bf5110ee29b")
+		)
+		(pin "2"
+			(uuid "92b440dc-02c0-4678-afbb-5ea9ce4db02c")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 142.24 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e34aab94-9143-49aa-bd6d-bb566fceb4e7")
+		(property "Reference" "R3"
+			(at 142.24 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 142.24 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 142.24 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Fournisseur" "Stock"
+			(at 142.24 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "528460c7-6d09-4415-b010-7461d40684d8")
+		)
+		(pin "2"
+			(uuid "9b45177d-c95e-4352-b93d-74939232881e")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Custom:17791063215")
+		(at 139.7 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ead42c15-f26c-49c3-90d6-604420d887d6")
+		(property "Reference" "U2"
+			(at 139.7 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "17791063215"
+			(at 139.7 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Custom:17791063215"
+			(at 148.59 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/17791063215.pdf"
+			(at 142.24 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Fournisseur" "Wurth"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "177 910 632 15"
+			(at 139.7 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "689e9825-2329-41e0-8b98-b62a57211dd7")
+		)
+		(pin "2"
+			(uuid "039eee19-5a22-4007-afcf-560c4cd827a8")
+		)
+		(pin "3"
+			(uuid "f3e9de5d-302f-4e86-bec7-cc9d22ac36cc")
+		)
+		(pin "6"
+			(uuid "01c9226e-ab79-40d1-b735-f8a698472352")
+		)
+		(pin "7"
+			(uuid "f20f142b-6875-4df4-9e3d-4fa1cb1ca199")
+		)
+		(pin "8"
+			(uuid "3ef78408-21a8-4ffc-a2bd-4413193a31bb")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/3abd505c-2b96-4cc2-9359-42e0642ca937"
+					(reference "U2")
 					(unit 1)
 				)
 			)
