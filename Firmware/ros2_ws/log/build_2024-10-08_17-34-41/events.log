@@ -1,0 +1,149 @@
+[0.000000] (-) TimerEvent: {}
+[0.001639] (ros2_serial_msgs) JobQueued: {'identifier': 'ros2_serial_msgs', 'dependencies': OrderedDict()}
+[0.002180] (uart_comm_pkg) JobQueued: {'identifier': 'uart_comm_pkg', 'dependencies': OrderedDict()}
+[0.002634] (ros2_serial_example) JobQueued: {'identifier': 'ros2_serial_example', 'dependencies': OrderedDict([('ros2_serial_msgs', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs')])}
+[0.002828] (ros2_serial_msgs) JobStarted: {'identifier': 'ros2_serial_msgs'}
+[0.030364] (uart_comm_pkg) JobStarted: {'identifier': 'uart_comm_pkg'}
+[0.053923] (ros2_serial_msgs) JobProgress: {'identifier': 'ros2_serial_msgs', 'progress': 'cmake'}
+[0.054997] (ros2_serial_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/carpe-bleue/ros2_ws/src/ros2_serial_example/ros2_serial_msgs', '-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs'], 'cwd': '/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.0.46 48574 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2/install:/home/carpe-bleue/ros2_ws/install:/home/carpe-bleue/ros2_ws/src/uart_comm/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.46 48574 192.168.0.43 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2/install/uart_comm/lib/python3.10/site-packages:/home/carpe-bleue/ros2/install/CFR_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.072497] (uart_comm_pkg) JobProgress: {'identifier': 'uart_comm_pkg', 'progress': 'cmake'}
+[0.075805] (uart_comm_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/carpe-bleue/ros2_ws/src/uart_comm_pkg', '-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/uart_comm_pkg'], 'cwd': '/home/carpe-bleue/ros2_ws/build/uart_comm_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.0.46 48574 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2/install:/home/carpe-bleue/ros2_ws/install:/home/carpe-bleue/ros2_ws/src/uart_comm/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/uart_comm_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.46 48574 192.168.0.43 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2/install/uart_comm/lib/python3.10/site-packages:/home/carpe-bleue/ros2/install/CFR_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099119] (-) TimerEvent: {}
+[0.126761] (uart_comm_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199287] (-) TimerEvent: {}
+[0.300266] (-) TimerEvent: {}
+[0.320289] (ros2_serial_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400514] (-) TimerEvent: {}
+[0.501644] (-) TimerEvent: {}
+[0.578034] (ros2_serial_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.601810] (-) TimerEvent: {}
+[0.608685] (ros2_serial_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.702132] (-) TimerEvent: {}
+[0.755888] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.802340] (-) TimerEvent: {}
+[0.903139] (-) TimerEvent: {}
+[0.915018] (ros2_serial_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.921716] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.932382] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.938961] (ros2_serial_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.939838] (ros2_serial_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.941181] (ros2_serial_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.952440] (ros2_serial_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.956597] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.996532] (uart_comm_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.003388] (-) TimerEvent: {}
+[1.052677] (uart_comm_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.103574] (-) TimerEvent: {}
+[1.194367] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.200667] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.203743] (-) TimerEvent: {}
+[1.279098] (ros2_serial_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.303898] (ros2_serial_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.304420] (-) TimerEvent: {}
+[1.305346] (ros2_serial_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.306484] (ros2_serial_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.330013] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.404594] (-) TimerEvent: {}
+[1.505865] (-) TimerEvent: {}
+[1.607494] (-) TimerEvent: {}
+[1.709046] (-) TimerEvent: {}
+[1.810220] (-) TimerEvent: {}
+[1.911165] (-) TimerEvent: {}
+[1.964480] (uart_comm_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.011368] (-) TimerEvent: {}
+[2.044287] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.111504] (-) TimerEvent: {}
+[2.212203] (-) TimerEvent: {}
+[2.313482] (uart_comm_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[2.314816] (-) TimerEvent: {}
+[2.315848] (uart_comm_pkg) StderrLine: {'line': b'  By not providing "FindSerial.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[2.317200] (uart_comm_pkg) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "Serial", but\n'}
+[2.318130] (uart_comm_pkg) StderrLine: {'line': b'  CMake did not find one.\n'}
+[2.318918] (uart_comm_pkg) StderrLine: {'line': b'\n'}
+[2.319921] (uart_comm_pkg) StderrLine: {'line': b'  Could not find a package configuration file provided by "Serial" with any\n'}
+[2.321009] (uart_comm_pkg) StderrLine: {'line': b'  of the following names:\n'}
+[2.321824] (uart_comm_pkg) StderrLine: {'line': b'\n'}
+[2.322614] (uart_comm_pkg) StderrLine: {'line': b'    SerialConfig.cmake\n'}
+[2.324115] (uart_comm_pkg) StderrLine: {'line': b'    serial-config.cmake\n'}
+[2.325402] (uart_comm_pkg) StderrLine: {'line': b'\n'}
+[2.326143] (uart_comm_pkg) StderrLine: {'line': b'  Add the installation prefix of "Serial" to CMAKE_PREFIX_PATH or set\n'}
+[2.326735] (uart_comm_pkg) StderrLine: {'line': b'  "Serial_DIR" to a directory containing one of the above files.  If "Serial"\n'}
+[2.327631] (uart_comm_pkg) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[2.328219] (uart_comm_pkg) StderrLine: {'line': b'  installed.\n'}
+[2.329008] (uart_comm_pkg) StderrLine: {'line': b'\n'}
+[2.329644] (uart_comm_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[2.330253] (uart_comm_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.330844] (uart_comm_pkg) StdoutLine: {'line': b'See also "/home/carpe-bleue/ros2_ws/build/uart_comm_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[2.344961] (uart_comm_pkg) CommandEnded: {'returncode': 1}
+[2.415006] (-) TimerEvent: {}
+[2.421066] (uart_comm_pkg) JobEnded: {'identifier': 'uart_comm_pkg', 'rc': 1}
+[2.515185] (-) TimerEvent: {}
+[2.573711] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[2.597081] (ros2_serial_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.615366] (-) TimerEvent: {}
+[2.651572] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.715494] (-) TimerEvent: {}
+[2.816148] (-) TimerEvent: {}
+[2.916808] (-) TimerEvent: {}
+[2.924022] (ros2_serial_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.016960] (-) TimerEvent: {}
+[3.117598] (-) TimerEvent: {}
+[3.218233] (-) TimerEvent: {}
+[3.318840] (-) TimerEvent: {}
+[3.419449] (-) TimerEvent: {}
+[3.520128] (-) TimerEvent: {}
+[3.621091] (-) TimerEvent: {}
+[3.722177] (-) TimerEvent: {}
+[3.822797] (-) TimerEvent: {}
+[3.923508] (-) TimerEvent: {}
+[4.024272] (-) TimerEvent: {}
+[4.125011] (-) TimerEvent: {}
+[4.225971] (-) TimerEvent: {}
+[4.261252] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.326129] (-) TimerEvent: {}
+[4.426764] (-) TimerEvent: {}
+[4.527392] (-) TimerEvent: {}
+[4.628029] (-) TimerEvent: {}
+[4.728729] (-) TimerEvent: {}
+[4.829491] (-) TimerEvent: {}
+[4.930627] (-) TimerEvent: {}
+[5.031463] (-) TimerEvent: {}
+[5.103074] (ros2_serial_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.131651] (-) TimerEvent: {}
+[5.232285] (-) TimerEvent: {}
+[5.332904] (-) TimerEvent: {}
+[5.433519] (-) TimerEvent: {}
+[5.534191] (-) TimerEvent: {}
+[5.635093] (-) TimerEvent: {}
+[5.735810] (-) TimerEvent: {}
+[5.836435] (-) TimerEvent: {}
+[5.937053] (-) TimerEvent: {}
+[6.037733] (-) TimerEvent: {}
+[6.126523] (ros2_serial_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.137888] (-) TimerEvent: {}
+[6.230363] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[6.238019] (-) TimerEvent: {}
+[6.251667] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[6.338318] (-) TimerEvent: {}
+[6.371794] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[6.372582] (ros2_serial_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[6.373014] (ros2_serial_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.373384] (ros2_serial_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[6.438464] (-) TimerEvent: {}
+[6.469709] (ros2_serial_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[6.538668] (-) TimerEvent: {}
+[6.639425] (-) TimerEvent: {}
+[6.655560] (ros2_serial_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.739580] (-) TimerEvent: {}
+[6.806419] (ros2_serial_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[6.817521] (ros2_serial_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning:\n'}
+[6.818077] (ros2_serial_msgs) StderrLine: {'line': b'  Manually-specified variables were not used by the project:\n'}
+[6.818406] (ros2_serial_msgs) StderrLine: {'line': b'\n'}
+[6.818731] (ros2_serial_msgs) StderrLine: {'line': b'    ROS2_SERIAL_PKGS\n'}
+[6.819036] (ros2_serial_msgs) StderrLine: {'line': b'\n'}
+[6.819391] (ros2_serial_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[6.819949] (ros2_serial_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/carpe-bleue/ros2_ws/build/ros2_serial_msgs\n'}
+[6.838161] (ros2_serial_msgs) JobEnded: {'identifier': 'ros2_serial_msgs', 'rc': 'SIGINT'}
+[6.841138] (-) TimerEvent: {}
+[6.841443] (ros2_serial_example) JobSkipped: {'identifier': 'ros2_serial_example'}
+[6.841539] (-) EventReactorShutdown: {}

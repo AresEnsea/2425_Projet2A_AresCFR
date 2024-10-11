@@ -1,0 +1,227 @@
+[0.000000] (-) TimerEvent: {}
+[0.001189] (ros2_serial_msgs) JobQueued: {'identifier': 'ros2_serial_msgs', 'dependencies': OrderedDict()}
+[0.001413] (uart_comm_pkg) JobQueued: {'identifier': 'uart_comm_pkg', 'dependencies': OrderedDict()}
+[0.001501] (ros2_serial_example) JobQueued: {'identifier': 'ros2_serial_example', 'dependencies': OrderedDict([('ros2_serial_msgs', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs')])}
+[0.001593] (ros2_serial_msgs) JobStarted: {'identifier': 'ros2_serial_msgs'}
+[0.027266] (uart_comm_pkg) JobStarted: {'identifier': 'uart_comm_pkg'}
+[0.051118] (ros2_serial_msgs) JobProgress: {'identifier': 'ros2_serial_msgs', 'progress': 'cmake'}
+[0.054454] (ros2_serial_msgs) JobProgress: {'identifier': 'ros2_serial_msgs', 'progress': 'build'}
+[0.057150] (ros2_serial_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs', '--', '-j4', '-l4'], 'cwd': '/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.0.46 48574 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2/install:/home/carpe-bleue/ros2_ws/install:/home/carpe-bleue/ros2_ws/src/uart_comm/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.46 48574 192.168.0.43 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2/install/uart_comm/lib/python3.10/site-packages:/home/carpe-bleue/ros2/install/CFR_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.073968] (uart_comm_pkg) JobProgress: {'identifier': 'uart_comm_pkg', 'progress': 'cmake'}
+[0.082992] (uart_comm_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/carpe-bleue/ros2_ws/src/uart_comm_pkg', '-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs', '-DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/uart_comm_pkg'], 'cwd': '/home/carpe-bleue/ros2_ws/build/uart_comm_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.0.46 48574 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2/install:/home/carpe-bleue/ros2_ws/install:/home/carpe-bleue/ros2_ws/src/uart_comm/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/uart_comm_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.0.46 48574 192.168.0.43 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2/install/uart_comm/lib/python3.10/site-packages:/home/carpe-bleue/ros2/install/CFR_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.098026] (-) TimerEvent: {}
+[0.129779] (uart_comm_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.198277] (-) TimerEvent: {}
+[0.230313] (ros2_serial_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.291582] (ros2_serial_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.298521] (-) TimerEvent: {}
+[0.322655] (ros2_serial_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_ros2_serial_msgs\n'}
+[0.398726] (-) TimerEvent: {}
+[0.499704] (-) TimerEvent: {}
+[0.601047] (-) TimerEvent: {}
+[0.702099] (-) TimerEvent: {}
+[0.803175] (-) TimerEvent: {}
+[0.904209] (-) TimerEvent: {}
+[0.917285] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.004409] (-) TimerEvent: {}
+[1.105205] (-) TimerEvent: {}
+[1.107890] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.122014] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.153729] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.202967] (uart_comm_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.205402] (-) TimerEvent: {}
+[1.269973] (uart_comm_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.305599] (-) TimerEvent: {}
+[1.406439] (-) TimerEvent: {}
+[1.438300] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.447133] (uart_comm_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.506629] (-) TimerEvent: {}
+[1.607449] (-) TimerEvent: {}
+[1.708359] (-) TimerEvent: {}
+[1.809165] (-) TimerEvent: {}
+[1.909913] (-) TimerEvent: {}
+[1.993616] (ros2_serial_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.997214] (ros2_serial_msgs) StdoutLine: {'line': b'creating ros2_serial_msgs.egg-info\n'}
+[1.998441] (ros2_serial_msgs) StdoutLine: {'line': b'writing ros2_serial_msgs.egg-info/PKG-INFO\n'}
+[2.001067] (ros2_serial_msgs) StdoutLine: {'line': b'writing dependency_links to ros2_serial_msgs.egg-info/dependency_links.txt\n'}
+[2.002298] (ros2_serial_msgs) StdoutLine: {'line': b'writing top-level names to ros2_serial_msgs.egg-info/top_level.txt\n'}
+[2.003912] (ros2_serial_msgs) StdoutLine: {'line': b"writing manifest file 'ros2_serial_msgs.egg-info/SOURCES.txt'\n"}
+[2.010208] (-) TimerEvent: {}
+[2.015963] (ros2_serial_msgs) StdoutLine: {'line': b"reading manifest file 'ros2_serial_msgs.egg-info/SOURCES.txt'\n"}
+[2.019938] (ros2_serial_msgs) StdoutLine: {'line': b"writing manifest file 'ros2_serial_msgs.egg-info/SOURCES.txt'\n"}
+[2.110545] (-) TimerEvent: {}
+[2.154114] (ros2_serial_msgs) StdoutLine: {'line': b'[  6%] Built target ros2_serial_msgs__cpp\n'}
+[2.184529] (ros2_serial_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_ros2_serial_msgs_egg\n'}
+[2.209962] (ros2_serial_msgs) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.210569] (-) TimerEvent: {}
+[2.216590] (ros2_serial_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.239552] (ros2_serial_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/ros2_serial_msgs__rosidl_generator_c.dir/rosidl_generator_c/ros2_serial_msgs/msg/detail/serial_mapping__functions.c.o\x1b[0m\n'}
+[2.260028] (ros2_serial_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.310884] (-) TimerEvent: {}
+[2.331914] (uart_comm_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.411132] (-) TimerEvent: {}
+[2.513365] (-) TimerEvent: {}
+[2.615651] (-) TimerEvent: {}
+[2.695614] (ros2_serial_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libros2_serial_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.715973] (-) TimerEvent: {}
+[2.817194] (-) TimerEvent: {}
+[2.820387] (uart_comm_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[2.821201] (uart_comm_pkg) StderrLine: {'line': b'  By not providing "FindSerial.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[2.821720] (uart_comm_pkg) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "Serial", but\n'}
+[2.822119] (uart_comm_pkg) StderrLine: {'line': b'  CMake did not find one.\n'}
+[2.822501] (uart_comm_pkg) StderrLine: {'line': b'\n'}
+[2.822982] (uart_comm_pkg) StderrLine: {'line': b'  Could not find a package configuration file provided by "Serial" with any\n'}
+[2.823495] (uart_comm_pkg) StderrLine: {'line': b'  of the following names:\n'}
+[2.824026] (uart_comm_pkg) StderrLine: {'line': b'\n'}
+[2.824604] (uart_comm_pkg) StderrLine: {'line': b'    SerialConfig.cmake\n'}
+[2.825224] (uart_comm_pkg) StderrLine: {'line': b'    serial-config.cmake\n'}
+[2.825808] (uart_comm_pkg) StderrLine: {'line': b'\n'}
+[2.826392] (uart_comm_pkg) StderrLine: {'line': b'  Add the installation prefix of "Serial" to CMAKE_PREFIX_PATH or set\n'}
+[2.826915] (uart_comm_pkg) StderrLine: {'line': b'  "Serial_DIR" to a directory containing one of the above files.  If "Serial"\n'}
+[2.827998] (uart_comm_pkg) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[2.830076] (uart_comm_pkg) StderrLine: {'line': b'  installed.\n'}
+[2.830952] (uart_comm_pkg) StderrLine: {'line': b'\n'}
+[2.831865] (uart_comm_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[2.832655] (uart_comm_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.833803] (uart_comm_pkg) StdoutLine: {'line': b'See also "/home/carpe-bleue/ros2_ws/build/uart_comm_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[2.853180] (uart_comm_pkg) CommandEnded: {'returncode': 1}
+[2.917389] (-) TimerEvent: {}
+[3.014625] (uart_comm_pkg) JobEnded: {'identifier': 'uart_comm_pkg', 'rc': 1}
+[3.017432] (-) TimerEvent: {}
+[3.061826] (ros2_serial_msgs) StdoutLine: {'line': b'[ 22%] Built target ros2_serial_msgs__rosidl_generator_c\n'}
+[3.110724] (ros2_serial_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.117634] (-) TimerEvent: {}
+[3.219128] (-) TimerEvent: {}
+[3.321583] (-) TimerEvent: {}
+[3.423212] (-) TimerEvent: {}
+[3.524724] (-) TimerEvent: {}
+[3.626020] (-) TimerEvent: {}
+[3.727549] (-) TimerEvent: {}
+[3.829295] (-) TimerEvent: {}
+[3.930647] (-) TimerEvent: {}
+[3.951039] (ros2_serial_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ros2_serial_msgs/msg/serial_mapping__type_support.cpp.o\x1b[0m\n'}
+[4.030985] (-) TimerEvent: {}
+[4.086775] (ros2_serial_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ros2_serial_msgs/msg/detail/dds_fastrtps/serial_mapping__type_support.cpp.o\x1b[0m\n'}
+[4.131238] (-) TimerEvent: {}
+[4.149830] (ros2_serial_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ros2_serial_msgs/msg/detail/serial_mapping__type_support.cpp.o\x1b[0m\n'}
+[4.231442] (-) TimerEvent: {}
+[4.332830] (-) TimerEvent: {}
+[4.434421] (-) TimerEvent: {}
+[4.536026] (-) TimerEvent: {}
+[4.638112] (-) TimerEvent: {}
+[4.740860] (-) TimerEvent: {}
+[4.843093] (-) TimerEvent: {}
+[4.890747] (ros2_serial_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ros2_serial_msgs/msg/detail/serial_mapping__type_support_c.cpp.o\x1b[0m\n'}
+[4.943447] (-) TimerEvent: {}
+[5.045238] (-) TimerEvent: {}
+[5.146889] (-) TimerEvent: {}
+[5.248510] (-) TimerEvent: {}
+[5.350826] (-) TimerEvent: {}
+[5.452512] (-) TimerEvent: {}
+[5.554148] (-) TimerEvent: {}
+[5.614968] (ros2_serial_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libros2_serial_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.654435] (-) TimerEvent: {}
+[5.756382] (-) TimerEvent: {}
+[5.833719] (ros2_serial_msgs) StdoutLine: {'line': b'[ 41%] Built target ros2_serial_msgs__rosidl_typesupport_cpp\n'}
+[5.856648] (-) TimerEvent: {}
+[5.892723] (ros2_serial_msgs) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.956976] (-) TimerEvent: {}
+[6.059929] (-) TimerEvent: {}
+[6.162071] (-) TimerEvent: {}
+[6.262973] (-) TimerEvent: {}
+[6.364072] (-) TimerEvent: {}
+[6.465133] (-) TimerEvent: {}
+[6.566044] (-) TimerEvent: {}
+[6.666962] (-) TimerEvent: {}
+[6.768040] (-) TimerEvent: {}
+[6.869058] (-) TimerEvent: {}
+[6.970010] (-) TimerEvent: {}
+[7.070982] (-) TimerEvent: {}
+[7.123565] (ros2_serial_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libros2_serial_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.171171] (-) TimerEvent: {}
+[7.183311] (ros2_serial_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libros2_serial_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[7.271515] (-) TimerEvent: {}
+[7.332221] (ros2_serial_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libros2_serial_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.371744] (-) TimerEvent: {}
+[7.472811] (-) TimerEvent: {}
+[7.530969] (ros2_serial_msgs) StdoutLine: {'line': b'[ 54%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_cpp\n'}
+[7.573150] (-) TimerEvent: {}
+[7.581579] (ros2_serial_msgs) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[7.585322] (ros2_serial_msgs) StdoutLine: {'line': b'[ 58%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_c\n'}
+[7.673511] (-) TimerEvent: {}
+[7.754187] (ros2_serial_msgs) StdoutLine: {'line': b'[ 58%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[7.773654] (-) TimerEvent: {}
+[7.841545] (ros2_serial_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ros2_serial_msgs/msg/detail/serial_mapping__type_support.c.o\x1b[0m\n'}
+[7.873895] (-) TimerEvent: {}
+[7.974713] (-) TimerEvent: {}
+[8.057366] (ros2_serial_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libros2_serial_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[8.074942] (-) TimerEvent: {}
+[8.175659] (-) TimerEvent: {}
+[8.176370] (ros2_serial_msgs) StdoutLine: {'line': b'[ 64%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_c\n'}
+[8.275853] (-) TimerEvent: {}
+[8.376499] (-) TimerEvent: {}
+[8.477149] (-) TimerEvent: {}
+[8.577772] (-) TimerEvent: {}
+[8.678398] (-) TimerEvent: {}
+[8.779230] (-) TimerEvent: {}
+[8.880356] (-) TimerEvent: {}
+[8.920544] (ros2_serial_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ros2_serial_msgs/msg/serial_mapping__type_support.cpp.o\x1b[0m\n'}
+[8.980576] (-) TimerEvent: {}
+[9.066578] (ros2_serial_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libros2_serial_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[9.080783] (-) TimerEvent: {}
+[9.181661] (-) TimerEvent: {}
+[9.218961] (ros2_serial_msgs) StdoutLine: {'line': b'[ 70%] Built target ros2_serial_msgs__rosidl_typesupport_c\n'}
+[9.281884] (-) TimerEvent: {}
+[9.300606] (ros2_serial_msgs) StdoutLine: {'line': b'[ 70%] Built target ros2_serial_msgs\n'}
+[9.380653] (ros2_serial_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[9.382040] (-) TimerEvent: {}
+[9.482865] (-) TimerEvent: {}
+[9.583525] (-) TimerEvent: {}
+[9.684191] (-) TimerEvent: {}
+[9.784833] (-) TimerEvent: {}
+[9.885532] (-) TimerEvent: {}
+[9.986159] (-) TimerEvent: {}
+[10.086775] (-) TimerEvent: {}
+[10.187450] (-) TimerEvent: {}
+[10.288098] (-) TimerEvent: {}
+[10.388774] (-) TimerEvent: {}
+[10.489470] (-) TimerEvent: {}
+[10.590073] (-) TimerEvent: {}
+[10.690672] (-) TimerEvent: {}
+[10.791307] (-) TimerEvent: {}
+[10.891951] (-) TimerEvent: {}
+[10.992584] (-) TimerEvent: {}
+[11.093309] (-) TimerEvent: {}
+[11.194189] (-) TimerEvent: {}
+[11.210799] (ros2_serial_msgs) StdoutLine: {'line': b'[ 74%] Built target ros2_serial_msgs__py\n'}
+[11.289229] (ros2_serial_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/ros2_serial_msgs__rosidl_generator_py.dir/rosidl_generator_py/ros2_serial_msgs/msg/_serial_mapping_s.c.o\x1b[0m\n'}
+[11.294352] (-) TimerEvent: {}
+[11.395043] (-) TimerEvent: {}
+[11.495730] (-) TimerEvent: {}
+[11.596416] (-) TimerEvent: {}
+[11.697173] (-) TimerEvent: {}
+[11.797906] (-) TimerEvent: {}
+[11.898812] (-) TimerEvent: {}
+[11.906488] (ros2_serial_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2_serial_msgs/libros2_serial_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[11.999017] (-) TimerEvent: {}
+[12.076688] (ros2_serial_msgs) StdoutLine: {'line': b'[ 80%] Built target ros2_serial_msgs__rosidl_generator_py\n'}
+[12.099247] (-) TimerEvent: {}
+[12.163632] (ros2_serial_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ros2_serial_msgs/_ros2_serial_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.165352] (ros2_serial_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ros2_serial_msgs/_ros2_serial_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.168726] (ros2_serial_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/ros2_serial_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ros2_serial_msgs/_ros2_serial_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.199610] (-) TimerEvent: {}
+[12.301742] (-) TimerEvent: {}
+[12.403229] (-) TimerEvent: {}
+[12.505062] (-) TimerEvent: {}
+[12.600189] (ros2_serial_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2_serial_msgs/ros2_serial_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[12.605323] (-) TimerEvent: {}
+[12.621754] (ros2_serial_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2_serial_msgs/ros2_serial_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[12.660478] (ros2_serial_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/ros2_serial_msgs/ros2_serial_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[12.705552] (-) TimerEvent: {}
+[12.767613] (ros2_serial_msgs) StdoutLine: {'line': b'[100%] Built target ros2_serial_msgs__rosidl_typesupport_c__pyext\n'}
+[12.792121] (ros2_serial_msgs) StdoutLine: {'line': b'[100%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[12.805734] (-) TimerEvent: {}
+[12.835165] (ros2_serial_msgs) StdoutLine: {'line': b'[100%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[12.874733] (ros2_serial_msgs) JobEnded: {'identifier': 'ros2_serial_msgs', 'rc': 'SIGINT'}
+[12.878033] (ros2_serial_example) JobSkipped: {'identifier': 'ros2_serial_example'}
+[12.878189] (-) EventReactorShutdown: {}

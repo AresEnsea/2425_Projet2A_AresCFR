@@ -1,0 +1,34 @@
+[0.074s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/ros2_serial_msgs -- -j4 -l4
+[0.295s] [  3%] Built target ros2_serial_msgs__cpp
+[0.301s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_generator_c[0m
+[0.380s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_cpp[0m
+[0.388s] [ 12%] Built target ros2_serial_msgs__rosidl_generator_c
+[0.403s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[0.424s] [ 12%] Built target ament_cmake_python_copy_ros2_serial_msgs
+[0.461s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_introspection_cpp[0m
+[0.473s] [ 22%] Built target ros2_serial_msgs__rosidl_typesupport_cpp
+[0.501s] [ 32%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_cpp
+[0.502s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_fastrtps_c[0m
+[0.553s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_c[0m
+[0.568s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_introspection_c[0m
+[0.609s] [ 41%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_cpp
+[0.615s] [ 51%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_c
+[0.647s] [ 61%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_c
+[0.654s] [ 70%] Built target ros2_serial_msgs__rosidl_typesupport_c
+[0.758s] [ 70%] Built target ros2_serial_msgs
+[0.864s] [ 74%] Built target ros2_serial_msgs__py
+[0.941s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_generator_py[0m
+[1.013s] [ 80%] Built target ros2_serial_msgs__rosidl_generator_py
+[1.074s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.091s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_c__pyext[0m
+[1.102s] [35m[1mConsolidate compiler generated dependencies of target ros2_serial_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[1.140s] [ 87%] Built target ros2_serial_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.193s] [ 93%] Built target ros2_serial_msgs__rosidl_typesupport_introspection_c__pyext
+[1.196s] [100%] Built target ros2_serial_msgs__rosidl_typesupport_c__pyext
+[1.933s] running egg_info
+[1.936s] writing ros2_serial_msgs.egg-info/PKG-INFO
+[1.937s] writing dependency_links to ros2_serial_msgs.egg-info/dependency_links.txt
+[1.939s] writing top-level names to ros2_serial_msgs.egg-info/top_level.txt
+[1.951s] reading manifest file 'ros2_serial_msgs.egg-info/SOURCES.txt'
+[1.954s] writing manifest file 'ros2_serial_msgs.egg-info/SOURCES.txt'
+[2.077s] [100%] Built target ament_cmake_python_build_ros2_serial_msgs_egg

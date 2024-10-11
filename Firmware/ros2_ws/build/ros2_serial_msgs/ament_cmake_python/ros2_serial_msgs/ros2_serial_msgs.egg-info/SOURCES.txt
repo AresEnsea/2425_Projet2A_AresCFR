@@ -1,0 +1,8 @@
+setup.py
+ros2_serial_msgs/__init__.py
+ros2_serial_msgs.egg-info/PKG-INFO
+ros2_serial_msgs.egg-info/SOURCES.txt
+ros2_serial_msgs.egg-info/dependency_links.txt
+ros2_serial_msgs.egg-info/top_level.txt
+ros2_serial_msgs/msg/__init__.py
+ros2_serial_msgs/msg/_serial_mapping.py

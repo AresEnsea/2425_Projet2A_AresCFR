@@ -1,0 +1,17 @@
+{
+  "package_name": "ros2_serial_msgs",
+  "output_dir": "/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs/rosidl_typesupport_c/ros2_serial_msgs",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
+  "idl_tuples": [
+    "/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs/rosidl_adapter/ros2_serial_msgs:msg/SerialMapping.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_c/resource/action__type_support.c.em",
+    "/opt/ros/humble/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
+    "/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs/rosidl_adapter/ros2_serial_msgs/msg/SerialMapping.idl"
+  ]
+}
