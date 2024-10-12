@@ -3801,6 +3801,10 @@
 		(uuid "2355e3e0-b371-4f23-aa8f-39dfee0b2c87")
 	)
 	(no_connect
+		(at 97.79 121.92)
+		(uuid "39e463f6-fa08-40cf-b92c-6a84ad7dd32a")
+	)
+	(no_connect
 		(at 97.79 88.9)
 		(uuid "4199c400-c441-4f56-b51d-4bed44a44329")
 	)
@@ -5809,17 +5813,6 @@
 		)
 		(uuid "b741b2bb-5d9e-4206-881b-6e42a8f4fcc7")
 	)
-	(label "I2C2_SCL"
-		(at 110.49 68.58 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "bc8aab64-4d90-4960-b240-90dd512b434a")
-	)
 	(label "SWO"
 		(at 110.49 96.52 180)
 		(fields_autoplaced yes)
@@ -5885,17 +5878,6 @@
 			(justify right bottom)
 		)
 		(uuid "e16f099b-4625-42c0-a577-1695a3403f06")
-	)
-	(label "I2C2_SDA"
-		(at 110.49 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e2f074f9-7a02-49c6-98dc-8f23c017f5d4")
 	)
 	(label "SWCLK"
 		(at 110.49 81.28 180)
@@ -9329,10 +9311,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9cfffb2c-7472-48cd-85b1-da57a22238c3")
 		(property "Reference" "C32"
-			(at 205.74 36.2013 0)
+			(at 199.39 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9341,7 +9322,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 205.74 38.7413 0)
+			(at 199.136 30.988 0)
 			(effects
 				(font
 					(size 1.27 1.27)
