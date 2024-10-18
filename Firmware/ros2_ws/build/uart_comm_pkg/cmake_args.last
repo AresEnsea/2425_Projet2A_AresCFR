@@ -1,1 +1,0 @@
-['-DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs']

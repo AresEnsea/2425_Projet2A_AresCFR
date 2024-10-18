@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.2,
-          "height": 6.4,
-          "width": 6.4
+          "drill": 0.0,
+          "height": 0.62,
+          "width": 0.56
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -764,7 +764,7 @@
   "sheets": [
     [
       "5e6c1e3f-0815-454a-8acb-8e3e2d064875",
-      "Root"
+      "Racine"
     ],
     [
       "fbaaf7ce-bae7-41f7-a7d1-9e6954b2dbcf",

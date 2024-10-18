@@ -1,8 +1,0 @@
-prefix=/home/carpe-bleue/ROS/simulation_ws/devel
-
-Name: stage_tutorial
-Description: Description of stage_tutorial
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

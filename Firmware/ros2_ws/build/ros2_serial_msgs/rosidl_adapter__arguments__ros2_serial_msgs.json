@@ -1,6 +1,0 @@
-{
-  "package_name": "ros2_serial_msgs",
-  "non_idl_tuples": [
-    "/home/carpe-bleue/ros2_ws/src/ros2_serial_example/ros2_serial_msgs:msg/SerialMapping.msg"
-  ]
-}
