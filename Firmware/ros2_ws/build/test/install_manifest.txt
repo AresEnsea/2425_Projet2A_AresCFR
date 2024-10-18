@@ -1,0 +1,15 @@
+/home/carpe-bleue/ros2_ws/install/test/share/ament_index/resource_index/package_run_dependencies/test
+/home/carpe-bleue/ros2_ws/install/test/share/ament_index/resource_index/parent_prefix_path/test
+/home/carpe-bleue/ros2_ws/install/test/share/test/environment/ament_prefix_path.sh
+/home/carpe-bleue/ros2_ws/install/test/share/test/environment/ament_prefix_path.dsv
+/home/carpe-bleue/ros2_ws/install/test/share/test/environment/path.sh
+/home/carpe-bleue/ros2_ws/install/test/share/test/environment/path.dsv
+/home/carpe-bleue/ros2_ws/install/test/share/test/local_setup.bash
+/home/carpe-bleue/ros2_ws/install/test/share/test/local_setup.sh
+/home/carpe-bleue/ros2_ws/install/test/share/test/local_setup.zsh
+/home/carpe-bleue/ros2_ws/install/test/share/test/local_setup.dsv
+/home/carpe-bleue/ros2_ws/install/test/share/test/package.dsv
+/home/carpe-bleue/ros2_ws/install/test/share/ament_index/resource_index/packages/test
+/home/carpe-bleue/ros2_ws/install/test/share/test/cmake/testConfig.cmake
+/home/carpe-bleue/ros2_ws/install/test/share/test/cmake/testConfig-version.cmake
+/home/carpe-bleue/ros2_ws/install/test/share/test/package.xml

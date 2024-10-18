@@ -1,0 +1,37 @@
+cmake_minimum_required(VERSION 3.8)
+project(serial_package)
+
+# Check for GCC or Clang and add compile options if using C++
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+# Find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclpy REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
+# Install Python scripts
+install(
+  PROGRAMS
+    src/serial_node.py  # Make sure this matches your script's location
+    src/serial_node_2.py
+  DESTINATION lib/${PROJECT_NAME}  # Installs to lib/serial_package
+)
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  
+  # Skip the linter for copyrights
+  set(ament_cmake_copyright_FOUND TRUE)
+  
+  # Skip cpplint checks
+  set(ament_cmake_cpplint_FOUND TRUE)
+  
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_package()
+
+# Uncomment and add other dependencies as needed
+# find_package(<dependency> REQUIRED)

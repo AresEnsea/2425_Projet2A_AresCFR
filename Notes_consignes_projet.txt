@@ -1,0 +1,39 @@
+11 séances 
+44h (faire 2 ou 3 fois plus)
+Présenter à l'oral souvent pour l'avancement (3 fois durant le projet)
+6, 11, et 14
+Règlement 28, quelques slides 
+Faire des slides corporate, pro, présentable, mettre logo et avoir répété 
+Livrable : github, montrer du schéma
+Capable de tout justifier 
+"Toujours un visuel" (pour représenter ou poser une question et le faire évoluer)
+Pas de présentation orale en contrepartie du bilan régulier 
+Donner du meilleur de soi même
+
+Dossier Hardware(KICAD/méca), Firmware (code stm32), Software(Code raspberry, ROS)
+Un dossier par PCB
+Faire des noms complets pas de (PCB new v2 etc)
+
+Faire un read me quali (user manuel, être clair si on installe des trucs, certaines versions et autres)
+
+Evaluation sur les compétences (même excel que l'année dernière)
+Fin de semestre
+
+(Pas faire gaffe aux mails envoyés à tout le monde sauf 1 (lol))
+
+Souvent rush à la 15 ème semaine, le commencer avant 
+(surtout que exams la 15 ème semaine)
+
+Attention délais PCB et composants
+
+POC : proof of concept (pour la Toussaint), pas besoin d'être beau, juste ça marche 
+
+PCB : pas à l'école, à l'extérieur 
+Budget : 40€ par personnes mais c'est théorique 
+
+Point à chaque début de séance 5 min
+
+PCB semaine 9 !!
+
+
+

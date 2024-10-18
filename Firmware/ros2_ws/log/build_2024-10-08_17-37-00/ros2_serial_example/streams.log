@@ -1,0 +1,54 @@
+[0.046s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ros2_serial_example': AMENT_PREFIX_PATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/ros2_serial_example/ros2_serial_example -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ros2_serial_example
+[0.295s] -- The C compiler identification is GNU 11.4.0
+[0.542s] -- The CXX compiler identification is GNU 11.4.0
+[0.571s] -- Detecting C compiler ABI info
+[0.874s] -- Detecting C compiler ABI info - done
+[0.900s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.900s] -- Detecting C compile features
+[0.902s] -- Detecting C compile features - done
+[0.913s] -- Detecting CXX compiler ABI info
+[1.252s] -- Detecting CXX compiler ABI info - done
+[1.278s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.279s] -- Detecting CXX compile features
+[1.281s] -- Detecting CXX compile features - done
+[1.300s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[2.068s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.615s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.922s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.964s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.019s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.088s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.185s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.455s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.476s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.015s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.213s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.533s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.597s] -- Looking for pthread.h
+[4.919s] -- Looking for pthread.h - found
+[4.920s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.245s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.250s] -- Found Threads: TRUE  
+[5.481s] -- Found ros2_serial_msgs: 0.0.0 (/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake)
+[5.537s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[5.970s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[6.302s] [31mCMake Error at CMakeLists.txt:27 (find_package):
+[6.302s]   By not providing "Findpx4_msgs.cmake" in CMAKE_MODULE_PATH this project has
+[6.302s]   asked CMake to find a package configuration file provided by "px4_msgs",
+[6.303s]   but CMake did not find one.
+[6.303s] 
+[6.303s]   Could not find a package configuration file provided by "px4_msgs" with any
+[6.303s]   of the following names:
+[6.304s] 
+[6.304s]     px4_msgsConfig.cmake
+[6.304s]     px4_msgs-config.cmake
+[6.305s] 
+[6.305s]   Add the installation prefix of "px4_msgs" to CMAKE_PREFIX_PATH or set
+[6.305s]   "px4_msgs_DIR" to a directory containing one of the above files.  If
+[6.305s]   "px4_msgs" provides a separate development package or SDK, be sure it has
+[6.306s]   been installed.
+[6.307s] 
+[6.307s] [0m
+[6.308s] -- Configuring incomplete, errors occurred!
+[6.308s] See also "/home/carpe-bleue/ros2_ws/build/ros2_serial_example/CMakeFiles/CMakeOutput.log".
+[6.341s] Invoked command in '/home/carpe-bleue/ros2_ws/build/ros2_serial_example' returned '1': AMENT_PREFIX_PATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/ros2_serial_example/ros2_serial_example -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ros2_serial_example
