@@ -7427,6 +7427,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 262.89) (xy 90.17 262.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "700473c3-26cc-4859-954f-f183ec3737f1")
+	)
+	(wire
+		(pts
 			(xy 242.57 187.96) (xy 243.84 187.96)
 		)
 		(stroke
@@ -8427,6 +8437,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 271.78) (xy 90.17 271.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c19aa087-72d5-40a1-a86c-ca25436e77a2")
+	)
+	(wire
+		(pts
 			(xy 36.83 234.95) (xy 38.1 234.95)
 		)
 		(stroke
@@ -9174,16 +9194,6 @@
 			)
 		)
 		(uuid "3b4ae869-49df-492a-af8e-dbd366e80e9c")
-	)
-	(text "check FB resistors"
-		(exclude_from_sim no)
-		(at 114.554 242.824 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "3e98f26f-09ce-4039-a9c0-df0794cffc5d")
 	)
 	(text "STM32G474RET6 uC for signals analyse and protection\nButtons, leds, screen and rotary encoder connectors"
 		(exclude_from_sim no)
@@ -10380,7 +10390,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Buck_5V_173010542:173010542"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 190.5 222.25 0)
 			(effects
 				(font
@@ -11246,7 +11256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 135.5852 245.11 0)
 			(effects
 				(font
@@ -11547,7 +11557,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DQY0008A"
+		(property "Footprint" "CSD87351Q5D:DQY0008A"
 			(at 38.1 129.54 0)
 			(effects
 				(font
@@ -11707,7 +11717,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 160.9852 237.49 0)
 			(effects
 				(font
@@ -12252,7 +12262,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 77.47 66.04 0)
 			(effects
 				(font
@@ -12389,7 +12399,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 45.72 87.63 0)
 			(effects
 				(font
@@ -12459,7 +12469,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_2220_5650Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 125.73 115.57 0)
 			(effects
 				(font
@@ -12556,7 +12566,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_2220_5650Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 53.34 114.3 0)
 			(effects
 				(font
@@ -12787,7 +12797,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 102.87 223.52 0)
 			(effects
 				(font
@@ -13858,7 +13868,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 176.53 257.81 0)
 			(effects
 				(font
@@ -14183,7 +14193,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.4"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 169.8752 267.97 0)
 			(effects
 				(font
@@ -14402,7 +14412,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "DQY0008A"
+		(property "Footprint" "CSD87351Q5D:DQY0008A"
 			(at 101.6 130.81 0)
 			(effects
 				(font
@@ -14495,7 +14505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_5x5.4"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 195.2752 267.97 0)
 			(effects
 				(font
@@ -14677,7 +14687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 198.12 257.81 0)
 			(effects
 				(font
@@ -14941,7 +14951,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 153.3652 232.41 0)
 			(effects
 				(font
@@ -14985,7 +14995,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 90.17 271.78 90)
+		(at 85.09 271.78 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14994,7 +15004,7 @@
 		(fields_autoplaced yes)
 		(uuid "72a39fdf-d12f-4fee-acc8-09f17f38f225")
 		(property "Reference" "#PWR030"
-			(at 93.98 271.78 0)
+			(at 88.9 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15003,7 +15013,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 86.36 271.7799 90)
+			(at 81.28 271.7799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15012,7 +15022,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 271.78 0)
+			(at 85.09 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15021,7 +15031,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 271.78 0)
+			(at 85.09 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15030,7 +15040,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 90.17 271.78 0)
+			(at 85.09 271.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15145,7 +15155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 186.69 233.68 0)
 			(effects
 				(font
@@ -15279,7 +15289,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 143.002 228.6 90)
 			(effects
 				(font
@@ -16231,7 +16241,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical"
 			(at 162.56 121.92 0)
 			(effects
 				(font
@@ -16402,7 +16412,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOIC8-GO-SME/SP3_LEM"
+		(property "Footprint" "Custom:SOIC8-GO-SME&slash_SP3_LEM"
 			(at 138.43 41.91 0)
 			(effects
 				(font
@@ -16808,7 +16818,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Custom:Converter_DCDC"
+		(property "Footprint" "Package_TO_SOT_SMD:TO-263-7_TabPin8"
 			(at 128.27 228.6 0)
 			(effects
 				(font
@@ -18157,7 +18167,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 90.17 262.89 90)
+		(at 85.09 262.89 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18166,7 +18176,7 @@
 		(fields_autoplaced yes)
 		(uuid "c633265c-9215-413e-a2ec-b13f39315b70")
 		(property "Reference" "#PWR031"
-			(at 93.98 262.89 0)
+			(at 88.9 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18175,7 +18185,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 86.36 262.8899 90)
+			(at 81.28 262.8899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18184,7 +18194,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 262.89 0)
+			(at 85.09 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18193,7 +18203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 262.89 0)
+			(at 85.09 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18202,7 +18212,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 90.17 262.89 0)
+			(at 85.09 262.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18756,7 +18766,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 140.462 241.3 90)
 			(effects
 				(font
@@ -18978,7 +18988,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_AMASS:AMASS_XT60-F_1x02_P7.20mm_Vertical"
 			(at 22.86 242.316 90)
 			(effects
 				(font
@@ -19267,7 +19277,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 110.49 227.838 90)
 			(effects
 				(font
@@ -19401,7 +19411,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm_EP3x3mm"
 			(at 48.26 72.39 0)
 			(effects
 				(font
@@ -19742,7 +19752,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 101.2952 241.3 0)
 			(effects
 				(font

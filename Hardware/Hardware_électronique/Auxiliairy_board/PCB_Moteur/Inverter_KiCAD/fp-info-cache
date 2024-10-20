@@ -1,4 +1,4 @@
-23781560229842755
+23797212243847747
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -2547,6 +2547,13 @@ speaker CUI
 0
 2
 2
+CSD87351Q5D
+DQY0008A
+
+CSD86350Q5D 
+0
+9
+9
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
@@ -54733,13 +54740,6 @@ ABLS-7.3728MHZ-CL-RESR-A-1-G-F
 2
 2
 Custom
-Converter_DCDC
-
-
-0
-8
-8
-Custom
 DIP-8 Gull Wing
 
 
@@ -54802,13 +54802,6 @@ TO-263AB
 0
 0
 0
-CustomLibrary_Kicad
-Converter_DCDC
-
-
-0
-8
-8
 Diode_SMD
 D_0201_0603Metric
 Diode SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator

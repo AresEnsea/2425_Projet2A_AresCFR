@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.62,
-          "width": 0.56
+          "drill": 3.2,
+          "height": 6.4,
+          "width": 6.4
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -180,7 +180,10 @@
         }
       ],
       "track_widths": [
-        0.0
+        0.0,
+        0.2,
+        0.5,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -706,11 +709,53 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Fournisseur",
+          "name": "Fournisseur",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MFR",
+          "name": "MFR",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Ref",
+          "name": "Ref",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "URL",
+          "name": "URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -764,7 +809,7 @@
   "sheets": [
     [
       "5e6c1e3f-0815-454a-8acb-8e3e2d064875",
-      "Racine"
+      "Root"
     ],
     [
       "fbaaf7ce-bae7-41f7-a7d1-9e6954b2dbcf",
