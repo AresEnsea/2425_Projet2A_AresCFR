@@ -345,6 +345,145 @@
 				)
 			)
 		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -3773,10 +3912,6 @@
 		(uuid "f82e63aa-3008-412f-8f3b-84d8a1dcc52f")
 	)
 	(no_connect
-		(at 62.23 76.2)
-		(uuid "05651330-99b5-44eb-a05e-2e5ff2f240dd")
-	)
-	(no_connect
 		(at 97.79 63.5)
 		(uuid "08c935b2-58f1-4fa4-991a-b2bdb597fd29")
 	)
@@ -3857,12 +3992,8 @@
 		(uuid "de2ddec1-93a7-415e-b535-ad7a05310281")
 	)
 	(no_connect
-		(at 62.23 81.28)
-		(uuid "e5b8c96c-d655-45e8-8e48-55ee24134a44")
-	)
-	(no_connect
-		(at 62.23 78.74)
-		(uuid "ed76f1b8-afe4-4d3e-b343-c75baf58f641")
+		(at 62.23 76.2)
+		(uuid "fda6fd9c-de4a-42ac-a99b-d1be0f899658")
 	)
 	(no_connect
 		(at 97.79 60.96)
@@ -4390,6 +4521,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 83.82) (xy 170.18 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5060171e-979a-41ce-a486-456678751e8f")
+	)
+	(wire
+		(pts
 			(xy 261.62 107.95) (xy 264.16 107.95)
 		)
 		(stroke
@@ -4507,6 +4648,16 @@
 			(type default)
 		)
 		(uuid "61f5c5e7-862a-4fda-a013-ac9914e26441")
+	)
+	(wire
+		(pts
+			(xy 154.94 81.28) (xy 170.18 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6203012e-1b0d-4c8f-87f5-050bc222463e")
 	)
 	(wire
 		(pts
@@ -5120,6 +5271,16 @@
 	)
 	(wire
 		(pts
+			(xy 46.99 81.28) (xy 62.23 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc7d8334-9b9c-4aac-b84b-1c8631bca105")
+	)
+	(wire
+		(pts
 			(xy 255.27 128.27) (xy 257.81 128.27)
 		)
 		(stroke
@@ -5297,6 +5458,16 @@
 			(type default)
 		)
 		(uuid "dc745cf6-311a-4bdd-8f71-edde50eb1149")
+	)
+	(wire
+		(pts
+			(xy 46.99 78.74) (xy 62.23 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e010ef2f-66df-41f4-9f15-4aee8ead3146")
 	)
 	(wire
 		(pts
@@ -5491,6 +5662,18 @@
 		(uuid 01cdb9f7-7582-4e3e-8d22-31141256c180)
 	)
 	(rectangle
+		(start 153.035 73.66)
+		(end 193.675 90.805)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8b7f443a-89b2-4fb4-b882-9cbec911d5ca)
+	)
+	(rectangle
 		(start 143.51 13.97)
 		(end 207.01 67.31)
 		(stroke
@@ -5571,6 +5754,16 @@
 		)
 		(uuid "7a12a81a-4918-4e98-abf5-302c58c983d4")
 	)
+	(text "UART To Mother Board"
+		(exclude_from_sim no)
+		(at 164.338 75.184 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "99042432-c58b-4b46-8268-01ee0028a284")
+	)
 	(text "PBOOT0 - PB8\n"
 		(exclude_from_sim no)
 		(at 120.65 106.68 0)
@@ -5648,6 +5841,17 @@
 		)
 		(uuid "1c79b435-44d5-4a90-bd40-84a405f74f8c")
 	)
+	(label "USART1_TX"
+		(at 154.94 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26336f4f-7d8d-4a65-a16a-f9205d1d3871")
+	)
 	(label "USR_LED_1"
 		(at 49.53 99.06 0)
 		(fields_autoplaced yes)
@@ -5680,6 +5884,17 @@
 			(justify left bottom)
 		)
 		(uuid "353ff07e-5371-40de-9ef6-840ecb9a16b3")
+	)
+	(label "USART1_TX"
+		(at 46.99 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a594e87-9e3a-4993-a385-c0c4b2f8becc")
 	)
 	(label "SWDIO"
 		(at 242.57 36.83 180)
@@ -5758,6 +5973,17 @@
 		)
 		(uuid "7353e105-5c4b-4dfa-9bbc-6a05efd5e0ea")
 	)
+	(label "USART1_RX"
+		(at 46.99 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8aeaf503-1680-48cc-8913-aaf464076898")
+	)
 	(label "VCP_RX"
 		(at 242.57 52.07 180)
 		(fields_autoplaced yes)
@@ -5779,6 +6005,17 @@
 			(justify left bottom)
 		)
 		(uuid "998373f3-a07f-414c-a69b-7859f47edbd9")
+	)
+	(label "USART1_RX"
+		(at 154.94 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c760da9-69bc-4fa4-8067-329d00a4fff0")
 	)
 	(label "USR_LED_2"
 		(at 49.53 96.52 0)
@@ -7501,6 +7738,76 @@
 			(project "Inverter_KiCAD"
 				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/fbaaf7ce-bae7-41f7-a7d1-9e6954b2dbcf"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 175.26 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ed8b56d-2d9e-4c49-a5c9-7ac80ece0e05")
+		(property "Reference" "J7"
+			(at 177.8 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02"
+			(at 177.8 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 175.26 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "865b8607-056d-4f00-bcbc-00ce0a7cecd5")
+		)
+		(pin "2"
+			(uuid "8d580bb0-7daa-485a-b342-8bbdcf938962")
+		)
+		(instances
+			(project "Inverter_KiCAD"
+				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875/fbaaf7ce-bae7-41f7-a7d1-9e6954b2dbcf"
+					(reference "J7")
 					(unit 1)
 				)
 			)
