@@ -11,7 +11,7 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 ## Liste des participants :
 - Lorenzo ROMEO
 - Antoine LEMARIGNER
-- Mateo GOMEZ
+- Mateo GOMES
 - Nathan BAINARD
 - Ewan ZAHRA-THENAULT
 - Khalid ZOUHAIR
