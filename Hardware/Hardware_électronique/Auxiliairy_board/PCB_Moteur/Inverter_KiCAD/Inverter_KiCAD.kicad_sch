@@ -5892,12 +5892,6 @@
 		(uuid "86ec4c51-c4d4-464f-8f34-0b6735e27154")
 	)
 	(junction
-		(at 374.65 228.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8759276c-f2ab-4b64-928f-c0313d87f720")
-	)
-	(junction
 		(at 142.24 247.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6010,12 +6004,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dca6b647-831e-4c3a-9c68-5e2c63c78a96")
-	)
-	(junction
-		(at 400.05 228.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd56dd16-6f92-4f32-8d07-8c6b1c1fb0a5")
 	)
 	(junction
 		(at 252.73 195.58)
@@ -6427,16 +6415,6 @@
 	)
 	(wire
 		(pts
-			(xy 400.05 223.52) (xy 389.89 223.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ef3bacc-8b4d-41cf-a84f-458af3750811")
-	)
-	(wire
-		(pts
 			(xy 22.86 50.8) (xy 29.21 50.8)
 		)
 		(stroke
@@ -6494,16 +6472,6 @@
 			(type default)
 		)
 		(uuid "2287c345-32fe-4713-bfff-9a384ffe6b24")
-	)
-	(wire
-		(pts
-			(xy 370.84 228.6) (xy 374.65 228.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22db788f-630b-462d-b46e-ff926824aacc")
 	)
 	(wire
 		(pts
@@ -8127,7 +8095,7 @@
 	)
 	(wire
 		(pts
-			(xy 374.65 233.68) (xy 374.65 228.6)
+			(xy 374.65 223.52) (xy 374.65 233.68)
 		)
 		(stroke
 			(width 0)
@@ -8397,16 +8365,6 @@
 	)
 	(wire
 		(pts
-			(xy 400.05 228.6) (xy 400.05 223.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bfb5b2d5-38a0-405f-ad47-3eb3ba9e45fa")
-	)
-	(wire
-		(pts
 			(xy 85.09 271.78) (xy 90.17 271.78)
 		)
 		(stroke
@@ -8624,16 +8582,6 @@
 			(type default)
 		)
 		(uuid "d0f163f1-c17a-4813-ac0d-4a8179812e63")
-	)
-	(wire
-		(pts
-			(xy 374.65 228.6) (xy 374.65 223.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d20af30f-1939-4c29-97b2-81ecb42d6e3d")
 	)
 	(wire
 		(pts
@@ -15388,80 +15336,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 368.3 228.6 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "940769bc-5695-479f-8a86-ee4e4839c61b")
-		(property "Reference" "H110"
-			(at 364.49 226.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 367.03 226.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 368.3 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 368.3 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 368.3 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "-"
-			(at 368.3 228.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2c815d21-9ff2-44d0-a7bf-43d239705459")
-		)
-		(instances
-			(project "Inverter_KiCAD"
-				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875"
-					(reference "H110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 320.04 228.6 0)
 		(unit 1)
@@ -15926,80 +15800,6 @@
 			(project "Inverter_KiCAD"
 				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875"
 					(reference "#PWR045")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 387.35 223.52 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a6695a66-b267-458e-b5fc-e39592f9f882")
-		(property "Reference" "H112"
-			(at 383.54 220.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 386.08 220.98 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
-			(at 387.35 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 387.35 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 387.35 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "-"
-			(at 387.35 223.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46ef99bf-7a06-47b0-806d-71c076b7f2e3")
-		)
-		(instances
-			(project "Inverter_KiCAD"
-				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875"
-					(reference "H112")
 					(unit 1)
 				)
 			)

@@ -1622,7 +1622,7 @@
 		(uuid "2c032d4b-f00a-4067-955a-3dc5d174fff7")
 	)
 	(hierarchical_label "Vout"
-		(shape input)
+		(shape output)
 		(at 123.19 101.6 90)
 		(fields_autoplaced yes)
 		(effects
@@ -1634,7 +1634,7 @@
 		(uuid "37e93296-ad65-4c86-834d-e86920d7e909")
 	)
 	(hierarchical_label "Vout"
-		(shape input)
+		(shape output)
 		(at 149.86 63.5 0)
 		(fields_autoplaced yes)
 		(effects

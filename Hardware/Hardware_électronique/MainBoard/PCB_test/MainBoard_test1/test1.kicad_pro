@@ -613,6 +613,10 @@
       "RaspberryPi4"
     ],
     [
+      "2669c65e-e6ec-4b2b-af30-eebda94e612e",
+      "Buck7"
+    ],
+    [
       "4b47bf12-cc1f-4e46-8ad3-4a8a5279f0b0",
       "Conn_ext"
     ],
@@ -626,7 +630,7 @@
     ],
     [
       "cad709d9-2085-46d3-9191-e70c9b6c1eb6",
-      "Buck7.4"
+      "Buck7.5"
     ]
   ],
   "text_variables": {}
