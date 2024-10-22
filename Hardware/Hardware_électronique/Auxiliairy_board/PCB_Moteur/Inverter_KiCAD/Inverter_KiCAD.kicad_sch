@@ -6639,12 +6639,6 @@
 		(uuid "60531d05-e505-4064-a152-de49b59c80b2")
 	)
 	(junction
-		(at 92.71 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "652ade4d-dbdf-4689-bbc2-a2878811297a")
-	)
-	(junction
 		(at 36.83 241.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6655,12 +6649,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "69c8f0cc-6456-4c43-a9d2-5ef4dea03ac6")
-	)
-	(junction
-		(at 92.71 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6c5225ac-34a5-4eab-8234-9078c898c99d")
 	)
 	(junction
 		(at 182.88 269.24)
@@ -6717,22 +6705,10 @@
 		(uuid "93163320-b49f-4c3f-9468-809bcf840e97")
 	)
 	(junction
-		(at 81.28 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9697aaa0-af05-446f-a61b-d5603aae68c1")
-	)
-	(junction
 		(at 106.68 262.89)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b93f7ef-29f7-484b-9d74-486d891b2346")
-	)
-	(junction
-		(at 81.28 172.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9f406e34-4c24-4d4b-9260-dfe7156c7929")
 	)
 	(junction
 		(at 35.56 241.3)
@@ -6939,16 +6915,6 @@
 			(type default)
 		)
 		(uuid "0445e9f8-73eb-45bb-a175-bdda56a282da")
-	)
-	(wire
-		(pts
-			(xy 92.71 182.88) (xy 104.14 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04599735-65fc-4900-9ab5-95e132d8e507")
 	)
 	(wire
 		(pts
@@ -7552,16 +7518,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 173.99) (xy 104.14 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a634272-c3e0-4b77-b477-c0892c37740b")
-	)
-	(wire
-		(pts
 			(xy 80.01 66.04) (xy 93.98 66.04)
 		)
 		(stroke
@@ -7922,16 +7878,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 182.88) (xy 92.71 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "636db3df-a8a9-44ae-832c-16062c80cb8a")
-	)
-	(wire
-		(pts
 			(xy 36.83 240.03) (xy 38.1 240.03)
 		)
 		(stroke
@@ -8019,16 +7965,6 @@
 			(type default)
 		)
 		(uuid "6b451c25-620e-4ed7-a0bf-316b28efe3f4")
-	)
-	(wire
-		(pts
-			(xy 92.71 172.72) (xy 104.14 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b6e40e0-1a37-4f73-aa7c-4ebc7ae2dee1")
 	)
 	(wire
 		(pts
@@ -8159,16 +8095,6 @@
 			(type default)
 		)
 		(uuid "738fca3c-0e24-4c80-988d-6eb7a77d4b32")
-	)
-	(wire
-		(pts
-			(xy 104.14 181.61) (xy 104.14 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "767f80f1-cbf5-449a-97f0-04126ec5c95d")
 	)
 	(wire
 		(pts
@@ -8812,16 +8738,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 172.72) (xy 92.71 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aabf0029-878c-4874-b75c-dffcf8c01550")
-	)
-	(wire
-		(pts
 			(xy 127 91.44) (xy 137.16 91.44)
 		)
 		(stroke
@@ -8839,16 +8755,6 @@
 			(type default)
 		)
 		(uuid "abed3f7c-9797-43d3-b454-efbb9ac6d4e8")
-	)
-	(wire
-		(pts
-			(xy 81.28 172.72) (xy 92.71 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ac3f232b-7435-49de-abb7-2705a1629b14")
 	)
 	(wire
 		(pts
@@ -9419,16 +9325,6 @@
 			(type default)
 		)
 		(uuid "e752cf05-ff45-4a2f-98c9-76de3c2cbb01")
-	)
-	(wire
-		(pts
-			(xy 92.71 181.61) (xy 92.71 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e93a273b-d54d-4b9d-971a-2ea4da7c7847")
 	)
 	(wire
 		(pts
@@ -17063,93 +16959,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 92.71 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b026031a-f76a-4034-b420-56b1a4cd08ee")
-		(property "Reference" "C11"
-			(at 96.52 176.276 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220u"
-			(at 96.52 178.562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
-			(at 93.6752 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 92.71 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 92.71 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fournisseur" "Wurth"
-			(at 92.71 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "861 011 086 027"
-			(at 92.71 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e285d343-15bc-457c-999c-79c9278caec7")
-		)
-		(pin "2"
-			(uuid "04902180-0150-4771-8714-06961825dee0")
-		)
-		(instances
-			(project "Inverter_KiCAD"
-				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875"
-					(reference "C11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 243.84 191.77 0)
 		(unit 1)
@@ -18332,93 +18141,6 @@
 			(project "Inverter_KiCAD"
 				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875"
 					(reference "C13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 104.14 177.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dc283ad9-eef2-4305-bad8-5534c7b7e2d7")
-		(property "Reference" "C12"
-			(at 107.95 176.276 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220u"
-			(at 107.95 178.562 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
-			(at 105.1052 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 104.14 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Fournisseur" "Wurth"
-			(at 104.14 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR" "861 011 086 027"
-			(at 104.14 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c44992d5-a7ad-4f8a-88b4-499e0b62fd70")
-		)
-		(pin "2"
-			(uuid "794a0319-3120-4ab3-a5dc-243cd87b62d2")
-		)
-		(instances
-			(project "Inverter_KiCAD"
-				(path "/5e6c1e3f-0815-454a-8acb-8e3e2d064875"
-					(reference "C12")
 					(unit 1)
 				)
 			)
