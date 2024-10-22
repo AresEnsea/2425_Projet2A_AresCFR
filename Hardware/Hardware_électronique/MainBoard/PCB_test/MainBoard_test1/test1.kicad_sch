@@ -946,64 +946,6 @@
 		)
 	)
 	(sheet
-		(at 31.75 115.57)
-		(size 17.78 5.5)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "2669c65e-e6ec-4b2b-af30-eebda94e612e")
-		(property "Sheetname" "Buck7"
-			(at 31.75 114.8584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "buck7.4V.kicad_sch"
-			(at 31.75 121.6546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "Vin" input
-			(at 31.75 118.13 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "4a5430f4-94bb-478e-96d4-a773428fdfe1")
-		)
-		(pin "Vout" output
-			(at 49.53 118.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "c91fcee2-af81-49d5-ad1f-d00e4410993d")
-		)
-		(instances
-			(project "test1"
-				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 31.5 86)
 		(size 18 6)
 		(fields_autoplaced yes)
