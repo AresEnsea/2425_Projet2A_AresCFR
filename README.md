@@ -1,10 +1,10 @@
 # CDF-2025
 Github de la Coupe de France de Robotique, objectif arriver premier et humilier INSA Lyon !!!!!!!!!
 
-# REGLEMENTS
+#REGLEMENTS
 https://www.coupederobotique.fr/accueil/le-concours/reglement-2025/
 
-##DIAPO 
+#DIAPO 
 [https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/Eb2eWKZeK-NNrEKdino8REcB281sSVFofJ1WQgk0IBzqbg?e=ZdGJZ5](https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/ESafam9fs7ZCg727WFCmVboB-b12O3MPg7kT_spCKCZYLA?e=d9OOJI)
 
 #CAD
