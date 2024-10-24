@@ -48,6 +48,7 @@ TIM_HandleTypeDef htim2;
 /* USER CODE BEGIN PV */
 uint8_t tx_buffer[27] = "Hello Ares \n\r";
 uint8_t rx_data[5];
+int i = 0;
 
 /* USER CODE END PV */
 
@@ -100,7 +101,7 @@ int main(void)
   MX_LPUART1_UART_Init();
   /* USER CODE BEGIN 2 */
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3); //PB10 TIM2 CH3
-  HAL_UART_Receive_IT(&hlpuart1,(uint8_t*)rx_data, 15);  // Start receiving data initially
+  HAL_UART_Receive_IT(&hlpuart1,(uint8_t*)rx_data, 5);  // Start receiving data initially
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -115,13 +116,10 @@ int main(void)
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
 		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 2000); // Vitesse haute
 	      }
-		  while (rx_data[0] == '0')
-	      {
-		         // Arrêter les moteurs
-	      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0); // Arrêter le moteur
-	      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
-          __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 0); // Arrêter la vitesse
-		  }
+
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0); // Arrêter le moteur
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
+		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 0); // Arrêter la vitesse
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -354,7 +352,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == LPUART1) // Vérifier si c'est le bon UART
+    {
+        HAL_UART_Transmit(&huart2, (uint8_t*)rx_data, strlen((char*)rx_data), HAL_MAX_DELAY);
 
+        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1 - i); // Toggle LED
+
+        HAL_UART_Receive_IT(&hlpuart1, (uint8_t*)rx_data, sizeof(rx_data)); // Démarrer la réception
+
+    }
+}
 /* USER CODE END 4 */
 
 /**
@@ -371,6 +380,8 @@ void Error_Handler(void)
   }
   /* USER CODE END Error_Handler_Debug */
 }
+
+
 
 #ifdef  USE_FULL_ASSERT
 /**
