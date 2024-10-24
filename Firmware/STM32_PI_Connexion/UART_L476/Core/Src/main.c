@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include <string.h>
 
 /* USER CODE END Includes */
 
@@ -59,22 +60,6 @@ static void MX_LPUART1_UART_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-    if (huart->Instance == LPUART1) // Check if it's the correct UART
-    {
-        HAL_UART_Transmit(&huart2, (uint8_t*)rx_data, 10, HAL_MAX_DELAY);
-
-        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1);
-
-        //HAL_UART_Abort(&hlpuart1);
-
-        HAL_UART_Receive_IT(&huart2, rx_data, 10);
-
-        //memset((uint8_t *)rx_data,'a',5);
-
-    }
-}
 
 /* USER CODE END 0 */
 
@@ -120,10 +105,32 @@ int main(void)
   while (1)
   {
 
-    /* USER CODE END WHILE */
+     /* USER CODE END WHILE */
+ 	  while (rx_data[0] == '1')
+ 	      {
+ 	          // Faire tourner les moteurs en avant
+ 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 1); // Moteur avant
+ 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
+ 	      __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 2000); // Vitesse haute
+ 	      }
+ 	  while (rx_data[0] == '0')
+ 	      {
+ 	         // Arrêter les moteurs
+ 	      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0); // Arrêter le moteur
+ 	      HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
+ 	      __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 0); // Arrêter la vitesse
+ 	      HAL_Delay(1000);
+ 	  }
 
-    /* USER CODE BEGIN 3 */
-  }
+ 	  // rx_data reste sur 1 commemt faire s'arreter le moteur quand on coupe les envois sur UART ????????
+ 	  // Deleguer ça au ROS qui doit mettre un message d'arret pour la stm32
+
+ 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0); // Arrêter le moteur
+ 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
+ 	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 0); // Arrêter la vitesse
+ 	  HAL_Delay(1000);
+     /* USER CODE BEGIN 3 */
+   }
   /* USER CODE END 3 */
 }
 
@@ -298,6 +305,23 @@ void Error_Handler(void)
   {
   }
   /* USER CODE END Error_Handler_Debug */
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if (huart->Instance == LPUART1) // Check if it's the correct UART
+    {
+        HAL_UART_Transmit(&huart2, (uint8_t*)rx_data, 10, HAL_MAX_DELAY);
+
+        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1);
+
+        //HAL_UART_Abort(&hlpuart1);
+
+        HAL_UART_Receive_IT(&huart2, rx_data, 10);
+
+        //memset((uint8_t *)rx_data,'a',5);
+
+    }
 }
 
 #ifdef  USE_FULL_ASSERT

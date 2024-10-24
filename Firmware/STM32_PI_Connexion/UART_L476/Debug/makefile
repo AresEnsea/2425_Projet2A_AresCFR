@@ -60,8 +60,8 @@ all: main-build
 main-build: UART_L476.elf secondary-outputs
 
 # Tool invocations
-UART_L476.elf UART_L476.map: $(OBJS) $(USER_OBJS) /home/carpe-bleue/STM32CubeIDE/my_workspace/UART_L476/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "UART_L476.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/carpe-bleue/STM32CubeIDE/my_workspace/UART_L476/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_L476.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+UART_L476.elf UART_L476.map: $(OBJS) $(USER_OBJS) /home/carpe-bleue/Git/2425_Projet2A_AresCFR/Firmware/STM32_PI_Connexion/UART_L476/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "UART_L476.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/carpe-bleue/Git/2425_Projet2A_AresCFR/Firmware/STM32_PI_Connexion/UART_L476/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="UART_L476.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
