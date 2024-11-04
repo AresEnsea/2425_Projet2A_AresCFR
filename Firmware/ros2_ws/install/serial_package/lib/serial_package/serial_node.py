@@ -15,7 +15,7 @@ def main(args=None):
     simple_sender = SimpleSender()
 
     # Connexion série à UART2
-    uart2_port = '/dev/serial0'  # Assurez-vous que cela correspond à votre UART2
+    uart2_port = '/dev/serial0'  # Assurez-vous que cela correspond à votre UAR>
     baudrate = 115200
     timeout = 1
 
@@ -26,14 +26,12 @@ def main(args=None):
         simple_sender.get_logger().info(f"Error opening serial port: {e}")
         exit()
 
-    # Envoi du message "hello ares"
-    message = "hello ares\n"
-    ser.write(message.encode())
-    simple_sender.get_logger().info(f"Sent message: {message.strip()}")
-
-    # Pause pour s'assurer que le message est envoyé
-    time.sleep(1)
-
+    messages = ["1\n\r \0", "0\n\r \0"]
+    
+    for message in messages:
+        simple_sender.get_logger().info(f"Sending message: {message.strip()}")
+        ser.write(message.encode())
+        time.sleep(5)  # Attendre 5 secondes entre les messages
     ser.close()  # Fermer la connexion série
     rclpy.shutdown()
 
