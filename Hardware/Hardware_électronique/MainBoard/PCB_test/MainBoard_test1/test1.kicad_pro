@@ -609,18 +609,6 @@
       "STM32H735"
     ],
     [
-      "ac8eed5a-b2d4-46c3-bdbf-5a3e44fdfc1c",
-      "RaspberryPi4"
-    ],
-    [
-      "4b47bf12-cc1f-4e46-8ad3-4a8a5279f0b0",
-      "Conn_ext"
-    ],
-    [
-      "2fd9541a-92b0-473b-862d-d3788646db00",
-      "Alimentation"
-    ],
-    [
       "26d4398e-0944-4bb2-b6fd-d788547aa7d2",
       "Buck5.1"
     ],
