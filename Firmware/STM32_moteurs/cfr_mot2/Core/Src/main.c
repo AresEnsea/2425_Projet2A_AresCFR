@@ -21,7 +21,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <string.h>
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -107,22 +108,36 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {
-	  // Set the rotation direction backward
-		  while (rx_data[0] == '1')
-		  	  {
-		  	      // Faire tourner les moteurs en avant
+  {// Set the rotation direction backward
+	  while (rx_data[0] == '0') // arret moteur
+	  {
+		  // Faire tourner les moteurs en avant
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0); // Moteur avant
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
+		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, (int)rx_data[0]*2000); // Vitesse haute
+
+	  }
+
+	  while (rx_data[0] == '1') // low moteur
+	  {
+		  // Faire tourner les moteurs en avant
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 1); // Moteur avant
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
-		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 2000); // Vitesse haute
-	      }
+		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 200); // Vitesse haute
 
-		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 0); // Arrêter le moteur
+	  }
+	  while (rx_data[0] == '2')//normal moteur 
+	  {
+		  // Faire tourner les moteurs en avant
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 1); // Moteur avant
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 0);
-		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 0); // Arrêter la vitesse
-    /* USER CODE END WHILE */
+		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3,(int) rx_data[0]*1000); // Vitesse haute
 
-    /* USER CODE BEGIN 3 */
+	  }
+
+	  /* USER CODE END WHILE */
+
+	  /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
@@ -358,7 +373,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
     {
         HAL_UART_Transmit(&huart2, (uint8_t*)rx_data, strlen((char*)rx_data), HAL_MAX_DELAY);
 
-        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 1 - i); // Toggle LED
+        HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, 0); // Toggle LED
 
         HAL_UART_Receive_IT(&hlpuart1, (uint8_t*)rx_data, sizeof(rx_data)); // Démarrer la réception
 
