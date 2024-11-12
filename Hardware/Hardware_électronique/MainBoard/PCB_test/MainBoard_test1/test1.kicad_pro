@@ -602,19 +602,15 @@
   "sheets": [
     [
       "6efb9aa2-c304-47cb-bf47-2a5d20e826bc",
-      "Root"
+      "Racine"
     ],
     [
       "ecae0a39-68aa-40d8-81be-c52fae22502f",
       "STM32H735"
     ],
     [
-      "26d4398e-0944-4bb2-b6fd-d788547aa7d2",
+      "2351e753-aab6-490e-ad96-365a57a146a8",
       "Buck5.1"
-    ],
-    [
-      "cad709d9-2085-46d3-9191-e70c9b6c1eb6",
-      "Buck7.5"
     ]
   ],
   "text_variables": {}
