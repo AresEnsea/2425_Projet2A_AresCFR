@@ -3782,6 +3782,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 33.02) (xy 80.01 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c18ce24-24d0-4701-83aa-51da3f042fc5")
+	)
+	(wire
+		(pts
 			(xy 69.215 139.7) (xy 69.215 140.335)
 		)
 		(stroke
@@ -4042,6 +4052,16 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 30.48) (xy 80.01 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "681ad44f-2556-4afd-ac7c-6811f082f0cb")
+	)
+	(wire
+		(pts
 			(xy 74.93 138.43) (xy 74.93 140.335)
 		)
 		(stroke
@@ -4297,7 +4317,18 @@
 		)
 		(uuid "f676d23b-efcf-4b7e-9040-796305a971d5")
 	)
-	(label "GPIO15_TXD"
+	(label "GPIO15_RXD"
+		(at 80.01 33.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0471e878-c256-4bc9-84cf-301c0189307a")
+	)
+	(label "GPIO15_RXD"
 		(at 100.33 46.99 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4308,7 +4339,7 @@
 		)
 		(uuid "0d0086e2-010e-4486-b437-5b24d716cfd7")
 	)
-	(label "GPIO15_RXD"
+	(label "GPIO14_TXD"
 		(at 100.33 44.45 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4318,6 +4349,17 @@
 			(justify left bottom)
 		)
 		(uuid "7eb95a02-143f-455c-96ef-2c9362ea0693")
+	)
+	(label "GPIO14_TXD"
+		(at 80.01 30.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e9219816-d5e1-4fb9-bee6-ee4023ab0413")
 	)
 	(global_label "GPIO16"
 		(shape input)
@@ -4627,28 +4669,6 @@
 			)
 		)
 	)
-	(global_label "GPIO14_TXD"
-		(shape input)
-		(at 67.31 30.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "84d8850b-cb7a-48b3-842f-04a856f184f5")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.6042 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GPIO5"
 		(shape input)
 		(at 54.61 58.42 180)
@@ -4711,28 +4731,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "GPIO15_RXD"
-		(shape input)
-		(at 67.31 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b1003ac0-3492-4a79-84b3-e63a83b34766")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.9066 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -5481,7 +5479,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 48.26 88.9 0)
 			(effects
 				(font
@@ -6721,7 +6719,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_AMASS:AMASS_XT60PW-F_1x02_P7.20mm_Horizontal"
 			(at 34.29 136.906 90)
 			(effects
 				(font
@@ -7686,7 +7684,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 46.99 102.87 0)
 			(effects
 				(font
@@ -7753,7 +7751,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 95.885 132.08 0)
 			(effects
 				(font
