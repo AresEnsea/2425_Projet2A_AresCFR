@@ -229,7 +229,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "lib_symbol_issues|635000|977900|89bea24b-a785-4e53-94f1-550157cebef4|00000000-0000-0000-0000-000000000000|||"
+    ],
     "meta": {
       "version": 0
     },
@@ -413,7 +415,7 @@
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
-      "endpoint_off_grid": "warning",
+      "endpoint_off_grid": "ignore",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
@@ -607,10 +609,6 @@
     [
       "ecae0a39-68aa-40d8-81be-c52fae22502f",
       "STM32H735"
-    ],
-    [
-      "2351e753-aab6-490e-ad96-365a57a146a8",
-      "Buck5.1"
     ]
   ],
   "text_variables": {}
