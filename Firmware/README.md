@@ -5,4 +5,8 @@ Ici le dossier Firmware du Github de la Coupe de France 2025 d'Ares, il regroupe
 - STM32_moteurs : contient le projet STM32CubeIDE qui délivre deux PWM pour faire tourner des moteurs
 - ros2_ws : le workspace ROS actuellement sur la pi4 (booté avec Ubuntu 22.04 et utilisant ROS2)
 
+Protocole de communication :
+Message de taille N, à augmenter selon les besoins 
+"M . . . . . . . .", 9 caractères pour les moteurs : 4 pour le droit et 4 pour le gauche
+"A . . . ", [0,1,2] pour l'actionneur à la position correspondante, respectivement pour 0,90 et 180 degrés
 
