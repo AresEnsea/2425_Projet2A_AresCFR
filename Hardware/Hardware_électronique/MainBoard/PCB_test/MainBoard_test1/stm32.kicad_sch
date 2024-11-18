@@ -10131,7 +10131,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.814 140.97) (xy 393.039 140.97)
+			(xy 369.57 140.97) (xy 393.039 140.97)
 		)
 		(stroke
 			(width 0)
@@ -10551,7 +10551,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.814 143.51) (xy 398.119 143.51)
+			(xy 369.57 143.51) (xy 398.119 143.51)
 		)
 		(stroke
 			(width 0)
@@ -10741,7 +10741,7 @@
 	)
 	(wire
 		(pts
-			(xy 375.894 146.05) (xy 370.814 146.05)
+			(xy 375.894 146.05) (xy 369.57 146.05)
 		)
 		(stroke
 			(width 0)
@@ -12031,7 +12031,7 @@
 	)
 	(wire
 		(pts
-			(xy 370.814 138.43) (xy 372.11 138.43)
+			(xy 369.57 138.43) (xy 373.38 138.43)
 		)
 		(stroke
 			(width 0)
@@ -17623,8 +17623,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e29d4db-a476-41d7-bd2b-44c3e644d588")
-		(property "Reference" "UART3"
-			(at 429.895 226.8037 0)
+		(property "Reference" "UART10"
+			(at 429.895 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17682,7 +17682,7 @@
 		(instances
 			(project "test1"
 				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc/ecae0a39-68aa-40d8-81be-c52fae22502f"
-					(reference "UART3")
+					(reference "UART10")
 					(unit 1)
 				)
 			)
@@ -17866,8 +17866,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4531d52a-4ac9-4f27-85c8-fd2f0dfdd8f1")
-		(property "Reference" "UART9"
-			(at 366.395 196.9587 0)
+		(property "Reference" "UART4"
+			(at 366.395 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17925,7 +17925,7 @@
 		(instances
 			(project "test1"
 				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc/ecae0a39-68aa-40d8-81be-c52fae22502f"
-					(reference "UART9")
+					(reference "UART4")
 					(unit 1)
 				)
 			)
@@ -18158,7 +18158,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 372.11 138.43 0)
+		(at 373.38 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18167,7 +18167,7 @@
 		(fields_autoplaced yes)
 		(uuid "50b2efb2-6c3c-4974-aa13-8b2a54b7699e")
 		(property "Reference" "#PWR072"
-			(at 372.11 142.24 0)
+			(at 373.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18176,7 +18176,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 372.11 133.35 0)
+			(at 373.38 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18184,7 +18184,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 372.11 138.43 0)
+			(at 373.38 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18193,7 +18193,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 372.11 138.43 0)
+			(at 373.38 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18202,7 +18202,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 372.11 138.43 0)
+			(at 373.38 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23867,7 +23867,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Male")
-		(at 365.734 140.97 0)
+		(at 364.49 140.97 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23875,8 +23875,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de421390-bd38-4655-b5bd-ba083c5959fd")
-		(property "Reference" "UART5"
-			(at 366.369 136.6337 0)
+		(property "Reference" "UART2"
+			(at 365.125 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23884,7 +23884,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Male"
-			(at 366.369 137.1909 0)
+			(at 365.125 137.1909 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23893,7 +23893,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 365.734 140.97 0)
+			(at 364.49 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23902,7 +23902,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 365.734 140.97 0)
+			(at 364.49 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23911,7 +23911,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 365.734 140.97 0)
+			(at 364.49 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23934,7 +23934,7 @@
 		(instances
 			(project "test1"
 				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc/ecae0a39-68aa-40d8-81be-c52fae22502f"
-					(reference "UART5")
+					(reference "UART2")
 					(unit 1)
 				)
 			)
@@ -23950,8 +23950,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e29acd17-8e1b-40a9-a714-477814c89653")
-		(property "Reference" "UART2"
-			(at 365.099 165.8437 0)
+		(property "Reference" "UART3"
+			(at 365.099 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24009,7 +24009,7 @@
 		(instances
 			(project "test1"
 				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc/ecae0a39-68aa-40d8-81be-c52fae22502f"
-					(reference "UART2")
+					(reference "UART3")
 					(unit 1)
 				)
 			)
@@ -24368,8 +24368,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb21a7da-0020-4d65-a78b-e97db3dd8526")
-		(property "Reference" "UART4"
-			(at 365.099 226.8037 0)
+		(property "Reference" "UART5"
+			(at 365.099 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24427,7 +24427,7 @@
 		(instances
 			(project "test1"
 				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc/ecae0a39-68aa-40d8-81be-c52fae22502f"
-					(reference "UART4")
+					(reference "UART5")
 					(unit 1)
 				)
 			)
