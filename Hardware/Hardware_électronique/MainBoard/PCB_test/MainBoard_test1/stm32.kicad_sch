@@ -8752,12 +8752,6 @@
 		(uuid "89cfa55e-20fc-4b5f-ab92-dace80243bbe")
 	)
 	(junction
-		(at 327.66 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "950c626a-b6b1-40c3-b37c-55a1d19ce93f")
-	)
-	(junction
 		(at 398.119 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10791,7 +10785,7 @@
 	)
 	(wire
 		(pts
-			(xy 327.66 45.72) (xy 331.47 45.72)
+			(xy 325.12 45.72) (xy 331.47 45.72)
 		)
 		(stroke
 			(width 0)
@@ -12538,16 +12532,6 @@
 			(type default)
 		)
 		(uuid "c8b5c6bc-69a9-48b8-b296-106aca2d519e")
-	)
-	(wire
-		(pts
-			(xy 325.12 45.72) (xy 327.66 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8c8c736-5002-4946-8b25-2b02f363926b")
 	)
 	(wire
 		(pts
@@ -14595,72 +14579,6 @@
 			(project "test1"
 				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc/ecae0a39-68aa-40d8-81be-c52fae22502f"
 					(reference "D4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 327.66 45.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "050d8d6e-945a-4a41-aaf7-95c2e1ddcbcc")
-		(property "Reference" "TP2"
-			(at 323.342 36.322 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 323.342 38.862 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 332.74 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 332.74 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 327.66 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac9afd00-aa6c-4918-8ce4-81381e93a47c")
-		)
-		(instances
-			(project "test1"
-				(path "/6efb9aa2-c304-47cb-bf47-2a5d20e826bc/ecae0a39-68aa-40d8-81be-c52fae22502f"
-					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -21276,7 +21194,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 222.25 43.18 0)
 			(effects
 				(font
@@ -23519,7 +23437,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 229.87 43.18 0)
 			(effects
 				(font
@@ -23607,7 +23525,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
 			(at 236.22 43.18 0)
 			(effects
 				(font
