@@ -7144,22 +7144,10 @@
 		)
 	)
 	(junction
-		(at 227.33 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05f18379-6627-4650-8d17-c5509b3cd20a")
-	)
-	(junction
 		(at 128.27 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0910ffd2-0d1d-44ba-a3ea-26fcb4f8b7be")
-	)
-	(junction
-		(at 229.87 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "09526c56-ea64-42b7-a9e4-9f3110e54ed3")
 	)
 	(junction
 		(at 147.32 40.64)
@@ -7646,6 +7634,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a4f3b9ef-a5b2-49b1-acca-2544c9e0fee1")
+	)
+	(junction
+		(at 229.87 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "acf05b6c-0855-474c-a6f2-0a10e6bde389")
 	)
 	(junction
 		(at 521.97 60.96)
@@ -8256,6 +8250,16 @@
 			(type default)
 		)
 		(uuid "03e2467e-a4b0-404c-9257-28e7e377244f")
+	)
+	(wire
+		(pts
+			(xy 236.22 46.99) (xy 236.22 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "042c6ef1-3d09-494f-a7e4-da96f36bb864")
 	)
 	(wire
 		(pts
@@ -9069,7 +9073,7 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 45.72) (xy 227.33 45.72)
+			(xy 222.25 46.99) (xy 229.87 46.99)
 		)
 		(stroke
 			(width 0)
@@ -9286,6 +9290,16 @@
 			(type default)
 		)
 		(uuid "49053dc2-2271-4652-8c05-8c1ea4f2e70f")
+	)
+	(wire
+		(pts
+			(xy 229.87 46.99) (xy 229.87 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "492bdc2c-b793-4d9c-ac08-b65df315ccda")
 	)
 	(wire
 		(pts
@@ -9576,6 +9590,16 @@
 			(type default)
 		)
 		(uuid "5c4723bf-ea16-4c9c-a245-62eff1968fb3")
+	)
+	(wire
+		(pts
+			(xy 222.25 46.99) (xy 222.25 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c4f5280-6a1a-4bd1-9b96-9041cae3de0f")
 	)
 	(wire
 		(pts
@@ -10169,7 +10193,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 45.72) (xy 236.22 45.72)
+			(xy 229.87 46.99) (xy 236.22 46.99)
 		)
 		(stroke
 			(width 0)
@@ -11406,16 +11430,6 @@
 			(type default)
 		)
 		(uuid "d25e6331-8b1d-4e28-9358-bd0f7af53de8")
-	)
-	(wire
-		(pts
-			(xy 227.33 45.72) (xy 229.87 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5b89571-15d8-4ebf-b944-2a2dda964653")
 	)
 	(wire
 		(pts
@@ -12942,7 +12956,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 120.65 36.83 0)
 			(effects
 				(font
@@ -12961,6 +12975,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 120.65 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 120.65 36.83 0)
 			(effects
 				(font
@@ -13012,7 +13035,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 351.4852 55.88 0)
 			(effects
 				(font
@@ -13049,6 +13072,15 @@
 			)
 		)
 		(property "Fournisseur" "Wurth"
+			(at 350.52 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 350.52 52.07 0)
 			(effects
 				(font
@@ -13136,6 +13168,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 459.105 241.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "ddf74f39-502d-4a40-96c6-390b8098764c")
 		)
@@ -13211,6 +13252,15 @@
 		)
 		(property "Mouser Part Number" "863-ESD7C5.0DT5G"
 			(at 394.309 241.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
+			(at 394.309 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13356,6 +13406,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 363.194 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8b8968f5-08c2-4031-90e4-5289ccbbbee0")
 		)
@@ -13423,6 +13482,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 426.72 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 426.72 113.03 0)
 			(effects
 				(font
@@ -13648,6 +13716,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 456.565 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c980ceaa-a4e5-4fe0-a987-bada6d34e19f")
 		)
@@ -13786,6 +13863,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 533.4 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5ba6b9af-a347-45cc-bb2b-20e44fa6b4aa")
 		)
@@ -13881,6 +13967,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 491.49 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b9de01e4-022f-4edd-84ee-3ba318ef4ab8")
 		)
@@ -13925,7 +14020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 151.13 36.83 0)
 			(effects
 				(font
@@ -13944,6 +14039,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 151.13 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 151.13 36.83 0)
 			(effects
 				(font
@@ -14097,6 +14201,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 457.835 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "01574fc1-40d8-46d0-94dd-fe0f3388383e")
 		)
@@ -14163,6 +14276,15 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M7 MCU, 1024KB flash, 564KB RAM, 550 MHz, 1.62-3.6V, 121 GPIO, LQFP176"
+			(at 182.88 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 182.88 152.4 0)
 			(effects
 				(font
@@ -14788,6 +14910,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 491.49 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3f07ee42-4b19-4f60-90aa-62430dd20d74")
 		)
@@ -14848,6 +14979,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 527.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 527.05 82.55 0)
 			(effects
 				(font
@@ -14924,6 +15064,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 527.05 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "947ad1c6-3c1d-46c2-80d2-5854bf37fdc0")
 		)
@@ -14966,7 +15115,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 119.38 243.84 0)
 			(effects
 				(font
@@ -14985,6 +15134,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 119.38 243.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 119.38 243.84 0)
 			(effects
 				(font
@@ -15053,6 +15211,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 528.32 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 528.32 102.87 0)
 			(effects
 				(font
@@ -15141,6 +15308,15 @@
 			)
 		)
 		(property "MFR" "885 012 105 018"
+			(at 523.24 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 523.24 106.68 0)
 			(effects
 				(font
@@ -15325,7 +15501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 154.94 36.83 0)
 			(effects
 				(font
@@ -15344,6 +15520,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 154.94 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 154.94 36.83 0)
 			(effects
 				(font
@@ -15413,6 +15598,15 @@
 			)
 		)
 		(property "Description" "test point"
+			(at 349.25 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 349.25 45.72 0)
 			(effects
 				(font
@@ -15527,7 +15721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 135.89 36.83 0)
 			(effects
 				(font
@@ -15546,6 +15740,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 135.89 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 135.89 36.83 0)
 			(effects
 				(font
@@ -15904,6 +16107,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 173.99 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7221cf75-1d87-459c-925b-4da55a560685")
 		)
@@ -15973,6 +16185,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 429.26 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5d38ff7f-1e1c-4135-8e27-9881ec563706")
 		)
@@ -16021,7 +16242,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 127 246.38 0)
 			(effects
 				(font
@@ -16040,6 +16261,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 127 246.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 127 246.38 0)
 			(effects
 				(font
@@ -16144,6 +16374,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 339.09 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2023d8a7-b8d0-4735-9d59-7ac2e3024f3a")
 		)
@@ -16216,6 +16455,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 365.76 201.295 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "32b53c49-f2a5-43ad-881a-262274fc8b47")
 		)
@@ -16266,7 +16514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 97.79 36.83 0)
 			(effects
 				(font
@@ -16285,6 +16533,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 97.79 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 97.79 36.83 0)
 			(effects
 				(font
@@ -16447,6 +16704,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 116.84 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ed255ac5-dae3-49e1-b97c-57d2f0acbdd8")
 		)
@@ -16598,6 +16864,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 482.6 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9b0f1841-39aa-44fa-b935-1e7c5f612ced")
 		)
@@ -16707,7 +16982,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 93.98 36.83 0)
 			(effects
 				(font
@@ -16726,6 +17001,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 93.98 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 93.98 36.83 0)
 			(effects
 				(font
@@ -16804,6 +17088,15 @@
 			)
 		)
 		(property "Fournisseur" "Stock"
+			(at 440.69 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 440.69 73.66 0)
 			(effects
 				(font
@@ -16933,6 +17226,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 543.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "83b220aa-0d64-4469-aa48-b770e65003c0")
 		)
@@ -17043,7 +17345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 158.75 36.83 0)
 			(effects
 				(font
@@ -17062,6 +17364,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 158.75 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 158.75 36.83 0)
 			(effects
 				(font
@@ -17149,6 +17460,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 456.565 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1a6b7799-9753-4a27-b7b3-75f5f0231f03")
 		)
@@ -17224,6 +17544,15 @@
 		)
 		(property "Mouser Part Number" "863-ESD7C5.0DT5G"
 			(at 395.605 211.455 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
+			(at 395.605 211.455 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17585,6 +17914,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 198.12 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a55d207b-708c-4dcd-9c52-14d9ebc24949")
 		)
@@ -17655,6 +17993,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 532.13 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3f6d0dfa-1767-41d5-88d6-9a8dcfaa1a2f")
 		)
@@ -17716,6 +18063,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 426.72 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 426.72 140.97 0)
 			(effects
 				(font
@@ -17807,6 +18163,15 @@
 			)
 		)
 		(property "MFR" "435 451 019 820"
+			(at 542.29 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 542.29 60.96 0)
 			(effects
 				(font
@@ -17910,6 +18275,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 491.49 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "edfb9296-31c8-46d7-8cb0-25118e053d33")
 		)
@@ -17954,7 +18328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 124.46 36.83 0)
 			(effects
 				(font
@@ -17973,6 +18347,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 124.46 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 124.46 36.83 0)
 			(effects
 				(font
@@ -18025,7 +18408,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 101.6 36.83 0)
 			(effects
 				(font
@@ -18044,6 +18427,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 101.6 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 101.6 36.83 0)
 			(effects
 				(font
@@ -18096,7 +18488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 132.08 36.83 0)
 			(effects
 				(font
@@ -18115,6 +18507,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 132.08 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 132.08 36.83 0)
 			(effects
 				(font
@@ -18340,6 +18741,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 482.6 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "fd10e716-729c-4e16-866b-e165eb398587")
 		)
@@ -18491,6 +18901,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 482.6 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9d52044d-03fd-4f54-830f-48adb1eb14bb")
 		)
@@ -18535,7 +18954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 128.27 36.83 0)
 			(effects
 				(font
@@ -18554,6 +18973,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 128.27 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 128.27 36.83 0)
 			(effects
 				(font
@@ -18848,6 +19276,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 521.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "205dfa88-45da-4e45-bbc1-740968b655a4")
 		)
@@ -19090,7 +19527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 116.84 36.83 0)
 			(effects
 				(font
@@ -19109,6 +19546,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 116.84 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 116.84 36.83 0)
 			(effects
 				(font
@@ -19224,7 +19670,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 133.35 250.19 0)
 			(effects
 				(font
@@ -19243,6 +19689,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 133.35 250.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 133.35 250.19 0)
 			(effects
 				(font
@@ -19331,6 +19786,15 @@
 			)
 		)
 		(property "MFR" "885 012 105 018"
+			(at 521.97 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 521.97 86.36 0)
 			(effects
 				(font
@@ -19473,6 +19937,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 528.32 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "13efcedb-d82e-48bd-92e5-494f504f1bb6")
 		)
@@ -19516,7 +19989,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 222.25 43.18 0)
 			(effects
 				(font
@@ -19553,6 +20026,15 @@
 			)
 		)
 		(property "MFR" "885 012 105 012"
+			(at 222.25 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 222.25 43.18 0)
 			(effects
 				(font
@@ -19640,6 +20122,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 393.039 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "0f0c086e-602b-44e1-9b62-e8211acfc85a")
 		)
@@ -19687,7 +20178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 162.56 36.83 0)
 			(effects
 				(font
@@ -19706,6 +20197,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 162.56 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 162.56 36.83 0)
 			(effects
 				(font
@@ -19758,7 +20258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 147.32 36.83 0)
 			(effects
 				(font
@@ -19777,6 +20277,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 147.32 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 147.32 36.83 0)
 			(effects
 				(font
@@ -20093,7 +20602,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 109.22 36.83 0)
 			(effects
 				(font
@@ -20112,6 +20621,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 109.22 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 109.22 36.83 0)
 			(effects
 				(font
@@ -20331,6 +20849,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 394.309 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f1e2f9d3-1a60-431f-90ce-db8f518aff33")
 		)
@@ -20406,6 +20933,15 @@
 		)
 		(property "Mouser Part Number" "863-ESD7C5.0DT5G"
 			(at 395.579 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
+			(at 395.579 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20684,6 +21220,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 427.99 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "be379763-b67c-49b4-87de-353a64a690e6")
 		)
@@ -20751,6 +21296,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 427.99 200.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 427.99 200.66 0)
 			(effects
 				(font
@@ -20852,6 +21406,15 @@
 			)
 		)
 		(property "Ref" "4177482"
+			(at 491.49 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 491.49 55.88 0)
 			(effects
 				(font
@@ -21015,6 +21578,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 523.24 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "151e827e-0d9e-4c6a-b5f2-bd9af06931e8")
 		)
@@ -21059,7 +21631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 143.51 36.83 0)
 			(effects
 				(font
@@ -21078,6 +21650,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 143.51 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 143.51 36.83 0)
 			(effects
 				(font
@@ -21130,7 +21711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 113.03 36.83 0)
 			(effects
 				(font
@@ -21149,6 +21730,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 113.03 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 113.03 36.83 0)
 			(effects
 				(font
@@ -21400,7 +21990,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 139.7 36.83 0)
 			(effects
 				(font
@@ -21419,6 +22009,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 139.7 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 139.7 36.83 0)
 			(effects
 				(font
@@ -21536,7 +22135,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 326.0852 55.88 0)
 			(effects
 				(font
@@ -21573,6 +22172,15 @@
 			)
 		)
 		(property "Fournisseur" "Wurth"
+			(at 325.12 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 325.12 52.07 0)
 			(effects
 				(font
@@ -21716,6 +22324,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 532.13 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "91053132-0ef2-4305-a4cf-41b6f5525a38")
 		)
@@ -21759,7 +22376,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 229.87 43.18 0)
 			(effects
 				(font
@@ -21796,6 +22413,15 @@
 			)
 		)
 		(property "MFR" "885 012 105 012"
+			(at 229.87 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 229.87 43.18 0)
 			(effects
 				(font
@@ -21847,7 +22473,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 236.22 43.18 0)
 			(effects
 				(font
@@ -21884,6 +22510,15 @@
 			)
 		)
 		(property "MFR" "885 012 105 012"
+			(at 236.22 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 236.22 43.18 0)
 			(effects
 				(font
@@ -22159,6 +22794,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 364.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "071ee4cb-1d78-4456-b01c-7a11246cb073")
 		)
@@ -22226,6 +22870,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 364.464 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 364.464 170.18 0)
 			(effects
 				(font
@@ -22328,6 +22981,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 186.69 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a55a9b7a-745c-4719-a47a-606825800a03")
 		)
@@ -22371,7 +23033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 177.8 33.02 0)
 			(effects
 				(font
@@ -22408,6 +23070,15 @@
 			)
 		)
 		(property "MFR" "885 012 105 012"
+			(at 177.8 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 177.8 33.02 0)
 			(effects
 				(font
@@ -22488,6 +23159,15 @@
 		)
 		(property "Mouser Part Number" "863-ESD7C5.0DT5G"
 			(at 457.835 179.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
+			(at 457.835 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22583,6 +23263,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 543.56 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "df0e4193-5c7d-4c23-a95e-090e3a7f874e")
 		)
@@ -22644,6 +23333,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 364.464 231.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 364.464 231.14 0)
 			(effects
 				(font
@@ -22743,6 +23441,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 542.29 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "89ca487f-7837-493b-9f9d-29109d95d9b7")
 		)
@@ -22760,7 +23467,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 227.33 45.72 0)
+		(at 229.87 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22768,7 +23475,7 @@
 		(dnp no)
 		(uuid "ef023c1e-0f1f-4b30-a31e-7eb41e543461")
 		(property "Reference" "#PWR082"
-			(at 227.33 52.07 0)
+			(at 229.87 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22777,7 +23484,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 48.006 0)
+			(at 224.79 49.276 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22786,7 +23493,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 227.33 45.72 0)
+			(at 229.87 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22795,7 +23502,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 227.33 45.72 0)
+			(at 229.87 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22804,7 +23511,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 227.33 45.72 0)
+			(at 229.87 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22897,6 +23604,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 128.27 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "aa516f83-901f-40d0-b5b3-f3e845f00444")
 		)
@@ -22959,6 +23675,15 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
+			(at 533.4 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 533.4 116.84 0)
 			(effects
 				(font
@@ -23118,6 +23843,15 @@
 				(hide yes)
 			)
 		)
+		(property "Vmax" ""
+			(at 482.6 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "00c78f3d-16f4-4a3d-8872-a126118e7905")
 		)
@@ -23162,7 +23896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 105.41 36.83 0)
 			(effects
 				(font
@@ -23181,6 +23915,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 105.41 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Vmax" ""
 			(at 105.41 36.83 0)
 			(effects
 				(font
