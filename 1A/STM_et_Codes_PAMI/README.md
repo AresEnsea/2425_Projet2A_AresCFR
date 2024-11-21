@@ -1,3 +1,1 @@
-# Hello ici c'est le Code
-
-## déposer le projet CubeIDE
+# Voici le Projet STM pour le PAMI Coupe de France 2425---- ENSEA ARES
