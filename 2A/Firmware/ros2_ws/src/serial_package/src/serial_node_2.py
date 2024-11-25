@@ -1,37 +1,67 @@
 #!/usr/bin/env python3
-import rclpy
-from rclpy.node import Node
 import serial
 import time
+import rclpy
+from rclpy.node import Node
+import tty
+import sys
+import termios
 
-class SimpleListener(Node):
-    def __init__(self, port='/dev/ttyS0', baudrate=115200):
-        super().__init__('simple_listener')
-        self.serial_port = serial.Serial(port, baudrate, timeout=1)
-        self.get_logger().info(f"Listening on {port} at {baudrate} baud")
+class SimpleSender(Node):
+    def __init__(self):
+        super().__init__('simple_sender')
+        self.uart2_port = '/dev/serial0'
+        self.baudrate = 115200
+        self.timeout = 1
 
-    def run(self):
-        while rclpy.ok():
-            if self.serial_port.in_waiting > 0:
-                received_data = self.serial_port.readline().decode('utf-8').strip()
-                self.get_logger().info(f"Received: {received_data}")
-            rclpy.spin_once(self)  # Process callbacks
-            time.sleep(0.1)  # Sleep for a brief period
+    def send_serial_message(self, message):
+        try:
+            with serial.Serial(self.uart2_port, self.baudrate, timeout=self.timeout) as ser:
+                self.get_logger().info(f"Sending message: {message.strip()}")
+                ser.write(message.encode())
+        except serial.SerialException as e:
+            self.get_logger().error(f"Error opening serial port: {e}")
 
-    def destroy_node(self):
-        self.serial_port.close()  # Close the serial connection
-        super().destroy_node()
+def getch():
+    fd = sys.stdin.fileno()
+    old_settings = termios.tcgetattr(fd)
+    try:
+        tty.setraw(fd)
+        ch = sys.stdin.read(1)
+    finally:
+        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+    return ch
 
 def main(args=None):
     rclpy.init(args=args)
-    listener_node = SimpleListener()
-
+    simple_sender = SimpleSender()
+    
+    print("Keyboard Teleop: Use 'z' (forward), 's' (backward), 'q' (left), 'd' (right). Press 'x' to exit.")
+    
     try:
-        listener_node.run()
-    except Exception as e:
-        listener_node.get_logger().error(f"Exception: {e}")
+        while rclpy.ok():
+            key = getch()
+            
+            if key == 'z':  # Move forward
+                message = "04000400\n\r\0"
+            elif key == 's':  # Move backward
+                message = "00000000\n\r\0"
+            elif key == 'q':  # Turn left
+                message = "04000100\n\r\0"
+            elif key == 'd':  # Turn right
+                message = "01000400\n\r\0"
+            elif key == 'x':  # Exit
+                break
+            else:
+                continue
+            
+            simple_sender.send_serial_message(message)
+            rclpy.spin_once(simple_sender, timeout_sec=0.1)
+    
+    except KeyboardInterrupt:
+        pass
+    
     finally:
-        listener_node.destroy_node()
         rclpy.shutdown()
 
 if __name__ == '__main__':

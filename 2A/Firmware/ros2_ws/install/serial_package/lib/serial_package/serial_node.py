@@ -26,12 +26,11 @@ def main(args=None):
         simple_sender.get_logger().info(f"Error opening serial port: {e}")
         exit()
 
-    messages = ["1\n\r \0", "0\n\r \0"]
-    
+    messages = ["00000000\n\r\0","00000000\n\r\0","04000000\n\r\0","08000000\n\r\0","12000000\n\r\0","12000000\n\r\0","10000400\n\r\0","08000800\n\r\0","04001200\n\r\0","00000800\n\r\0","00000400\n\r\0","00000000\n\r\0","04000400\n\r\0","08000800\n\r\0","12001200\n\r\0"]
     for message in messages:
         simple_sender.get_logger().info(f"Sending message: {message.strip()}")
         ser.write(message.encode())
-        time.sleep(5)  # Attendre 5 secondes entre les messages
+        time.sleep(1)  # Attendre 5 secondes entre les messages
     ser.close()  # Fermer la connexion série
     rclpy.shutdown()
 

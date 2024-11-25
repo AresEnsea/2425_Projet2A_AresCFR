@@ -46,6 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/serial_package" TYPE PROGRAM FILES
     "/home/carpe-bleue/ros2_ws/src/serial_package/src/serial_node.py"
     "/home/carpe-bleue/ros2_ws/src/serial_package/src/serial_node_2.py"
+    "/home/carpe-bleue/ros2_ws/src/serial_package/src/serial_node_3.py"
     )
 endif()
 

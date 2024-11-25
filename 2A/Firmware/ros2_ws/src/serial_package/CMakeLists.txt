@@ -16,6 +16,7 @@ install(
   PROGRAMS
     src/serial_node.py  # Make sure this matches your script's location
     src/serial_node_2.py
+    src/serial_node_3.py
   DESTINATION lib/${PROJECT_NAME}  # Installs to lib/serial_package
 )
 

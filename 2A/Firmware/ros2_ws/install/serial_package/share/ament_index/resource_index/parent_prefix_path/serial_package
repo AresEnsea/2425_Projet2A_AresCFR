@@ -1,1 +1,1 @@
-/opt/ros/humble
+/opt/ros/humble:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs
