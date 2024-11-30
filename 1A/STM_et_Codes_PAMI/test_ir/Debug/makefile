@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := testF303_8IR
+BUILD_ARTIFACT_NAME := test_ir
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-testF303_8IR.elf \
+test_ir.elf \
 
 MAP_FILES += \
-testF303_8IR.map \
+test_ir.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-testF303_8IR.list \
+test_ir.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: testF303_8IR.elf secondary-outputs
+main-build: test_ir.elf secondary-outputs
 
 # Tool invocations
-testF303_8IR.elf testF303_8IR.map: $(OBJS) $(USER_OBJS) C:\Users\capod\STM32CubeIDE\ARES\testF303_8IR\STM32F303K8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "testF303_8IR.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\capod\STM32CubeIDE\ARES\testF303_8IR\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="testF303_8IR.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+test_ir.elf test_ir.map: $(OBJS) $(USER_OBJS) C:\Users\capod\OneDrive\桌面\ARES\coupe\ de\ france\ 2425\CFR2425\2425_Projet_AresCFR\1A\STM_et_Codes_PAMI\test_ir\STM32F303K8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "test_ir.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\capod\OneDrive\桌面\ARES\coupe de france 2425\CFR2425\2425_Projet_AresCFR\1A\STM_et_Codes_PAMI\test_ir\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="test_ir.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-testF303_8IR.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "testF303_8IR.list"
+test_ir.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "test_ir.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) default.size.stdout testF303_8IR.elf testF303_8IR.list testF303_8IR.map
+	-$(RM) default.size.stdout test_ir.elf test_ir.list test_ir.map
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
