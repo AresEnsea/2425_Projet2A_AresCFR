@@ -199,105 +199,152 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  // The code for the radar, it prints the distance
-	  HAL_GPIO_WritePin(TRIG_PORT, TRIG_PIN, GPIO_PIN_SET);  // pull the TRIG pin HIGH
-	  //__HAL_TIM_SET_COUNTER(&htim1, 0);
-	  while (__HAL_TIM_GET_COUNTER (&htim1) < 10);  // wait for 10 us
-	  HAL_GPIO_WritePin(TRIG_PORT, TRIG_PIN, GPIO_PIN_RESET);  // pull the TRIG pin low
-	  __HAL_TIM_SET_COUNTER(&htim1, 0);
+    // The code for the radar, it prints the distance
+    HAL_GPIO_WritePin(TRIG_PORT, TRIG_PIN, GPIO_PIN_SET); // pull the TRIG pin HIGH
+    //__HAL_TIM_SET_COUNTER(&htim1, 0);
+    while (__HAL_TIM_GET_COUNTER(&htim1) < 10)
+      ;                                                     // wait for 10 us
+    HAL_GPIO_WritePin(TRIG_PORT, TRIG_PIN, GPIO_PIN_RESET); // pull the TRIG pin low
+    __HAL_TIM_SET_COUNTER(&htim1, 0);
 
+    // Lign tracker part
+    ADC_Select_CH1();
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, 1000);
+    ADC_VAL[0] = HAL_ADC_GetValue(&hadc1);
+    HAL_ADC_Stop(&hadc1);
 
-	  //Lign tracker part
-	  ADC_Select_CH1();
-	  HAL_ADC_Start(&hadc1);
-	  HAL_ADC_PollForConversion(&hadc1, 1000);
-	  ADC_VAL[0] = HAL_ADC_GetValue(&hadc1);
-	  HAL_ADC_Stop(&hadc1);
+    ADC_Select_CH2();
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, 1000);
+    ADC_VAL[1] = HAL_ADC_GetValue(&hadc1);
+    HAL_ADC_Stop(&hadc1);
 
-	  ADC_Select_CH2();
-	  HAL_ADC_Start(&hadc1);
-	  HAL_ADC_PollForConversion(&hadc1, 1000);
-	  ADC_VAL[1] = HAL_ADC_GetValue(&hadc1);
-	  HAL_ADC_Stop(&hadc1);
+    ADC_Select_CH3();
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, 1000);
+    ADC_VAL[2] = HAL_ADC_GetValue(&hadc1);
+    HAL_ADC_Stop(&hadc1);
+    // printf("Left : %d, Mid: %d, Right: %d \r\n", ADC_VAL[0], ADC_VAL[1], ADC_VAL[2]);
 
-	  ADC_Select_CH3();
-	  HAL_ADC_Start(&hadc1);
-	  HAL_ADC_PollForConversion(&hadc1, 1000);
-	  ADC_VAL[2] = HAL_ADC_GetValue(&hadc1);
-	  HAL_ADC_Stop(&hadc1);
-	  //printf("Left : %d, Mid: %d, Right: %d \r\n", ADC_VAL[0], ADC_VAL[1], ADC_VAL[2]);
+    if ((ADC_VAL[0] > threshold) && (ADC_VAL[1] > threshold) && (ADC_VAL[2] > threshold) && (Distance > 10))
+    {
+      // Set the rotation direction forward
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 1);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
+      // Set the speed
+      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 200);
+      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 200);
+      count_time_actu = HAL_GetTick();
+      count_time_init = HAL_GetTick();
+      started_to_turn_right = 0;
+      started_to_turn_left = 0;
+    }
+    //	  if(((ADC_VAL[0]>threshold) && (ADC_VAL[1]<threshold) && (ADC_VAL[3]<threshold))&&(Distance>10)){//|| (started_to_turn_right==1)
+    //  		  //left motor rotate foward
+    //	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 1);
+    //	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+    //	  	  		  //right motor rotate foward
+    //	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
+    //	  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
+    //  		  // Set the speed
+    //	  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1, 150);
+    //	  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 0);
+    //  	  count_time_actu =HAL_GetTick();
+    //  	  count_time_init =HAL_GetTick();
+    //  	  started_to_turn_right = 1;
+    //  }
+    //	  if(((ADC_VAL[0]<threshold) && (ADC_VAL[1]<threshold) && (ADC_VAL[3]>threshold))&&(Distance>10)){ //|| (started_to_turn_left==1)
+    //	  		  //Stop the left motor
+    //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 0);
+    //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+    //	  		  //right motor rotate foward
+    //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
+    //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
+    //	  		  // Set the speed
+    //		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1, 0);
+    //		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 150);
+    //	  	  count_time_actu =HAL_GetTick();
+    //	  	  count_time_init =HAL_GetTick();
+    //	  	  started_to_turn_left = 1;
+    //	  }
+    if ((ADC_VAL[0] < threshold) && (ADC_VAL[1] < threshold) && (ADC_VAL[3] > threshold) && (Distance > 10))
+    { //|| (started_to_turn_right==1)
+      // left motor rotate foward
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 0);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+      // right motor rotate foward
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
+      // Set the speed
+      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
+      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 200);
+      count_time_actu = HAL_GetTick();
+      count_time_init = HAL_GetTick();
+      started_to_turn_right = 1;
+    }
+    if ((ADC_VAL[0] > threshold) && (ADC_VAL[1] < threshold) && (ADC_VAL[3] < threshold) && (Distance > 10))
+    { //|| (started_to_turn_left==1)
+      // Stop the left motor
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 1);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+      // right motor rotate foward
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
+      // Set the speed
+      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 200);
+      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 0);
+      count_time_actu = HAL_GetTick();
+      count_time_init = HAL_GetTick();
+      started_to_turn_left = 1;
+    }
+    //	  else if(((ADC_VAL[0]>threshold) && (ADC_VAL[1]<threshold) && (ADC_VAL[3]<threshold)&&(Distance>10))){//|| (started_to_turn_right==1)
+    //	  		  //left motor rotate foward
+    //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 1);
+    //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+    //		  	  		  //right motor rotate foward
+    //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
+    //		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
+    //	  		  // Set the speed
+    //		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1, 150);
+    //
+    //	  	  count_time_actu =HAL_GetTick();
+    //	  	  count_time_init =HAL_GetTick();
+    //	  	  started_to_turn_right = 1;
+    //	  }
 
+    if (Distance < 10)
+    {
+      // Stop both motors
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 0);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
+      HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
+      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 0);
+      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 0);
+      count_time_actu = HAL_GetTick();
+      count_time_init = HAL_GetTick();
+    }
 
-	  if(((ADC_VAL[0]<threshold) &&(ADC_VAL[1]>threshold) && (ADC_VAL[2]<threshold))&&(Distance>10)){
-	  		  //Set the rotation direction forward
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 1);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
-	  		  // Set the speed
-		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1, 200);
-		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 200);
-		  count_time_actu =HAL_GetTick();
-		  count_time_init =HAL_GetTick();
-		  started_to_turn_right = 0;
-		  started_to_turn_left = 0;
-	  }else if(( (ADC_VAL[0]>threshold)&&(Distance>10)) || (started_to_turn_left==1)){
-	  		  //Stop the left motor
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 0);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
-	  		  //right motor rotate foward
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
-	  		  // Set the speed
-		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_2, 150);
-	  	  count_time_actu =HAL_GetTick();
-	  	  count_time_init =HAL_GetTick();
-	  	  started_to_turn_left = 1;
-	  }else if(((ADC_VAL[2]>threshold)&&(Distance>10))|| (started_to_turn_right==1)){
-	  		  //left motor rotate foward
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 1);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
-		  	  		  //right motor rotate foward
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
-	  		  // Set the speed
-		  __HAL_TIM_SET_COMPARE(&htim3,TIM_CHANNEL_1, 150);
-
-	  	  count_time_actu =HAL_GetTick();
-	  	  count_time_init =HAL_GetTick();
-	  	  started_to_turn_right = 1;
-	  }
-
-	  if(Distance<10){
-	  	  //Stop both motors
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 0);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
-		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
-	  	  count_time_actu =HAL_GetTick();
-	  	  count_time_init =HAL_GetTick();
-	  }
-	  if((ADC_VAL[0]<threshold) &&(ADC_VAL[1]<threshold) && (ADC_VAL[2]<threshold)){
-	    		  //Set the rotation direction forward
-	   	  count_time_actu = HAL_GetTick();
-	  	  //if((count_time_actu-count_time_init) !=0){count_time_init =count_time_actu;}
-	  	  //printf("count_time_init-HAL_GetTick() = %d \r\n",(count_time_actu-count_time_init));
-	   	  if (count_time_actu-count_time_init >800 ){
-	    			//Stop both motors
-					  //printf("jarrrettee \r\n");
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 0);
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
-			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
-			  count_time_init = count_time_actu;
-	  	}
-	  }
-
-
-	  HAL_Delay(50); //If I don't add this the detection with ultrasound might cause pb with relatively long ditances
-	  // The sound needs time to travel, here each iteration is 20ms, might be too quick, so HAL_Delay here works just fine.
-
-
+    //	  if((ADC_VAL[0]<threshold) &&(ADC_VAL[1]<threshold) && (ADC_VAL[2]<threshold)){
+    //	    		  //Set the rotation direction forward
+    //	   	  count_time_actu = HAL_GetTick();
+    //	  	  //if((count_time_actu-count_time_init) !=0){count_time_init =count_time_actu;}
+    //	  	  //printf("count_time_init-HAL_GetTick() = %d \r\n",(count_time_actu-count_time_init));
+    //	   	  if (count_time_actu-count_time_init >800 ){
+    //	    			//Stop both motors
+    //					  //printf("jarrrettee \r\n");
+    //			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_3, 0);
+    //			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
+    //			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
+    //			  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 0);
+    //			  count_time_init = count_time_actu;
+    //	  	}
+    //	  }
+    HAL_Delay(5); // If I don't add this the detection with ultrasound might cause pb with relatively long ditances
+    // The sound needs time to travel, here each iteration is 20ms, might be too quick, so HAL_Delay here works just fine.
 
     /* USER CODE END WHILE */
 
