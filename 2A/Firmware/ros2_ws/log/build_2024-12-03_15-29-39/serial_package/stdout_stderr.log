@@ -1,0 +1,11 @@
+-- Install configuration: ""
+-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node.py
+-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_2.py
+-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_3.py
+-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_4.py
+[31mCMake Error at cmake_install.cmake:46 (file):
+  file INSTALL cannot find
+  "/home/carpe-bleue/ros2_ws/src/serial_package/src/lidar_node.py": No such
+  file or directory.
+
+[0m

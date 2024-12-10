@@ -1,0 +1,40 @@
+[0.064s] Invoking command in '/home/carpe-bleue/ros2_ws/build/serial_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4
+[0.524s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.132s] -- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)
+[1.134s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.309s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.324s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.358s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.411s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.475s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.739s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.071s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.075s] -- Added test 'lint_cmake' to check CMake code style
+[2.078s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.087s] -- Added test 'xmllint' to check XML markup files
+[2.094s] -- Configuring done
+[2.145s] -- Generating done
+[2.154s] -- Build files have been written to: /home/carpe-bleue/ros2_ws/build/serial_package
+[2.264s] Invoked command in '/home/carpe-bleue/ros2_ws/build/serial_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4
+[2.416s] Invoking command in '/home/carpe-bleue/ros2_ws/build/serial_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/serial_package
+[2.444s] -- Install configuration: ""
+[2.445s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node.py
+[2.445s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_2.py
+[2.445s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_3.py
+[2.446s] -- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_4.py
+[2.447s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/package_run_dependencies/serial_package
+[2.448s] -- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/parent_prefix_path/serial_package
+[2.449s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.sh
+[2.450s] -- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.dsv
+[2.451s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/path.sh
+[2.451s] -- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/path.dsv
+[2.453s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.bash
+[2.453s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.sh
+[2.453s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.zsh
+[2.454s] -- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.dsv
+[2.455s] -- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/package.dsv
+[2.456s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/packages/serial_package
+[2.457s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/cmake/serial_packageConfig.cmake
+[2.458s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/cmake/serial_packageConfig-version.cmake
+[2.458s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/package.xml
+[2.464s] Invoked command in '/home/carpe-bleue/ros2_ws/build/serial_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/serial_package

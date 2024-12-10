@@ -1,0 +1,22 @@
+[0.883s] Invoking command in '/home/carpe-bleue/ros2_ws/build/serial_package': /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4
+[0.972s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.548s] Traceback (most recent call last):
+[1.549s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[1.550s]     from ament_package.templates import get_environment_hook_template_path
+[1.551s] ModuleNotFoundError: No module named 'ament_package'
+[1.612s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[1.612s]   execute_process(/usr/bin/python3
+[1.613s]   /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[1.613s]   /home/carpe-bleue/ros2_ws/build/serial_package/ament_cmake_package_templates/templates.cmake)
+[1.614s]   returned error code 1
+[1.614s] Call Stack (most recent call first):
+[1.615s]   /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[1.617s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[1.618s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[1.618s]   CMakeLists.txt:10 (find_package)
+[1.619s] 
+[1.619s] [0m
+[1.620s] -- Configuring incomplete, errors occurred!
+[1.620s] See also "/home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles/CMakeOutput.log".
+[1.622s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[1.629s] Invoked command in '/home/carpe-bleue/ros2_ws/build/serial_package' returned '2': /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4

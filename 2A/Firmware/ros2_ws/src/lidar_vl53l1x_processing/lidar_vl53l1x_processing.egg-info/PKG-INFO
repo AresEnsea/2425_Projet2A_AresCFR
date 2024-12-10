@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: lidar-vl53l1x-processing
+Version: 0.0.0
+Summary: STM32 TOF sensors VL53L1X lidar data processing
+Home-page: UNKNOWN
+Maintainer: mowibox
+Maintainer-email: ousmane.thg@gmail.com
+License: Apache-2.0
+Platform: UNKNOWN
+License-File: LICENSE
+
+UNKNOWN
+

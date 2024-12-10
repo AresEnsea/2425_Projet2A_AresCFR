@@ -1,6 +1,9 @@
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_2.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_3.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_4.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart_lidar.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart_lidar2.py
 /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/package_run_dependencies/serial_package
 /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/parent_prefix_path/serial_package
 /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.sh

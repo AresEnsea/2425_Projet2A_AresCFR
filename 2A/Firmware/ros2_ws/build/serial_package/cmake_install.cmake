@@ -47,6 +47,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/carpe-bleue/ros2_ws/src/serial_package/src/serial_node.py"
     "/home/carpe-bleue/ros2_ws/src/serial_package/src/serial_node_2.py"
     "/home/carpe-bleue/ros2_ws/src/serial_package/src/serial_node_3.py"
+    "/home/carpe-bleue/ros2_ws/src/serial_package/src/serial_node_4.py"
+    "/home/carpe-bleue/ros2_ws/src/serial_package/src/test_uart_lidar.py"
+    "/home/carpe-bleue/ros2_ws/src/serial_package/src/test_uart_lidar2.py"
     )
 endif()
 

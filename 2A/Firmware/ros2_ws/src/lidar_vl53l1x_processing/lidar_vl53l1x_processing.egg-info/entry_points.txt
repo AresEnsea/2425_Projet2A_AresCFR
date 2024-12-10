@@ -1,0 +1,3 @@
+[console_scripts]
+send_data = lidar_vl53l1x_processing.data_processing:main
+

@@ -17,6 +17,10 @@ install(
     src/serial_node.py  # Make sure this matches your script's location
     src/serial_node_2.py
     src/serial_node_3.py
+    src/serial_node_4.py
+    src/test_uart_lidar.py	
+    src/test_uart_lidar2.py
+
   DESTINATION lib/${PROJECT_NAME}  # Installs to lib/serial_package
 )
 

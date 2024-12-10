@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+
+#This node receive an input from the keyboard he transforms into an UART command for the STM32
+
 import serial
 import time
 import rclpy
@@ -55,7 +58,7 @@ def main(args=None):
             else:
                 continue
             
-            simple_sender.send_serial_message(message)
+            simple_sender.send_serial_message(message)  
             rclpy.spin_once(simple_sender, timeout_sec=0.1)
     
     except KeyboardInterrupt:
