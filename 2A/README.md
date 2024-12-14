@@ -23,7 +23,6 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 - Mohamed EL KOURMISS 
 - Sammy GROS
 - Matis GARBEZ
-- Remi WEILDE
 - Kenny SAINT FLEUR 
 
 ## PCB MOTHERBOARD :
@@ -61,24 +60,23 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - [x] Wurth
 - [x] Elsys Design
 - [x] RS
+- [x] Acksys
 - [ ] Banque
 - [ ] Thales
 
 ## Règlement (experts) :
-- [ ] Rémi
-- [ ] Fannie
+- [ ] Sammy
 
 # 1-Répartition par tâche :
 ## ROS2 :
 - Antoine
 - Mateo
 - Sammy
-- Nathan (poly)
-- Matis (poly)
+
+ ## Avancées :
 
 ## 2-Traitement Image
 - Khalid
-- Nathan (poly)
 - Mohamed
 - Abderahmane
 
@@ -87,12 +85,13 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - Ewan
 
 ## 4-Mécanique 
-- Lorenzo 
+- Lorenzo
+- Matis
 - Bilal
-- Sammy (poly)
+- Sammy 
 
 ## 5-Réseaux
-- Kenny ?
+- Nathan
 
 ## 6-Planification 
 - Mateo
