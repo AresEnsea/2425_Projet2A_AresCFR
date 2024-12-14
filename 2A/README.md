@@ -74,6 +74,14 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - Sammy
 
  ## Avancées :
+ -établissement d'une communication ssh acec la py 
+ -Installation de ROS2 sur la py
+ -connection en huart entre la py et la stm32
+ -possibilité d'un envoie de message depuis la py vers la stm32 pour controler des moteurs et définir les valeurs de vitesses souhaités
+ -Possibilité de controler la base roulante avec le clavier
+ -ROSBAG ( possibilité de rejouer une séquence faite avec le robot )
+ -Lidar ( pour l'instant, il ya bien une évoltion dans le bon sens de la distance évaluée par le lidar lorsqu'un objet se déplace mais cette distance n'est pas encore très précise ) 
+ 
 
 ## 2-Traitement Image
 - Khalid
