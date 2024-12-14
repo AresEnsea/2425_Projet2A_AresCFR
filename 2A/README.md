@@ -68,7 +68,7 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - [ ] Sammy
 
 # 1-Répartition par tâche :
-## ROS2 :
+## ROS2/STM32 :
 - Antoine
 - Mateo
 - Sammy
