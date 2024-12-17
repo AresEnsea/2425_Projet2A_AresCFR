@@ -4,17 +4,7 @@ Ce dépôt contient les travaux de l'équipe Vision dans le cadre du projet 2A A
 
 ---
 
-## 📖 **Table des matières**
-1. [Calibration de la Caméra](#calibration-de-la-caméra)
-2. [Configuration et Système](#configuration-et-système)
-3. [Navigation et Recommandations](#navigation-et-recommandations)
-4. [Travail Effectué](#travail-effectué)
-5. [Prochaines Étapes](#prochaines-étapes)
-6. [Équipe](#équipe)
-
----
-
-## 📸 **Calibration de la Caméra**
+##  **Calibration de la Caméra**
 
 ### **Contexte**
 - La calibration de la caméra est une étape clé pour corriger les distorsions et garantir la précision des mesures.
@@ -28,7 +18,7 @@ Ce dépôt contient les travaux de l'équipe Vision dans le cadre du projet 2A A
 
 ---
 
-## ⚙️ **Configuration et Système**
+##  **Configuration et Système**
 
 ### **Jetson Nano**
 - Installation et configuration complètes de la Jetson Nano.
@@ -36,7 +26,7 @@ Ce dépôt contient les travaux de l'équipe Vision dans le cadre du projet 2A A
 
 ---
 
-## 🛤️ **Navigation et Recommandations**
+## **Navigation et Recommandations**
 
 ### **Implémentation Actuelle**
 1. Discrétisation de la carte :
@@ -62,7 +52,7 @@ L’équipe travaille sur :
 
 ---
 
-## ✅ **Travail Effectué**
+##  **Travail Effectué**
 
 1. Finalisation de la calibration de la caméra.
 2. Configuration complète de la Jetson Nano avec ROS 2.
@@ -73,7 +63,7 @@ L’équipe travaille sur :
 
 ---
 
-## 🚀 **Prochaines Étapes**
+##  **Prochaines Étapes**
 
 1. Développer un pipeline pour convertir les données des caméras en une **carte en niveaux de gris**.
 2. Intégrer la carte générée dans ROS pour déterminer des chemins optimaux avec une plus grande précision.
@@ -81,7 +71,7 @@ L’équipe travaille sur :
 
 ---
 
-## 👥 **Équipe**
+##  **Équipe**
 - **Khalid ZOUHAIR**
 - **Mohamed EL KOURMISS**
 - **Abderhamane EL FELSOUFI**
