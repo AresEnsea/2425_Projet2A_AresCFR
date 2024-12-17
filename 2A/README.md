@@ -105,7 +105,7 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - Mateo
 - Antoine 
 
-#Firmware :
+# Firmware :
 - CFR_G474RET6 : le projet STM32CubeIDE que nous implémenteront ultérieurement dans le microprocesseur (G474RET6) du pcb, pour le moment il contient simplement le pinout
 - STM32_Pi_Connexion : contient le projet qui STM32CubeIDE qui permet la connexion UART entre une STM32CubeIDE L476RG (avant de pouvoir utiliser le PCB) et une raspberry pi4
 - STM32_moteurs : contient le projet STM32CubeIDE qui délivre deux PWM pour faire tourner des moteurs
