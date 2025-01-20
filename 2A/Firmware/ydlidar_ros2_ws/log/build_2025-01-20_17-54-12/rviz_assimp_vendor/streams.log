@@ -1,0 +1,37 @@
+[0.098s] Invoking command in '/home/carpe-bleue/ydlidar_ros2_ws/build/rviz_assimp_vendor': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake /home/carpe-bleue/ydlidar_ros2_ws/src/rviz/rviz_assimp_vendor -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ydlidar_ros2_ws/install/rviz_assimp_vendor
+[1.206s] -- The C compiler identification is GNU 11.4.0
+[1.939s] -- The CXX compiler identification is GNU 11.4.0
+[1.980s] -- Detecting C compiler ABI info
+[2.418s] -- Detecting C compiler ABI info - done
+[2.444s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.446s] -- Detecting C compile features
+[2.449s] -- Detecting C compile features - done
+[2.464s] -- Detecting CXX compiler ABI info
+[2.841s] -- Detecting CXX compiler ABI info - done
+[2.868s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.869s] -- Detecting CXX compile features
+[2.870s] -- Detecting CXX compile features - done
+[2.906s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.798s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.691s] -- Configuring incomplete, errors occurred!
+[4.692s] See also "/home/carpe-bleue/ydlidar_ros2_ws/build/rviz_assimp_vendor/CMakeFiles/CMakeOutput.log".
+[4.693s] [31mCMake Error at CMakeLists.txt:5 (find_package):
+[4.693s]   By not providing "Findament_cmake_vendor_package.cmake" in
+[4.694s]   CMAKE_MODULE_PATH this project has asked CMake to find a package
+[4.695s]   configuration file provided by "ament_cmake_vendor_package", but CMake did
+[4.699s]   not find one.
+[4.700s] 
+[4.700s]   Could not find a package configuration file provided by
+[4.702s]   "ament_cmake_vendor_package" with any of the following names:
+[4.702s] 
+[4.704s]     ament_cmake_vendor_packageConfig.cmake
+[4.708s]     ament_cmake_vendor_package-config.cmake
+[4.711s] 
+[4.711s]   Add the installation prefix of "ament_cmake_vendor_package" to
+[4.712s]   CMAKE_PREFIX_PATH or set "ament_cmake_vendor_package_DIR" to a directory
+[4.713s]   containing one of the above files.  If "ament_cmake_vendor_package"
+[4.713s]   provides a separate development package or SDK, be sure it has been
+[4.714s]   installed.
+[4.714s] 
+[4.715s] [0m
+[4.716s] Invoked command in '/home/carpe-bleue/ydlidar_ros2_ws/build/rviz_assimp_vendor' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake /home/carpe-bleue/ydlidar_ros2_ws/src/rviz/rviz_assimp_vendor -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ydlidar_ros2_ws/install/rviz_assimp_vendor
