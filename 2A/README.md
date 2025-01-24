@@ -1,15 +1,18 @@
 # CDF-2025
 Github de la Coupe de France de Robotique!
 
-# REGLEMENTS
+#REGLEMENTS
 https://www.coupederobotique.fr/accueil/le-concours/reglement-2025/
 https://www.coupederobotique.fr/wp-content/uploads/Eurobot2025_Rules.pdf
 
-# DIAPO 
+#DIAPO 
 [https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/Eb2eWKZeK-NNrEKdino8REcB281sSVFofJ1WQgk0IBzqbg?e=ZdGJZ5](https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/ESafam9fs7ZCg727WFCmVboB-b12O3MPg7kT_spCKCZYLA?e=d9OOJI)
 
 #CAD
 https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50ea9e11/e/9022f36f38f961f67dfb7efc?renderMode=0&uiState=66fbe8290d120e0a630e1b35
+
+## Photo Robot :
+<img src="https://github.com/user-attachments/assets/f719fcd2-1e79-4abe-89d7-a2176633c4ac" alt="IMG_20250124_191657" width="500"/>
 
 
 ## Liste des participants :
@@ -23,8 +26,15 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 - Mohamed EL KOURMISS 
 - Sammy GROS
 - Matis GARBEZ
-- Kenny SAINT FLEUR 
+- Kenny SAINT FLEUR
 
+## Partenaires :
+- [x] Wurth
+- [x] Elsys Design
+- [x] RS
+- [x] Acksys
+
+# Etat du Projet 
 
 ## PCB MOTHERBOARD : 
 - lien : https://github.com/AresEnsea/2425_Projet2A_AresCFR/edit/main/2A/Hardware/Hardware_%C3%A9lectronique/MainBoard/PCB_test/
@@ -34,44 +44,42 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 - [x] Moteurs base roulante https://github.com/AresEnsea/2425_Projet2A_AresCFR/new/main/2A/Hardware/Hardware_%C3%A9lectronique/Auxiliairy_board/PCB_Moteur
 - [x] Servo moteurs https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_%C3%A9lectronique/Auxiliairy_board/PCB_Servo
 
-## Soft auxiliaires :
-- [ ] Lib (?)
-- [ ] XL320/430
+## Méca :
+lien modèle 3D : https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_M%C3%A9canique
+- [x] Base roulante du robot complète
+- [x] Modèle de Pince final (quasi)
+- [x] Pancarte
+- [ ] Plus rien à faire mécaniquement
 
-## Vision (Python / OpenCV) :
-- [ ] Nvidia Jetson
+## ROS2 embarqué
+- lien workspace ros : https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Firmware/ros2_ws
+- [x] Liaison UART pi-STM32
+- [x] Rosbags moteurs-actionneurs-Lidar
+- [x] Interface écran
+- [ ] Odométrie
+- lien workspace lidar : https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Firmware/ydlidar_ros2_ws
+- [x] Scan fonctionnel
+- [ ] Tout mettre dans le workspace principal
 
-## Communication Wifi
+## STM32
+lien projet STM32 : https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Firmware/STM32_moteurs
+- [x] V1 code stm32 moteurs réagissant à la pi
+- [ ] V2 sur le microprocesseur du PCB
 
-## Mécanique
+## Vision
+lien projet Vision : https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Vision
+- [x] Calibration caméra
+- [x] Détection Aruco de la table
+- [x] Suivi du mouvement d'un Aruco
+- [ ] Transformer les informations de la caméra en carte pour le ROS
 
-- Moteurs Maxon
-- Base roulante
-- Dèploiement de banderole
-- Pince élévatrice
-
-## Partenaires :
-- [x] Wurth
-- [x] Elsys Design
-- [x] RS
-- [x] Acksys
-
-
-## Règlement (experts) :
-- [ ] Sammy
-
- ## 0-Avancées génrales :
- - établissement d'une communication ssh acec la py 
- - Installation de ROS2 sur la py
- - Connection en huart entre la py et la stm32
- - possibilité d'un envoie de message depuis la py vers la stm32 pour controler des moteurs et définir les valeurs de vitesses souhaités
- - Possibilité de controler la base roulante avec le clavier
- - ROSBAG ( possibilité de rejouer une séquence faite avec le robot )
- - Lidar ( pour l'instant, il ya bien une évoltion dans le bon sens de la distance évaluée par le lidar lorsqu'un objet se déplace mais cette distance n'est pas encore très précise ) 
- - V2 pour le PCB Moteur et la MainBoard.
- - PCB auxiliaire pour les stepper et les servo.
+## Réseau
+- [x] Apprendre à utiliser un routeur
+- [x] Ping à travers 2 routeurs
+- [ ] Avoir un réseau transportable à la Coupe
+- [ ] Connecter la pi et la jetson à un même réseau wifi pour communiquer
    
-## Répartition par tâche :
+# Répartition par tâche :
 
 ## 1-ROS2/STM32 :
 - Antoine
@@ -100,16 +108,10 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardwar
 - Lorenzo
 - Matis
 - Bilal
-- Sammy
+- Sammy 
 
-  Le compte rendu de notre équipe sur la mécanique est présent ici :
-  [2A/Hardware/Hardware_Mécanique](https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_M%C3%A9canique)
-
-## 5-Réseau :
+## 5-Réseaux :
 - Nathan
-  
-Le compte rendu de notre équipe sur le réseau est présent ici :
-https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/65623766bfbad0fd12c86ece8abc88d152095706/2A/Reseau/README.md
 
 ## 6-Planification :
 - Mateo
