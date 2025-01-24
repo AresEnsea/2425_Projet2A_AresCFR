@@ -26,7 +26,7 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 - Kenny SAINT FLEUR 
 
 
-## PCB MOTHERBOARD : {https://github.com/AresEnsea/2425_Projet2A_AresCFR/edit/main/2A/Hardware/Hardware_%C3%A9lectronique/MainBoard/PCB_test/}
+## PCB MOTHERBOARD : https://github.com/AresEnsea/2425_Projet2A_AresCFR/edit/main/2A/Hardware/Hardware_%C3%A9lectronique/MainBoard/PCB_test/
 - [x] Actuellement en V2
 ## PCBs auxiliaires :
 - [x] steppers [https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_%C3%A9lectronique/Auxiliairy_board/PCB_Stepper]
