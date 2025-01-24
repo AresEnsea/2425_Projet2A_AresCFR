@@ -72,8 +72,8 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - Mateo
 - Sammy
 
-compte rendu de cette equipe se trouve dans le ReadMe du dossier Firmware.
-2A/Firmware/README.md
+Le compte rendu de cette equipe se trouve dans le ReadMe.md du dossier Firmware :
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Firmware/README.md
 
  ## Avancées :
  -établissement d'une communication ssh acec la py 
