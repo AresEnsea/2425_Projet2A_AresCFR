@@ -1,6 +1,6 @@
 # Rapport de fin de semestre :
 
-Durant ce semestre notre équipe à pu réaliser différents PCB : 
+Durant ce semestre notre équipe à pu réaliser différents PCB...
 
 ## PCB_ MotherBoard
 
@@ -15,6 +15,9 @@ via le WIFI.
 ### Features Principales: 
  - 9 liasons inter cartes : connecteur JST4 (1 UART + alimentation 24V).
  - Shield pour Raspberry Pi assurant l'alimentation 5V ainsi qu'une liason UART.
+
+### Issues :
+ - Malheuresement, suite à une erreur d'empreinte, le PCBMotherBoard 
 
 
 
@@ -38,16 +41,16 @@ via le WIFI.
 -  La V1 du PCB n'a pas été concluante suite au non fonctionnement d'un convertisseur buck. Celui-ci à été changé dans la V2.
 
 
-# PCB_Stepper 
+## PCB_Stepper 
 ![image](https://github.com/user-attachments/assets/bfb7ffd5-f9a2-40f6-af61-cffc47343d7f)
-## Description :
+### Description :
  - Carte de pilotage pour 2 steppers steppers.
 
-## Caractéristiques principales : 
+### Caractéristiques principales : 
  - Supporte l'eau la plie les pets et le vent grâce aux 2 TMC2225 embarqué pour le pilotage des steppers.
  - STM32G071 embarquée pour la liason UART avec la carte mère ainsi que la commande des moteurs...
 
-## Issues :
+### Issues :
 
 - V1 actuelle .
 - Pour la V2 ce serait bien de mesure de courant en instantané.
