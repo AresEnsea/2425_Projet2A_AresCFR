@@ -11,8 +11,8 @@ Read me 1A :
 - 2A : Ce repository contient le travail des 2èmes années membres de l'association Arès à l'ENSEA sur le robot principal de la Coupe de France de Robotique
 
 Read me 2A :
-      https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d31c0a6f493fd39ef2473158ee9f9881ace5f1f4/2A/README.md
-
+      https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/main/2A/README.md
+      
 <img src="https://github.com/user-attachments/assets/f719fcd2-1e79-4abe-89d7-a2176633c4ac" alt="IMG_20250124_191657" width="500"/>
 <img src="https://github.com/user-attachments/assets/45f6e25f-2a6f-4edc-9d75-9a7a13105c7d" alt="PAMI_img1" width="500"/>
 
