@@ -1,3 +1,6 @@
+![image](https://github.com/user-attachments/assets/7895d0b8-4d78-4fce-9e91-588a723b96fe)
+
+
 # PCB_ MotherBoard
 ## Description : 
  - La carte mère permet l'alimentation et la laison des péripériques (capteurs, actionneurs...) 
