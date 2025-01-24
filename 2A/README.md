@@ -87,6 +87,7 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634f
 ## 3-PCB :
 - Kenny
 - Ewan
+
 Le compte rendu de notre équipe sur le PCB est présent ici :
 https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_%C3%A9lectronique
 
