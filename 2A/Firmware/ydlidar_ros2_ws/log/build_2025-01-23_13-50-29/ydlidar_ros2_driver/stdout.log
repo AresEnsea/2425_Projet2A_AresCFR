@@ -1,0 +1,4 @@
+[ 25%] [32m[1mLinking CXX executable ydlidar_ros2_driver_client[0m
+[ 50%] [32m[1mLinking CXX executable ydlidar_ros2_driver_node[0m
+[ 75%] Built target ydlidar_ros2_driver_node
+[100%] Built target ydlidar_ros2_driver_client
