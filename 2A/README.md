@@ -41,10 +41,6 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - [ ] ESC
 - [ ] autes capteurs (...)
 
-## Soft MB :
-- [ ] microROS
-- [ ] FreeRTOS
-
 ## Soft auxiliaires :
 - [ ] Lib (?)
 - [ ] XL320/430
@@ -66,6 +62,15 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 ## Règlement (experts) :
 - [ ] Sammy
 
+ ## Avancées génrales :
+ -établissement d'une communication ssh acec la py 
+ -Installation de ROS2 sur la py
+ -connection en huart entre la py et la stm32
+ -possibilité d'un envoie de message depuis la py vers la stm32 pour controler des moteurs et définir les valeurs de vitesses souhaités
+ -Possibilité de controler la base roulante avec le clavier
+ -ROSBAG ( possibilité de rejouer une séquence faite avec le robot )
+ -Lidar ( pour l'instant, il ya bien une évoltion dans le bon sens de la distance évaluée par le lidar lorsqu'un objet se déplace mais cette distance n'est pas encore très précise ) 
+ 
 # 1-Répartition par tâche :
 ## ROS2/STM32 :
 - Antoine
@@ -75,20 +80,13 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 Le compte rendu de cette equipe se trouve dans le ReadMe.md du dossier Firmware :
 https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Firmware/README.md
 
- ## Avancées :
- -établissement d'une communication ssh acec la py 
- -Installation de ROS2 sur la py
- -connection en huart entre la py et la stm32
- -possibilité d'un envoie de message depuis la py vers la stm32 pour controler des moteurs et définir les valeurs de vitesses souhaités
- -Possibilité de controler la base roulante avec le clavier
- -ROSBAG ( possibilité de rejouer une séquence faite avec le robot )
- -Lidar ( pour l'instant, il ya bien une évoltion dans le bon sens de la distance évaluée par le lidar lorsqu'un objet se déplace mais cette distance n'est pas encore très précise ) 
- 
-
 ## 2-Traitement Image
 - Khalid
 - Mohamed
 - Abderahmane
+
+Le compte rendu de cette équipe est présent ici :
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Vision/README.md
 
 ## 3-PCB 
 - Kenny
