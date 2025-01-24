@@ -13,6 +13,8 @@ Ici le dossier Firmware du Github de la Coupe de France 2025 d'Ares, il regroupe
   >- test_uart_lidar.py : on publie les distances (normalement) mesurées par le Lidar (reliés directement en UART à la pi), mais les valeurs varient beaucoup assez vite, donc à corriger ( faire des moyeenes ou un seuil de décision spécial).
 
 - ydlidar_ros2_ws : le workspace du lidar qui nous sert de test pour l'instant mais qui sera rajouté dans notre workspace principal
+   >- ydlidar_launch_view.py : avec un logiciel de visualisation 3D, nous voyons l'ensemble des points définis par le lidar.
+   >- ydlidar_launch.py : renvoie les distances prises en considération par le lidar 
 
 ## Protocole de communication :
 Message de taille N, à augmenter selon les besoins 
