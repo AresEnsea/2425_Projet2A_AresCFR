@@ -1,5 +1,5 @@
 # CDF-2025
-Github de la Coupe de France de Robotique, objectif arriver premier et humilier INSA Lyon !!!!!!!!!
+Github de la Coupe de France de Robotique!
 
 #REGLEMENTS
 https://www.coupederobotique.fr/accueil/le-concours/reglement-2025/
