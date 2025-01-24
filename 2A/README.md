@@ -45,6 +45,11 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 
 ## Mécanique
 
+2A/Hardware/Hardware_Mécanique
+
+ROMEO Lorenzo
+GARBEZ Matis
+
 ## Partenaires :
 - [x] Wurth
 - [x] Elsys Design
