@@ -27,7 +27,7 @@ Elle a été réalisée en utilisant un échiquier standard avec ROS et OpenCV. 
 
 **Illustration de la calibration avec un échiquier :**
 
-![Calibration avec Chessboard](images/calibration_chessboard.jpg)
+![Calibration avec Chessboard](images/calibration_chessboard.png)
 *Fig. 1 : Image utilisée pour la calibration.*
 
 ---
@@ -48,6 +48,8 @@ précises sur la localisation et l’orientation du robot.
 **Illustration des ArUco fixes sur la table :**
 
 ![ArUco sur table](images/aruco_table_reglement.jpg)
+
+
 *Fig. 2 : Exemple tiré du règlement, montrant les marqueurs ArUco fixes.*
 
 ### **Implémentation et Résultats**
@@ -58,7 +60,9 @@ précises sur la localisation et l’orientation du robot.
 
 **Exemple de détection des ArUco :**
 
-![Détection sur maquette](images/aruco_detection_maquette.jpg)
+![Détection sur maquette](images/aruco_detection_maquette.png)
+
+
 *Fig. 3 : Détection des ArUco sur une maquette avec retour des IDs et des vecteurs associés.*
 
 #### **Détection en conditions réelles**
@@ -66,6 +70,8 @@ précises sur la localisation et l’orientation du robot.
 - Optimisation des paramètres de détection pour minimiser les erreurs.
 
 ![Détection terrain réel](images/aruco_detection_terrain.jpg)
+
+
 *Fig. 4 : Détection robuste des ArUco dans un environnement encombré.*
 
 ---
@@ -83,6 +89,8 @@ de navigation.
 **Exemple :**
 
 ![Position initiale](images/path_robot_initial.jpg)
+
+
 *Fig. 5 : Position initiale du robot avec représentation sur un plan 2D.*
 
 #### **Suivi du Mouvement et Ajustements**
@@ -93,6 +101,8 @@ des coefficients.
 **Exemple de mouvement :**
 
 ![Mouvement du robot](images/path_robot_movement.jpg)
+
+
 *Fig. 6 : Mouvement du robot avec mise à jour sur le plan 2D.*
 
 ---
@@ -107,6 +117,8 @@ des données visuelles.
 **Illustration :**
 
 ![Tour actuelle](images/camera_tower.jpg)
+
+
 *Fig. 7 : Tour temporaire pour la caméra.*
 
 ---
