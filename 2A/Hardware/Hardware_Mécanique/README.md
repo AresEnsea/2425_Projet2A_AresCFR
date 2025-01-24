@@ -1,8 +1,19 @@
+#Rapport de l'équipe mécanique#
+
 La mécanique à été réalisée par ROMEO Lorenzo, GARBEZ Matis, avec une petite particpatioon de YOUSFI Bilal qui a voulu réaliser les fixations pour les moteurs stepper des poulies.
 
-# Base roulante
+## Base roulante
 
   Nous avons opté pour des moteur à courant continu MAXON, assemblé avec un réducteur et un encodeur afin de pouvoir développer un rapport couple-vitesse optimal et asservir la vitesse de rotation moteur.
+  De plus nous avons redesigné le système d'accroche des encodeurs de roue ainsi que le système de billes porteuses. Ces èlèments sont désormais posés sur de ressorts ce qui nous a permis d'opter pour des roues de type compliant BaneBots procurant une excellente adhérence au robot facilitant le suivi de trajectoire.
+
+  ![image](https://github.com/user-attachments/assets/215828df-55af-4cb2-b604-4adb616b72f2)
+  Voici donc ci dessus la base roulante finale de notre robot
+
+![Capture d’écran du 2025-01-24 22-34-33](https://github.com/user-attachments/assets/0777e243-9541-4fdc-b805-c1c4ba122967)
+![Capture d’écran du 2025-01-24 22-35-08](https://github.com/user-attachments/assets/35084065-b79e-4923-bfae-4ddd7a8b2774)
+Vous pouvez observer ci dessus le système de suspensions de l'odométrie ainsi que des billes porteuses.
+
 
 # Déploiement de la bannière
 
