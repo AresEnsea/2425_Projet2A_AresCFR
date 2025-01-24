@@ -5,6 +5,7 @@ Ce repository contient le travail de l'association Arès dans le cadre de la Cou
 Dépôt du projet de coupe de France de robotique 2024/2025
 - 1A : Ce repository contient le travail des 1ères années membres de l'association Arès à l'ENSEA sur les PAMIs de la Coupe de France de Robotique
 - 2A : Ce repository contient le travail des 2èmes années membres de l'association Arès à l'ENSEA sur le robot principal de la Coupe de France de Robotique
+  ReadMe 2A : https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d31c0a6f493fd39ef2473158ee9f9881ace5f1f4/2A/README.md
 
 ![IMG_20250124_191657](https://github.com/user-attachments/assets/f719fcd2-1e79-4abe-89d7-a2176633c4ac)
 
