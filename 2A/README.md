@@ -45,10 +45,10 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 
 ## Mécanique
 
-- Lien : [2A/Hardware/Hardware_Mécanique](https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_M%C3%A9canique)
-
-- ROMEO Lorenzo
-- GARBEZ Matis
+- Moteurs Maxon
+- Base roulante
+- Dèploiement de banderole
+- Pince élévatrice
 
 ## Partenaires :
 - [x] Wurth
@@ -100,7 +100,10 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardwar
 - Lorenzo
 - Matis
 - Bilal
-- Sammy 
+- Sammy
+
+  Le compte rendu de notre équipe sur la mécanique est présent ici :
+  [2A/Hardware/Hardware_Mécanique](https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_M%C3%A9canique)
 
 ## 5-Réseaux :
 - Nathan
