@@ -62,7 +62,7 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 ## Règlement (experts) :
 - [ ] Sammy
 
- ## Avancées génrales :
+ ## 0-Avancées génrales :
  -établissement d'une communication ssh acec la py 
  -Installation de ROS2 sur la py
  -connection en huart entre la py et la stm32
@@ -71,8 +71,9 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
  -ROSBAG ( possibilité de rejouer une séquence faite avec le robot )
  -Lidar ( pour l'instant, il ya bien une évoltion dans le bon sens de la distance évaluée par le lidar lorsqu'un objet se déplace mais cette distance n'est pas encore très précise ) 
  
-# 1-Répartition par tâche :
-## ROS2/STM32 :
+## Répartition par tâche :
+
+## 1-ROS2/STM32 :
 - Antoine
 - Mateo
 - Sammy
@@ -80,7 +81,7 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 Le compte rendu de cette equipe se trouve dans le ReadMe.md du dossier Firmware :
 https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Firmware/README.md
 
-## 2-Traitement Image
+## 2-Traitement Image :
 - Khalid
 - Mohamed
 - Abderahmane
@@ -88,20 +89,20 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634f
 Le compte rendu de cette équipe est présent ici :
 https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Vision/README.md
 
-## 3-PCB 
+## 3-PCB :
 - Kenny
 - Ewan
 
-## 4-Mécanique 
+## 4-Mécanique :
 - Lorenzo
 - Matis
 - Bilal
 - Sammy 
 
-## 5-Réseaux
+## 5-Réseaux :
 - Nathan
 
-## 6-Planification 
+## 6-Planification :
 - Mateo
 - Antoine 
 
