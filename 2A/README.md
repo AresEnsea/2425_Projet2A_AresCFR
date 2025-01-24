@@ -70,7 +70,7 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 - Mateo
 - Sammy
 
-Le compte rendu de cette equipe se trouve dans le ReadMe.md du dossier Firmware :
+Le compte rendu de notre équipe sur le software embarqué se trouve dans le ReadMe.md du dossier Firmware :
 https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Firmware/README.md
 
 ## 2-Traitement Image :
@@ -78,7 +78,7 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634f
 - Mohamed
 - Abderahmane
 
-Le compte rendu de cette équipe est présent ici :
+Le compte rendu de notre équipe sur le traitement d'image est présent ici :
 https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Vision/README.md
 
 ## 3-PCB :
