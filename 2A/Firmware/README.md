@@ -14,7 +14,11 @@ Ici le dossier Firmware du Github de la Coupe de France 2025 d'Ares, il regroupe
 
 - ydlidar_ros2_ws : le workspace du lidar qui nous sert de test pour l'instant mais qui sera rajouté dans notre workspace principal
    >- ydlidar_launch_view.py : avec un logiciel de visualisation 3D, nous voyons l'ensemble des points définis par le lidar.
-   >- ydlidar_launch.py : renvoie les distances prises en considération par le lidar 
+   >- ydlidar_launch.py : renvoie les distances prises en considération par le lidar.
+  
+- ecran_code_2425 : projet permettant d'afficher sur un écran lcd le plateau de jeu de la coupe de France. A l'avenir, nos aurons chaque rosbag associé à chaque position de départ.
+
+Rosbag : fichier qui enregistre des données de ROS pour les rejouer ensuite.
 
 ## Protocole de communication :
 Message de taille N, à augmenter selon les besoins 
