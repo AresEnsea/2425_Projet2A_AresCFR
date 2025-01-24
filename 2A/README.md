@@ -56,14 +56,16 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 - [ ] Sammy
 
  ## 0-Avancées génrales :
- -établissement d'une communication ssh acec la py 
- -Installation de ROS2 sur la py
- -connection en huart entre la py et la stm32
- -possibilité d'un envoie de message depuis la py vers la stm32 pour controler des moteurs et définir les valeurs de vitesses souhaités
- -Possibilité de controler la base roulante avec le clavier
- -ROSBAG ( possibilité de rejouer une séquence faite avec le robot )
- -Lidar ( pour l'instant, il ya bien une évoltion dans le bon sens de la distance évaluée par le lidar lorsqu'un objet se déplace mais cette distance n'est pas encore très précise ) 
- 
+ - établissement d'une communication ssh acec la py 
+ - Installation de ROS2 sur la py
+ - Connection en huart entre la py et la stm32
+ - possibilité d'un envoie de message depuis la py vers la stm32 pour controler des moteurs et définir les valeurs de vitesses souhaités
+ - Possibilité de controler la base roulante avec le clavier
+ - ROSBAG ( possibilité de rejouer une séquence faite avec le robot )
+ - Lidar ( pour l'instant, il ya bien une évoltion dans le bon sens de la distance évaluée par le lidar lorsqu'un objet se déplace mais cette distance n'est pas encore très précise ) 
+ - V2 pour le PCB Moteur et la MainBoard.
+ - PCB auxiliaire pour les stepper et les servo.
+   
 ## Répartition par tâche :
 
 ## 1-ROS2/STM32 :
