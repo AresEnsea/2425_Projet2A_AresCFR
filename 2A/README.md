@@ -82,7 +82,7 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634f
 - Abderahmane
 
 Le compte rendu de notre équipe sur le traitement d'image est présent ici :
-https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Vision/README.md
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/main/2A/Vision/README.md
 
 ## 3-PCB :
 - Kenny
