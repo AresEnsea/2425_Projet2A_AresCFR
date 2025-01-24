@@ -25,7 +25,7 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 - Matis GARBEZ
 - Kenny SAINT FLEUR 
 
-## PCB MOTHERBOARD :
+## PCB MOTHERBOARD :[https://github.com]
 - [ ] alimentation + connecteurs universels :
   - [ ] régulateurs de tension
   - [ ] connecteurs universels sur toute la bordure de la carte (en mettre un maximum)
