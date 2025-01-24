@@ -12,6 +12,8 @@ Ici le dossier Firmware du Github de la Coupe de France 2025 d'Ares, il regroupe
   >- serial_node_4.py : on a une node "attentive" aux messages publiés sur le topic "keyboard_commands", qui attends les messages et les envoie dans l'UART.
   >- test_uart_lidar.py : on publie les distances (normalement) mesurées par le Lidar (reliés directement en UART à la pi), mais les valeurs varient beaucoup assez vite, donc à corriger ( faire des moyeenes ou un seuil de décision spécial).
 
+- ydlidar_ros2_ws : le workspace du lidar qui nous sert de test pour l'instant mais qui sera rajouté dans notre workspace principal
+
 ## Protocole de communication :
 Message de taille N, à augmenter selon les besoins 
 "M . . . . . . . .", 9 caractères pour les moteurs : 4 pour le droit et 4 pour le gauche
