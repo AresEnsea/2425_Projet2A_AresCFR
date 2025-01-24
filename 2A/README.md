@@ -105,8 +105,11 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardwar
   Le compte rendu de notre équipe sur la mécanique est présent ici :
   [2A/Hardware/Hardware_Mécanique](https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_M%C3%A9canique)
 
-## 5-Réseaux :
+## 5-Réseau :
 - Nathan
+  
+Le compte rendu de notre équipe sur le réseau est présent ici :
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/65623766bfbad0fd12c86ece8abc88d152095706/2A/Reseau/README.md
 
 ## 6-Planification :
 - Mateo
