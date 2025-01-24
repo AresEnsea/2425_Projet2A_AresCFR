@@ -61,8 +61,7 @@ Lien reu 1 :[https://enseafr-my.sharepoint.com/personal/ousmane_thiongane_ensea_
 - [x] Elsys Design
 - [x] RS
 - [x] Acksys
-- [ ] Banque
-- [ ] Thales
+
 
 ## Règlement (experts) :
 - [ ] Sammy
