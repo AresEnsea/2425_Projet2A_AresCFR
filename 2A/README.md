@@ -1,11 +1,11 @@
 # CDF-2025
 Github de la Coupe de France de Robotique!
 
-#REGLEMENTS
+# REGLEMENTS
 https://www.coupederobotique.fr/accueil/le-concours/reglement-2025/
 https://www.coupederobotique.fr/wp-content/uploads/Eurobot2025_Rules.pdf
 
-#DIAPO 
+# DIAPO 
 [https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/Eb2eWKZeK-NNrEKdino8REcB281sSVFofJ1WQgk0IBzqbg?e=ZdGJZ5](https://enseafr-my.sharepoint.com/:p:/g/personal/antoine_lemarignier_ensea_fr/ESafam9fs7ZCg727WFCmVboB-b12O3MPg7kT_spCKCZYLA?e=d9OOJI)
 
 #CAD
@@ -45,10 +45,10 @@ https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50e
 
 ## Mécanique
 
-2A/Hardware/Hardware_Mécanique
+- Lien : [2A/Hardware/Hardware_Mécanique](https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_M%C3%A9canique)
 
-ROMEO Lorenzo
-GARBEZ Matis
+- ROMEO Lorenzo
+- GARBEZ Matis
 
 ## Partenaires :
 - [x] Wurth
