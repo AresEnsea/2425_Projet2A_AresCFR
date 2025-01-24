@@ -18,13 +18,27 @@ Ici le dossier Firmware du Github de la Coupe de France 2025 d'Ares, il regroupe
   
 - ecran_code_2425 : projet permettant d'afficher sur un écran lcd le plateau de jeu de la coupe de France. A l'avenir, nos aurons chaque rosbag associé à chaque position de départ.
 
-Rosbag : fichier qui enregistre des données de ROS pour les rejouer ensuite.
-
 ## Protocole de communication :
 Message de taille N, à augmenter selon les besoins 
 "M . . . . . . . .", 9 caractères pour les moteurs : 4 pour le droit et 4 pour le gauche
-"A . . . ", [0,1,2] pour l'actionneur à la position correspondante, respectivement pour 0,90 et 180 degrés
+(à faire : "A . . . ", [0,1,2] pour l'actionneur à la position correspondante, respectivement pour 0,90 et 180 degrés)
 
+## Liste des topics 
+-"keyboard_commands" envoyés par les nodes "serial_node_X" pour communiquer en UART avec la STM32, de la forme décrite ci-dessus.
+-"scan" topic propre au lidar qui envoie les ranges (float) et l'intensité (float)  du laser pour chaque angle.
+-"stop" le topic booléen que l'on tournera a 1 si le robot doit s'arrêter, il sera alors communiqué au reste des nodes du robots (moteurs, actionneurs).
+
+
+# ROS Terms
+- Rosbag : fichier qui enregistre des données des topics ROS pour les rejouer ensuite.
+--> un rosbag peut par exemple enregistrer les données d'un topic "lidar" et d'un topic "wheels" pour rejouer les données (extension .deb3)
+- Topic : message de types différents (int, bool, char, ...) qui s'échangent entre les nodes (node pubisher et node subscriber)
+--> pour un Lidar, les données peuvent être envoyées avec un topic "lidar_data" avec un en-tête qui donne les paramètres puis les données de tout type (voir le package lidar-driver).
+- Node : processus (fichier en python ou en C++ ici) qui effectue une action, un projet comprend généralement de nombreux nœuds.
+--> dans notre projet par exemple les fichiers "serial_node_X.py" envoie de manière différente des données via uart à la pi
+
+# ROS workspace objectif
+![image](https://github.com/user-attachments/assets/d4c207fe-e565-4de2-9e26-0dd949e4befa)
 
 # Fait 
 - Communication Pi-STM32 : notre code en C avec les nodes ROS nous permettent de controler plusieurs PWM grâce à un message en UART envoyés à intervalles réguliers (ainsi que les GPIOs)
@@ -34,4 +48,4 @@ Message de taille N, à augmenter selon les besoins
 # A venir :
 - Odométrie : dès que nous aurons un PCB opérationel nous nous empresserons de commencer l'odométrie 
 - Rosbag : nous aimerions également enrgistrer au plus vite des bags nous permettant de rejouer les messages envoyés aux moteurs et aux servos pour commencer à faire des tenatives de constructions de "gradins".
-- Lidar : le code de Lidar semble avoir besoin d'une petite révision pour être vraiment exploitable.
+- Lidar : Il manque l'implémentation d'une node d'arrêt en fonction des données du Lidar (avec un topic "stop").
