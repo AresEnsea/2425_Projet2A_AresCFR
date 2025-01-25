@@ -110,8 +110,11 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardwar
 - Bilal
 - Sammy 
 
-## 5-Réseaux :
+## 5-Réseau :
 - Nathan
+  
+Le compte rendu pour la partie réseau est disponible ici :
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/3bc464fbcdb312380643ca8a8ec65655ec626f66/2A/Reseau/README.md
 
 ## 6-Planification :
 - Mateo
