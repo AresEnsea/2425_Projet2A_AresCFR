@@ -84,7 +84,7 @@ lien projet Vision : https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/mai
 - Sammy
 
 Le compte rendu de notre équipe sur le software embarqué se trouve dans le ReadMe.md du dossier Firmware :
-https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/d943063ebb5853ef2ae5634fa93b110d4156a13e/2A/Firmware/README.md
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/main/2A/Firmware/README.md
 
 ## 2-Traitement Image :
 - Khalid
