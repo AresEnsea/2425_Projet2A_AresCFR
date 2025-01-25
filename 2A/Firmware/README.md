@@ -47,6 +47,7 @@ Message de taille N, à augmenter selon les besoins
 
 # Algorigramme Robot 
 <img width="725" alt="image" src="https://github.com/user-attachments/assets/e0e04d4b-9f4d-4145-87f1-bcad0d0d5a1c" />
+
 Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lancent : poser la bannière, démarrage du package LiDAR. Ensuite l'action du robot reste simple : il suit le chemin indiqué par la jetson, exécute l'action de poser ou de prendre les canettes/planches et recommence. La fin de l'opération cannettes/planches sera vérifiée grâce à des switch. 
 
 # Fait 
