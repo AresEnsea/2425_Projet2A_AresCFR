@@ -108,7 +108,7 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardwar
 - Sammy
   
 Le compte rendu pour la partie mécanique est disponible ici :
-https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/a25f2b5a17c75e35858d1b8de0e25cd13e54277f/2A/Hardware/Hardware_M%C3%A9canique/README.md
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_Mécanique/README.md
 
 ## 5-Réseau :
 - Nathan
