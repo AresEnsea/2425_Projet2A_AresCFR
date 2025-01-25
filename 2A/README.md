@@ -114,7 +114,7 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/a25f2b5a17c75e35858d1b8d
 - Nathan
   
 Le compte rendu pour la partie réseau est disponible ici :
-https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/3bc464fbcdb312380643ca8a8ec65655ec626f66/2A/Reseau/README.md
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Reseau/README.md
 
 ## 6-Planification :
 - Mateo
