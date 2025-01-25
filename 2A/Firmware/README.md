@@ -45,6 +45,10 @@ Message de taille N, à augmenter selon les besoins
 # ROS workspace objectif
 ![image](https://github.com/user-attachments/assets/d4c207fe-e565-4de2-9e26-0dd949e4befa)
 
+# Algorigramme Robot 
+<img width="725" alt="image" src="https://github.com/user-attachments/assets/e0e04d4b-9f4d-4145-87f1-bcad0d0d5a1c" />
+Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lancent : poser la bannière, démarrage du package LiDAR. Ensuite l'action du robot reste simple : il suit le chemin indiqué par la jetson, exécute l'action de poser ou de prendre les canettes/planches et recommence. La fin de l'opération cannettes/planches sera vérifiée grâce à des switch. 
+
 # Fait 
 - Communication Pi-STM32 : notre code en C avec les nodes ROS nous permettent de controler plusieurs PWM grâce à un message en UART envoyés à intervalles réguliers (ainsi que les GPIOs)
 - Rosbag : nous pouvons enrgistrer aisément des bags avec les messages envoyés à l'UART même si nous semblons rencontrer certaines difficultés à les rejouer avec le bon timing, nous y travaillons.
