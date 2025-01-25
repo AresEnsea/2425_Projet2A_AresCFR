@@ -99,7 +99,7 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/main/2A/Vision/README.md
 - Ewan
 
 Le compte rendu de notre équipe sur le PCB est présent ici :
-https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_%C3%A9lectronique
+https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_électronique/readme.md
 
 ## 4-Mécanique :
 - Lorenzo
