@@ -3,4 +3,5 @@
   (lib (name "Custom")(type "KiCad")(uri "${KIPRJMOD}/libs/Custom.pretty")(options "")(descr ""))
   (lib (name "footprints")(type "KiCad")(uri "/home/nicolas/git/Hardware_Developments/CoHoMa_USB_IrDA_Transceiver/libs/ul_ABLS-7-3728MHZ-CL-RESR-A-1-G-F/KiCAD/2023-04-03_20-48-08/footprints.pretty")(options "")(descr ""))
   (lib (name "CSD87351Q5D")(type "KiCad")(uri "/home/knnstflr/Downloads/ul_CSD86350Q5D/KiCADv6/footprints.pretty")(options "")(descr ""))
+  (lib (name "MainBoard")(type "KiCad")(uri "${KIPRJMOD}/libs/MainBoard.pretty")(options "")(descr ""))
 )
