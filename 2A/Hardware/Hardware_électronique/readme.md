@@ -56,10 +56,9 @@ via le WIFI.
 - Pour la V2 ce serait bien de mesure de courant en instantané.
 
 
-
-![image](https://github.com/user-attachments/assets/a935942f-0da9-4f4b-93e9-5e0f482d999f)
-
 # PCB_Servo
+![image](https://github.com/user-attachments/assets/0d86c332-15f9-4467-bbf8-0971174e202c)
+
 
 ## Description :
 - Carte servant d'intermédiaire entre la mainboard et tous les servos du robot
