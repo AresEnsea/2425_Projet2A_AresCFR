@@ -18,6 +18,8 @@ install(
     src/serial_node_2.py
     src/serial_node_3.py
     src/serial_node_4.py
+    src/serial_node_5.py
+    src/serial_node_6.py
     src/test_uart_lidar.py	
     src/test_uart_lidar2.py
 

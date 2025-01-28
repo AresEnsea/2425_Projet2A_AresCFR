@@ -1,0 +1,101 @@
+[0.083s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver
+[1.075s] -- The C compiler identification is GNU 11.4.0
+[1.432s] -- The CXX compiler identification is GNU 11.4.0
+[1.490s] -- Detecting C compiler ABI info
+[1.911s] -- Detecting C compiler ABI info - done
+[1.941s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.945s] -- Detecting C compile features
+[1.948s] -- Detecting C compile features - done
+[1.964s] -- Detecting CXX compiler ABI info
+[2.487s] -- Detecting CXX compiler ABI info - done
+[2.522s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.524s] -- Detecting CXX compile features
+[2.526s] -- Detecting CXX compile features - done
+[2.573s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.780s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.623s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[5.074s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[5.134s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[5.208s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[5.303s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[5.436s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.816s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.847s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[6.460s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[6.723s] -- Found FastRTPS: /opt/ros/humble/include  
+[7.142s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[7.236s] -- Looking for pthread.h
+[7.575s] -- Looking for pthread.h - found
+[7.577s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.921s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.925s] -- Found Threads: TRUE  
+[8.256s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[8.440s] -- Found visualization_msgs: 4.2.4 (/opt/ros/humble/share/visualization_msgs/cmake)
+[8.553s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[8.663s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[9.259s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.281s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.283s] -- Configured cppcheck include dirs: /home/carpe-bleue/ros2_ws/src/ydlidar_ros2_driver/src
+[9.283s] -- Configured cppcheck exclude dirs and/or files: 
+[9.304s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.304s] -- Configured cpplint exclude dirs and/or files: 
+[9.309s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.317s] -- Added test 'lint_cmake' to check CMake code style
+[9.323s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[9.344s] -- Added test 'uncrustify' to check C / C++ code style
+[9.345s] -- Configured uncrustify additional arguments: 
+[9.350s] -- Added test 'xmllint' to check XML markup files
+[9.362s] -- Configuring done
+[9.451s] -- Generating done
+[9.479s] -- Build files have been written to: /home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver
+[9.524s] Invoked command in '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/ydlidar_ros2_driver -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver
+[9.533s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[9.751s] [ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_node.dir/src/ydlidar_ros2_driver_node.cpp.o[0m
+[9.755s] [ 50%] [32mBuilding CXX object CMakeFiles/ydlidar_ros2_driver_client.dir/src/ydlidar_ros2_driver_client.cpp.o[0m
+[32.648s] [ 75%] [32m[1mLinking CXX executable ydlidar_ros2_driver_node[0m
+[34.313s] [ 75%] Built target ydlidar_ros2_driver_node
+[46.624s] [100%] [32m[1mLinking CXX executable ydlidar_ros2_driver_client[0m
+[48.532s] [100%] Built target ydlidar_ros2_driver_client
+[48.571s] Invoked command in '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver -- -j4 -l4
+[48.579s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver
+[48.606s] -- Install configuration: ""
+[48.607s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node
+[48.621s] -- Set runtime path of "/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node" to ""
+[48.622s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client
+[48.650s] -- Set runtime path of "/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client" to ""
+[48.650s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch
+[48.651s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py
+[48.652s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py
+[48.653s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py
+[48.654s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params
+[48.655s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TminiPro.yaml
+[48.656s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml
+[48.657s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml
+[48.658s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml
+[48.659s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml
+[48.661s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml
+[48.663s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml
+[48.664s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml
+[48.666s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml
+[48.668s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml
+[48.669s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml
+[48.671s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup
+[48.672s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh
+[48.673s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config
+[48.707s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz
+[48.710s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver
+[48.713s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver
+[48.715s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh
+[48.717s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv
+[48.719s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh
+[48.721s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv
+[48.723s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash
+[48.725s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh
+[48.727s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh
+[48.729s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv
+[48.731s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv
+[48.733s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver
+[48.736s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake
+[48.737s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake
+[48.739s] -- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml
+[48.750s] Invoked command in '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver

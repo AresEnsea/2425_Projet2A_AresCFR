@@ -73,7 +73,7 @@ def main(args=None):
             
             command = None
             if key == 'z':  # Avancer
-                command = "04000400"
+                command = "06000600"
             elif key == 's':  # Reculer
                 command = "00000000"
             elif key == 'q':  # Gauche
