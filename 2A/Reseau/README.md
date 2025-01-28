@@ -52,11 +52,19 @@ Les tables de routages ont été configurées pour permettre la connection entre
 
 Les deux tests ont été réussis, les pings ont bien été envoyés et reçus ce qui prouve bien la connexion.
 
+## Mise en place d'un DNS local
+
+test d'attribution pour un ordinateur connecté en ethernet derrière le routeur 1
+![image](https://github.com/user-attachments/assets/1dface88-ba38-4399-b58a-a6c75af169de)
+
+Depuis l'ordinateur connecté au réseau : 
+![image](https://github.com/user-attachments/assets/fbfdb7e1-c06d-4251-8d11-0e7d8e46daa6)
+
 ## Prochains travaux 
 
-### Reproduire le test précédent avec la Raspberry PI 4 du robot principal et la Jetson (vision)
--> Essayer de les faire se ping entre eux. 
--> Configurer une IP fixe pour ces derniers ( pour faciliter la communication entre les deux ) 
+### Attribuer la Raspberry PI 4 du robot principal et la Jetson (vision) sur le DNS
+-> Essayer de les faire se ping entre eux.
+-> Essayer d'envoyer des messages
 
 
 ### 28/01/2025 :
