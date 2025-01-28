@@ -102,8 +102,8 @@
         "skew_out_of_range": "error",
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
-        "text_height": "warning",
-        "text_thickness": "warning",
+        "text_height": "ignore",
+        "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -642,7 +642,7 @@
   "sheets": [
     [
       "7d8c2ca7-c6ac-4d1b-8da0-598ada20afbe",
-      "Racine"
+      "Root"
     ]
   ],
   "text_variables": {}
