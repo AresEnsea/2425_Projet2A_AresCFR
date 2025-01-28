@@ -58,6 +58,16 @@ Les deux tests ont été réussis, les pings ont bien été envoyés et reçus c
 -> Essayer de les faire se ping entre eux. 
 -> Configurer une IP fixe pour ces derniers ( pour faciliter la communication entre les deux ) 
 
+
+###28/01/2025 : 
+Il n'était pas possible de ping de l'ordinateur connecté au wifi à l'ordinateur connecté en ethernet derriere le routeur 1 : 
+
+Changer les paramètres du firewall a permis de corriger le problème :
+![image](https://github.com/user-attachments/assets/54236e30-69c6-4aae-a6f3-830d5d7f3682)
+
+Maintenant il faut corriger l'autre sens : 
+
+
 ### Remarque :
 
 Pour le moment nous abandonnons la partie avec le switch physique nous permettant de se connecter à internet depuis le réseau local n'étant pas sûr d'avoir un câble RJ45 relié au réseau sur les lieux de la CFR, éventuellement nous pouvons faire des profils supplémentaires si le cas se présente
