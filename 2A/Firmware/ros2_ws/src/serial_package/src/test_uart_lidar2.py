@@ -6,6 +6,7 @@ import time
 # Paramètres du LiDAR
 LIDAR_MODULE_NUMBER = 16
 LIDAR_FRAME_SIZE = 114
+INVALID_DISTANCE = 20000  # Valeur correspondant à une mesure invalide (20 000 mm)
 
 # Finite State Machine
 class LidarVL53L1XParsingStatus:
@@ -20,13 +21,11 @@ class LidarVL53L1X:
         self.ROI_number = 0
         self.measure_number = 0
         self.rx_storage = bytearray(LIDAR_FRAME_SIZE * 2)
-        self.measure = [[0, 0] for _ in range(LIDAR_MODULE_NUMBER)]
+        self.measure = [[0, 0] for _ in range(LIDAR_MODULE_NUMBER)]  # Historique des mesures
 
 def get_lidar_data(lidar: LidarVL53L1X) -> LidarVL53L1X:
     """
     Computing and storing the lidar distance data
-
-    @lidar: The lidar structure
     """
     reading_head = 0
     wait_for_head_cmp = 0
@@ -99,16 +98,22 @@ def read_lidar_data(serial_port):
                 lidar.rx_storage = data
                 lidar = get_lidar_data(lidar)
 
-                # Affichage des mesures
+                # Affichage des mesures avec ajustement des valeurs
                 print("Mesures LiDAR :")
                 for i in range(LIDAR_MODULE_NUMBER):
+                    # Calculer la distance
                     distance = (lidar.measure[i][1] << 8) + lidar.measure[i][0]
+
+                    # Retrancher 20000 si la distance est trop grande
+                    if distance > INVALID_DISTANCE:
+                        distance -= INVALID_DISTANCE
+
                     print(f"Module {i+1}: {distance} mm")
 
             else:
                 print("Erreur de lecture de la trame LiDAR.")
-            
-            time.sleep(0.1)  # Attente avant de lire la prochaine trame
+
+            time.sleep(0.5)  # Attente avant de lire la prochaine trame
 
     except serial.SerialException as e:
         print(f"Erreur de communication série: {e}")
