@@ -59,8 +59,8 @@ Les deux tests ont été réussis, les pings ont bien été envoyés et reçus c
 -> Configurer une IP fixe pour ces derniers ( pour faciliter la communication entre les deux ) 
 
 
-###28/01/2025 : 
-Il n'est finalement pas possible de ping de l'ordinateur connecté au wifi à l'ordinateur connecté en ethernet derriere le routeur 1. Recherche d'un correctif à ce problème
+### 28/01/2025 :
+Avec l'ordinateur connecté en wifi il est possible de ping un pc connecté en ethernet au routeur, mais pour faire la manipulation inverse il était nécessaire de désactiver le pare feu windows (information à retenir pour la suite)
  
 
 
@@ -68,6 +68,10 @@ Il n'est finalement pas possible de ping de l'ordinateur connecté au wifi à l'
 
 Pour le moment nous abandonnons la partie avec le switch physique nous permettant de se connecter à internet depuis le réseau local n'étant pas sûr d'avoir un câble RJ45 relié au réseau sur les lieux de la CFR, éventuellement nous pouvons faire des profils supplémentaires si le cas se présente
 
+## Table des problèmes : 
+### Problème de connexion entre le pc de commande et le reste :
+ -> désactiver pare-feu 
+ 
 ## Equipe réseau : 
 
 ### Respo réseau : Nathan
