@@ -60,12 +60,8 @@ Les deux tests ont été réussis, les pings ont bien été envoyés et reçus c
 
 
 ###28/01/2025 : 
-Il n'était pas possible de ping de l'ordinateur connecté au wifi à l'ordinateur connecté en ethernet derriere le routeur 1 : 
-
-Changer les paramètres du firewall a permis de corriger le problème :
-![image](https://github.com/user-attachments/assets/54236e30-69c6-4aae-a6f3-830d5d7f3682)
-
-Maintenant il faut corriger l'autre sens : 
+Il n'est finalement pas possible de ping de l'ordinateur connecté au wifi à l'ordinateur connecté en ethernet derriere le routeur 1. Recherche d'un correctif à ce problème
+ 
 
 
 ### Remarque :
