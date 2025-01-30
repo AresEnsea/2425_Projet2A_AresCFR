@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-# This code is supposed to receive the command from the topic "keyboard_commands",
-# as well as monitor the "stop_moteur" topic, and resend commands to UART accordingly.
+#version  rosbag qui s'arrete avec le lidar 
 
 import rclpy
 from rclpy.node import Node

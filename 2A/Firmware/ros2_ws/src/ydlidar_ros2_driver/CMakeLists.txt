@@ -28,11 +28,18 @@ include_directories(
   ${YDLIDAR_SDK_INCLUDE_DIRS})
 #link library directories
 link_directories(${YDLIDAR_SDK_LIBRARY_DIRS})
+
+
+install(PROGRAMS
+  src/safety_node.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 #---------------------------------------------------------------------------------------
 # generate excutable and add libraries
 #---------------------------------------------------------------------------------------
 add_executable(${PROJECT_NAME}_node
-    src/${PROJECT_NAME}_node.cpp)
+    src/${PROJECT_NAME}_node.cpp
+    src/safety_node.py)
 #---------------------------------------------------------------------------------------
 # link libraries
 #--------------------------------------------------------------------------------------
@@ -72,4 +79,5 @@ if(BUILD_TESTING)
     find_package(ament_lint_auto REQUIRED)
     ament_lint_auto_find_test_dependencies()
 endif()
+
 ament_package()
