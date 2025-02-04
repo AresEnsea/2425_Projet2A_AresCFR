@@ -7,7 +7,7 @@ Dépôt du projet de coupe de France de robotique 2024/2025
 - 2A : Ce repository contient le travail des 2èmes années membres de l'association Arès à l'ENSEA sur le robot principal de la Coupe de France de Robotique
 
 ![IMG_20250124_191657](https://github.com/user-attachments/assets/f719fcd2-1e79-4abe-89d7-a2176633c4ac)
-
+![alt text](PAMI_img1.jpg)
 ## Règlement
 Le but de la compétition est de faire réaliser des actions de différentes difficultés grâce à des robots complétement autonomes, en lien avec le thème de l'année. Cette année le robot principal devra pouvoir se déplacer, déplacer des cannettes et des planches en bois de sorte à les empiler selon l'ordre suivant (2 canettes - 1 planche, 2 canettes - 1 planche , 2 canettes - 1 planche) pour un maximum de 3 étages, chaque étage rapporte plus de points que le précédent, le tout pour atteindre le score le plus grand. Cette année les PAMIs (Petits Actionneur Motorisés Indépendants) censés aider le robot principal en rapportant également des points sont d'une grande importance puisque rapporte en théorie autant de points qiue le robot principal, ils réaliseront des actions simples (déplacement et activation d'un actionneurs), un se distingue parmi eux le "Superstar" qui devra grimper sur l'estrade de la table et se rapprocher le plus du bord sans tomber pour gagner des points.
 ![image](https://github.com/user-attachments/assets/a6300a36-e328-420a-aa51-a023f629f76c)
