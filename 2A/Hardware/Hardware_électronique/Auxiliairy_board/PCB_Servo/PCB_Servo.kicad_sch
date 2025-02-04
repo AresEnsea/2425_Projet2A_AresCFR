@@ -6317,15 +6317,35 @@
 		)
 		(uuid "2645b996-4d26-4da2-b4fe-ed9d70d10a51")
 	)
-	(text "Buck 25.2V -> 5V"
+	(text "Buck 25.2V -> 7.5V"
 		(exclude_from_sim no)
-		(at 193.548 74.422 0)
+		(at 194.818 74.422 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "2d7a5eda-f434-4f7f-bff5-2b739ee6b0d9")
+	)
+	(text "7.35V"
+		(exclude_from_sim no)
+		(at 249.174 105.41 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2e759872-36cc-4ea3-b517-986fed121ea4")
+	)
+	(text "Courant?"
+		(exclude_from_sim no)
+		(at 259.588 84.074 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "6422840a-ab9d-4c96-89ef-138852c1c39f")
 	)
 	(text "Conn_Uart\n"
 		(exclude_from_sim no)
@@ -9377,7 +9397,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "AP64500Q"
 			(at 220.98 78.74 0)
 			(effects
 				(font
@@ -10700,7 +10720,7 @@
 			(uuid "4c25eeae-392c-4ab5-9be4-1506fa14d46f")
 		)
 		(instances
-			(project ""
+			(project "PCB_Servo"
 				(path "/7d8c2ca7-c6ac-4d1b-8da0-598ada20afbe"
 					(reference "U2")
 					(unit 1)
@@ -11002,7 +11022,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 244.8052 148.59 0)
 			(effects
 				(font
@@ -11216,7 +11236,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 213.0552 148.59 0)
 			(effects
 				(font
@@ -11250,7 +11270,7 @@
 			(uuid "a1c39529-fff8-4ebb-aad1-3d7f73bf0be9")
 		)
 		(instances
-			(project ""
+			(project "PCB_Servo"
 				(path "/7d8c2ca7-c6ac-4d1b-8da0-598ada20afbe"
 					(reference "C17")
 					(unit 1)
