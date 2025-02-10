@@ -1,4 +1,4 @@
-24445597053074023
+24447415058080990
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -65641,6 +65641,13 @@ DO41-10
 MainBoard
 E5-6
 <b>ELECTROLYTIC CAPACITOR</b><p>{return}grid 5.08 mm, diameter 6 mm
+
+0
+2
+2
+MainBoard
+IHLL-0806AZ-1Z
+
 
 0
 2
