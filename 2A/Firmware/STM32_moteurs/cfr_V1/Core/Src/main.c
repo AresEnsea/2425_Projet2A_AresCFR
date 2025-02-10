@@ -116,33 +116,63 @@ int main(void)
   while (1)
   {
 
+	      // Extraire les 4 premiers octets pour le moteur Maxon droit
+	  	  char mot_maxon_dataD[4];
+	  	  char direc[1];
+	  	  strncpy(direc, (char *)&rx_data, 1);
+	  	  //int dir_R = (int)rx_data[0];
+	  	  strncpy(mot_maxon_dataD, (char *)&rx_data + 1, 4);
+	  	  //mot_maxon_dataD[4] = '\0'; // Null terminate
+	  	  int mot_maxon_valueD = atoi(mot_maxon_dataD);
+	  	  int dir_R= atoi(direc);
+	  	  mot_maxonD(mot_maxon_valueD,dir_R);
 
-	  // Extraire les 4 premiers octets pour le moteur Maxon droit
-	  char mot_maxon_dataD[5];
-	  strncpy(mot_maxon_dataD, (char *)rx_data, 4);
-	  mot_maxon_dataD[4] = '\0'; // Null terminate
-	  int mot_maxon_valueD = atoi(mot_maxon_dataD);
-	  mot_maxonD(mot_maxon_valueD);
+	  	  // Extraire les octets 5 à 8 pour le moteur gauche
+	  	  char mot_maxon_dataG[4];
+	  	  char direc_G[1];
+	  	  strncpy(direc_G, (char *)&rx_data + 5, 1);
+	  	  strncpy(mot_maxon_dataG, (char *)&rx_data + 6, 4);
+	  	  //mot_maxon_dataG[4] = '\0'; // Null terminate
+	  	  int mot_maxon_valueG = atoi(mot_maxon_dataG);
+	  	  int dir_G= atoi(direc_G);
+	  	  mot_maxonG(mot_maxon_valueG,dir_G);
 
-	  // Extraire les octets 5 à 8 pour le moteur gauche
-	  char mot_maxon_dataG[5];
-	  strncpy(mot_maxon_dataG, (char *)&rx_data[4], 4);
-	  mot_maxon_dataG[4] = '\0'; // Null terminate
-	  int mot_maxon_valueG = atoi(mot_maxon_dataG);
-	  mot_maxonG(mot_maxon_valueG);
+	  	  // Extraire les octets 5 à 8 pour le servo moteur
+	  	  char servo_goal_data[1];
+	  	  strncpy(servo_goal_data, (char *)&rx_data + 10, 1);
+	  	  //servo_goal_data[2] = '\0'; // Null terminate
+	  	  int servo_goal_value = atoi(servo_goal_data);
+	  	  reach_goal_servo(servo_goal_value);
 
-//	  // Extraire les octets 5 à 8 pour le servo moteur
-//	  char servo_goal_data[5];
-//	  strncpy(servo_goal_data, (char *)&rx_data[4], 4);
-//	  servo_goal_data[4] = '\0'; // Null terminate
-//	  int servo_goal_value = atoi(servo_goal_data);
-//	  reach_goal_servo(servo_goal_value);
+	  	  // Transmission pour debug
+	  	  uint8_t newline[] = "\r\n\0";
 
-	  // Transmission pour debug
-	  HAL_UART_Transmit(&huart2, (uint8_t *)rx_data, sizeof(rx_data), HAL_MAX_DELAY);
+	  	  HAL_UART_Transmit(&huart2, (uint8_t *)&dir_R, sizeof(dir_R), HAL_MAX_DELAY);
+	  	  HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, (uint8_t *)mot_maxon_dataD, sizeof(mot_maxon_dataD), HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, (uint8_t *)&mot_maxon_valueD, sizeof(mot_maxon_valueD), HAL_MAX_DELAY);
 
-	  // Réactiver la réception des données
-	  HAL_UART_Receive_IT(&hlpuart1, rx_data, sizeof(rx_data));
+	  	  //HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+	  	  HAL_UART_Transmit(&huart2, (uint8_t *)&dir_G, sizeof(dir_G), HAL_MAX_DELAY);
+	  	  HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, (uint8_t *)mot_maxon_dataG, sizeof(mot_maxon_dataG), HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, (uint8_t *)&mot_maxon_valueG, sizeof(mot_maxon_valueG), HAL_MAX_DELAY);
+
+	  	  //HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, (uint8_t *)servo_goal_data, sizeof(servo_goal_data), HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+	  	  //HAL_UART_Transmit(&huart2, (uint8_t *)&servo_goal_value, sizeof(servo_goal_value), HAL_MAX_DELAY);
+
+
+	  	  //HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+
+	  	  HAL_UART_Transmit(&huart2, (uint8_t *)rx_data, sizeof(rx_data), HAL_MAX_DELAY);
+
+	  	  HAL_UART_Transmit(&huart2, newline, sizeof(newline) - 1, HAL_MAX_DELAY);
+	  	  // Réactiver la réception des données
+	  	  HAL_UART_Receive_IT(&hlpuart1, rx_data, sizeof(rx_data));
 
 
     /* USER CODE END WHILE */
@@ -434,7 +464,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4|GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -449,8 +479,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PB4 PB5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5;
+  /*Configure GPIO pins : PB4 PB5 PB8 PB9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_8|GPIO_PIN_9;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

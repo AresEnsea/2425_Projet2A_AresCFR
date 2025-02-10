@@ -2,46 +2,61 @@
 
 import rclpy
 from rclpy.node import Node
+from std_msgs.msg import String
 import serial
+import threading
 
-class UARTNode(Node):
+class SerialListener(Node):
     def __init__(self):
-        super().__init__('uart_node')
+        super().__init__('serial_listener')
+        
+        # Configure the serial port
         self.serial_port = serial.Serial(
-            port='/dev/ttyAMA0',  # Adjust based on your Pi's UART port
-            baudrate=115200,      # Match STM32's configured baudrate
-            timeout=1
+            port='/dev/ttyACM0',  # Adjust port as needed
+            baudrate=115200,
+            parity=serial.PARITY_NONE,
+            stopbits=serial.STOPBITS_ONE,
+            bytesize=serial.EIGHTBITS
         )
         
-        # Create publisher and subscriber for testing
-        self.publisher = self.create_publisher(std_msgs.msg.String, 'uart_tx', 10)
-        self.subscription = self.create_subscription(
-            std_msgs.msg.String, 
-            'uart_rx', 
-            self.listener_callback, 
-            10
-        )
+        # Create a publisher for the commands
+        self.publisher_ = self.create_publisher(String, 'stm32_commands', 10)
+        
+        # Start the serial reading thread
+        self.thread = threading.Thread(target=self.read_serial)
+        self.thread.daemon = True
+        self.thread.start()
+        
+        self.get_logger().info('Serial listener node started')
 
-    def listener_callback(self, msg):
-        # Send data over UART
-        self.serial_port.write(msg.data.encode())
+    def read_serial(self):
+        while rclpy.ok():
+            if self.serial_port.in_waiting:
+                try:
+                    # Read line from serial
+                    command = self.serial_port.readline().decode('utf-8').strip()
+                    
+                    # Create and publish the message
+                    msg = String()
+                    msg.data = command
+                    self.publisher_.publish(msg)
+                    
+                    self.get_logger().info(f'Received command: {command}')
+                    
+                except Exception as e:
+                    self.get_logger().error(f'Error reading serial: {str(e)}')
 
-    def uart_read(self):
-        # Read data from UART
-        if self.serial_port.in_waiting > 0:
-            data = self.serial_port.readline().decode().strip()
-            msg = std_msgs.msg.String()
-            msg.data = data
-            self.publisher.publish(msg)
-
-def main(args=None):
-    rclpy.init(args=args)
-    uart_node = UARTNode()
+def main():
+    rclpy.init()
+    serial_listener = SerialListener()
     
-    # Periodic read
-    while rclpy.ok():
-        uart_node.uart_read()
-        rclpy.spin_once(uart_node)
+    try:
+        rclpy.spin(serial_listener)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        serial_listener.destroy_node()
+        rclpy.shutdown()
 
-    uart_node.destroy_node()
-    rclpy.shutdown()
+if __name__ == '__main__':
+    main()

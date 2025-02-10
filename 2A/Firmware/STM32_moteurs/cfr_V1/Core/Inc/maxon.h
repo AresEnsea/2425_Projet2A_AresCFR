@@ -11,7 +11,7 @@
 #include "stm32l4xx_hal.h"
 #include <stdlib.h>
 
-void mot_maxonD(int result);
-void mot_maxonG(int result);
+void mot_maxonD(int result, int dir);
+void mot_maxonG(int result, int dir);
 
 #endif /* INC_MAXON_H_ */

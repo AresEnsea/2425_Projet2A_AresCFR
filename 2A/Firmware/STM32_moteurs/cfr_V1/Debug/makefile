@@ -34,34 +34,37 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := cfr_mot2
+BUILD_ARTIFACT_NAME := cfr_V1
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-cfr_mot2.elf \
+cfr_V1.elf \
 
 MAP_FILES += \
-cfr_mot2.map \
+cfr_V1.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-cfr_mot2.list \
+cfr_V1.list \
+
+OBJCOPY_BIN += \
+cfr_V1.bin \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: cfr_mot2.elf secondary-outputs
+main-build: cfr_V1.elf secondary-outputs
 
 # Tool invocations
-cfr_mot2.elf cfr_mot2.map: $(OBJS) $(USER_OBJS) C:\Users\Antle\OneDrive\Documents\cfr_mot2\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "cfr_mot2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Antle\OneDrive\Documents\cfr_mot2\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cfr_mot2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+cfr_V1.elf cfr_V1.map: $(OBJS) $(USER_OBJS) /home/carpe-bleue/STM32CubeIDE/cfr_workspace/cfr_V1/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "cfr_V1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/carpe-bleue/STM32CubeIDE/cfr_workspace/cfr_V1/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cfr_V1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,17 +73,22 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-cfr_mot2.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "cfr_mot2.list"
+cfr_V1.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "cfr_V1.list"
+	@echo 'Finished building: $@'
+	@echo ' '
+
+cfr_V1.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "cfr_V1.bin"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) cfr_mot2.elf cfr_mot2.list cfr_mot2.map default.size.stdout
+	-$(RM) cfr_V1.bin cfr_V1.elf cfr_V1.list cfr_V1.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
