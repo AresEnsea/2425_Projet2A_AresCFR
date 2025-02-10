@@ -8,7 +8,12 @@
 extern TIM_HandleTypeDef htim1;
 
 void reach_goal_servo(int goal){
-	TIM1->CCR1 = goal;
+	if (goal==1){
+		TIM1->CCR1 = 5;
+	}
+	else{
+		TIM1->CCR1 = 20;
+	}
 
 }
 
