@@ -4,10 +4,14 @@
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_4.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_5.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_6.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart_lidar.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart_lidar2.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_2.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_3.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_4.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/bagfile_stm32.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/launch_serial_lidar.py
 /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/launch_serial_lidar.py
 /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/package_run_dependencies/serial_package

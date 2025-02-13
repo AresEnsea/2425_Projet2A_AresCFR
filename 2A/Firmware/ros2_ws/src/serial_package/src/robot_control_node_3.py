@@ -3,50 +3,54 @@ import serial
 import time
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String, Bool
+from std_msgs.msg import String, Bool  # Added Bool message type
 import tty
 import sys
 import termios
-import threading
 
 class SimpleNode(Node):
     def __init__(self, node_name='keyboard_controller'):
         super().__init__(node_name)
 
+        # Keyboard commands publisher (unchanged)
         self.publisher = self.create_publisher(
             String,
             'keyboard_commands',
             10
         )
 
+        # New subscription to stop_moteur topic
         self.stop_subscription = self.create_subscription(
-            Bool,
-            'stop_moteur',
-            self.stop_moteur_callback,
-            10
+            Bool,  # Boolean message type
+            'stop_moteur',  # Topic name
+            self.stop_moteur_callback,  # Callback function
+            10  # Queue size
         )
 
         self.uart2_port = '/dev/serial0'
         self.baudrate = 115200
         self.timeout = 1
 
+        # New attribute to track motor stop state
         self.motor_stopped = False
-        self.toggle_state = 0
-        self.last_command = "00000000"
 
-        self.current_command = None
-        self.command_lock = threading.Lock()
+        # Toggle state remains the same
+        self.toggle_state = 0
+
+        # Store the last full command sent
+        self.last_command = "00000000"  # Default value, this will be modified
 
         self.get_logger().info('Keyboard controller node initialized')
-
+    
+    # New callback to handle stop_moteur messages
     def stop_moteur_callback(self, msg):
+        # Update motor stop state based on received Boolean
         self.motor_stopped = msg.data
         if self.motor_stopped:
-            self.get_logger().warn("Motor stop signal received. Sending stop command.")
-            self.send_stop_command()
+            self.get_logger().warn("Motor stop signal received. Disabling keyboard control.")
         else:
             self.get_logger().info("Motor resume signal received. Keyboard control re-enabled.")
-
+    
     def send_serial_message(self, message):
         try:
             with serial.Serial(self.uart2_port, self.baudrate, timeout=self.timeout) as ser:
@@ -54,42 +58,13 @@ class SimpleNode(Node):
                 ser.write(message.encode())
         except serial.SerialException as e:
             self.get_logger().error(f"Error opening serial port: {e}")
-
+    
     def publish_command(self, command):
         msg = String()
         msg.data = command
-        command = command.rstrip('\n\r\0')
+        #command = command.rstrip('\n\r\0') 
         self.publisher.publish(msg)
         self.get_logger().info(f'Published command: {command}')
-
-    def send_stop_command(self):
-        stop_command = f"00000000{self.toggle_state}"
-        self.send_serial_message(f"{stop_command}\n\r\0")
-        self.publish_command(stop_command)
-
-    def keyboard_listener(self):
-        while rclpy.ok():
-            key = getch()
-            command = None
-            if key == 'z':
-                command = f"06000600{self.toggle_state}"
-            elif key == 's':
-                command = f"00000000{self.toggle_state}"
-            elif key == 'q':
-                command = f"04000100{self.toggle_state}"
-            elif key == 'd':
-                command = f"01000400{self.toggle_state}"
-            elif key == 'p':
-                self.toggle_state = 1 - self.toggle_state
-                self.last_command = self.last_command[:-1] + str(self.toggle_state)
-                command = self.last_command
-            elif key == 'x':
-                rclpy.shutdown()
-                break
-
-            if command:
-                with self.command_lock:
-                    self.current_command = command
 
 def getch():
     fd = sys.stdin.fileno()
@@ -103,41 +78,80 @@ def getch():
 
 def main(args=None):
     rclpy.init(args=args)
-
+    
     node = SimpleNode('keyboard_controller')
-
+    
     print("Keyboard Teleop:")
     print(" - 'z': forward")
-    print(" - 's': backward")
+    print(" - 's': backward") 
+
+    print(" - 'e': forward right")
+    print(" - 'a': backward left") 
+
     print(" - 'q': left")
     print(" - 'd': right")
+    print(" - 'w': back left")
+    print(" - 'x': back right")
     print(" - 'p': toggle 9th character")
     print(" - 'x': exit")
-
-    keyboard_thread = threading.Thread(target=node.keyboard_listener)
-    keyboard_thread.start()
-
+    
     try:
         while rclpy.ok():
-            rclpy.spin_once(node, timeout_sec=0.1)
+            # Check if motors are stopped before processing keyboard input
             if node.motor_stopped:
-                node.send_stop_command()
-            else:
-                with node.command_lock:
-                    if node.current_command:
-                        node.send_serial_message(f"{node.current_command}\n\r\0")
-                        node.publish_command(node.current_command)
-                        node.last_command = node.current_command
-                        node.current_command = None
-            time.sleep(0.2)
+                # Optional: Add a small delay to prevent high CPU usage
+                time.sleep(0.1)
+                rclpy.spin_once(node, timeout_sec=0.1)
+            key = getch()
 
+            command = None
+            if key == 'z':  # Avancer
+                command = f"1060010600{node.toggle_state}"
+            elif key == 's':  # Reculer
+                command = f"0060000600{node.toggle_state}"
+            elif key == 'r':  # Reculer
+                command = f"0000000000{node.toggle_state}"
+
+            elif key == 'a':  # Gauche
+                command = f"1040010100{node.toggle_state}"
+            elif key == 'w':  # Gauche back
+                command = f"0040000100{node.toggle_state}"
+            elif key == 'e':  # Droite
+                command = f"1010010400{node.toggle_state}"
+            elif key == 'x':  # Droite back
+                command = f"0010000400{node.toggle_state}"
+
+            elif key == 'q':  # Gauche back
+                command = f"1040000400{node.toggle_state}"
+            elif key == 'd':  # Gauche back
+                command = f"0040010400{node.toggle_state}"
+
+
+            elif key == 'p':  # Toggle last character
+                node.toggle_state = 1 - node.toggle_state
+                # Modify the last part of the previous command
+                node.last_command = node.last_command[:-1] + str(node.toggle_state)
+                command = node.last_command  # Reuse the last command with the modified toggle_state
+            elif key == 'c':  # Quitter
+                break
+
+            if command:
+                # Send over the serial port
+                node.send_serial_message(f"{command}") #\ n\r\0
+                # Publish on the ROS2 topic
+                node.publish_command(command)
+                node.last_command = command
+
+            rclpy.spin_once(node, timeout_sec=0.1)
+    
     except KeyboardInterrupt:
         pass
-
+    
     finally:
         node.destroy_node()
         rclpy.shutdown()
-        keyboard_thread.join()
 
 if __name__ == '__main__':
     main()
+
+
