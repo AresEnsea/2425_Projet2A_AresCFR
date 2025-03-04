@@ -1,0 +1,4 @@
+Invoking command in '/home/carpe-bleue/ros2_ws/build/test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/test -- -j4 -l4
+Invoked command in '/home/carpe-bleue/ros2_ws/build/test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/test -- -j4 -l4
+Invoking command in '/home/carpe-bleue/ros2_ws/build/test': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/test
+Invoked command in '/home/carpe-bleue/ros2_ws/build/test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/test

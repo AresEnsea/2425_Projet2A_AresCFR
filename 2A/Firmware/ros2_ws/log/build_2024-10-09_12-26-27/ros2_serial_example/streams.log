@@ -1,0 +1,34 @@
+[0.056s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ros2_serial_example': CMAKE_PREFIX_PATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/test:/opt/ros/humble /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/ros2_serial_example/ros2_serial_example -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ros2_serial_example
+[0.103s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.669s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.816s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.827s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.850s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.887s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.935s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.058s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.064s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.834s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.015s] -- Found ros2_serial_msgs: 0.0.0 (/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/share/ros2_serial_msgs/cmake)
+[2.069s] -- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.421s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.696s] [31mCMake Error at CMakeLists.txt:27 (find_package):
+[2.697s]   By not providing "Findpx4_msgs.cmake" in CMAKE_MODULE_PATH this project has
+[2.697s]   asked CMake to find a package configuration file provided by "px4_msgs",
+[2.697s]   but CMake did not find one.
+[2.698s] 
+[2.698s]   Could not find a package configuration file provided by "px4_msgs" with any
+[2.698s]   of the following names:
+[2.699s] 
+[2.699s]     px4_msgsConfig.cmake
+[2.699s]     px4_msgs-config.cmake
+[2.699s] 
+[2.700s]   Add the installation prefix of "px4_msgs" to CMAKE_PREFIX_PATH or set
+[2.700s]   "px4_msgs_DIR" to a directory containing one of the above files.  If
+[2.701s]   "px4_msgs" provides a separate development package or SDK, be sure it has
+[2.702s]   been installed.
+[2.702s] 
+[2.702s] [0m
+[2.703s] -- Configuring incomplete, errors occurred!
+[2.703s] See also "/home/carpe-bleue/ros2_ws/build/ros2_serial_example/CMakeFiles/CMakeOutput.log".
+[2.728s] Invoked command in '/home/carpe-bleue/ros2_ws/build/ros2_serial_example' returned '1': CMAKE_PREFIX_PATH=/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/test:/opt/ros/humble /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/ros2_serial_example/ros2_serial_example -DROS2_SERIAL_PKGS=sensor_msgs;px4_msgs -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ros2_serial_example

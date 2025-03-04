@@ -1,0 +1,6 @@
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    ROS2_SERIAL_PKGS
+
+[0m

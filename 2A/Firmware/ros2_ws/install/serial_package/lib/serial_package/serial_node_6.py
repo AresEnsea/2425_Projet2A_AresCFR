@@ -1,0 +1,1 @@
+/home/carpe-bleue/ros2_ws/src/serial_package/src/serial_node_6.py

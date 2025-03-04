@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "c2c5490f-51a8-4e74-905f-02b98c3e790e")
+	(paper "A4")
+	(title_block
+		(title "AAP Inverter")
+		(date "2023-05-01")
+		(company "ENSEA")
+	)
+	(lib_symbols)
+)

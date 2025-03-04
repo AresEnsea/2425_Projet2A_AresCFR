@@ -1,0 +1,4 @@
+Invoking command in '/home/carpe-bleue/ros2_ws/build/serial_package': /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4
+Invoked command in '/home/carpe-bleue/ros2_ws/build/serial_package' returned '0': /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4
+Invoking command in '/home/carpe-bleue/ros2_ws/build/serial_package': /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/serial_package
+Invoked command in '/home/carpe-bleue/ros2_ws/build/serial_package' returned '1': /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/serial_package

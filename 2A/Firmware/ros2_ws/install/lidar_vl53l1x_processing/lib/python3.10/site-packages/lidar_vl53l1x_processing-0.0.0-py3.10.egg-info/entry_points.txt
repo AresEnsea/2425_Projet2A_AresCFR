@@ -1,0 +1,3 @@
+[console_scripts]
+lidar_ensea = lidar_vl53l1x_processing.data_processing:main
+

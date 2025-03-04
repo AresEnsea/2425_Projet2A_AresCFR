@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/serial_node.dir/src/serial_node.cpp.o -o serial_node 

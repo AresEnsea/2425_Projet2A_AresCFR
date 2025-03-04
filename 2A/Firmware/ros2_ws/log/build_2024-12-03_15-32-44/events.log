@@ -1,0 +1,132 @@
+[0.000000] (-) TimerEvent: {}
+[0.001654] (lidar_vl53l1x_processing) JobQueued: {'identifier': 'lidar_vl53l1x_processing', 'dependencies': OrderedDict()}
+[0.002229] (serial_package) JobQueued: {'identifier': 'serial_package', 'dependencies': OrderedDict()}
+[0.002318] (lidar_vl53l1x_processing) JobStarted: {'identifier': 'lidar_vl53l1x_processing'}
+[0.034331] (serial_package) JobStarted: {'identifier': 'serial_package'}
+[0.099011] (-) TimerEvent: {}
+[0.199629] (-) TimerEvent: {}
+[0.300334] (-) TimerEvent: {}
+[0.400967] (-) TimerEvent: {}
+[0.501556] (-) TimerEvent: {}
+[0.602143] (-) TimerEvent: {}
+[0.702746] (-) TimerEvent: {}
+[0.803333] (-) TimerEvent: {}
+[0.903977] (-) TimerEvent: {}
+[1.004541] (-) TimerEvent: {}
+[1.105339] (-) TimerEvent: {}
+[1.155237] (serial_package) JobProgress: {'identifier': 'serial_package', 'progress': 'cmake'}
+[1.158285] (serial_package) JobProgress: {'identifier': 'serial_package', 'progress': 'build'}
+[1.160756] (serial_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carpe-bleue/ros2_ws/build/serial_package', '--', '-j4', '-l4'], 'cwd': '/home/carpe-bleue/ros2_ws/build/serial_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.88.240 57408 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/serial_package'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.88.240 57408 192.168.88.238 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.205481] (-) TimerEvent: {}
+[1.262721] (serial_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.305664] (-) TimerEvent: {}
+[1.406794] (-) TimerEvent: {}
+[1.507484] (-) TimerEvent: {}
+[1.608183] (-) TimerEvent: {}
+[1.708850] (-) TimerEvent: {}
+[1.809540] (-) TimerEvent: {}
+[1.847888] (serial_package) StdoutLine: {'line': b'-- Found rclpy: 3.3.14 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[1.848866] (serial_package) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.909683] (-) TimerEvent: {}
+[1.988658] (serial_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.999988] (serial_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.009825] (-) TimerEvent: {}
+[2.025703] (serial_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.066025] (serial_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.110008] (-) TimerEvent: {}
+[2.118454] (serial_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.210188] (-) TimerEvent: {}
+[2.310831] (-) TimerEvent: {}
+[2.359841] (serial_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.411042] (-) TimerEvent: {}
+[2.511780] (-) TimerEvent: {}
+[2.612529] (-) TimerEvent: {}
+[2.688661] (serial_package) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.691292] (serial_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.693360] (serial_package) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.700846] (serial_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.705130] (serial_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.712663] (-) TimerEvent: {}
+[2.734464] (serial_package) StdoutLine: {'line': b'-- Generating done\n'}
+[2.742543] (serial_package) StdoutLine: {'line': b'-- Build files have been written to: /home/carpe-bleue/ros2_ws/build/serial_package\n'}
+[2.812963] (-) TimerEvent: {}
+[2.837772] (serial_package) CommandEnded: {'returncode': 0}
+[2.913266] (-) TimerEvent: {}
+[2.963891] (serial_package) JobProgress: {'identifier': 'serial_package', 'progress': 'install'}
+[2.994117] (serial_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/carpe-bleue/ros2_ws/build/serial_package'], 'cwd': '/home/carpe-bleue/ros2_ws/build/serial_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.88.240 57408 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/serial_package'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.88.240 57408 192.168.88.238 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.005635] (lidar_vl53l1x_processing) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/lidar_vl53l1x_processing', 'build', '--build-base', '/home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build', 'install', '--record', '/home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/carpe-bleue/ros2_ws/src/lidar_vl53l1x_processing', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'carpe-bleue', 'SSH_CLIENT': '192.168.88.240 57408 22', 'LC_TIME': 'fr_FR.UTF-8', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/carpe-bleue', 'OLDPWD': '/home/carpe-bleue', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'fr_FR.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'humble', 'LOGNAME': 'carpe-bleue', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'fr_FR.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'PWD': '/home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.88.240 57408 192.168.88.238 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1'}, 'shell': False}
+[3.016354] (-) TimerEvent: {}
+[3.029478] (serial_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.030163] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node.py\n'}
+[3.030661] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_2.py\n'}
+[3.031038] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_3.py\n'}
+[3.031342] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_4.py\n'}
+[3.031919] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/package_run_dependencies/serial_package\n'}
+[3.032290] (serial_package) StdoutLine: {'line': b'-- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/parent_prefix_path/serial_package\n'}
+[3.033024] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.sh\n'}
+[3.033584] (serial_package) StdoutLine: {'line': b'-- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.dsv\n'}
+[3.034739] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/path.sh\n'}
+[3.035194] (serial_package) StdoutLine: {'line': b'-- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/path.dsv\n'}
+[3.036616] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.bash\n'}
+[3.037210] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.sh\n'}
+[3.037878] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.zsh\n'}
+[3.038454] (serial_package) StdoutLine: {'line': b'-- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.dsv\n'}
+[3.039337] (serial_package) StdoutLine: {'line': b'-- Installing: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/package.dsv\n'}
+[3.040803] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/packages/serial_package\n'}
+[3.041386] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/cmake/serial_packageConfig.cmake\n'}
+[3.042044] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/cmake/serial_packageConfig-version.cmake\n'}
+[3.042470] (serial_package) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/package.xml\n'}
+[3.047486] (serial_package) CommandEnded: {'returncode': 0}
+[3.116563] (-) TimerEvent: {}
+[3.217406] (-) TimerEvent: {}
+[3.228034] (serial_package) JobEnded: {'identifier': 'serial_package', 'rc': 0}
+[3.317600] (-) TimerEvent: {}
+[3.418294] (-) TimerEvent: {}
+[3.518881] (-) TimerEvent: {}
+[3.619458] (-) TimerEvent: {}
+[3.720069] (-) TimerEvent: {}
+[3.820644] (-) TimerEvent: {}
+[3.921259] (-) TimerEvent: {}
+[4.022042] (-) TimerEvent: {}
+[4.056787] (lidar_vl53l1x_processing) StdoutLine: {'line': b'running egg_info\n'}
+[4.059141] (lidar_vl53l1x_processing) StdoutLine: {'line': b'creating ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info\n'}
+[4.059976] (lidar_vl53l1x_processing) StdoutLine: {'line': b'writing ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/PKG-INFO\n'}
+[4.061061] (lidar_vl53l1x_processing) StdoutLine: {'line': b'writing dependency_links to ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/dependency_links.txt\n'}
+[4.061646] (lidar_vl53l1x_processing) StdoutLine: {'line': b'writing entry points to ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/entry_points.txt\n'}
+[4.062155] (lidar_vl53l1x_processing) StdoutLine: {'line': b'writing requirements to ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/requires.txt\n'}
+[4.062652] (lidar_vl53l1x_processing) StdoutLine: {'line': b'writing top-level names to ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/top_level.txt\n'}
+[4.063487] (lidar_vl53l1x_processing) StdoutLine: {'line': b"writing manifest file '../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/SOURCES.txt'\n"}
+[4.070687] (lidar_vl53l1x_processing) StdoutLine: {'line': b"reading manifest file '../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/SOURCES.txt'\n"}
+[4.071716] (lidar_vl53l1x_processing) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[4.074144] (lidar_vl53l1x_processing) StdoutLine: {'line': b"writing manifest file '../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/SOURCES.txt'\n"}
+[4.074687] (lidar_vl53l1x_processing) StdoutLine: {'line': b'running build\n'}
+[4.075125] (lidar_vl53l1x_processing) StdoutLine: {'line': b'running build_py\n'}
+[4.075523] (lidar_vl53l1x_processing) StdoutLine: {'line': b'creating /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build\n'}
+[4.076092] (lidar_vl53l1x_processing) StdoutLine: {'line': b'creating /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build/lib\n'}
+[4.076467] (lidar_vl53l1x_processing) StdoutLine: {'line': b'creating /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build/lib/lidar_vl53l1x_processing\n'}
+[4.076931] (lidar_vl53l1x_processing) StdoutLine: {'line': b'copying lidar_vl53l1x_processing/__init__.py -> /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build/lib/lidar_vl53l1x_processing\n'}
+[4.077407] (lidar_vl53l1x_processing) StdoutLine: {'line': b'copying lidar_vl53l1x_processing/data_processing.py -> /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build/lib/lidar_vl53l1x_processing\n'}
+[4.078231] (lidar_vl53l1x_processing) StdoutLine: {'line': b'running install\n'}
+[4.079480] (lidar_vl53l1x_processing) StdoutLine: {'line': b'running install_lib\n'}
+[4.082473] (lidar_vl53l1x_processing) StdoutLine: {'line': b'creating /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages/lidar_vl53l1x_processing\n'}
+[4.083046] (lidar_vl53l1x_processing) StdoutLine: {'line': b'copying /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build/lib/lidar_vl53l1x_processing/__init__.py -> /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages/lidar_vl53l1x_processing\n'}
+[4.083663] (lidar_vl53l1x_processing) StdoutLine: {'line': b'copying /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build/lib/lidar_vl53l1x_processing/data_processing.py -> /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages/lidar_vl53l1x_processing\n'}
+[4.086128] (lidar_vl53l1x_processing) StdoutLine: {'line': b'byte-compiling /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages/lidar_vl53l1x_processing/__init__.py to __init__.cpython-310.pyc\n'}
+[4.087457] (lidar_vl53l1x_processing) StdoutLine: {'line': b'byte-compiling /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages/lidar_vl53l1x_processing/data_processing.py to data_processing.cpython-310.pyc\n'}
+[4.091160] (lidar_vl53l1x_processing) StdoutLine: {'line': b'running install_data\n'}
+[4.091738] (lidar_vl53l1x_processing) StdoutLine: {'line': b'creating /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/share/ament_index\n'}
+[4.092243] (lidar_vl53l1x_processing) StdoutLine: {'line': b'creating /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/share/ament_index/resource_index\n'}
+[4.092677] (lidar_vl53l1x_processing) StdoutLine: {'line': b'creating /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/share/ament_index/resource_index/packages\n'}
+[4.092990] (lidar_vl53l1x_processing) StdoutLine: {'line': b'copying resource/lidar_vl53l1x_processing -> /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/share/ament_index/resource_index/packages\n'}
+[4.093440] (lidar_vl53l1x_processing) StdoutLine: {'line': b'copying package.xml -> /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/share/lidar_vl53l1x_processing\n'}
+[4.093875] (lidar_vl53l1x_processing) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.100768] (lidar_vl53l1x_processing) StdoutLine: {'line': b'Copying ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info to /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages/lidar_vl53l1x_processing-0.0.0-py3.10.egg-info\n'}
+[4.106111] (lidar_vl53l1x_processing) StdoutLine: {'line': b'running install_scripts\n'}
+[4.122201] (-) TimerEvent: {}
+[4.183226] (lidar_vl53l1x_processing) StdoutLine: {'line': b'Installing lidar_ensea script to /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/lidar_vl53l1x_processing\n'}
+[4.184691] (lidar_vl53l1x_processing) StdoutLine: {'line': b"writing list of installed files to '/home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/install.log'\n"}
+[4.222504] (-) TimerEvent: {}
+[4.298354] (lidar_vl53l1x_processing) CommandEnded: {'returncode': 0}
+[4.322721] (-) TimerEvent: {}
+[4.325279] (lidar_vl53l1x_processing) JobEnded: {'identifier': 'lidar_vl53l1x_processing', 'rc': 0}
+[4.328347] (-) EventReactorShutdown: {}

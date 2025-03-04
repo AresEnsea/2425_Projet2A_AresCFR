@@ -1,0 +1,11 @@
+../Core/Src/main.c:72:6:HAL_GPIO_EXTI_Callback	16	static
+../Core/Src/main.c:93:6:ADC_Select_CH1	8	static
+../Core/Src/main.c:107:6:ADC_Select_CH2	8	static
+../Core/Src/main.c:123:6:ADC_Select_CH3	8	static
+../Core/Src/main.c:148:5:main	24	static
+../Core/Src/main.c:313:6:SystemClock_Config	96	static
+../Core/Src/main.c:360:13:MX_ADC1_Init	48	static
+../Core/Src/main.c:443:13:MX_TIM1_Init	40	static
+../Core/Src/main.c:490:13:MX_TIM3_Init	64	static
+../Core/Src/main.c:553:13:MX_GPIO_Init	40	static
+../Core/Src/main.c:606:6:Error_Handler	4	static,ignoring_inline_asm

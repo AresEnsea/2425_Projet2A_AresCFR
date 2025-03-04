@@ -1,0 +1,46 @@
+Reference;Value;Datasheet;Footprint;Qty;Magasin
+BT1;Battery;~;Connector_AMASS:AMASS_XT60-M_1x02_P7.20mm_Vertical;1;https://www.conrad.fr/fr/p/reely-re-6586515-fiche-male-pour-batterie-xt60-3-5-mm-a-souder-1-pc-s-2195505.html?utm_source=google&utm_medium=surfaces&utm_campaign=shopping-feed&utm_content=free-google-shopping-clicks&utm_term=2195505&cq_src=google_ads&cq_cmp=17690685297&cq_term=&cq_plac=&cq_net=x&cq_plt=gp&utm_source=google&utm_medium=cpc&utm_campaign=SH+-+FR+-+Performance+max+-+High&utm_id=17690685297&gad_source=5&gclid=EAIaIQobChMIj9CN9sPFiQMVH2tBAh090APKEAQYAyABEgLpEPD_BwE
+C1,C4,C17,C23,C33;10u;-- valeurs mixtées --;Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder;5;
+C2,C3,C25;1u;~;Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder;3;
+C5,C6,C7,C13,C14,C15;4.7n;~;Capacitor_SMD:C_0402_1005Metric;6;
+C8,C9,C10;220u;https://www.we-online.com/components/products/datasheet/865060657012.pdf;Capacitor_SMD:CP_Elec_10x10.5;3;https://fr.farnell.com/c/composants-passifs/condensateurs/condensateurs-electrolytiques-aluminium/condensateurs-electrolytiques-aluminium-cms?st=865060657012
+C16,C20,C31,C38,C39;10n;~;Capacitor_SMD:C_0402_1005Metric;5;
+C18;22u;~;Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder;1;https://www.we-online.com/en/components/products/WCAP-CSGP-10VDC?sq=885012106032#885012106032
+C19,C24,C26,C27,C28,C29,C30,C32,C1201;100n;~;Capacitor_SMD:C_0402_1005Metric;9;
+C21,C22;22p;~;Capacitor_SMD:C_0402_1005Metric;2;
+C34;4.7nF;~;Capacitor_SMD:C_0402_1005Metric_Pad0.74x0.62mm_HandSolder;1;
+C35;22nF;~;Capacitor_SMD:C_0402_1005Metric;1;
+C36;47u;~;Capacitor_SMD:C_0805_2012Metric;1;https://fr.farnell.com/taiyo-yuden/lmk212bbj476mg-t/cap-47uf-10v-mlcc-0805/dp/3217585
+Converter_DCDC_WPMDH1302401;~;;Package_TO_SOT_SMD:TO-263-7_TabPin8;1;https://www.we-online.com/en/components/products/MAGIC-VDRM#171032401
+D1,D3,D4,D5,D6,D7,D8;Red LED;~;LED_SMD:LED_0603_1608Metric;7;
+D9,D10,D11,D12;Blue LED;~;LED_SMD:LED_0603_1608Metric;4;
+;;;;;
+J1;Conn_02x02_Top_Bottom;~;Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal;1;https://www.digikey.fr/fr/products/detail/molex/0039012040/61376?utm_adgroup=&utm_source=google&utm_medium=cpc&utm_campaign=PMax%20Shopping_Supplier&utm_term=&productid=61376&utm_content=&utm_id=go_cmp-19858118772_adg-_ad-__dev-c_ext-_prd-61376_sig-EAIaIQobChMIj-OIyM3FiQMVNIxoCR090jI8EAQYAyABEgIQevD_BwE&gad_source=5&gclid=EAIaIQobChMIj-OIyM3FiQMVNIxoCR090jI8EAQYAyABEgIQevD_BwE
+J2;173010542;https://www.we-online.com/components/products/datasheet/173010542.pdf;Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical;1;
+J3;Conn_02x05_Odd_Even;~;Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical;1;
+J4,J5;Conn_01x02;~;Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical;2;
+J6;Conn_ST_STDC14;https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf;Connector_PinHeader_1.27mm:PinHeader_2x07_P1.27mm_Vertical_SMD;1;
+J7;Conn_01x04_Pin;~;Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical;1;
+L1;39n;~;Inductor_SMD:L_0603_1608Metric;1;
+Q5;SQ2310ES;~;Package_TO_SOT_SMD:SOT-23;1;
+R1,R4,R7,R8,R10,R18,R19,R20,R21;390;~;Resistor_SMD:R_0402_1005Metric;9;
+R3;100k;~;Resistor_SMD:R_0402_1005Metric;1;
+R5;8.2K;~;Resistor_SMD:R_0402_1005Metric;1;
+R6;2k7;~;Resistor_SMD:R_0402_1005Metric;1;
+R9;680;~;Resistor_SMD:R_0402_1005Metric;1;
+R11;22;~;Resistor_SMD:R_0402_1005Metric;1;
+R12,R13,R14,R15,R16,R17,R22,R23,R24,R25;10k;~;Resistor_SMD:R_0402_1005Metric;10;
+R26;100k;~;Resistor_SMD:R_0402_1005Metric;1;
+R27;1.91k;~;Resistor_SMD:R_0402_1005Metric;1;
+R28;34k;~;Resistor_SMD:R_0402_1005Metric;1;
+R1201;200;~;Resistor_SMD:R_0402_1005Metric;1;
+SW1,SW2,SW7,SW8;SW_Push;~;Custom:435451019820;4;
+TP1,TP2,TP3,TP4;TestPoint;~;TestPoint:TestPoint_Pad_D2.0mm;4;
+U1;MIC4606;https://www.mouser.fr/datasheet/2/268/MIC4606_85V_Full_Bridge_MOSFET_Drivers_with_Adapti-3442103.pdf;Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm_EP3x3mm;1;https://www.mouser.fr/ProductDetail/Microchip-Technology/MIC4606-2YTS-TR?qs=fxR7EJxuiMGiGNq6G0IdXQ%3D%3D
+U2,U3;GO 10-SME/SP3;GO 10-SME;Custom:SOIC8-GO-SME&slash_SP3_LEM;2;
+U4;AZ1117-3.3;https://www.diodes.com/assets/Datasheets/AZ1117.pdf;Package_TO_SOT_SMD:SOT-223-3_TabPin2;1;
+U5;MAX3097ECSE+;https://www.mouser.fr/datasheet/2/609/MAX3097E_MAX3098E-3128450.pdf;Package_SO:SOIC-16_3.9x9.9mm_P1.27mm;1;
+U6;STM32G474RETx;https://www.st.com/resource/en/datasheet/stm32g474re.pdf;Package_QFP:LQFP-64_10x10mm_P0.5mm;1;
+U7,U8;CSD86350Q5D;CSD86350Q5D;CSD87351Q5D:DQY0008A;2;https://www.mouser.fr/ProductDetail/Texas-Instruments/CSD86350Q5D?qs=6mL4zoXrlH82elBdFmujUQ%3D%3D
+U1201;TCN75A;https://docs.rs-online.com/fc92/0900766b80d0dfb5.pdf;Package_SO:SOIC-8_3.9x4.9mm_P1.27mm;1;
+Y1;16M;https://4donline.ihs.com/images/VipMasterIC/IC/ABRC/ABRCS03441/ABRCS03441-1.pdf?hkey=6D3A4C79FDBF58556ACFDE234799DDF0;Custom:ABLS-7.3728MHZ-CL-RESR-A-1-G-F;1;

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/carpe-bleue/ROS/simulation_ws/devel/setup.sh

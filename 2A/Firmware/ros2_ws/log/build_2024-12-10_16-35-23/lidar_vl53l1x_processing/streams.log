@@ -1,0 +1,22 @@
+[3.167s] Invoking command in '/home/carpe-bleue/ros2_ws/src/lidar_vl53l1x_processing': PYTHONPATH=/home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar_vl53l1x_processing build --build-base /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build install --record /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/install.log --single-version-externally-managed install_data
+[4.187s] running egg_info
+[4.189s] writing ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/PKG-INFO
+[4.190s] writing dependency_links to ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/dependency_links.txt
+[4.191s] writing entry points to ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/entry_points.txt
+[4.192s] writing requirements to ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/requires.txt
+[4.193s] writing top-level names to ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/top_level.txt
+[4.201s] reading manifest file '../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/SOURCES.txt'
+[4.202s] adding license file 'LICENSE'
+[4.205s] writing manifest file '../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info/SOURCES.txt'
+[4.206s] running build
+[4.206s] running build_py
+[4.207s] running install
+[4.209s] running install_lib
+[4.214s] running install_data
+[4.214s] running install_egg_info
+[4.221s] removing '/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages/lidar_vl53l1x_processing-0.0.0-py3.10.egg-info' (and everything under it)
+[4.223s] Copying ../../build/lidar_vl53l1x_processing/lidar_vl53l1x_processing.egg-info to /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages/lidar_vl53l1x_processing-0.0.0-py3.10.egg-info
+[4.228s] running install_scripts
+[4.306s] Installing lidar_ensea script to /home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/lidar_vl53l1x_processing
+[4.307s] writing list of installed files to '/home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/install.log'
+[4.422s] Invoked command in '/home/carpe-bleue/ros2_ws/src/lidar_vl53l1x_processing' returned '0': PYTHONPATH=/home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/lidar_vl53l1x_processing build --build-base /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/build install --record /home/carpe-bleue/ros2_ws/build/lidar_vl53l1x_processing/install.log --single-version-externally-managed install_data
