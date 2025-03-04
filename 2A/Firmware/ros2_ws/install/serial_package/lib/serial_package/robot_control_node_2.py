@@ -1,1 +1,0 @@
-/home/carpe-bleue/ros2_ws/src/serial_package/src/robot_control_node_2.py

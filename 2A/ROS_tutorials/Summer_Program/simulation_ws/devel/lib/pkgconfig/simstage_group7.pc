@@ -1,8 +1,0 @@
-prefix=/home/carpe-bleue/ROS/simulation_ws/devel
-
-Name: simstage_group7
-Description: Description of simstage_group7
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs nav_msgs roscpp rospy sensor_msgs stage_ros std_msgs tf

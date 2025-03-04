@@ -1,6 +1,0 @@
-source;share/lidar_vl53l1x_processing/hook/pythonpath.ps1
-source;share/lidar_vl53l1x_processing/hook/pythonpath.dsv
-source;share/lidar_vl53l1x_processing/hook/pythonpath.sh
-source;share/lidar_vl53l1x_processing/hook/ament_prefix_path.ps1
-source;share/lidar_vl53l1x_processing/hook/ament_prefix_path.dsv
-source;share/lidar_vl53l1x_processing/hook/ament_prefix_path.sh

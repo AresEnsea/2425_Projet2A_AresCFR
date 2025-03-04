@@ -1,1 +1,0 @@
-/home/carpe-bleue/ros2_ws/src/serial_package/src/test_uart_lidar2.py

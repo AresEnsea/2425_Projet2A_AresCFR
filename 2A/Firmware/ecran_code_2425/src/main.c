@@ -40,8 +40,8 @@ int main(void)
     HAL_UART_MspInit(&huart6);
     strategie();
 
-    //HAL_UART_Receive_IT(&huart1, pData, 4);
-    //HAL_UART_Receive_IT(&huart6, pData, 3);
+    HAL_UART_Receive_IT(&huart1, pData, 4);
+    HAL_UART_Receive_IT(&huart6, pData, 3);
 
     while (1)
     {

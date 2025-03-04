@@ -1,6 +1,0 @@
-[31mCMake Error at CMakeLists.txt:36:
-  Parse error.  Expected a command name, got unquoted argument with text
-  "src/safety_node.py".
-
-[0m
-gmake: *** [Makefile:308: cmake_check_build_system] Error 1

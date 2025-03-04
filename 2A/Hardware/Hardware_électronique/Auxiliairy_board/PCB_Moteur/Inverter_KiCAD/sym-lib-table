@@ -1,6 +1,0 @@
-(sym_lib_table
-  (version 7)
-  (lib (name "Custom")(type "KiCad")(uri "${KIPRJMOD}/libs/Custom.kicad_sym")(options "")(descr ""))
-  (lib (name "mic4606")(type "Legacy")(uri "${KIPRJMOD}/libs/mic4606/mic4606.lib")(options "")(descr ""))
-  (lib (name "CSD87351Q5D")(type "KiCad")(uri "/home/knnstflr/Downloads/ul_CSD86350Q5D/KiCADv6/2024-10-11_23-51-27.kicad_sym")(options "")(descr ""))
-)

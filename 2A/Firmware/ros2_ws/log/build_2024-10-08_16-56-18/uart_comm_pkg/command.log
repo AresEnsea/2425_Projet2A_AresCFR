@@ -1,2 +1,0 @@
-Invoking command in '/home/carpe-bleue/ros2_ws/build/uart_comm_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/uart_comm_pkg -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/uart_comm_pkg
-Invoked command in '/home/carpe-bleue/ros2_ws/build/uart_comm_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/uart_comm_pkg -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/uart_comm_pkg

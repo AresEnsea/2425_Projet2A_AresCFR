@@ -1,6 +1,0 @@
-[31mCMake Error at cmake_install.cmake:46 (file):
-  file INSTALL cannot find
-  "/home/carpe-bleue/ros2_ws/src/lidar_test/src/serial_node.py": No such file
-  or directory.
-
-[0m

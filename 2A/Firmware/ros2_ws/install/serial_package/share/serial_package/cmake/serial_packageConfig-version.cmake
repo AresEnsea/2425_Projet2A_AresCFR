@@ -1,1 +1,0 @@
-/home/carpe-bleue/ros2_ws/build/serial_package/ament_cmake_core/serial_packageConfig-version.cmake

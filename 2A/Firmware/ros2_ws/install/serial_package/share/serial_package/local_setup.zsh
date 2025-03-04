@@ -1,1 +1,0 @@
-/home/carpe-bleue/ros2_ws/build/serial_package/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,1 +1,0 @@
-Invoking command in '/home/carpe-bleue/ros2_ws/build/ros2_serial_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/ros2_serial_msgs -- -j4 -l4

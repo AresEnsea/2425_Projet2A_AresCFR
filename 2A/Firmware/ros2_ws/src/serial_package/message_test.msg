@@ -1,1 +1,0 @@
-string my_message

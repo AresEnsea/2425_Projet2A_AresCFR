@@ -1,5 +1,0 @@
-[0.113s] Invoking command in '/home/carpe-bleue/ydlidar_ros2_ws/build/ydlidar_ros2_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ydlidar_ros2_ws/build/ydlidar_ros2_driver -- -j4 -l4
-[0.738s] [ 25%] [32m[1mLinking CXX executable ydlidar_ros2_driver_client[0m
-[0.741s] [ 50%] [32m[1mLinking CXX executable ydlidar_ros2_driver_node[0m
-[2.976s] [ 75%] Built target ydlidar_ros2_driver_node
-[3.363s] [100%] Built target ydlidar_ros2_driver_client
