@@ -5,7 +5,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define SERIAL_PORT "/dev/serial10"
+#define SERIAL_PORT "/dev/serial0"
 
 using namespace std::chrono_literals;
 
