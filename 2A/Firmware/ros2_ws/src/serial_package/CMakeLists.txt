@@ -10,6 +10,20 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+
+# Ajouter l'exécutable
+add_executable(UART_Node src/UART_Node.cpp)
+
+# Lier les bibliothèques nécessaires
+ament_target_dependencies(UART_Node rclcpp std_msgs)
+
+# Installer l'exécutable
+install(TARGETS
+  UART_Node
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 # Install Python scripts
 install(
