@@ -60,8 +60,8 @@ all: main-build
 main-build: PCB_moteur2.elf secondary-outputs
 
 # Tool invocations
-PCB_moteur2.elf PCB_moteur2.map: $(OBJS) $(USER_OBJS) C:\Users\Antle\STM32CubeIDE\workspace_1.16.1\PCB_moteur2\STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "PCB_moteur2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Antle\STM32CubeIDE\workspace_1.16.1\PCB_moteur2\STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PCB_moteur2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+PCB_moteur2.elf PCB_moteur2.map: $(OBJS) $(USER_OBJS) /home/nicolas/git/2425_Projet2A_AresCFR/2A/Firmware/STM32_moteurs/PCB_moteur2/STM32G474RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "PCB_moteur2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/nicolas/git/2425_Projet2A_AresCFR/2A/Firmware/STM32_moteurs/PCB_moteur2/STM32G474RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="PCB_moteur2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

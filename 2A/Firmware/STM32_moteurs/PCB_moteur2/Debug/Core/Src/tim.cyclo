@@ -1,0 +1,9 @@
+../Core/Src/tim.c:33:6:MX_TIM1_Init	3
+../Core/Src/tim.c:79:6:MX_TIM2_Init	7
+../Core/Src/tim.c:139:6:MX_TIM3_Init	8
+../Core/Src/tim.c:206:6:MX_TIM16_Init	5
+../Core/Src/tim.c:264:6:HAL_TIM_Encoder_MspInit	2
+../Core/Src/tim.c:294:6:HAL_TIM_Base_MspInit	4
+../Core/Src/tim.c:331:6:HAL_TIM_MspPostInit	4
+../Core/Src/tim.c:402:6:HAL_TIM_Encoder_MspDeInit	2
+../Core/Src/tim.c:425:6:HAL_TIM_Base_MspDeInit	4
