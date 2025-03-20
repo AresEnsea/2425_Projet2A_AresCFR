@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "motor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,12 +45,10 @@
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
-float alpha=0.0f;
-float V=0.0f;
-int dutyCycle=0;
-uint8_t direction = 0;
-/* USER CODE BEGIN PV */
 
+/* USER CODE BEGIN PV */
+float alpha=0;
+float V=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -72,7 +70,9 @@ int main(void)
 {
 
 	/* USER CODE BEGIN 1 */
-
+	float speed = 0;
+	float inc = 1;
+	float acc = 1;
 	/* USER CODE END 1 */
 
 	/* MCU Configuration--------------------------------------------------------*/
@@ -102,25 +102,30 @@ int main(void)
 	MX_USART1_UART_Init();
 	MX_USART3_UART_Init();
 	/* USER CODE BEGIN 2 */
-	//  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3); //PA2 TIM2 CH3 symétrique PC7
-	//  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1); //PC6 TIM3 CH1
-	//  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4);
-	//  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
-	HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3); // D1 led
-	//HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4);
-	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1); // D5 led
-	//HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
-	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1); // enable motor
-	//  HAL_TIM_PWM_Stop();
+	HAL_GPIO_WritePin(MOTOR_EN_GPIO_Port, MOTOR_EN_Pin, SET);
+	HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
+	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
+
+
+	Motor_Init(&hmotor, &htim2, TIM_CHANNEL_3, &htim3, TIM_CHANNEL_1, MOTOR_EN_GPIO_Port, MOTOR_EN_Pin);
+	Motor_Start(&hmotor);
+	Motor_Set_Speed(&hmotor, 0.0);
+
 	/* USER CODE END 2 */
 
 	/* Infinite loop */
 	/* USER CODE BEGIN WHILE */
 	while (1)
-	{// freq 20 K, presc à 0, pres à 7, pi avec simulink, aller voir Mr Martin
-		V=15.0f;
-		alpha = (V / 24.0f + 1.0f) * 0.5f;//  paramètre V a donné
-		dutyCycle = (int)(alpha * 1000.0f);
+	{
+		if(speed > 23) acc = -1;
+		if(speed < -23) acc = 1;
+		speed += acc*inc;
+
+		Motor_Set_Speed(&hmotor, speed);
+
+		// freq 20 K, presc à 0, pres à 7, pi avec simulink, aller voir Mr Martin
+		//	  V=24;
+		//	  alpha=(V/24 +1)*(1/2);//  paramètre V a donné
 		//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 1000);
 		//	  //__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_1, 1000);
 		//	  //__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_4, 1000);
@@ -131,65 +136,12 @@ int main(void)
 		//	  //__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_4, 0);
 		//	  //__HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 0);
 		//	  HAL_Delay(1000);
-		//dutyCycle = 700;
-		//
-		//		TIM2 -> CCR3 =dutyCycle; // plus c'est proche de 1000, plus le moteur tourne vite
-		//		TIM3 -> CCR1 =1000-dutyCycle;
 
-		//HAL_GPIO_TogglePin(USR_LED_1_GPIO_Port, USR_LED_1_Pin);
-		//HAL_GPIO_TogglePin(USR_LED_2_GPIO_Port, USR_LED_2_Pin);
-		//HAL_GPIO_TogglePin(USR_LED_3_GPIO_Port, USR_LED_3_Pin);
-		//HAL_GPIO_TogglePin(USR_LED_4_GPIO_Port, USR_LED_4_Pin);
-
-		TIM2 -> CCR3 =999; // plus c'est proche de 1000, plus le moteur tourne vite
-		TIM3 -> CCR1 =1;
 		HAL_GPIO_TogglePin(USR_LED_1_GPIO_Port, USR_LED_1_Pin);
-
-		HAL_Delay(2000);
-
-		TIM2 -> CCR3 =750; // plus c'est proche de 1000, plus le moteur tourne vite
-		TIM3 -> CCR1 =250;
-
-		HAL_Delay(2000);
-
-		TIM2 -> CCR3 =500; // plus c'est proche de 1000, plus le moteur tourne vite
-		TIM3 -> CCR1 =500;
 		HAL_GPIO_TogglePin(USR_LED_2_GPIO_Port, USR_LED_2_Pin);
-
-		HAL_Delay(2000);
-
-		TIM2 -> CCR3 =250; // plus c'est proche de 1000, plus le moteur tourne vite
-		TIM3 -> CCR1 =750;
-
-		HAL_Delay(2000);
-
-		TIM2 -> CCR3 =1; // plus c'est proche de 1000, plus le moteur tourne vite
-		TIM3 -> CCR1 =999;
 		HAL_GPIO_TogglePin(USR_LED_3_GPIO_Port, USR_LED_3_Pin);
-		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1); // enable motor
-
-		HAL_Delay(2000);
-
-		TIM2 -> CCR3 =250; // plus c'est proche de 1000, plus le moteur tourne vite
-		TIM3 -> CCR1 =750;
-
-		HAL_Delay(2000);
-
-		TIM2 -> CCR3 =500; // plus c'est proche de 1000, plus le moteur tourne vite
-		TIM3 -> CCR1 =500;
 		HAL_GPIO_TogglePin(USR_LED_4_GPIO_Port, USR_LED_4_Pin);
-
-		HAL_Delay(2000);
-
-		TIM2 -> CCR3 =750; // plus c'est proche de 1000, plus le moteur tourne vite
-		TIM3 -> CCR1 =250;
-
-		HAL_Delay(2000);
-		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, 1); // enable motor
-
-
-
-
+		HAL_Delay(100);
 		/* USER CODE END WHILE */
 
 		/* USER CODE BEGIN 3 */
