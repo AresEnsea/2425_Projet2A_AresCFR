@@ -41,7 +41,7 @@ public:
         read_thread_ = std::thread(&UART_Node::readSerialPort, this);
 
         timer_ = this->create_wall_timer(
-        std::chrono::milliseconds(50),  // 20 Hz
+        std::chrono::milliseconds(500),  // 20 Hz
         [this]() {
             auto msg = std::make_shared<std_msgs::msg::String>();
             msg->data = MESSAGE_MOTOR;
