@@ -1,20 +1,20 @@
 /* USER CODE BEGIN Header */
 /**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2024 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
+ ******************************************************************************
+ * @file           : main.c
+ * @brief          : Main program body
+ ******************************************************************************
+ * @attention
+ *
+ * Copyright (c) 2024 STMicroelectronics.
+ * All rights reserved.
+ *
+ * This software is licensed under terms that can be found in the LICENSE file
+ * in the root directory of this software component.
+ * If no LICENSE file comes with this software, it is provided AS-IS.
+ *
+ ******************************************************************************
+ */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
@@ -110,62 +110,89 @@ int main(void)
   MX_USART2_UART_Init();
   MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3); //PB10 TIM2 CH3
-  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1); //PA 8 TIM1 CH1
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4); //PB11 TIM2 CH4
-  HAL_UART_Receive_IT(&hlpuart1, (uint8_t *)rx_data, sizeof(rx_data));
+	HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3); //PB10 TIM2 CH3 Moteur D
+	HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_4); //PB11 TIM2 CH4 Moteur G
+
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1); //PA 8 TIM1 CH1
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2); //PA 8 TIM1 CH1
+	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3); //PA 8 TIM1 CH1
+
+	HAL_UART_Receive_IT(&hlpuart1, (uint8_t *)rx_data, sizeof(rx_data));
+
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 1); //Avant moteur A
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, 1);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 1); //Avant moteur B
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, 1);
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_4, 1);    // Direction avant
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_8, 1);
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_3, 400);  // Vitesse
+	while (1)
+	{
+		while(1){
+			TIM1 -> CCR1 = 1000;
+			HAL_Delay(1000);
+			TIM1 -> CCR1 = 2000; //Valeur extremes (1-2ms)
+			HAL_Delay(1000);
 
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_5, 1);    // Direction avant
-	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_9, 1);
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_4, 400);
+			TIM1 -> CCR2 = 1000;
+			HAL_Delay(1000);
+			TIM1 -> CCR2 = 2000; //Valeur extremes (1-2ms)
+			HAL_Delay(1000);
 
-	  // Pour le moteur Maxon droit
-	  //char direction_d = rx_data[0]; // Premier caractère pour la direction
-	  char mot_maxon_dataD[5];      // 4 caractères + '\0' pour la vitesse
-	  strncpy(mot_maxon_dataD, (char *)&rx_data[1], 4);
-	  mot_maxon_dataD[4] = '\0';    // Null terminate
-	  int mot_maxon_valueD = atoi(mot_maxon_dataD);
-	  int inv_d = (int)rx_data[0];
-	  mot_maxonD(mot_maxon_valueD, inv_d);
+			TIM1 -> CCR3 = 1000;
+			HAL_Delay(1000);
+			TIM1 -> CCR3 = 2000; //Valeur extremes (1-2ms)
+			HAL_Delay(1000);
 
-	  // Pour le moteur Maxon gauche
-	  char direction_g = rx_data[5]; // Premier caractère pour la direction
-	  char mot_maxon_dataG[5];      // 4 caractères + '\0' pour la vitesse
-	  strncpy(mot_maxon_dataG, (char *)&rx_data[6], 4);
-	  mot_maxon_dataG[4] = '\0';    // Null terminate
-	  int mot_maxon_valueG = atoi(mot_maxon_dataG);
-	  int inv_g = (int)rx_data[5];
-	  mot_maxonG(mot_maxon_valueG, inv_g);
+		}
 
-	  // Pour le servo moteur
-	  char servo_goal_data[5];
-	  memcpy(servo_goal_data, (char *)&rx_data[10], 3);
-	  servo_goal_data[4] = '\r'; // Ajouter retour chariot
-	  servo_goal_data[5] = '\n';
-	  HAL_UART_Transmit(&huart3, (uint8_t *)servo_goal_data, 5, HAL_MAX_DELAY);
 
-	  // Transmission pour debug
-	  char message[15]; // 13 caractères de rx_data + 2 pour "\r\n"
-	  memcpy(message, rx_data, 13); // Copier rx_data dans message
-	  message[14] = '\r'; // Ajouter retour chariot
-	  message[15] = '\n'; // Ajouter nouvelle ligne
-	  //HAL_UART_Transmit(&huart2, (uint8_t *)message, sizeof(message), HAL_MAX_DELAY);
+
+
+		// Pour le moteur Maxon droit
+		//char direction_d = rx_data[0]; // Premier caractère pour la direction
+		char mot_maxon_dataD[5];      // 4 caractères + '\0' pour la vitesse
+		strncpy(mot_maxon_dataD, (char *)&rx_data[1], 4);
+		mot_maxon_dataD[4] = '\0';    // Null terminate
+		int mot_maxon_valueD = atoi(mot_maxon_dataD);
+		int inv_d = (int)rx_data[0];
+		mot_maxonD(mot_maxon_valueD, inv_d);
+
+		// Pour le moteur Maxon gauche
+		char direction_g = rx_data[5]; // Premier caractère pour la direction
+		char mot_maxon_dataG[5];      // 4 caractères + '\0' pour la vitesse
+		strncpy(mot_maxon_dataG, (char *)&rx_data[6], 4);
+		mot_maxon_dataG[4] = '\0';    // Null terminate
+		int mot_maxon_valueG = atoi(mot_maxon_dataG);
+		int inv_g = (int)rx_data[5];
+		mot_maxonG(mot_maxon_valueG, inv_g);
+
+		// Pour le servo moteur
+		char servo_goal_data[5];
+		memcpy(servo_goal_data, (char *)&rx_data[10], 3);
+		servo_goal_data[4] = '\r'; // Ajouter retour chariot
+		servo_goal_data[5] = '\n';
+		//fonction servo
+		reach_servo_goal(servo_goal_data);
+		HAL_UART_Transmit(&huart3, (uint8_t *)servo_goal_data, 5, HAL_MAX_DELAY);
+
+
+		// Transmission pour debug
+		char message[15]; // 13 caractères de rx_data + 2 pour "\r\n"
+		memcpy(message, rx_data, 13); // Copier rx_data dans message
+		message[14] = '\r'; // Ajouter retour chariot
+		message[15] = '\n'; // Ajouter nouvelle ligne
+		//HAL_UART_Transmit(&huart2, (uint8_t *)message, sizeof(message), HAL_MAX_DELAY);
 
 
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+	}
   /* USER CODE END 3 */
 }
 
@@ -343,9 +370,9 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 7900-1;
+  htim1.Init.Prescaler = 80-1;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 200-1;
+  htim1.Init.Period = 20000-1;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -377,6 +404,14 @@ static void MX_TIM1_Init(void)
   sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
   sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
   if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
   {
     Error_Handler();
   }
@@ -529,11 +564,11 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
+	/* User can add his own implementation to report the HAL error return state */
+	__disable_irq();
+	while (1)
+	{
+	}
   /* USER CODE END Error_Handler_Debug */
 }
 
@@ -548,7 +583,7 @@ void Error_Handler(void)
 void assert_failed(uint8_t *file, uint32_t line)
 {
   /* USER CODE BEGIN 6 */
-  /* User can add his own implementation to report the file name and line number,
+	/* User can add his own implementation to report the file name and line number,
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
 }

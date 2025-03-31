@@ -60,8 +60,8 @@ all: main-build
 main-build: cfr_mot2.elf secondary-outputs
 
 # Tool invocations
-cfr_mot2.elf cfr_mot2.map: $(OBJS) $(USER_OBJS) C:\Users\Antle\OneDrive\Documents\cfr_mot2\STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "cfr_mot2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Antle\OneDrive\Documents\cfr_mot2\STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cfr_mot2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+cfr_mot2.elf cfr_mot2.map: $(OBJS) $(USER_OBJS) /home/carpe-bleue/Git/2425_Projet2A_AresCFR/2A/Firmware/STM32_moteurs/PCB_moteur2/cfr_mot2/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "cfr_mot2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/carpe-bleue/Git/2425_Projet2A_AresCFR/2A/Firmware/STM32_moteurs/PCB_moteur2/cfr_mot2/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cfr_mot2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

@@ -11,6 +11,6 @@
 #include "stm32l4xx_hal.h"
 #include <stdlib.h>
 
-void reach_goal_servo(int goal);
+void reach_goal_servo(char* goal);
 
 #endif /* INC_SERVO_H_ */

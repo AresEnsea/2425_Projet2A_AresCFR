@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := cfr_mot
+BUILD_ARTIFACT_NAME := cfr_mot2
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-cfr_mot.elf \
+cfr_mot2.elf \
 
 MAP_FILES += \
-cfr_mot.map \
+cfr_mot2.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-cfr_mot.list \
+cfr_mot2.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: cfr_mot.elf secondary-outputs
+main-build: cfr_mot2.elf secondary-outputs
 
 # Tool invocations
-cfr_mot.elf cfr_mot.map: $(OBJS) $(USER_OBJS) /home/carpe-bleue/Git/2425_Projet2A_AresCFR/Firmware/STM32_moteurs/cfr_mot/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "cfr_mot.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/carpe-bleue/Git/2425_Projet2A_AresCFR/Firmware/STM32_moteurs/cfr_mot/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cfr_mot.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+cfr_mot2.elf cfr_mot2.map: $(OBJS) $(USER_OBJS) /home/carpe-bleue/Git/2425_Projet2A_AresCFR/2A/Firmware/STM32_moteurs/cfr_mot2/STM32L476RGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "cfr_mot2.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/carpe-bleue/Git/2425_Projet2A_AresCFR/2A/Firmware/STM32_moteurs/cfr_mot2/STM32L476RGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cfr_mot2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-cfr_mot.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "cfr_mot.list"
+cfr_mot2.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "cfr_mot2.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) cfr_mot.elf cfr_mot.list cfr_mot.map default.size.stdout
+	-$(RM) cfr_mot2.elf cfr_mot2.list cfr_mot2.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
