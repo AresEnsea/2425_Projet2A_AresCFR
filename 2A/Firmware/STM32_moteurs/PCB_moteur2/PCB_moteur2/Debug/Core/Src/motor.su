@@ -1,0 +1,4 @@
+../Core/Src/motor.c:14:19:Motor_Init	24	static
+../Core/Src/motor.c:23:19:Motor_Start	16	static
+../Core/Src/motor.c:27:19:Motor_Stop	16	static
+../Core/Src/motor.c:31:19:Motor_Set_Speed	16	static

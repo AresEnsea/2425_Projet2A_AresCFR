@@ -58,7 +58,28 @@
           "width": 0.0
         }
       ],
+<<<<<<< HEAD
       "drc_exclusions": [],
+=======
+      "drc_exclusions": [
+        [
+          "clearance|174122056|117097056|0158f5ef-7ba5-44c9-abd7-05dccab5a482|fcd6ef45-887f-45ec-8d52-a9f37a5bff5b",
+          ""
+        ],
+        [
+          "clearance|174772056|117097056|1599a6dc-d3bf-4d05-8f23-9c736a625130|0158f5ef-7ba5-44c9-abd7-05dccab5a482",
+          ""
+        ],
+        [
+          "clearance|177372056|117097056|f241d4e0-e657-4abd-92c6-aa45cb417336|7353186e-42d8-4ae3-aa13-15a82d3d9492",
+          ""
+        ],
+        [
+          "clearance|178022056|117097056|2e92cbf4-b3b5-4149-bb1e-04cb4f189b6f|f241d4e0-e657-4abd-92c6-aa45cb417336",
+          ""
+        ]
+      ],
+>>>>>>> eca5bd43e53bee708a97bf4f1251219196013499
       "meta": {
         "version": 2
       },
@@ -502,6 +523,10 @@
         "bus_width": 12,
         "clearance": 2.0,
         "diff_pair_gap": 0.25,
+<<<<<<< HEAD
+=======
+        "diff_pair_via_gap": 0.25,
+>>>>>>> eca5bd43e53bee708a97bf4f1251219196013499
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -519,6 +544,10 @@
         "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
+<<<<<<< HEAD
+=======
+        "diff_pair_via_gap": 0.25,
+>>>>>>> eca5bd43e53bee708a97bf4f1251219196013499
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -536,6 +565,10 @@
         "bus_width": 12,
         "clearance": 0.3,
         "diff_pair_gap": 0.25,
+<<<<<<< HEAD
+=======
+        "diff_pair_via_gap": 0.25,
+>>>>>>> eca5bd43e53bee708a97bf4f1251219196013499
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -553,6 +586,10 @@
         "bus_width": 12,
         "clearance": 0.1524,
         "diff_pair_gap": 0.25,
+<<<<<<< HEAD
+=======
+        "diff_pair_via_gap": 0.25,
+>>>>>>> eca5bd43e53bee708a97bf4f1251219196013499
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -570,6 +607,10 @@
         "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
+<<<<<<< HEAD
+=======
+        "diff_pair_via_gap": 0.25,
+>>>>>>> eca5bd43e53bee708a97bf4f1251219196013499
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
@@ -836,11 +877,19 @@
   "sheets": [
     [
       "5e6c1e3f-0815-454a-8acb-8e3e2d064875",
+<<<<<<< HEAD
       "Root"
     ],
     [
       "fbaaf7ce-bae7-41f7-a7d1-9e6954b2dbcf",
       "MCU_STM32G474"
+=======
+      "Racine"
+    ],
+    [
+      "fbaaf7ce-bae7-41f7-a7d1-9e6954b2dbcf",
+      "MCU_STM32G475"
+>>>>>>> eca5bd43e53bee708a97bf4f1251219196013499
     ],
     [
       "a4ba4eec-6121-4bfb-a54c-f6a373ea9f8b",

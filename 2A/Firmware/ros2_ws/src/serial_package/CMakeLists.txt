@@ -10,6 +10,20 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
+
+# Ajouter l'exécutable
+add_executable(UART_Node src/UART_Node.cpp)
+
+# Lier les bibliothèques nécessaires
+ament_target_dependencies(UART_Node rclcpp std_msgs)
+
+# Installer l'exécutable
+install(TARGETS
+  UART_Node
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 # Install Python scripts
 install(
@@ -20,10 +34,14 @@ install(
     src/serial_node_4.py
     src/serial_node_5.py
     src/serial_node_6.py
+    src/test_uart.py
     src/test_uart_lidar.py	
     src/test_uart_lidar2.py
     src/robot_control_node.py
     src/robot_control_node_2.py
+    src/robot_control_node_3.py
+    src/robot_control_node_4.py
+    src/bagfile_stm32.py
     launch/launch_serial_lidar.py
 
   DESTINATION lib/${PROJECT_NAME}  # Installs to lib/serial_package

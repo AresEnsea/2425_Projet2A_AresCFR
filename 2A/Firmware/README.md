@@ -27,17 +27,19 @@ Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lan
 <image src="https://github.com/user-attachments/assets/786938ef-1c37-4f8c-b087-20cfafe1b13b" alt="image" width=300/>
 
 
-
 ## Protocole de communication :
 Message de taille N, à augmenter selon les besoins 
-"M . . . . . . . .", 9 caractères pour les moteurs : 4 pour le droit et 4 pour le gauche
-(à faire : "A . . . ", [0,1,2] pour l'actionneur à la position correspondante, respectivement pour 0,90 et 180 degrés)
+Pour le moment le protocole est le suivant : " dir_mot_D | speed_mot_D | dir_mot_G | speed_mot_G  | pince"
+Avec le nombres de bytes accordés à chaque variables : "1 | 4 | 1 | 4 | 1" 
+
+Le byte alloué à la pince s'attend à recevoir un 0 ou 1 qui représente la position ouverte et fermée (on régler ces positions avec la valeur de CCR dans le fichier servo.c du projet stm32)
+Le code de STM32 "cfr_V2" est adapté à ce protocole, en revanche le code de cfr_V1 s'attend à ne recevoir que 8 bytes et ne peut donc pas choisir de direction ou modifier la position de la pince.
 
 ## Liste des topics 
 -"keyboard_commands" envoyés par les nodes "serial_node_X" pour communiquer en UART avec la STM32, de la forme décrite ci-dessus.
 -"scan" topic propre au lidar qui envoie les ranges (float) et l'intensité (float)  du laser pour chaque angle.
--"stop" le topic booléen que l'on tournera a 1 si le robot doit s'arrêter, il sera alors communiqué au reste des nodes du robots (moteurs, actionneurs).
-
+-"stop_moteur" le topic booléen que l'on tournera a 1 si le robot doit s'arrêter, il sera alors communiqué au reste des nodes du robots (moteurs, actionneurs).
+-"bagfile_stm32" le topic dans lequel la node 
 
 # ROS Terms
 - Rosbag : fichier qui enregistre des données des topics ROS pour les rejouer ensuite.

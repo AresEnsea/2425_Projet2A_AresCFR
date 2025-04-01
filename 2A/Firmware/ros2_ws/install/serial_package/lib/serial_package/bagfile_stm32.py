@@ -1,0 +1,1 @@
+/home/carpe-bleue/ros2_ws/src/serial_package/src/bagfile_stm32.py

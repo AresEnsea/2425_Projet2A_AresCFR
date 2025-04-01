@@ -24,76 +24,76 @@ void strategie()
 {
 	Style_btn_confirm();
 	lv_style_init(&btn_strat_orginal);
-	lv_style_set_bg_color(&btn_strat_orginal, lv_palette_main(LV_PALETTE_AMBER));
+	lv_style_set_bg_color(&btn_strat_orginal, lv_palette_main(LV_PALETTE_BLUE));
 	lv_style_set_radius(&btn_strat_orginal, 80);
 	lv_style_set_width(&btn_strat_orginal, BTN_WIDTH);
 	lv_style_set_height(&btn_strat_orginal, BTN_HEIGHT);
 
 	lv_style_init(&btn_strat_symetrique);
-	lv_style_set_bg_color(&btn_strat_symetrique, lv_palette_main(LV_PALETTE_BLUE));
+	lv_style_set_bg_color(&btn_strat_symetrique, lv_palette_main(LV_PALETTE_AMBER));
 	lv_style_set_radius(&btn_strat_symetrique, 80);
-    lv_style_set_width(&btn_strat_symetrique, BTN_WIDTH);
-    lv_style_set_height(&btn_strat_symetrique, BTN_HEIGHT);
+	lv_style_set_width(&btn_strat_symetrique, BTN_WIDTH);
+	lv_style_set_height(&btn_strat_symetrique, BTN_HEIGHT);
 
-    LV_IMG_DECLARE(TableRedi);
-    table = lv_img_create(lv_scr_act());
-    lv_obj_set_size(table, 480, 272);
-    lv_obj_center(table);
-    lv_img_set_src(table, &TableRedi);
+	LV_IMG_DECLARE(TableRedi);
+	table = lv_img_create(lv_scr_act());
+	lv_obj_set_size(table, 480, 272);
+	lv_obj_center(table);
+	lv_img_set_src(table, &TableRedi);
 
-    uint32_t i;
-    for(i = 0; i < BTN_NUMBER; i++) {
-    	lv_obj_t * btn = lv_btn_create(table);
-	   	lv_obj_add_flag(btn, LV_OBJ_FLAG_EVENT_BUBBLE);
-	   	// valeur de i défini aussi le changement de couleur après un appuie
-	   	// i paire la couleur après un appui sera jaune alors que i impaire la
-	   	// la couleur sera bleue
-	   	switch(i)
-	   	{
-	   	case 0:
-	   		lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 423-(BTN_WIDTH/2), 30-(BTN_HEIGHT/2));
-	   		lv_obj_add_style(btn, &btn_strat_orginal, 0);
-	   		break;
-	    case 1:
-	    	lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 61-(BTN_WIDTH/2), 30-(BTN_HEIGHT/2));
-	       	lv_obj_add_style(btn, &btn_strat_symetrique, 0);
-	       	break;
-	    case 2:
-	    	lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 20-(BTN_WIDTH/2), 150-(BTN_HEIGHT/2));
-	       	lv_obj_add_style(btn, &btn_strat_orginal, 0);
-	      	break;
-	    case 3:
-	    	lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 440-(BTN_WIDTH/2), 150-(BTN_HEIGHT/2));
-        	lv_obj_add_style(btn, &btn_strat_symetrique, 0);
-        	break;
-	    case 4:
-	       	lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 285-(BTN_WIDTH/2), 241-(BTN_HEIGHT/2));
-	       	lv_obj_add_style(btn, &btn_strat_orginal, 0);
-	       	break;
-	    case 5:
-	       	lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 190-(BTN_WIDTH/2), 241-(BTN_HEIGHT/2));
-	       	lv_obj_add_style(btn, &btn_strat_symetrique, 0);
-	       	break;
-	    default:
-	    	break;
-	   	}
+	uint32_t i;
+	for(i = 0; i < BTN_NUMBER; i++) {
+		lv_obj_t * btn = lv_btn_create(table);
+		lv_obj_add_flag(btn, LV_OBJ_FLAG_EVENT_BUBBLE);
+		// valeur de i défini aussi le changement de couleur après un appuie
+		// i paire la couleur après un appui sera jaune alors que i impaire la
+		// la couleur sera bleue
+		switch(i)
+		{
+		case 0:
+			lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 423-(BTN_WIDTH/2), 30-(BTN_HEIGHT/2));
+			lv_obj_add_style(btn, &btn_strat_orginal, 0);
+			break;
+		case 1:
+			lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 61-(BTN_WIDTH/2), 30-(BTN_HEIGHT/2));
+			lv_obj_add_style(btn, &btn_strat_symetrique, 0);
+			break;
+		case 2:
+			lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 20-(BTN_WIDTH/2), 150-(BTN_HEIGHT/2));
+			lv_obj_add_style(btn, &btn_strat_orginal, 0);
+			break;
+		case 3:
+			lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 440-(BTN_WIDTH/2), 150-(BTN_HEIGHT/2));
+			lv_obj_add_style(btn, &btn_strat_symetrique, 0);
+			break;
+		case 4:
+			lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 285-(BTN_WIDTH/2), 241-(BTN_HEIGHT/2));
+			lv_obj_add_style(btn, &btn_strat_orginal, 0);
+			break;
+		case 5:
+			lv_obj_align(btn, LV_ALIGN_TOP_LEFT, 190-(BTN_WIDTH/2), 241-(BTN_HEIGHT/2));
+			lv_obj_add_style(btn, &btn_strat_symetrique, 0);
+			break;
+		default:
+			break;
+		}
 
-	   	lv_obj_t * label = lv_label_create(btn);
-	   	lv_label_set_text_fmt(label, "%"LV_PRIu32, i);
-	   	lv_obj_center(label);
-    }
+		lv_obj_t * label = lv_label_create(btn);
+		lv_label_set_text_fmt(label, "%"LV_PRIu32, i);
+		lv_obj_center(label);
+	}
 
-    lv_obj_t * btn1 = lv_btn_create(table);
-    lv_obj_remove_style_all(btn1);
-    lv_obj_add_style(btn1, &style, 0);
-    lv_obj_add_style(btn1, &style_pr, LV_STATE_PRESSED);
-    lv_obj_set_size(btn1, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
-    lv_obj_center(btn1);
-    lv_obj_add_flag(btn1, LV_OBJ_FLAG_EVENT_BUBBLE);
+	lv_obj_t * btn1 = lv_btn_create(table);
+	lv_obj_remove_style_all(btn1);
+	lv_obj_add_style(btn1, &style, 0);
+	lv_obj_add_style(btn1, &style_pr, LV_STATE_PRESSED);
+	lv_obj_set_size(btn1, LV_SIZE_CONTENT, LV_SIZE_CONTENT);
+	lv_obj_center(btn1);
+	lv_obj_add_flag(btn1, LV_OBJ_FLAG_EVENT_BUBBLE);
 
-    lv_obj_t * lab = lv_label_create(btn1);
-    lv_label_set_text(lab, "Confirm");
-    lv_obj_center(lab);
+	lv_obj_t * lab = lv_label_create(btn1);
+	lv_label_set_text(lab, "Confirm");
+	lv_obj_center(lab);
 
 	lv_obj_add_event_cb(table, event_btn, LV_EVENT_CLICKED, NULL);
 }
@@ -145,69 +145,77 @@ static void event_btn(lv_event_t * e)
 	int fullr;
 	int Index;
 	int fullcolor;
-	char gbuf[5];
+	char command[8]; // Buffer for our command string (Tony)
+	char gbuf[8];
 
-    lv_obj_t * target = lv_event_get_target(e);
-    lv_obj_t * cont = lv_event_get_current_target(e);
-    if(target == cont) return;
+	lv_obj_t * target = lv_event_get_target(e);
+	lv_obj_t * cont = lv_event_get_current_target(e);
+	if(target == cont) return;
 
-    Index = lv_obj_get_index(target);
-    if(confirm == 0 && Index == BTN_NUMBER)
-    {
-    	confirm++;
-    	lv_color_t r = lv_palette_main(LV_PALETTE_PINK);
-    	fullr = r.full;
-    	for(int i = 0;i<BTN_NUMBER;i++)
-    	{
-    		lv_obj_t * obj = lv_obj_get_child(cont, i);
-    		lv_color_t color = lv_obj_get_style_bg_color(obj, LV_PART_MAIN);
-    		fullcolor = color.full;
-    		if(fullcolor == fullr)
-    		{
-    			lv_obj_t * label = lv_obj_get_child(target, 0);
-    		    lv_label_set_text_fmt(label, "CONFIRM: %"LV_PRIu32, (long unsigned int) i);
+	Index = lv_obj_get_index(target);
+	if(confirm == 0 && Index == BTN_NUMBER)
+	{
+		confirm++;
+		lv_color_t r = lv_palette_main(LV_PALETTE_PINK);
+		fullr = r.full;
+		for(int i = 0;i<BTN_NUMBER;i++)
+		{
+			lv_obj_t * obj = lv_obj_get_child(cont, i);
+			lv_color_t color = lv_obj_get_style_bg_color(obj, LV_PART_MAIN);
+			fullcolor = color.full;
+			if(fullcolor == fullr)
+			{
+				lv_obj_t * label = lv_obj_get_child(target, 0);
+				lv_label_set_text_fmt(label, "CONFIRM: %"LV_PRIu32, (long unsigned int) i);
 
-    			int taille=0;
-    			taille=sprintf(gbuf,"%d \r\n",i);
-    			if(taille>0)
-    				HAL_UART_Transmit(&huart6, (unsigned char *)gbuf, taille, 1);
-    		}
+				// modif Tony
+				int taille=0;
+				taille=sprintf(gbuf,"%d \r\n",i);
+				if(taille>0){
+				HAL_UART_Transmit(&huart6, (unsigned char *)gbuf, taille, 1);
+				}
+				// Format the command string for ROS2
+				taille = sprintf(command, "file%d\r\n", i);
+				if(taille > 0){
+					HAL_UART_Transmit(&huart6, (unsigned char *)command, taille, 100);
+				}
+			}
 
-    		if(i%2 == 0)
-    		{
-    			lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_AMBER), 0);
-    		}
-    		else
-    		{
-    			lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_BLUE), 0);
-    		}
-    	}
-    	HAL_Delay(5000);
-    	lv_obj_del(table);
-    	HAL_Delay(1000);
-    	score();
+			if(i%2 == 0)
+			{
+				lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_AMBER), 0);
+			}
+			else
+			{
+				lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_BLUE), 0);
+			}
+		}
+		HAL_Delay(5000);
+		lv_obj_del(table);
+		HAL_Delay(1000);
+		score();
 
-    }
-    else if(confirm == 0 && Index != 10)
-    {
-    	for(int i = 0;i<BTN_NUMBER;i++)
-    	{
-    		lv_obj_t * obj = lv_obj_get_child(cont, i);
-    	    if(obj != target)
-    	    {
-    	    	if(i%2 == 0)
-    	    	{
-    	    		lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_AMBER), 0);
-    	    	}
-    	    	else
-    	    	{
-    	    		lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_BLUE), 0);
-    	    	}
-    	    }
-    	    else
-    	    {
-    	    	lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_PINK), 0);
-    	    }
-    	}
-    }
+	}
+	else if(confirm == 0 && Index != 10)
+	{
+		for(int i = 0;i<BTN_NUMBER;i++)
+		{
+			lv_obj_t * obj = lv_obj_get_child(cont, i);
+			if(obj != target)
+			{
+				if(i%2 == 0)
+				{
+					lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_AMBER), 0);
+				}
+				else
+				{
+					lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_BLUE), 0);
+				}
+			}
+			else
+			{
+				lv_obj_set_style_bg_color(obj, lv_palette_main(LV_PALETTE_PINK), 0);
+			}
+		}
+	}
 }
