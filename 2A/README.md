@@ -44,9 +44,14 @@ https://www.coupederobotique.fr/wp-content/uploads/Eurobot2025_Rules.pdf
 ## Méca :
 lien modèle 3D : https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50ea9e11/e/9022f36f38f961f67dfb7efc?renderMode=0&uiState=66fbe8290d120e0a630e1b35
 - [x] Base roulante du robot complète
-- [x] Modèle de Pince final (quasi)
-- [x] Pancarte
-- [ ] Plus rien à faire mécaniquement
+- [x] Pinces attrape canettes
+- [x] Chariots élévateurs
+- [x] Banderole
+- [x] Fixations PCB
+- [ ] Management de cables
+- [ ] Odométrie
+- [ ] Bouton d'arret d'urgence
+- [ ] Tirette de démarrage
 
 ## ROS2 embarqué
 - lien workspace ros : https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Firmware/ros2_ws
@@ -104,8 +109,6 @@ https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardwar
 ## 4-Mécanique :
 - Lorenzo
 - Matis
-- Bilal
-- Sammy
   
 Le compte rendu pour la partie mécanique est disponible ici :
 https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/main/2A/Hardware/Hardware_Mécanique/README.md
