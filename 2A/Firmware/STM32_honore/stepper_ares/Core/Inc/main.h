@@ -71,10 +71,6 @@ void Error_Handler(void);
 #define EN1_GPIO_Port GPIOC
 #define step1_Pin GPIO_PIN_10
 #define step1_GPIO_Port GPIOA
-#define GPIO_Imput_1_Pin GPIO_PIN_6
-#define GPIO_Imput_1_GPIO_Port GPIOB
-#define GPIO_Imput_2_Pin GPIO_PIN_7
-#define GPIO_Imput_2_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
