@@ -9,8 +9,10 @@
 
 #define SERIAL_PORT "/dev/serial0"
 #define BUFFER_SIZE 256
-#define MESSAGE_MOTOR "128381921238"
-
+#define MESSAGE_MOTOR "0000000000000"
+#define MESSAGE_MOT10 "0000000000010"
+#define MESSAGE_MOT100 "0000000000100"
+#define MESSAGE_MOT110 "0000000000100"
 using namespace std::chrono_literals;
 
 class UART_Node : public rclcpp::Node
@@ -75,7 +77,9 @@ private:
             ssize_t bytes_written = write(serialPort, data.c_str(), data.size());
             if (bytes_written == -1) {
                 std::cerr << "Erreur lors de l'écriture sur le port série !" << std::endl;
-            }
+            }else{
+		std::cout << "Envoyé à la STM : " <<  data.c_str() << std::endl;
+	    }
         } else {
             std::cerr << "Erreur : Port série non ouvert !" << std::endl;
         }

@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/carpe-bleue/ros2_ws/build/serial_package
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: CMakeFiles/UART_Node.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,6 +73,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/serial_package_uninstall.dir/clean
+clean: CMakeFiles/UART_Node.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -126,6 +127,32 @@ serial_package_uninstall: CMakeFiles/serial_package_uninstall.dir/rule
 CMakeFiles/serial_package_uninstall.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_package_uninstall.dir/build.make CMakeFiles/serial_package_uninstall.dir/clean
 .PHONY : CMakeFiles/serial_package_uninstall.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/UART_Node.dir
+
+# All Build rule for target.
+CMakeFiles/UART_Node.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles --progress-num=1,2 "Built target UART_Node"
+.PHONY : CMakeFiles/UART_Node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/UART_Node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/UART_Node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles 0
+.PHONY : CMakeFiles/UART_Node.dir/rule
+
+# Convenience name for target.
+UART_Node: CMakeFiles/UART_Node.dir/rule
+.PHONY : UART_Node
+
+# clean rule for target.
+CMakeFiles/UART_Node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/clean
+.PHONY : CMakeFiles/UART_Node.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

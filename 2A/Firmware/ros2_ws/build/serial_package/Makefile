@@ -197,6 +197,43 @@ serial_package_uninstall/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/serial_package_uninstall.dir/build.make CMakeFiles/serial_package_uninstall.dir/build
 .PHONY : serial_package_uninstall/fast
 
+#=============================================================================
+# Target rules for targets named UART_Node
+
+# Build rule for target.
+UART_Node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UART_Node
+.PHONY : UART_Node
+
+# fast build rule for target.
+UART_Node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/build
+.PHONY : UART_Node/fast
+
+src/UART_Node.o: src/UART_Node.cpp.o
+.PHONY : src/UART_Node.o
+
+# target to build an object file
+src/UART_Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/src/UART_Node.cpp.o
+.PHONY : src/UART_Node.cpp.o
+
+src/UART_Node.i: src/UART_Node.cpp.i
+.PHONY : src/UART_Node.i
+
+# target to preprocess a source file
+src/UART_Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/src/UART_Node.cpp.i
+.PHONY : src/UART_Node.cpp.i
+
+src/UART_Node.s: src/UART_Node.cpp.s
+.PHONY : src/UART_Node.s
+
+# target to generate assembly for a file
+src/UART_Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/src/UART_Node.cpp.s
+.PHONY : src/UART_Node.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -212,6 +249,10 @@ help:
 	@echo "... test"
 	@echo "... serial_package_uninstall"
 	@echo "... uninstall"
+	@echo "... UART_Node"
+	@echo "... src/UART_Node.o"
+	@echo "... src/UART_Node.i"
+	@echo "... src/UART_Node.s"
 .PHONY : help
 
 

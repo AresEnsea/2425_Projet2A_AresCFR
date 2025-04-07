@@ -41,6 +41,9 @@ install(
     src/robot_control_node_2.py
     src/robot_control_node_3.py
     src/robot_control_node_4.py
+    src/robot_control_node_5.py
+    src/robot_control_node_6.py
+    src/robot_control_node_7.py
     src/bagfile_stm32.py
     launch/launch_serial_lidar.py
 

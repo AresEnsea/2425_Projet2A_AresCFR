@@ -34,17 +34,17 @@ class SimpleNode(Node):
         # New attribute to track motor stop state
         self.motor_stopped = False
 
-        # Toggle state remains the same
-        self.toggle_state = 0
+        # Three toggle states bound to keys "i", "o", and "p"
+        self.toggle_state_1 = 0  # Controlled by "i"
+        self.toggle_state_2 = 0  # Controlled by "o"
+        self.toggle_state_3 = 0  # Controlled by "p"
 
         # Store the last full command sent
-        self.last_command = "00000000"  # Default value, this will be modified
+        self.last_command = "00000000000"  # Default value, adjusted for 3 toggles
 
         self.get_logger().info('Keyboard controller node initialized')
     
-    # New callback to handle stop_moteur messages
     def stop_moteur_callback(self, msg):
-        # Update motor stop state based on received Boolean
         self.motor_stopped = msg.data
         if self.motor_stopped:
             self.get_logger().warn("Motor stop signal received. Disabling keyboard control.")
@@ -62,7 +62,6 @@ class SimpleNode(Node):
     def publish_command(self, command):
         msg = String()
         msg.data = command
-        #command = command.rstrip('\n\r\0') 
         self.publisher.publish(msg)
         self.get_logger().info(f'Published command: {command}')
 
@@ -83,66 +82,66 @@ def main(args=None):
     
     print("Keyboard Teleop:")
     print(" - 'z': forward")
-    print(" - 's': backward") 
-
+    print(" - 's': backward")
     print(" - 'e': forward right")
-    print(" - 'a': backward left") 
-
+    print(" - 'a': backward left")
     print(" - 'q': left")
     print(" - 'd': right")
     print(" - 'w': back left")
     print(" - 'x': back right")
-    print(" - 'p': toggle 9th character")
-    print(" - 'x': exit")
+    print(" - 'i': toggle pin 1")
+    print(" - 'o': toggle pin 2")
+    print(" - 'p': toggle pin 3")
+    print(" - 'c': exit")
     
     try:
         while rclpy.ok():
-            # Check if motors are stopped before processing keyboard input
             if node.motor_stopped:
-                # Optional: Add a small delay to prevent high CPU usage
-                time.sleep(0.1)
+                time.sleep(0.2)
                 rclpy.spin_once(node, timeout_sec=0.1)
             key = getch()
 
             command = None
-            if key == 'z':  # Avancer
-                command = f"1060010600{node.toggle_state}"
-            elif key == 's':  # Reculer
-                command = f"0060000600{node.toggle_state}"
-            elif key == 'r':  # Reculer
-                command = f"0000000000{node.toggle_state}"
-
-            elif key == 'a':  # Gauche
-                command = f"1040010100{node.toggle_state}"
-            elif key == 'w':  # Gauche back
-                command = f"0040000100{node.toggle_state}"
-            elif key == 'e':  # Droite
-                command = f"1010010400{node.toggle_state}"
-            elif key == 'x':  # Droite back
-                command = f"0010000400{node.toggle_state}"
-
-            elif key == 'q':  # Gauche back
-                command = f"1040000400{node.toggle_state}"
-            elif key == 'd':  # Gauche back
-                command = f"0040010400{node.toggle_state}"
-
-
-            elif key == 'p':  # Toggle last character
-                node.toggle_state = 1 - node.toggle_state
-                # Modify the last part of the previous command
-                node.last_command = node.last_command[:-1] + str(node.toggle_state)
-                command = node.last_command  # Reuse the last command with the modified toggle_state
-            elif key == 'c':  # Quitter
+            if key == 'z':
+                command = f"1060010600{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            elif key == 's':
+                command = f"0060000600{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            elif key == 'r':
+                command = f"0000000000{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            elif key == 'a':
+                command = f"1040010100{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            elif key == 'w':
+                command = f"0040000100{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            elif key == 'e':
+                command = f"1010010400{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            elif key == 'x':
+                command = f"0010000400{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            elif key == 'q':
+                command = f"1040000400{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            elif key == 'd':
+                command = f"0040010400{node.toggle_state_1}{node.toggle_state_2}{node.toggle_state_3}"
+            
+            elif key == 'i':
+                node.toggle_state_1 = 1 - node.toggle_state_1
+                node.last_command = node.last_command[:-3] + str(node.toggle_state_1) + node.last_command[-2:]
+                command = node.last_command
+            elif key == 'o':
+                node.toggle_state_2 = 1 - node.toggle_state_2
+                node.last_command = node.last_command[:-2] + str(node.toggle_state_2) + node.last_command[-1:]
+                command = node.last_command
+            elif key == 'p':
+                node.toggle_state_3 = 1 - node.toggle_state_3
+                node.last_command = node.last_command[:-1] + str(node.toggle_state_3)
+                command = node.last_command
+            elif key == 'c':
                 break
-
+            
             if command:
-                # Send over the serial port
-                node.send_serial_message(f"{command}") #\ n\r\0
-                # Publish on the ROS2 topic
+                node.send_serial_message(f"{command}")
                 node.publish_command(command)
                 node.last_command = command
 
-            rclpy.spin_once(node, timeout_sec=0.1)
+            rclpy.spin_once(node, timeout_sec=0.2)
     
     except KeyboardInterrupt:
         pass
@@ -153,5 +152,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-

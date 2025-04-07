@@ -310,8 +310,11 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install(PROGRAMS "src/serial_node.py" "src/serial_node_2.py" "src/serial_node_3.py" "src/serial_node_4.py" "src/serial_node_5.py" "src/serial_node_6.py" "src/test_uart.py" "src/test_uart_lidar.py" "src/test_uart_lidar2.py" "src/robot_control_node.py" "src/robot_control_node_2.py" "src/robot_control_node_3.py" "src/robot_control_node_4.py" "src/bagfile_stm32.py" "launch/launch_serial_lidar.py" "DESTINATION" "lib/serial_package")
-ament_cmake_symlink_install_programs("/home/carpe-bleue/ros2_ws/src/serial_package" PROGRAMS "src/serial_node.py" "src/serial_node_2.py" "src/serial_node_3.py" "src/serial_node_4.py" "src/serial_node_5.py" "src/serial_node_6.py" "src/test_uart.py" "src/test_uart_lidar.py" "src/test_uart_lidar2.py" "src/robot_control_node.py" "src/robot_control_node_2.py" "src/robot_control_node_3.py" "src/robot_control_node_4.py" "src/bagfile_stm32.py" "launch/launch_serial_lidar.py" "DESTINATION" "lib/serial_package")
+# install("TARGETS" "UART_Node" "DESTINATION" "lib/serial_package")
+include("/home/carpe-bleue/ros2_ws/build/serial_package/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
+
+# install(PROGRAMS "src/serial_node.py" "src/serial_node_2.py" "src/serial_node_3.py" "src/serial_node_4.py" "src/serial_node_5.py" "src/serial_node_6.py" "src/test_uart.py" "src/test_uart_lidar.py" "src/test_uart_lidar2.py" "src/robot_control_node.py" "src/robot_control_node_2.py" "src/robot_control_node_3.py" "src/robot_control_node_4.py" "src/robot_control_node_5.py" "src/robot_control_node_6.py" "src/robot_control_node_7.py" "src/bagfile_stm32.py" "launch/launch_serial_lidar.py" "DESTINATION" "lib/serial_package")
+ament_cmake_symlink_install_programs("/home/carpe-bleue/ros2_ws/src/serial_package" PROGRAMS "src/serial_node.py" "src/serial_node_2.py" "src/serial_node_3.py" "src/serial_node_4.py" "src/serial_node_5.py" "src/serial_node_6.py" "src/test_uart.py" "src/test_uart_lidar.py" "src/test_uart_lidar2.py" "src/robot_control_node.py" "src/robot_control_node_2.py" "src/robot_control_node_3.py" "src/robot_control_node_4.py" "src/robot_control_node_5.py" "src/robot_control_node_6.py" "src/robot_control_node_7.py" "src/bagfile_stm32.py" "launch/launch_serial_lidar.py" "DESTINATION" "lib/serial_package")
 
 # install(DIRECTORY "launch" "DESTINATION" "share/serial_package")
 ament_cmake_symlink_install_directory("/home/carpe-bleue/ros2_ws/src/serial_package" DIRECTORY "launch" "DESTINATION" "share/serial_package")
