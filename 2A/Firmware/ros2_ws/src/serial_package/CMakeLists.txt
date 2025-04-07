@@ -12,16 +12,25 @@ find_package(rclpy REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 # Ajouter l'exécutable
 add_executable(UART_Node src/UART_Node.cpp)
+add_executable(OdometryNode src/OdometryNode.cpp)
+
 
 # Lier les bibliothèques nécessaires
 ament_target_dependencies(UART_Node rclcpp std_msgs)
+ament_target_dependencies(odometry_node
+  rclcpp
+  std_msgs
+  geometry_msgs
+)
 
 # Installer l'exécutable
 install(TARGETS
   UART_Node
+  OdometryNode
   DESTINATION lib/${PROJECT_NAME}
 )
 
