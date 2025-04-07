@@ -9,10 +9,12 @@
 
 #define SERIAL_PORT "/dev/serial0"
 #define BUFFER_SIZE 256
+/*
 #define MESSAGE_MOTOR "0000000000000"
 #define MESSAGE_MOT10 "0000000000010"
 #define MESSAGE_MOT100 "0000000000100"
 #define MESSAGE_MOT110 "0000000000100"
+*/
 using namespace std::chrono_literals;
 
 class UART_Node : public rclcpp::Node
@@ -41,7 +43,8 @@ public:
         
         // Démarrer le thread de lecture
         read_thread_ = std::thread(&UART_Node::readSerialPort, this);
-
+	    
+	/*
         timer_ = this->create_wall_timer(
         std::chrono::milliseconds(500),  // 20 Hz
         [this]() {
@@ -49,6 +52,7 @@ public:
             msg->data = MESSAGE_MOTOR;
             this->msgs_callback(msg);
         });
+	*/
 
     }
 
@@ -70,7 +74,7 @@ private:
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_data_encoder;
     std::thread read_thread_;
     std::atomic<bool> running_;
-    rclcpp::TimerBase::SharedPtr timer_;
+    //rclcpp::TimerBase::SharedPtr timer_;
 
     void sendData(const std::string& data) {
         if (serialPort != -1) {
