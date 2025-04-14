@@ -2,7 +2,7 @@
 
 # PCB_Moteur V2
 
-## Descriptopn :
+## Description :
  - Carte de pilotage des moteurs de la base roulante. Nous avons prévu une carte par moteur.
 
 
