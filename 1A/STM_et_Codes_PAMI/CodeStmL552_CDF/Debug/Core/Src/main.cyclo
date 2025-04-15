@@ -1,0 +1,13 @@
+../Core/Src/main.c:83:6:HAL_GPIO_EXTI_Rising_Callback	3
+../Core/Src/main.c:95:6:HAL_GPIO_EXTI_Falling_Callback	3
+../Core/Src/main.c:118:5:__io_putchar	1
+../Core/Src/main.c:129:5:main	42
+../Core/Src/main.c:284:6:SystemClock_Config	4
+../Core/Src/main.c:335:13:MX_ADC1_Init	7
+../Core/Src/main.c:429:13:MX_ICACHE_Init	2
+../Core/Src/main.c:457:13:MX_TIM1_Init	8
+../Core/Src/main.c:543:13:MX_TIM4_Init	7
+../Core/Src/main.c:606:13:MX_USART2_UART_Init	5
+../Core/Src/main.c:652:13:MX_DMA_Init	1
+../Core/Src/main.c:671:13:MX_GPIO_Init	1
+../Core/Src/main.c:742:6:Error_Handler	1

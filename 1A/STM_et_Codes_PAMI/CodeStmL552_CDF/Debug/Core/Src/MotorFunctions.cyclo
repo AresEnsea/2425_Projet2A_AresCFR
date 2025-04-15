@@ -1,0 +1,8 @@
+../Core/Src/MotorFunctions.c:12:6:OL	1
+../Core/Src/MotorFunctions.c:15:6:IL	1
+../Core/Src/MotorFunctions.c:18:6:IR	1
+../Core/Src/MotorFunctions.c:21:6:OR	1
+../Core/Src/MotorFunctions.c:25:6:Run	1
+../Core/Src/MotorFunctions.c:36:6:TurnLeft	1
+../Core/Src/MotorFunctions.c:47:6:TurnRight	1
+../Core/Src/MotorFunctions.c:58:6:Stop	1

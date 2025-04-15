@@ -1,0 +1,8 @@
+../Core/Src/MotorFunctions.c:12:6:OL	4	static
+../Core/Src/MotorFunctions.c:15:6:IL	4	static
+../Core/Src/MotorFunctions.c:18:6:IR	4	static
+../Core/Src/MotorFunctions.c:21:6:OR	4	static
+../Core/Src/MotorFunctions.c:25:6:Run	16	static
+../Core/Src/MotorFunctions.c:36:6:TurnLeft	16	static
+../Core/Src/MotorFunctions.c:47:6:TurnRight	16	static
+../Core/Src/MotorFunctions.c:58:6:Stop	8	static
