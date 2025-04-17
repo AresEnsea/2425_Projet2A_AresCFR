@@ -3,6 +3,9 @@
 ![image](https://github.com/user-attachments/assets/89a816ae-5087-4a4a-9b37-609c87e18b05)
 
 La mécanique à été réalisée par ROMEO Lorenzo, GARBEZ Matis, avec une petite particpatioon de YOUSFI Bilal qui a voulu réaliser les fixations pour les moteurs stepper des poulies.
+On peut voir sur la photo ci dessus la totalité du robot assemblé. On y trouve donc la base roulante sur lesquels sont montés les moteurs ainsi que l'odométrie et les PCBs. Les rails linéaires fixés aux tiges d'alluminium extrudé afin de supporter les méxanismes de pinces élévatrices s'élevant par un système de poulie actionné par moteurs stepper. Ces tiges supportent la plaque supérieure sur laquelle sont montés les moteurs stepper actionnant les poulies mais aussi le LiDAR pour l'évitement d'obstacles, le routeur et ses antennes pour communiquer avec la NVidia Jetson, le support de balise monté au dessus du LiDAR, le bouton d'arrêt d'urgence et le mécanisme d'activation par tirette actionné par dépression d'un switch en enlevant la tirette.
+
+Tous les fichiers 3D sont disponibles sur OnShape via ce lien : https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50ea9e11/e/9022f36f38f961f67dfb7efc?renderMode=0&uiState=6800e786ed3eb5033177a7fb
 
 ## Base roulante
 
@@ -35,21 +38,22 @@ Ceci est une animation du système de déploiement de la bannière, il faut imag
 ![image](https://github.com/user-attachments/assets/a73c80eb-1c25-46c3-9eb7-8602b1113a6b)
 
   Les mécanismes sont concus de sorte à transporter tout un étage de l'estrade comme tel et le déposer déjà monté. Il se base sur un mécansime à fils afin de resserer les pinces autour des deux "piliers" centraux de l'estrade et des bras viennent porter la planche supérieure de l'estrade. Ce mécanisme est monté sur un système de poulie et rail linéaire. Nous prévoyons deux mécanismes pour chacun des deux cotés du robot, soit la capacité à déplacer 4 estrades à la fois et aisni aisément construire deux estrades de deux etages.
-Le choix d'un mécanisme acctionné par des fils repose sur le fait de vouloir minimiser l'empreinte de la pince mais aussi le nombre d'actionneurs et donc de cablage et de STM32 à devoir gérer.
+De plus, à cela s'ajoute la possibilité de pouvoir porter deux etages déja assemblés avec une unique pince nous permettant donc de pouvoir empiler trois étages. Cela traduit donc une mécanique complète. Nous considérons qu'il ný a plus rien à améliorer d'un point de vue mécanique sur les pinces.
+Le choix d'un mécanisme acctionné par des fils repose sur le fait de vouloir minimiser l'empreinte de la pince mais aussi le nombre d'actionneurs et donc de cablage et de STM32 à devoir gérer. De plus cela permet de développer tout de même une force importante et amplement suffisante pour porter meme plusieurs étages d'un seul coup.
 
 ![Capturevidodu24-01-2025234327-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/f864907f-14ca-48cb-84fd-f37cff8e279c)
 
-Voici donc le fonctionnement des pinces principales actionnées par l'enrouleur central en gris et légérement déporté vers la droite actionné par un servomoteur KST.
+Voici donc le fonctionnement des pinces principales actionnées par l'enrouleur central en gris et légérement déporté vers la droite actionné par un servomoteur KST, essentiel pour délivrer le couple nécessaire.
 
 ![Capturevidodu24-01-2025234354-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c4e8f96a-34e9-41d9-8fe1-ef323870e8e1)
 
-L'enrouleur central a été déporté afin d'autoriser le ce mécanisme auxiliaire permettant de mieux englober la boite de conserve à soulever.
+L'enrouleur central a été déporté afin d'autoriser le fonctionnement du mécanisme auxiliaire permettant de mieux englober la boite de conserve à soulever, assurant une prise à toute épreuve.
 
 ![Capturevidodu24-01-2025234951-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/324428de-3780-4965-b9b9-f4a586f2f41e)
 
-Ce mécanisme est responsable de soulever les planches posées sur les boites de conserve. Un switch est intégré dans les bras porteurs afin de reconnaitre facilement lorsque le chariot est placé de sorte à pouvoir soulever la planche avec certitude; cela est crucial à l'exécution de la maneuvre de récupération d'un étage:
+Ce mécanisme est responsable de soulever les planches posées sur les boites de conserve. Un switch est intégré dans les bras porteurs afin de reconnaitre facilement lorsque le chariot est placé de sorte à pouvoir soulever la planche avec certitude; cela est une redondance à l'exécution de la maneuvre de récupération d'un étage étant donné que l'élévation par steppers permet déjà une connaissance assez précise de la position verticale du mécanisme:
 
 1. Le robot s'aligne à l'étage preésent sur la table.
-2. Il fait monter le chariot élévateur jusqu'à ce que les interrupteurs de fin de course s'actionnent
+2. Il fait monter le chariot élévateur jusqu'à ce que les bras atteignent les planches
 3. Il reserre alors les pinces afin d'attraper les canettes et soulève la totalité de l'étage.
 
