@@ -1,6 +1,6 @@
 # Rapport de l'équipe mécanique
 
-![image](https://github.com/user-attachments/assets/2c44dc92-bbf3-4a54-9eb2-7309ac15c661)
+![image](![image](https://github.com/user-attachments/assets/89a816ae-5087-4a4a-9b37-609c87e18b05)
 
 La mécanique à été réalisée par ROMEO Lorenzo, GARBEZ Matis, avec une petite particpatioon de YOUSFI Bilal qui a voulu réaliser les fixations pour les moteurs stepper des poulies.
 
