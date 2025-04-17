@@ -32,7 +32,7 @@ Ceci est une animation du système de déploiement de la bannière, il faut imag
 
 ## Pinces élévatrices
 
-![image](https://github.com/user-attachments/assets/1db8e8d8-f833-4263-b094-adb31e3e23de)
+![image](https://github.com/user-attachments/assets/a73c80eb-1c25-46c3-9eb7-8602b1113a6b)
 
   Les mécanismes sont concus de sorte à transporter tout un étage de l'estrade comme tel et le déposer déjà monté. Il se base sur un mécansime à fils afin de resserer les pinces autour des deux "piliers" centraux de l'estrade et des bras viennent porter la planche supérieure de l'estrade. Ce mécanisme est monté sur un système de poulie et rail linéaire. Nous prévoyons deux mécanismes pour chacun des deux cotés du robot, soit la capacité à déplacer 4 estrades à la fois et aisni aisément construire deux estrades de deux etages.
 Le choix d'un mécanisme acctionné par des fils repose sur le fait de vouloir minimiser l'empreinte de la pince mais aussi le nombre d'actionneurs et donc de cablage et de STM32 à devoir gérer.
