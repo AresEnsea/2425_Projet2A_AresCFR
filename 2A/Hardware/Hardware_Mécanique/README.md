@@ -20,6 +20,8 @@ Voici donc ci dessus la base roulante finale de notre robot
 
 Vous pouvez observer ci dessus le système de suspensions de l'odométrie ainsi que des billes porteuses.
 
+La projection verticale de cette plaque inférieure combinée à celle des mécanismes de pinces doit définir un périmètre de moins de 1200mm lorsque les mécanismes sont au plus compact et moins de 1400mm lorsque les mécanismes sont déployés. Nous avons bien fait attention à respecter cela, si bien que nous atteignont presque les 1200mm de périmètre lorsque le robot est entièrement déployé.
+
 ## Déploiement de la bannière
 
   La banière sera déployée depuis un porte bannière qui sera accroché par le robot sur le bord de l'aire de jeu, la bannière sera ensuite déroulée par l'action de la pesanteur et du poids du mécanisme autour duquel la bannière est pliée puis enroulée, ce dernier dépliera la bannière en fin de course par la tension de ressorts comprimés par l'enroulement de la bannière.
