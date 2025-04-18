@@ -53,7 +53,7 @@ L'enrouleur central a été déporté afin d'autoriser le fonctionnement du méc
 
 Ce mécanisme est responsable de soulever les planches posées sur les boites de conserve. Un switch est intégré dans les bras porteurs afin de reconnaitre facilement lorsque le chariot est placé de sorte à pouvoir soulever la planche avec certitude; cela est une redondance à l'exécution de la maneuvre de récupération d'un étage étant donné que l'élévation par steppers permet déjà une connaissance assez précise de la position verticale du mécanisme:
 
-1. Le robot s'aligne à l'étage preésent sur la table.
+1. Le robot s'aligne à l'étage présent sur la table.
 2. Il fait monter le chariot élévateur jusqu'à ce que les bras atteignent les planches
 3. Il reserre alors les pinces afin d'attraper les canettes et soulève la totalité de l'étage.
 
