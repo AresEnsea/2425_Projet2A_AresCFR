@@ -5,6 +5,8 @@
 La mécanique à été réalisée par ROMEO Lorenzo, GARBEZ Matis, avec une petite particpatioon de YOUSFI Bilal qui a voulu réaliser les fixations pour les moteurs stepper des poulies.
 On peut voir sur la photo ci dessus la totalité du robot assemblé. On y trouve donc la base roulante sur lesquels sont montés les moteurs ainsi que l'odométrie et les PCBs. Les rails linéaires fixés aux tiges d'alluminium extrudé afin de supporter les mécanismes de pinces élévatrices s'élevant par un système de poulie actionné par moteurs stepper. Ces tiges supportent la plaque supérieure sur laquelle sont montés les moteurs stepper actionnant les poulies mais aussi le LiDAR pour l'évitement d'obstacles, le routeur et ses antennes pour communiquer avec la NVidia Jetson, le support de balise monté au dessus du LiDAR, le bouton d'arrêt d'urgence et le mécanisme d'activation par tirette actionné par dépression d'un switch en enlevant la tirette.
 
+Par ailleurs vous pourrez remarquer que la plaque supérieure est bien plus petite que la plaque inférieure. Cela permet d'empiler 3 étages et donc de répondre entièrement aux contraintes imposées par la compétition, malgré le 3 ème étage étant plus haut que la hauteur maximale autorisée du robot.
+
 Tous les fichiers 3D sont disponibles sur OnShape via ce lien : https://cad.onshape.com/documents/e7dd6126290aaac8861c9b96/w/d5c385b6723083ea50ea9e11/e/9022f36f38f961f67dfb7efc?renderMode=0&uiState=6800e786ed3eb5033177a7fb
 
 ## Base roulante
