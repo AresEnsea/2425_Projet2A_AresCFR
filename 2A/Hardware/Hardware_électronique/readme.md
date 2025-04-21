@@ -57,24 +57,28 @@ via le WIFI.
 
 
 # PCB_Servo
-![image](https://github.com/user-attachments/assets/0d86c332-15f9-4467-bbf8-0971174e202c)
+![IMG_7566](https://github.com/user-attachments/assets/c269c726-2128-440c-a93d-ea61964eadca)
 
 
 ## Description :
 - Carte servant d'intermédiaire entre la mainboard et tous les servos du robot
 
 ## Caractéristiques techniques :
-- Le connecteur JST 4 pins recoit la puissance et une information UART de la carte mainboard
-- La puissance est convertie en 7.4V pour alimenter les servos
-- Le 7.4V est convertie en 3.3V pour alimenter le microprocesseur STM32G071CBUx
-- L'information UART est traduite par le microprocesseur en un signal PWM par servo
+- Le connecteur JST 4 pins recoit la puissance et une information UART de la carte mainboard.
+- La puissance est convertie de 25.2V en 7.4V pour alimenter les servos.
+- Le 7.4V est convertie en 3.3V pour alimenter le microprocesseur STM32G071CBUx.
+- L'information UART est traduite par le microprocesseur en un signal PWM par servo.
+
+## Finalité:
+Quatre PCB servos furent soudés. 
+Trois sont opérationnels, cela nous permet d'en avoir deux dans le robot et un en réserve par sécurité.
+En effet, un PCB servo peut commander 8 servos et il y a 12 servos à commander à la fois sur le robot.
+Le troisième constitue une sécurité au cas ou une des deux cartes utilisées viendrait à casser (court-circuit, surcharge, choque...).
 
 # Issues
-- le modèle de servo moteur devant etre utilisé à changé après avoir finis le routage, il a fallu alors reprendre le routage de toute la puissance de la carte
-
-
-
-
-
-
-
+- Le modèle de servo moteur devant etre utilisé à changé après avoir finis le routage, il a fallu alors reprendre le routage de toute la puissance de la carte
+- Sur les quatre PCB soudés, tous ne fonctionnent pas parfaitement:
+   Je ne suis pas parvenu à téléverser un quelconque programme sur le microprocesseur de la première carte que j'ai soudé. Celle-ci est donc considéré comme HS.
+   La deuxième carte est opérationnelle mais je lui ai relevé deux défaults. Premièrement, elle délivre du 8,2V aux servos au lieu de 7,6V. Deuxièmement, je n'ai réussis qu'à souder 6 connecteurs JST pour relier la carte aux servos.
+   Les deux cartes soudées en dernières fonctionnent parfaitement (aucun problème de fonctionnement relevé).
+  
