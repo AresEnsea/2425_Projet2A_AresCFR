@@ -102,10 +102,11 @@ Comparer la **position calculée** vs **position réelle** pour mesurer la préc
   - Setup normal : **3–4 FPS**
   - Setup optimisé : **10–12 FPS**
 
-### 📉 Graphe de performance (manquant dans version précédente)
+### 📉 Graphe de performance FPS (manquant dans version précédente)
 
-![Graphique de performance](images/performance_graph.png)
-*Fig. 8 : Amélioration du FPS entre setup normal et optimisé.*
+![image](https://github.com/user-attachments/assets/58ec0bf0-e610-4a8e-9dde-196bb714a1b3)
+
+*Fig. 8 : FPS du setup normal.*
 
 ---
 
