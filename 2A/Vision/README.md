@@ -149,8 +149,7 @@ Pour évaluer la précision du système de vision, une comparaison a été effec
 Les résultats obtenus respectent les exigences de précision et de performance définies dans le cahier des charges de l'équipe ROS, avec une erreur de localisation bien en dessous de la limite autorisée et un taux de FPS adapté selon les configurations.
 
 **Graphique de performance :**
-![Graphique FPS](images/fps_graphique.png)
-![image](https://github.com/user-attachments/assets/82b14bf0-b61e-4bdd-8de5-90bedca31008)
+
 
 *Fig. 8 : Comparaison entre le setup normal et optimisé des performances en FPS.*
 
@@ -168,12 +167,14 @@ Une vidéo a été réalisée pour illustrer les performances du système de vis
 ### **Illustrations supplémentaires**
 
 **Exemple de détection des ArUco sur la maquette :**
-![Détection des ArUco](images/aruco_detection_maquette.png)
+![image](https://github.com/user-attachments/assets/485b1ae6-3c68-43ba-b2c9-fcc19a3e9494)
+
 
 *Fig. 9 : Détection des marqueurs ArUco sur la maquette utilisée pour les tests.*
 
 **Vue du terrain de jeu avec les ArUco visibles :**
-![Terrain de jeu](images/terrain_jeu_aruco.png)
+
+![image](https://github.com/user-attachments/assets/82b14bf0-b61e-4bdd-8de5-90bedca31008)
 
 *Fig. 10 : Terrain de jeu avec les marqueurs ArUco visibles pour le robot.*
 
