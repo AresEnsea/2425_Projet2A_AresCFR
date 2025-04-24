@@ -15,7 +15,8 @@ Read me 2A :
       https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/main/2A/README.md
       
 <img src="https://github.com/user-attachments/assets/f719fcd2-1e79-4abe-89d7-a2176633c4ac" alt="IMG_20250124_191657" width="500"/>
-![WhatsApp Image 2025-04-24 à 07 14 22_3d9a94c0](https://github.com/user-attachments/assets/cd621b2d-0ee9-4fe2-a165-46ec8f692af9)
+<img src="https://github.com/user-attachments/assets/cd621b2d-0ee9-4fe2-a165-46ec8f692af9" alt="WhatsApp Image 2025-04-24 à 07 14 22_3d9a94c0" width="500"/>
+
 
 
 <img src="https://github.com/user-attachments/assets/45f6e25f-2a6f-4edc-9d75-9a7a13105c7d" alt="PAMI_img1" width="500"/>
