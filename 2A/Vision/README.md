@@ -1,115 +1,149 @@
-# Vision - Projet 2A Ares CFR
+# 🎯 Vision – Projet 2A ARES CFR (Coupe de France de Robotique)
 
-Ce dépôt contient les travaux de l'équipe Vision pour le projet 2A Ares CFR, dans le cadre de la Coupe de France de Robotique. 
-
-L'objectif est de développer un système de vision performant permettant :
-1. La reconnaissance d'éléments et marqueurs dans un environnement robotique.
-2. Le calcul de chemins optimaux pour le robot en intégrant les contraintes dynamiques du terrain de jeu.
+Ce dépôt regroupe les travaux de l'équipe **Vision** pour le projet **2A ARES CFR**, dans le cadre de la **Coupe de France de Robotique**.
 
 ---
 
-## 1. Calibration de la Caméra
+## 🧠 Objectifs du Système de Vision
 
-### Contexte et Méthodologie
-La calibration de la caméra est une étape cruciale pour corriger les distorsions optiques et garantir la précision des mesures. 
-Elle a été réalisée en utilisant un échiquier standard avec ROS et OpenCV. Les principales étapes suivies étaient :
-- Capture de plusieurs images de l'échiquier à partir de différents angles.
-- Détection automatique des coins de l'échiquier dans chaque image.
-- Calcul des paramètres intrinsèques et extrinsèques à l'aide de la méthode de régression linéaire.
-- Validation des résultats à l'aide d'un modèle de reprojection.
-
-### Résultat
-- Calibration validée sur 50 images d’un échiquier avec une faible erreur RMS.
-- Les paramètres calculés incluent :
-  - Une matrice intrinsèque précise pour la caméra.
-  - Des coefficients de distorsion réduisant les aberrations.
-- Tests validés sur la maquette et dans des conditions réelles.
+Développer un système capable de :
+1. **Détecter des éléments et marqueurs (ArUco)** dans un environnement robotique.
+2. **Fournir une position précise** du robot en temps réel.
+3. **Calculer des chemins optimaux**, en intégrant les contraintes dynamiques du terrain.
 
 ---
 
-## 2. Détection des ArUco
+## 🔧 1. Calibration de la Caméra
 
-### Contexte et Règlement
-Le règlement de la compétition impose l’utilisation de marqueurs ArUco fixes sur le terrain de jeu. Ces marqueurs servent de points 
-de référence pour le positionnement du robot. Nous avons conçu un pipeline complet pour exploiter ces ArUcos et fournir des données 
-précises sur la localisation et l’orientation du robot.
+### 🔍 Contexte
+Calibration indispensable pour corriger les **distorsions optiques** et garantir la **précision** des mesures.
 
-### Méthodologie
-- Détection des marqueurs grâce à la bibliothèque OpenCV.
-- Extraction des IDs des ArUco et calcul des vecteurs de translation et de rotation.
-- Validation des résultats par des tests comparatifs avec des données réelles.
-- Robustesse testée dans différents environnements avec des niveaux d’éclairage variés.
+### 🧪 Méthodologie
+- Utilisation d’un échiquier et de **ROS + OpenCV**.
+- Détection des coins → calcul des matrices intrinsèques/extrinsèques.
+- Validation avec modèle de reprojection.
 
-### Implémentation et Résultats
+### ✅ Résultats
+- **50 images** utilisées, faible erreur RMS.
+- Matrice intrinsèque + coefficients de distorsion.
+- Tests validés sur maquette et en conditions réelles.
 
-#### Détection des ArUco sur une maquette
-- Le système détecte les ArUco avec leurs orientations.
-- Extraction précise des vecteurs de translation et de rotation pour chaque marqueur.
-
-#### Détection en conditions réelles
-- Robustesse démontrée sur le terrain de jeu, malgré des perturbations visuelles (objets et ombres).
-- Optimisation des paramètres de détection pour minimiser les erreurs.
+![Calibration avec Chessboard](images/calibration_chessboard.png)
+*Fig. 1 : Image utilisée pour la calibration.*
 
 ---
 
-## 3. Navigation et Cheminement
+## 🧭 2. Détection des Marqueurs ArUco
 
-### Positionnement et Calcul de Chemins
+### 📜 Contexte
+Le règlement impose des marqueurs ArUco fixes sur le terrain. Ils servent de **points de référence** pour localiser le robot.
 
-#### Position Initiale et Représentation 2D
-- Les ArUco fixes servent de repères pour définir l'origine et la position initiale du robot.
-- Un modèle mathématique est utilisé pour convertir les coordonnées du repère ArUco en une représentation 2D utilisée par le système 
-de navigation.
-- Intégration avec un algorithme de discrétisation pour diviser le terrain en zones accessibles et inaccessibles.
+### ⚙️ Méthodologie
+- Détection avec **OpenCV**.
+- Extraction des IDs + calcul des vecteurs (translation & rotation).
+- Tests en environnement réel, robustesse validée (lumière, perturbations).
 
-#### Suivi du Mouvement et Ajustements
-- Les vecteurs de rotation et de translation des ArUco sont utilisés pour mettre à jour les positions.
-- Détection d’une erreur dans le calcul des distances : la distance parcourue est sous-estimée, ce qui nécessite un ajustement 
-des coefficients.
+![ArUco sur table](images/aruco_table_reglement.jpg)
+*Fig. 2 : Marqueurs fixes définis par le règlement.*
 
----
+### 🧪 Résultats
 
-## 4. Infrastructure du Système
+#### ✅ Sur maquette :
+- Détection précise des IDs et vecteurs.
 
-### Tour pour la Caméra
-En attendant la tour définitive conçue par l'équipe mécanique, une solution temporaire a été mise en place pour fixer la caméra. 
-Cette tour temporaire permet une flexibilité suffisante pour les tests tout en offrant une stabilité correcte pour la capture 
-des données visuelles.
+![Détection sur maquette](images/aruco_detection_maquette.png)
+*Fig. 3 : ArUco détectés sur la maquette.*
 
----
+#### ✅ En conditions réelles :
+- Bonne robustesse, même en présence d’ombres ou d’objets.
 
-## 5. Calcul de l'Erreur de Position et Performances
-
-### Méthode
-Pour évaluer la précision du système de vision, une comparaison a été effectuée entre la position réelle du robot et celle calculée par notre code. Cette évaluation a permis de déterminer l'erreur de localisation dans le contexte de la détection des ArUco.
-
-### Résultats
-- Erreur de Position : L'erreur moyenne observée dans la position calculée par le système est d'environ 1.8 cm maximum.
-- FPS (Frames Per Second) : 
-  - Setup Normal : Entre 3 et 4 FPS, ce qui est suffisant pour une détection basique mais pourrait être amélioré pour des scénarios dynamiques.
-  - Setup Optimisé : Entre 10 et 12 FPS, ce qui offre une fluidité de détection plus élevée pour une meilleure réactivité du robot.
-
-### Validation
-Les résultats obtenus respectent les exigences de précision et de performance définies dans le cahier des charges de l'équipe ROS, avec une erreur de localisation bien en dessous de la limite autorisée et un taux de FPS adapté selon les configurations.
+![Détection terrain réel](images/aruco_detection_terrain.jpg)
+*Fig. 4 : Détection fiable dans un environnement encombré.*
 
 ---
 
-## 6. Vidéo du Système en Action
+## 🗺️ 3. Positionnement & Cheminement
 
-Une vidéo a été réalisée pour illustrer les performances du système de vision et la détection en temps réel des ArUco. Cette vidéo montre la réactivité du robot et la précision de la localisation dans différents scénarios de terrain.
+### 🧭 Détermination de la position initiale
+- Les ArUco servent de repères pour définir l’origine.
+- Transformation vers une **représentation 2D** exploitable.
+- Discrétisation du terrain pour identifier les zones accessibles.
 
-Lien de la vidéo :  
-https://github.com/user-attachments/assets/b6591760-27ca-40ef-97e6-4b8968a7495c
+![Position initiale](images/path_robot_initial.jpg)
+*Fig. 5 : Position initiale représentée en 2D.*
+
+### 🔄 Suivi du mouvement
+- Mises à jour dynamiques selon les vecteurs.
+- Ajustement en cours sur l’estimation de la distance parcourue.
+
+![Mouvement du robot](images/path_robot_movement.jpg)
+*Fig. 6 : Mise à jour de la position du robot.*
 
 ---
 
-## 7. Conclusion
+## 🏗️ 4. Infrastructure : Tour Caméra
 
-Le système de vision développé a atteint les objectifs de précision et de performance définis dans le cadre du projet 2A Ares CFR. Grâce à l'intégration des ArUco pour la détection de position et de rotation, ainsi qu'à l'optimisation des FPS, nous avons obtenu des résultats fiables et robustes.
+En attendant la structure finale de l’équipe mécanique, une **tour temporaire** a été fabriquée pour fixer la caméra.
+
+![Tour actuelle](images/camera_tower.jpg)
+*Fig. 7 : Structure provisoire pour la caméra.*
 
 ---
 
-### Équipe Vision
-- Khalid ZOUHAIR  
-- Mohamed EL KOURMISS  
-- Abderrahmane EL FELSOUFI
+## 📈 5. Performances & Mesures
+
+### 🎯 Objectif
+Comparer la **position calculée** vs **position réelle** pour mesurer la précision du système.
+
+### 📊 Résultats
+
+- **Erreur moyenne** : ~ **1.8 cm**
+- **Fréquence (FPS)** :
+  - Setup normal : **3–4 FPS**
+  - Setup optimisé : **10–12 FPS**
+
+### 📉 Graphe de performance (manquant dans version précédente)
+
+![Graphique de performance](images/performance_graph.png)
+*Fig. 8 : Amélioration du FPS entre setup normal et optimisé.*
+
+---
+
+## 🎥 6. Démonstration Vidéo
+
+Une vidéo illustre le fonctionnement du système en temps réel, montrant la **réactivité** et la **précision** de la localisation :
+
+➡️ [Lien vers la démonstration vidéo](https://github.com/user-attachments/assets/b6591760-27ca-40ef-97e6-4b8968a7495c)
+
+---
+
+## 🖼️ 7. Illustrations Complémentaires
+
+**Détection des ArUco sur la maquette :**  
+![image](https://github.com/user-attachments/assets/485b1ae6-3c68-43ba-b2c9-fcc19a3e9494)
+
+**Vue du terrain avec les ArUco visibles :**  
+![image](https://github.com/user-attachments/assets/82b14bf0-b61e-4bdd-8de5-90bedca31008)
+
+---
+
+## ✅ 8. Conclusion & Roadmap
+
+Le système est **fiable**, **réactif** et prêt pour une intégration complète dans le système de navigation.
+
+### 🚀 Prochaines étapes :
+- Améliorer l’estimation des distances.
+- Générer une carte exploitable par **ROS** (niveaux de gris).
+- Finaliser l'intégration ROS.
+- Tests intensifs sur terrain réel.
+
+---
+
+### 👥 Équipe Vision
+- **Khalid ZOUHAIR**
+- **Mohamed EL KOURMISS**
+- **Abderrahmane EL FELSOUFI**
+
+---
+
+
