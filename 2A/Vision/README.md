@@ -163,7 +163,11 @@ Une vidéo a été réalisée pour illustrer les performances du système de vis
 
 
 
-Uploading WhatsApp Video 2025-04-24 at 23.46.30 (1) (1).mp4…
+
+https://github.com/user-attachments/assets/b6591760-27ca-40ef-97e6-4b8968a7495c
+
+
+
 
 
 ---
