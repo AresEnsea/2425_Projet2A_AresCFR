@@ -160,7 +160,7 @@ Les résultats obtenus respectent les exigences de précision et de performance 
 Une vidéo a été réalisée pour illustrer les performances du système de vision et la détection en temps réel des ArUco. Cette vidéo montre la réactivité du robot et la précision de la localisation dans différents scénarios de terrain.
 
 **Vidéo de démonstration :**
-[**Voir la vidéo ici**](lien_vers_video)
+
 
 ---
 
