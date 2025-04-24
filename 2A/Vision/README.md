@@ -134,6 +134,47 @@ une navigation plus précise.
 
 ---
 
+## **6. Calcul de l'Erreur de Position et Performances**
+
+### **Méthode**
+Pour évaluer la précision du système de vision, une comparaison a été effectuée entre la position réelle du robot et celle calculée par notre code. Cette évaluation a permis de déterminer l'erreur de localisation dans le contexte de la détection des ArUco.
+
+### **Résultats**
+- **Erreur de Position** : L'erreur moyenne observée dans la position calculée par le système est d'environ **1.8 cm** maximum.
+- **FPS (Frames Per Second)** : 
+  - **Setup Normal** : Entre **3 et 4 FPS**, ce qui est suffisant pour une détection basique mais pourrait être amélioré pour des scénarios dynamiques.
+  - **Setup Optimisé** : Entre **10 et 12 FPS**, ce qui offre une fluidité de détection plus élevée pour une meilleure réactivité du robot.
+
+### **Validation**
+Les résultats obtenus respectent les exigences de précision et de performance définies dans le cahier des charges de l'équipe ROS, avec une erreur de localisation bien en dessous de la limite autorisée et un taux de FPS adapté selon les configurations.
+
+**Graphique de performance :**
+![Graphique FPS](images/fps_graphique.png)
+
+*Fig. 8 : Comparaison entre le setup normal et optimisé des performances en FPS.*
+
+---
+
+## **7. Vidéo du Système en Action**
+
+Une vidéo a été réalisée pour illustrer les performances du système de vision et la détection en temps réel des ArUco. Cette vidéo montre la réactivité du robot et la précision de la localisation dans différents scénarios de terrain.
+
+**Vidéo de démonstration :**
+[**Voir la vidéo ici**](lien_vers_video)
+
+---
+
+## **8. Conclusion et Prochaines Étapes**
+
+Le système de vision développé a atteint les objectifs de précision et de performance définis dans le cadre du projet 2A Ares CFR. Grâce à l'intégration des ArUco pour la détection de position et de rotation, ainsi qu'à l'optimisation des FPS, nous avons obtenu des résultats fiables et robustes.
+
+Les prochaines étapes incluent :
+- **Optimisation des performances** : Tester d'autres techniques pour réduire encore l'erreur de localisation.
+- **Intégration ROS** : Finaliser l'intégration complète avec ROS pour le calcul des chemins optimaux en fonction des informations de position et des contraintes dynamiques du terrain.
+- **Tests sur terrain réel** : Effectuer des tests en conditions réelles pour valider la robustesse et la réactivité du système en compétition.
+
+---
+
 ### **Équipe Vision**
 - **Khalid ZOUHAIR**
 - **Mohamed EL KOURMISS**
