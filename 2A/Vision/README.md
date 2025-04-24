@@ -150,6 +150,7 @@ Les résultats obtenus respectent les exigences de précision et de performance 
 
 **Graphique de performance :**
 ![Graphique FPS](images/fps_graphique.png)
+![image](https://github.com/user-attachments/assets/82b14bf0-b61e-4bdd-8de5-90bedca31008)
 
 *Fig. 8 : Comparaison entre le setup normal et optimisé des performances en FPS.*
 
@@ -161,6 +162,20 @@ Une vidéo a été réalisée pour illustrer les performances du système de vis
 
 **Vidéo de démonstration :**
 [**Voir la vidéo ici**](lien_vers_video)
+
+---
+
+### **Illustrations supplémentaires**
+
+**Exemple de détection des ArUco sur la maquette :**
+![Détection des ArUco](images/aruco_detection_maquette.png)
+
+*Fig. 9 : Détection des marqueurs ArUco sur la maquette utilisée pour les tests.*
+
+**Vue du terrain de jeu avec les ArUco visibles :**
+![Terrain de jeu](images/terrain_jeu_aruco.png)
+
+*Fig. 10 : Terrain de jeu avec les marqueurs ArUco visibles pour le robot.*
 
 ---
 
@@ -178,4 +193,4 @@ Les prochaines étapes incluent :
 ### **Équipe Vision**
 - **Khalid ZOUHAIR**
 - **Mohamed EL KOURMISS**
-- **Abderhamane EL FELSOUFI**
+- **Abderrahmane EL FELSOUFI**
