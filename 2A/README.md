@@ -76,9 +76,9 @@ lien projet Vision : https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/mai
 - [ ] Transformer les informations de la caméra en carte pour le ROS
 
 ## Réseau
-- [x] Apprendre à utiliser un routeur
+- [x] Administration de routeurs
 - [x] Ping à travers 2 routeurs
-- [ ] Avoir un réseau transportable à la Coupe
+- [x] Avoir un réseau transportable à la Coupe
 - [ ] Connecter la pi et la jetson à un même réseau wifi pour communiquer
    
 # Répartition par tâche :
