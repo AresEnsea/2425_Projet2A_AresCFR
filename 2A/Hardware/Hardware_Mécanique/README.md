@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/89a816ae-5087-4a4a-9b37-609c87e18b05)
 
-La mécanique à été réalisée par ROMEO Lorenzo, GARBEZ Matis, avec une petite particpatioon de YOUSFI Bilal qui a voulu réaliser les fixations pour les moteurs stepper des poulies.
+La mécanique à été réalisée par ROMEO Lorenzo, GARBEZ Matis, avec une petite participation de YOUSFI Bilal qui a voulu réaliser les fixations pour les moteurs stepper des poulies.
 On peut voir sur la photo ci dessus la totalité du robot assemblé. On y trouve donc la base roulante sur lesquels sont montés les moteurs ainsi que l'odométrie et les PCBs. Les rails linéaires fixés aux tiges d'alluminium extrudé afin de supporter les mécanismes de pinces élévatrices s'élevant par un système de poulie actionné par moteurs stepper. Ces tiges supportent la plaque supérieure sur laquelle sont montés les moteurs stepper actionnant les poulies mais aussi le LiDAR pour l'évitement d'obstacles, le routeur et ses antennes pour communiquer avec la NVidia Jetson, le support de balise monté au dessus du LiDAR, le bouton d'arrêt d'urgence et le mécanisme d'activation par tirette actionné par dépression d'un switch en enlevant la tirette.
 
 Par ailleurs vous pourrez remarquer que la plaque supérieure est bien plus petite que la plaque inférieure. Cela permet d'empiler 3 étages et donc de répondre entièrement aux contraintes imposées par la compétition, malgré le 3 ème étage étant plus haut que la hauteur maximale autorisée du robot.
@@ -26,12 +26,15 @@ La projection verticale de cette plaque inférieure combinée à celle des méca
 
 ## Déploiement de la bannière
 
-  La banière sera déployée depuis un porte bannière qui sera accroché par le robot sur le bord de l'aire de jeu, la bannière sera ensuite déroulée par l'action de la pesanteur et du poids du mécanisme autour duquel la bannière est pliée puis enroulée, ce dernier dépliera la bannière en fin de course par la tension de ressorts comprimés par l'enroulement de la bannière.
+  Dans la compétition nous devons déployer une bannière de 50cm de long pour 25 cm de large. Nous pouvons la déployer sur le terrain ou contre la table. Pour éviter des problèmes avec le robot principal et les pamis, nous avons décidé de la déployer sur le rebord de la table. 
+  Les règles imposent une taille maximal pour le robot, c'est pourquoi nous devions trouvé un mécanisme afin de pouvoir la plier en début de match et la déplier sur le rebord de la table. Dans un premier temps nous avions proposé un système totalement mécanique. Cependant, le déploiement n'était pas parfait et nous avions peur de ne pas répondre au critère de la compétition. C'est pourquoi nous avons optés pour un déploiement de la partie du haut de la banderolle mécanique et électronique avec un servo-moteur. 
+  Ainsi la bannière sera déployée depuis un porte bannière, posé sur la pince du haut et poussé par les "bras" des pinces. On aura donc dans un premier temps la partie du bas de la bannière qui se déroulera par l'action de la pesanteur et du poids du mécanisme autour duquel la bannière est pliée puis enroulée. Ce dernier dépliera la bannière en fin de course grâce à la tension de ressorts comprimés par l'enroulement de la bannière.
   Nous avons opté pour ce système de déploiement car il reste relativement simple et efficace, il était nécessaire de plier ou d'enrouler la bannière car la réglementation impose une largeur et une longueur de bannière trop grandes pour etre stockées dans le robot comme tel.
+  La partie du haut se déploiera par le même mécanisme mais uniquement quand le robot enverra la commande au servo moteur. Ainsi la bannière sera proprement déployeée. Le robot n'aura plus qu'à se déconnecté en roulant de l'autre côté de la bannière, ce qui déconnectera les pins header relié à la carte stm. 
 
 ![image](https://github.com/user-attachments/assets/7d14aec5-ddd7-40d0-9cb9-9021474d7b22)
 
-Vous pouvez voir ci dessus la partie qui sera accrochée sur le bord de l'aire de jeu. La bannière y sera attachée entre les deux différentes plaques maintenues par un système de vis écrou. Les rebords extrudés de la partie grise ainsi que du bas de l'accroche de la partie bleue serviront à mieux maintenir la bannière enroulée lors de l'accroche du porte bannière sur le rebord de la table, et autoriser ensuite la chute du mécanisme de déploiement.
+Vous pouvez voir ci dessus la partie qui sera accrochée sur le bord de l'aire de jeu. La bannière y sera attachée entre les deux différentes plaques maintenues par un système de vis écrou. Les rebords extrudés de la partie grise ainsi que du bas de l'accroche de la partie bleue serviront à mieux maintenir la bannière enroulée lors de l'accroche du porte bannière sur le rebord de la table, et autoriser ensuite la chute du mécanisme de déploiement. On peut également y voir le trou pour le servo moteur et les fils qui y sortiront. 
 
 ![Capturevidodu24-01-2025230203-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7a24c7ee-1fc4-43a6-92a6-2346f90275c3)
 
