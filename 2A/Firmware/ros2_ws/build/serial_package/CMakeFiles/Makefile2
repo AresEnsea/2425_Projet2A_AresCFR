@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/carpe-bleue/ros2_ws/build/serial_package
 
 # The main recursive "all" target.
 all: CMakeFiles/UART_Node.dir/all
+all: CMakeFiles/OdometryNode.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,6 +75,7 @@ preinstall:
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/serial_package_uninstall.dir/clean
 clean: CMakeFiles/UART_Node.dir/clean
+clean: CMakeFiles/OdometryNode.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -135,7 +137,7 @@ CMakeFiles/serial_package_uninstall.dir/clean:
 CMakeFiles/UART_Node.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles --progress-num=1,2 "Built target UART_Node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles --progress-num=3,4 "Built target UART_Node"
 .PHONY : CMakeFiles/UART_Node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -153,6 +155,32 @@ UART_Node: CMakeFiles/UART_Node.dir/rule
 CMakeFiles/UART_Node.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/clean
 .PHONY : CMakeFiles/UART_Node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/OdometryNode.dir
+
+# All Build rule for target.
+CMakeFiles/OdometryNode.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OdometryNode.dir/build.make CMakeFiles/OdometryNode.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OdometryNode.dir/build.make CMakeFiles/OdometryNode.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles --progress-num=1,2 "Built target OdometryNode"
+.PHONY : CMakeFiles/OdometryNode.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/OdometryNode.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OdometryNode.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles 0
+.PHONY : CMakeFiles/OdometryNode.dir/rule
+
+# Convenience name for target.
+OdometryNode: CMakeFiles/OdometryNode.dir/rule
+.PHONY : OdometryNode
+
+# clean rule for target.
+CMakeFiles/OdometryNode.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OdometryNode.dir/build.make CMakeFiles/OdometryNode.dir/clean
+.PHONY : CMakeFiles/OdometryNode.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -1,0 +1,11 @@
+prefix=/home/carpe-bleue/ros2_ws/install/ydlidar_sdk
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: YDLIDAR_SDK
+Description: 
+Version: 1.2.14
+Cflags:   -I/home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src -I/home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include
+Libs: -L${libdir}  -lpthread -lrt -lydlidar_sdk
+

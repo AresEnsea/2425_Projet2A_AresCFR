@@ -1,0 +1,459 @@
+[0.000000] (-) TimerEvent: {}
+[0.001669] (serial_package) JobQueued: {'identifier': 'serial_package', 'dependencies': OrderedDict()}
+[0.001797] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.001880] (serial_package) JobStarted: {'identifier': 'serial_package'}
+[0.027103] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.047764] (serial_package) JobProgress: {'identifier': 'serial_package', 'progress': 'cmake'}
+[0.050882] (serial_package) JobProgress: {'identifier': 'serial_package', 'progress': 'build'}
+[0.053538] (serial_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carpe-bleue/ros2_ws/build/serial_package', '--', '-j4', '-l4'], 'cwd': '/home/carpe-bleue/ros2_ws/build/serial_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.1.76 52120 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/serial_package'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.76 52120 192.168.1.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.069294] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[0.072292] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[0.073526] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.1.76 52120 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.76 52120 192.168.1.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099282] (-) TimerEvent: {}
+[0.160760] (serial_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.174957] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199543] (-) TimerEvent: {}
+[0.300345] (-) TimerEvent: {}
+[0.401056] (-) TimerEvent: {}
+[0.501887] (-) TimerEvent: {}
+[0.602615] (-) TimerEvent: {}
+[0.703393] (-) TimerEvent: {}
+[0.758159] (serial_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.793190] (serial_package) StdoutLine: {'line': b'-- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.793921] (serial_package) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.797650] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.803570] (-) TimerEvent: {}
+[0.904381] (-) TimerEvent: {}
+[0.930801] (serial_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.941427] (serial_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.945156] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.955428] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.964792] (serial_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.978331] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.003167] (serial_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.004507] (-) TimerEvent: {}
+[1.016458] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.052528] (serial_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.064733] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.104681] (-) TimerEvent: {}
+[1.191930] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.197404] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.204845] (-) TimerEvent: {}
+[1.266064] (serial_package) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.305016] (-) TimerEvent: {}
+[1.363493] (serial_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.369143] (serial_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.405181] (-) TimerEvent: {}
+[1.506377] (-) TimerEvent: {}
+[1.607380] (-) TimerEvent: {}
+[1.708121] (-) TimerEvent: {}
+[1.809103] (-) TimerEvent: {}
+[1.909803] (-) TimerEvent: {}
+[1.921854] (ydlidar_ros2_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.009978] (-) TimerEvent: {}
+[2.104089] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.110213] (-) TimerEvent: {}
+[2.135753] (serial_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.210396] (-) TimerEvent: {}
+[2.216678] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found visualization_msgs: 4.8.0 (/opt/ros/humble/share/visualization_msgs/cmake)\n'}
+[2.293650] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[2.294342] (serial_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.310606] (-) TimerEvent: {}
+[2.411488] (-) TimerEvent: {}
+[2.458963] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:22 (find_package):\n'}
+[2.459708] (ydlidar_ros2_driver) StderrLine: {'line': b'  By not providing "Findydlidar_sdk.cmake" in CMAKE_MODULE_PATH this project\n'}
+[2.460212] (ydlidar_ros2_driver) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[2.460630] (ydlidar_ros2_driver) StderrLine: {'line': b'  "ydlidar_sdk", but CMake did not find one.\n'}
+[2.461023] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[2.461421] (ydlidar_ros2_driver) StderrLine: {'line': b'  Could not find a package configuration file provided by "ydlidar_sdk" with\n'}
+[2.461875] (ydlidar_ros2_driver) StderrLine: {'line': b'  any of the following names:\n'}
+[2.462371] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[2.462883] (ydlidar_ros2_driver) StderrLine: {'line': b'    ydlidar_sdkConfig.cmake\n'}
+[2.463328] (ydlidar_ros2_driver) StderrLine: {'line': b'    ydlidar_sdk-config.cmake\n'}
+[2.463766] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[2.464317] (ydlidar_ros2_driver) StderrLine: {'line': b'  Add the installation prefix of "ydlidar_sdk" to CMAKE_PREFIX_PATH or set\n'}
+[2.464774] (ydlidar_ros2_driver) StderrLine: {'line': b'  "ydlidar_sdk_DIR" to a directory containing one of the above files.  If\n'}
+[2.465741] (ydlidar_ros2_driver) StderrLine: {'line': b'  "ydlidar_sdk" provides a separate development package or SDK, be sure it\n'}
+[2.466933] (ydlidar_ros2_driver) StderrLine: {'line': b'  has been installed.\n'}
+[2.468759] (ydlidar_ros2_driver) StderrLine: {'line': b'\n'}
+[2.469453] (ydlidar_ros2_driver) StderrLine: {'line': b'\x1b[0m\n'}
+[2.470166] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.470805] (ydlidar_ros2_driver) StdoutLine: {'line': b'See also "/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver/CMakeFiles/CMakeOutput.log".\n'}
+[2.490162] (ydlidar_ros2_driver) StderrLine: {'line': b'gmake: *** [Makefile:308: cmake_check_build_system] Error 1\n'}
+[2.496607] (ydlidar_ros2_driver) CommandEnded: {'returncode': 2}
+[2.511669] (-) TimerEvent: {}
+[2.563959] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 2}
+[2.611888] (-) TimerEvent: {}
+[2.679371] (serial_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.680198] (serial_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[2.680585] (serial_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.686823] (serial_package) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.698630] (serial_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.705751] (serial_package) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.712016] (-) TimerEvent: {}
+[2.744478] (serial_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[2.745020] (serial_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[2.751399] (serial_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.757291] (serial_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.812240] (-) TimerEvent: {}
+[2.850163] (serial_package) StdoutLine: {'line': b'-- Generating done\n'}
+[2.869799] (serial_package) StdoutLine: {'line': b'-- Build files have been written to: /home/carpe-bleue/ros2_ws/build/serial_package\n'}
+[2.912404] (-) TimerEvent: {}
+[2.971610] (serial_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target UART_Node\x1b[0m\n'}
+[3.006323] (serial_package) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.o\x1b[0m\n'}
+[3.012599] (-) TimerEvent: {}
+[3.113314] (-) TimerEvent: {}
+[3.214223] (-) TimerEvent: {}
+[3.281431] (serial_package) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/UART_Node.dir/src/UART_Node.cpp.o\x1b[0m\n'}
+[3.314419] (-) TimerEvent: {}
+[3.415288] (-) TimerEvent: {}
+[3.516034] (-) TimerEvent: {}
+[3.616687] (-) TimerEvent: {}
+[3.717364] (-) TimerEvent: {}
+[3.818020] (-) TimerEvent: {}
+[3.918754] (-) TimerEvent: {}
+[4.020368] (-) TimerEvent: {}
+[4.121209] (-) TimerEvent: {}
+[4.221984] (-) TimerEvent: {}
+[4.322826] (-) TimerEvent: {}
+[4.423943] (-) TimerEvent: {}
+[4.525227] (-) TimerEvent: {}
+[4.626061] (-) TimerEvent: {}
+[4.726796] (-) TimerEvent: {}
+[4.827573] (-) TimerEvent: {}
+[4.928316] (-) TimerEvent: {}
+[5.029030] (-) TimerEvent: {}
+[5.129736] (-) TimerEvent: {}
+[5.230382] (-) TimerEvent: {}
+[5.331100] (-) TimerEvent: {}
+[5.431826] (-) TimerEvent: {}
+[5.481607] (serial_package) StderrLine: {'line': b'\x1b[01m\x1b[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:4:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kgeometry_msgs/msg/pose2d.hpp: No such file or directory\n'}
+[5.482269] (serial_package) StderrLine: {'line': b'    4 | #include \x1b[01;31m\x1b[K"geometry_msgs/msg/pose2d.hpp"\x1b[m\x1b[K\n'}
+[5.482644] (serial_package) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.482977] (serial_package) StderrLine: {'line': b'compilation terminated.\n'}
+[5.494830] (serial_package) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/OdometryNode.dir/build.make:76: CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.o] Error 1\n'}
+[5.495624] (serial_package) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/OdometryNode.dir/all] Error 2\n'}
+[5.496110] (serial_package) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[5.531975] (-) TimerEvent: {}
+[5.632783] (-) TimerEvent: {}
+[5.733561] (-) TimerEvent: {}
+[5.834194] (-) TimerEvent: {}
+[5.934908] (-) TimerEvent: {}
+[6.035602] (-) TimerEvent: {}
+[6.136370] (-) TimerEvent: {}
+[6.237033] (-) TimerEvent: {}
+[6.337723] (-) TimerEvent: {}
+[6.438449] (-) TimerEvent: {}
+[6.539172] (-) TimerEvent: {}
+[6.639899] (-) TimerEvent: {}
+[6.740641] (-) TimerEvent: {}
+[6.841380] (-) TimerEvent: {}
+[6.942066] (-) TimerEvent: {}
+[7.042773] (-) TimerEvent: {}
+[7.143429] (-) TimerEvent: {}
+[7.244189] (-) TimerEvent: {}
+[7.344849] (-) TimerEvent: {}
+[7.445607] (-) TimerEvent: {}
+[7.546318] (-) TimerEvent: {}
+[7.647007] (-) TimerEvent: {}
+[7.747690] (-) TimerEvent: {}
+[7.848388] (-) TimerEvent: {}
+[7.949051] (-) TimerEvent: {}
+[8.049712] (-) TimerEvent: {}
+[8.150409] (-) TimerEvent: {}
+[8.251108] (-) TimerEvent: {}
+[8.351843] (-) TimerEvent: {}
+[8.452499] (-) TimerEvent: {}
+[8.553181] (-) TimerEvent: {}
+[8.653849] (-) TimerEvent: {}
+[8.754524] (-) TimerEvent: {}
+[8.855312] (-) TimerEvent: {}
+[8.956000] (-) TimerEvent: {}
+[9.056958] (-) TimerEvent: {}
+[9.157659] (-) TimerEvent: {}
+[9.258350] (-) TimerEvent: {}
+[9.359061] (-) TimerEvent: {}
+[9.459748] (-) TimerEvent: {}
+[9.560534] (-) TimerEvent: {}
+[9.661235] (-) TimerEvent: {}
+[9.761926] (-) TimerEvent: {}
+[9.862648] (-) TimerEvent: {}
+[9.963350] (-) TimerEvent: {}
+[10.064076] (-) TimerEvent: {}
+[10.164739] (-) TimerEvent: {}
+[10.265439] (-) TimerEvent: {}
+[10.366169] (-) TimerEvent: {}
+[10.466870] (-) TimerEvent: {}
+[10.567572] (-) TimerEvent: {}
+[10.668288] (-) TimerEvent: {}
+[10.768976] (-) TimerEvent: {}
+[10.869693] (-) TimerEvent: {}
+[10.970405] (-) TimerEvent: {}
+[11.071146] (-) TimerEvent: {}
+[11.171883] (-) TimerEvent: {}
+[11.272591] (-) TimerEvent: {}
+[11.373310] (-) TimerEvent: {}
+[11.474027] (-) TimerEvent: {}
+[11.574742] (-) TimerEvent: {}
+[11.675437] (-) TimerEvent: {}
+[11.776164] (-) TimerEvent: {}
+[11.876879] (-) TimerEvent: {}
+[11.977600] (-) TimerEvent: {}
+[12.078322] (-) TimerEvent: {}
+[12.179002] (-) TimerEvent: {}
+[12.279683] (-) TimerEvent: {}
+[12.380412] (-) TimerEvent: {}
+[12.481127] (-) TimerEvent: {}
+[12.581841] (-) TimerEvent: {}
+[12.682593] (-) TimerEvent: {}
+[12.783354] (-) TimerEvent: {}
+[12.884099] (-) TimerEvent: {}
+[12.984778] (-) TimerEvent: {}
+[13.085478] (-) TimerEvent: {}
+[13.186179] (-) TimerEvent: {}
+[13.286909] (-) TimerEvent: {}
+[13.387618] (-) TimerEvent: {}
+[13.488431] (-) TimerEvent: {}
+[13.589101] (-) TimerEvent: {}
+[13.689783] (-) TimerEvent: {}
+[13.790493] (-) TimerEvent: {}
+[13.891182] (-) TimerEvent: {}
+[13.991938] (-) TimerEvent: {}
+[14.092743] (-) TimerEvent: {}
+[14.193424] (-) TimerEvent: {}
+[14.294124] (-) TimerEvent: {}
+[14.394803] (-) TimerEvent: {}
+[14.495478] (-) TimerEvent: {}
+[14.596166] (-) TimerEvent: {}
+[14.696845] (-) TimerEvent: {}
+[14.797518] (-) TimerEvent: {}
+[14.898186] (-) TimerEvent: {}
+[14.998870] (-) TimerEvent: {}
+[15.099581] (-) TimerEvent: {}
+[15.200318] (-) TimerEvent: {}
+[15.300999] (-) TimerEvent: {}
+[15.401679] (-) TimerEvent: {}
+[15.502340] (-) TimerEvent: {}
+[15.603048] (-) TimerEvent: {}
+[15.703726] (-) TimerEvent: {}
+[15.804444] (-) TimerEvent: {}
+[15.905113] (-) TimerEvent: {}
+[16.005786] (-) TimerEvent: {}
+[16.106488] (-) TimerEvent: {}
+[16.207155] (-) TimerEvent: {}
+[16.307869] (-) TimerEvent: {}
+[16.408529] (-) TimerEvent: {}
+[16.509189] (-) TimerEvent: {}
+[16.609880] (-) TimerEvent: {}
+[16.710600] (-) TimerEvent: {}
+[16.811262] (-) TimerEvent: {}
+[16.911990] (-) TimerEvent: {}
+[17.012698] (-) TimerEvent: {}
+[17.113370] (-) TimerEvent: {}
+[17.214070] (-) TimerEvent: {}
+[17.314807] (-) TimerEvent: {}
+[17.415555] (-) TimerEvent: {}
+[17.516287] (-) TimerEvent: {}
+[17.616963] (-) TimerEvent: {}
+[17.717623] (-) TimerEvent: {}
+[17.818299] (-) TimerEvent: {}
+[17.918989] (-) TimerEvent: {}
+[18.019751] (-) TimerEvent: {}
+[18.120472] (-) TimerEvent: {}
+[18.221129] (-) TimerEvent: {}
+[18.321792] (-) TimerEvent: {}
+[18.422506] (-) TimerEvent: {}
+[18.523204] (-) TimerEvent: {}
+[18.623925] (-) TimerEvent: {}
+[18.724588] (-) TimerEvent: {}
+[18.825258] (-) TimerEvent: {}
+[18.925939] (-) TimerEvent: {}
+[19.026675] (-) TimerEvent: {}
+[19.127496] (-) TimerEvent: {}
+[19.228261] (-) TimerEvent: {}
+[19.328940] (-) TimerEvent: {}
+[19.429600] (-) TimerEvent: {}
+[19.530293] (-) TimerEvent: {}
+[19.630985] (-) TimerEvent: {}
+[19.731859] (-) TimerEvent: {}
+[19.832711] (-) TimerEvent: {}
+[19.933369] (-) TimerEvent: {}
+[20.034060] (-) TimerEvent: {}
+[20.134735] (-) TimerEvent: {}
+[20.235467] (-) TimerEvent: {}
+[20.336172] (-) TimerEvent: {}
+[20.436834] (-) TimerEvent: {}
+[20.537522] (-) TimerEvent: {}
+[20.638211] (-) TimerEvent: {}
+[20.738927] (-) TimerEvent: {}
+[20.839583] (-) TimerEvent: {}
+[20.940273] (-) TimerEvent: {}
+[21.040916] (-) TimerEvent: {}
+[21.141556] (-) TimerEvent: {}
+[21.242311] (-) TimerEvent: {}
+[21.343040] (-) TimerEvent: {}
+[21.443757] (-) TimerEvent: {}
+[21.544481] (-) TimerEvent: {}
+[21.645184] (-) TimerEvent: {}
+[21.745883] (-) TimerEvent: {}
+[21.846567] (-) TimerEvent: {}
+[21.947280] (-) TimerEvent: {}
+[22.048211] (-) TimerEvent: {}
+[22.148902] (-) TimerEvent: {}
+[22.249585] (-) TimerEvent: {}
+[22.350266] (-) TimerEvent: {}
+[22.450949] (-) TimerEvent: {}
+[22.551688] (-) TimerEvent: {}
+[22.652617] (-) TimerEvent: {}
+[22.753527] (-) TimerEvent: {}
+[22.854374] (-) TimerEvent: {}
+[22.955061] (-) TimerEvent: {}
+[23.055823] (-) TimerEvent: {}
+[23.156502] (-) TimerEvent: {}
+[23.257177] (-) TimerEvent: {}
+[23.357828] (-) TimerEvent: {}
+[23.458471] (-) TimerEvent: {}
+[23.559126] (-) TimerEvent: {}
+[23.659864] (-) TimerEvent: {}
+[23.760541] (-) TimerEvent: {}
+[23.861206] (-) TimerEvent: {}
+[23.961876] (-) TimerEvent: {}
+[24.062579] (-) TimerEvent: {}
+[24.163286] (-) TimerEvent: {}
+[24.263966] (-) TimerEvent: {}
+[24.364633] (-) TimerEvent: {}
+[24.465317] (-) TimerEvent: {}
+[24.566039] (-) TimerEvent: {}
+[24.666708] (-) TimerEvent: {}
+[24.767397] (-) TimerEvent: {}
+[24.868111] (-) TimerEvent: {}
+[24.968771] (-) TimerEvent: {}
+[25.069444] (-) TimerEvent: {}
+[25.170106] (-) TimerEvent: {}
+[25.270774] (-) TimerEvent: {}
+[25.371466] (-) TimerEvent: {}
+[25.472179] (-) TimerEvent: {}
+[25.572862] (-) TimerEvent: {}
+[25.673543] (-) TimerEvent: {}
+[25.774216] (-) TimerEvent: {}
+[25.874923] (-) TimerEvent: {}
+[25.975594] (-) TimerEvent: {}
+[26.076310] (-) TimerEvent: {}
+[26.177011] (-) TimerEvent: {}
+[26.277751] (-) TimerEvent: {}
+[26.378450] (-) TimerEvent: {}
+[26.479125] (-) TimerEvent: {}
+[26.579819] (-) TimerEvent: {}
+[26.680477] (-) TimerEvent: {}
+[26.781188] (-) TimerEvent: {}
+[26.881864] (-) TimerEvent: {}
+[26.982545] (-) TimerEvent: {}
+[27.083212] (-) TimerEvent: {}
+[27.183941] (-) TimerEvent: {}
+[27.284609] (-) TimerEvent: {}
+[27.385285] (-) TimerEvent: {}
+[27.485952] (-) TimerEvent: {}
+[27.586619] (-) TimerEvent: {}
+[27.687315] (-) TimerEvent: {}
+[27.788043] (-) TimerEvent: {}
+[27.888706] (-) TimerEvent: {}
+[27.989377] (-) TimerEvent: {}
+[28.090028] (-) TimerEvent: {}
+[28.190688] (-) TimerEvent: {}
+[28.291359] (-) TimerEvent: {}
+[28.392030] (-) TimerEvent: {}
+[28.492649] (-) TimerEvent: {}
+[28.593282] (-) TimerEvent: {}
+[28.693979] (-) TimerEvent: {}
+[28.794631] (-) TimerEvent: {}
+[28.895300] (-) TimerEvent: {}
+[28.995965] (-) TimerEvent: {}
+[29.096637] (-) TimerEvent: {}
+[29.197306] (-) TimerEvent: {}
+[29.297958] (-) TimerEvent: {}
+[29.398615] (-) TimerEvent: {}
+[29.499298] (-) TimerEvent: {}
+[29.599955] (-) TimerEvent: {}
+[29.700630] (-) TimerEvent: {}
+[29.801270] (-) TimerEvent: {}
+[29.901947] (-) TimerEvent: {}
+[30.002613] (-) TimerEvent: {}
+[30.103248] (-) TimerEvent: {}
+[30.203916] (-) TimerEvent: {}
+[30.304556] (-) TimerEvent: {}
+[30.405203] (-) TimerEvent: {}
+[30.505862] (-) TimerEvent: {}
+[30.606491] (-) TimerEvent: {}
+[30.707166] (-) TimerEvent: {}
+[30.807898] (-) TimerEvent: {}
+[30.908577] (-) TimerEvent: {}
+[31.009265] (-) TimerEvent: {}
+[31.109969] (-) TimerEvent: {}
+[31.210619] (-) TimerEvent: {}
+[31.311280] (-) TimerEvent: {}
+[31.411936] (-) TimerEvent: {}
+[31.512586] (-) TimerEvent: {}
+[31.613239] (-) TimerEvent: {}
+[31.713875] (-) TimerEvent: {}
+[31.814558] (-) TimerEvent: {}
+[31.915218] (-) TimerEvent: {}
+[32.015912] (-) TimerEvent: {}
+[32.116580] (-) TimerEvent: {}
+[32.217241] (-) TimerEvent: {}
+[32.317877] (-) TimerEvent: {}
+[32.418561] (-) TimerEvent: {}
+[32.519194] (-) TimerEvent: {}
+[32.619924] (-) TimerEvent: {}
+[32.720927] (-) TimerEvent: {}
+[32.821966] (-) TimerEvent: {}
+[32.922879] (-) TimerEvent: {}
+[33.023938] (-) TimerEvent: {}
+[33.124947] (-) TimerEvent: {}
+[33.225950] (-) TimerEvent: {}
+[33.326651] (-) TimerEvent: {}
+[33.427370] (-) TimerEvent: {}
+[33.528157] (-) TimerEvent: {}
+[33.628835] (-) TimerEvent: {}
+[33.729547] (-) TimerEvent: {}
+[33.830231] (-) TimerEvent: {}
+[33.930928] (-) TimerEvent: {}
+[34.031589] (-) TimerEvent: {}
+[34.132404] (-) TimerEvent: {}
+[34.233093] (-) TimerEvent: {}
+[34.333742] (-) TimerEvent: {}
+[34.434419] (-) TimerEvent: {}
+[34.535077] (-) TimerEvent: {}
+[34.635743] (-) TimerEvent: {}
+[34.736485] (-) TimerEvent: {}
+[34.837162] (-) TimerEvent: {}
+[34.937832] (-) TimerEvent: {}
+[35.038926] (-) TimerEvent: {}
+[35.141472] (-) TimerEvent: {}
+[35.242316] (-) TimerEvent: {}
+[35.343046] (-) TimerEvent: {}
+[35.444057] (-) TimerEvent: {}
+[35.545200] (-) TimerEvent: {}
+[35.646456] (-) TimerEvent: {}
+[35.735110] (serial_package) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable UART_Node\x1b[0m\n'}
+[35.746658] (-) TimerEvent: {}
+[35.847430] (-) TimerEvent: {}
+[35.948184] (-) TimerEvent: {}
+[36.048886] (-) TimerEvent: {}
+[36.149698] (-) TimerEvent: {}
+[36.250890] (-) TimerEvent: {}
+[36.351973] (-) TimerEvent: {}
+[36.452781] (-) TimerEvent: {}
+[36.553773] (-) TimerEvent: {}
+[36.654857] (-) TimerEvent: {}
+[36.755479] (-) TimerEvent: {}
+[36.856121] (-) TimerEvent: {}
+[36.956774] (-) TimerEvent: {}
+[37.057675] (-) TimerEvent: {}
+[37.158287] (-) TimerEvent: {}
+[37.258967] (-) TimerEvent: {}
+[37.359735] (-) TimerEvent: {}
+[37.460410] (-) TimerEvent: {}
+[37.531132] (serial_package) StdoutLine: {'line': b'[ 75%] Built target UART_Node\n'}
+[37.534967] (serial_package) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[37.540442] (serial_package) JobEnded: {'identifier': 'serial_package', 'rc': 'SIGINT'}
+[37.544184] (-) EventReactorShutdown: {}

@@ -1,0 +1,39 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.o[0m
+[ 75%] Built target UART_Node
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:56:46:[m[K [01;31m[Kerror: [m[K‘[01m[KPose2D[m[K’ is not a member of ‘[01m[Kgeometry_msgs::msg[m[K’; did you mean ‘[01m[KPose_[m[K’?
+   56 |     rclcpp::Subscription<geometry_msgs::msg::[01;31m[KPose2D[m[K>::SharedPtr jetson_sub_;
+      |                                              [01;31m[K^~~~~~[m[K
+      |                                              [32m[KPose_[m[K
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:56:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   56 |     rclcpp::Subscription<geometry_msgs::msg::Pose2D[01;31m[K>[m[K::SharedPtr jetson_sub_;
+      |                                                    [01;31m[K^[m[K
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:56:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:56:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:56:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:56:55:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   56 |     rclcpp::Subscription<geometry_msgs::msg::Pose2D>::[01;31m[KSharedPtr[m[K jetson_sub_;
+      |                                                       [01;31m[K^~~~~~~~~[m[K
+      |                                                                [32m[K;[m[K
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:56:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kjetson_sub_[m[K’ does not name a type
+   56 |     rclcpp::Subscription<geometry_msgs::msg::Pose2D>::SharedPtr [01;31m[Kjetson_sub_[m[K;
+      |                                                                 [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:[m[K In constructor ‘[01m[KOdometryNode::OdometryNode()[m[K’:
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kjetson_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_sub_[m[K’?
+   19 |         [01;31m[Kjetson_sub_[m[K = this->create_subscription<geometry_msgs::msg::Pose>(
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[Kstop_sub_[m[K
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:[m[K In member function ‘[01m[Kvoid OdometryNode::jetsonCallback(geometry_msgs::msg::Pose_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:86:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kx[m[K’
+   86 |         target_x_ = msg->[01;31m[Kx[m[K;
+      |                          [01;31m[K^[m[K
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:87:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ky[m[K’
+   87 |         target_y_ = msg->[01;31m[Ky[m[K;
+      |                          [01;31m[K^[m[K
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:[m[K In member function ‘[01m[Kvoid OdometryNode::controlLoop()[m[K’:
+[01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:103:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kjetson_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_sub_[m[K’?
+  103 |         if (![01;31m[Kjetson_sub_[m[K->get_publisher_count() || stop_motors_) {
+      |              [01;31m[K^~~~~~~~~~~[m[K
+      |              [32m[Kstop_sub_[m[K
+gmake[2]: *** [CMakeFiles/OdometryNode.dir/build.make:76: CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/OdometryNode.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

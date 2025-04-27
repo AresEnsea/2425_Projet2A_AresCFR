@@ -12,7 +12,7 @@ class SerialListener(Node):
         
         # Configure the serial port
         self.serial_port = serial.Serial(
-            port='/dev/serial0',  # Adjust port as needed
+            port='/dev/ttyACM0',  # Adjust port as needed, try serial0
             baudrate=115200,
             parity=serial.PARITY_NONE,
             stopbits=serial.STOPBITS_ONE,

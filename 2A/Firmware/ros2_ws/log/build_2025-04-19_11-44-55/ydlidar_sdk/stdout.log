@@ -1,0 +1,67 @@
+[  1%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/core/base/timer.cpp.o[0m
+[  5%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/core/network/ActiveSocket.cpp.o[0m
+[  7%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/core/common/ydlidar_def.cpp.o[0m
+[  7%] [32mBuilding C object CMakeFiles/ydlidar_sdk.dir/core/json/cJSON.c.o[0m
+[  9%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/core/network/PassiveSocket.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/core/network/SimpleSocket.cpp.o[0m
+[ 13%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/core/serial/serial.cpp.o[0m
+[ 15%] [32mBuilding C object CMakeFiles/ydlidar_sdk.dir/core/serial/impl/unix/lock.c.o[0m
+[ 17%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/core/serial/impl/unix/list_ports_linux.cpp.o[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/core/serial/impl/unix/unix_serial.cpp.o[0m
+[ 21%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/CYdLidar.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/DTSLidarDriver.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/ETLidarDriver.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/GSLidarDriver.cpp.o[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/SDMLidarDriver.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/TiaLidarDriver.cpp.o[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/YDlidarDriver.cpp.o[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/ydlidar_sdk.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/filters/NoiseFilter.cpp.o[0m
+[ 39%] [32mBuilding CXX object CMakeFiles/ydlidar_sdk.dir/src/filters/StrongLightFilter.cpp.o[0m
+[ 41%] [32m[1mLinking CXX static library libydlidar_sdk.a[0m
+[ 41%] Built target ydlidar_sdk
+[ 43%] [32mBuilding CXX object examples/CMakeFiles/et_test.dir/et_test.cpp.o[0m
+[ 45%] [32mBuilding CXX object examples/CMakeFiles/gs_ota.dir/gs_ota.cpp.o[0m
+[ 47%] [32mBuilding CXX object examples/CMakeFiles/gs_test2.dir/gs_test2.cpp.o[0m
+[ 49%] [32mBuilding CXX object examples/CMakeFiles/gs_test.dir/gs_test.cpp.o[0m
+[ 50%] [32m[1mLinking CXX executable ../et_test[0m
+[ 50%] Built target et_test
+[ 52%] [32mBuilding CXX object examples/CMakeFiles/scl_test.dir/scl_test.cpp.o[0m
+[ 54%] [32m[1mLinking CXX executable ../gs_ota[0m
+[ 56%] [32m[1mLinking CXX executable ../gs_test[0m
+[ 56%] Built target gs_ota
+[ 58%] [32m[1mLinking CXX executable ../gs_test2[0m
+[ 60%] [32mBuilding CXX object examples/CMakeFiles/sdm18_test.dir/sdm18_test.cpp.o[0m
+[ 60%] Built target gs_test
+[ 62%] [32mBuilding CXX object examples/CMakeFiles/sdm_test.dir/sdm_test.cpp.o[0m
+[ 62%] Built target gs_test2
+[ 64%] [32mBuilding CXX object examples/CMakeFiles/tea_test.dir/tea_test.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable ../scl_test[0m
+[ 68%] [32m[1mLinking CXX executable ../sdm18_test[0m
+[ 68%] Built target scl_test
+[ 70%] [32mBuilding CXX object examples/CMakeFiles/tia_test.dir/tia_test.cpp.o[0m
+[ 70%] Built target sdm18_test
+[ 72%] [32mBuilding CXX object examples/CMakeFiles/tmini_test.dir/tmini_test.cpp.o[0m
+[ 74%] [32m[1mLinking CXX executable ../sdm_test[0m
+[ 76%] [32m[1mLinking CXX executable ../tea_test[0m
+[ 76%] Built target sdm_test
+[ 78%] [32mBuilding CXX object examples/CMakeFiles/tof_test.dir/tof_test.cpp.o[0m
+[ 78%] Built target tea_test
+[ 80%] [32mBuilding CXX object examples/CMakeFiles/tri_and_gs_test.dir/tri_and_gs_test.cpp.o[0m
+[ 82%] [32m[1mLinking CXX executable ../tia_test[0m
+[ 84%] [32m[1mLinking CXX executable ../tmini_test[0m
+[ 84%] Built target tia_test
+[ 86%] [32mBuilding CXX object examples/CMakeFiles/tri_restart.dir/tri_restart.cpp.o[0m
+[ 88%] [32m[1mLinking CXX executable ../tof_test[0m
+[ 88%] Built target tmini_test
+[ 90%] [32mBuilding CXX object examples/CMakeFiles/tri_test.dir/tri_test.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable ../tri_and_gs_test[0m
+[ 92%] Built target tof_test
+[ 94%] [32mBuilding C object examples/CMakeFiles/lidar_c_api_test.dir/lidar_c_api_test.c.o[0m
+[ 94%] Built target tri_and_gs_test
+[ 96%] [32m[1mLinking CXX executable ../lidar_c_api_test[0m
+[ 96%] Built target lidar_c_api_test
+[ 98%] [32m[1mLinking CXX executable ../tri_restart[0m
+[ 98%] Built target tri_restart
+[100%] [32m[1mLinking CXX executable ../tri_test[0m
+[100%] Built target tri_test

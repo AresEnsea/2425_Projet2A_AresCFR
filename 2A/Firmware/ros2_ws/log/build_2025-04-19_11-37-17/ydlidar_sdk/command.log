@@ -1,0 +1,1 @@
+Invoking command in '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk': /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/ydlidar_sdk -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ydlidar_sdk

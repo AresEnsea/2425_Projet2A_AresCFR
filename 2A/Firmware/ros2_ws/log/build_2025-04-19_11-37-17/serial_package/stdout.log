@@ -1,0 +1,3 @@
+[35m[1mConsolidate compiler generated dependencies of target UART_Node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.o[0m
+[ 75%] Built target UART_Node

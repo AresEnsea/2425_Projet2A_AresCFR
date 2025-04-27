@@ -1,4 +1,5 @@
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/UART_Node
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/OdometryNode
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_2.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_3.py
@@ -15,9 +16,15 @@
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_5.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_6.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_7.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/screen_reader.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/bagfile_stm32.py
 /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/launch_serial_lidar.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/launch_robot.py
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/tirette_node.py
+/home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/OdometryNode.launch.py
 /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/UART_Node.launch.py
+/home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/combined_launch.py
+/home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/launch_robot.py
 /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/launch_serial_lidar.py
 /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/package_run_dependencies/serial_package
 /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/parent_prefix_path/serial_package

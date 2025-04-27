@@ -1,0 +1,18 @@
+[31mCMake Error at CMakeLists.txt:22 (find_package):
+  By not providing "Findydlidar_sdk.cmake" in CMAKE_MODULE_PATH this project
+  has asked CMake to find a package configuration file provided by
+  "ydlidar_sdk", but CMake did not find one.
+
+  Could not find a package configuration file provided by "ydlidar_sdk" with
+  any of the following names:
+
+    ydlidar_sdkConfig.cmake
+    ydlidar_sdk-config.cmake
+
+  Add the installation prefix of "ydlidar_sdk" to CMAKE_PREFIX_PATH or set
+  "ydlidar_sdk_DIR" to a directory containing one of the above files.  If
+  "ydlidar_sdk" provides a separate development package or SDK, be sure it
+  has been installed.
+
+[0m
+gmake: *** [Makefile:308: cmake_check_build_system] Error 1

@@ -1,0 +1,12 @@
+[0.078s] Invoking command in '/home/carpe-bleue/ros2_ws/build/serial_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4
+[0.253s] [35m[1mConsolidate compiler generated dependencies of target UART_Node[0m
+[0.294s] [ 25%] [32mBuilding CXX object CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.o[0m
+[0.351s] [ 75%] Built target UART_Node
+[1.870s] [01m[K/home/carpe-bleue/ros2_ws/src/serial_package/src/OdometryNode.cpp:4:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/pose2d.hpp: No such file or directory
+[1.870s]     4 | #include [01;31m[K"geometry_msgs/msg/pose2d.hpp"[m[K
+[1.871s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[1.872s] compilation terminated.
+[1.880s] gmake[2]: *** [CMakeFiles/OdometryNode.dir/build.make:76: CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.o] Error 1
+[1.881s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/OdometryNode.dir/all] Error 2
+[1.882s] gmake: *** [Makefile:146: all] Error 2
+[1.902s] Invoked command in '/home/carpe-bleue/ros2_ws/build/serial_package' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4

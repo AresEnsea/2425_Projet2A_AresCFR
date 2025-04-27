@@ -21,7 +21,7 @@ add_executable(OdometryNode src/OdometryNode.cpp)
 
 # Lier les bibliothèques nécessaires
 ament_target_dependencies(UART_Node rclcpp std_msgs)
-ament_target_dependencies(odometry_node
+ament_target_dependencies(OdometryNode
   rclcpp
   std_msgs
   geometry_msgs
@@ -53,8 +53,12 @@ install(
     src/robot_control_node_5.py
     src/robot_control_node_6.py
     src/robot_control_node_7.py
+    src/screen_reader.py
     src/bagfile_stm32.py
     launch/launch_serial_lidar.py
+    launch/launch_robot.py
+    src/tirette_node.py
+ 
 
   DESTINATION lib/${PROJECT_NAME}  # Installs to lib/serial_package
 )

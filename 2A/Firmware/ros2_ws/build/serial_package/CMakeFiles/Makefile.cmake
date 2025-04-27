@@ -709,4 +709,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/serial_package_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/UART_Node.dir/DependInfo.cmake"
+  "CMakeFiles/OdometryNode.dir/DependInfo.cmake"
   )

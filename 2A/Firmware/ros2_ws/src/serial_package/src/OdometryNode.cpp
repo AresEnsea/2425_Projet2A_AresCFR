@@ -1,7 +1,9 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "std_msgs/msg/bool.hpp"
-#include "geometry_msgs/msg/pose2d.hpp"
+//#include "geometry_msgs/msg/pose2d.hpp" error while compiling probably deprecated
+
+#include "geometry_msgs/msg/pose.hpp"
 #include <sstream>
 #include <cmath>
 #include <memory>
@@ -14,7 +16,7 @@ public:
         encoder_sub_ = this->create_subscription<std_msgs::msg::String>(
             "data_encoder", 10, std::bind(&OdometryNode::encoderCallback, this, std::placeholders::_1));
         
-        jetson_sub_ = this->create_subscription<geometry_msgs::msg::Pose2D>(
+        jetson_sub_ = this->create_subscription<geometry_msgs::msg::Pose>(
             "data_jetson", 10, std::bind(&OdometryNode::jetsonCallback, this, std::placeholders::_1));
         
         stop_sub_ = this->create_subscription<std_msgs::msg::Bool>(
@@ -51,7 +53,7 @@ private:
     const double Ki_angular = 100.0;   // Gain intégral angulaire
 
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr encoder_sub_;
-    rclcpp::Subscription<geometry_msgs::msg::Pose2D>::SharedPtr jetson_sub_;
+    rclcpp::Subscription<geometry_msgs::msg::Pose>::SharedPtr jetson_sub_;
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_sub_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr stm_pub_;
     rclcpp::TimerBase::SharedPtr timer_;
@@ -79,10 +81,10 @@ private:
         current_theta_ = std::fmod(current_theta_ + 2 * M_PI, 2 * M_PI);
     }
 
-    void jetsonCallback(const geometry_msgs::msg::Pose2D::SharedPtr msg)
+    void jetsonCallback(const geometry_msgs::msg::Pose::SharedPtr msg)
     {
-        target_x_ = msg->x;
-        target_y_ = msg->y;
+        target_x_ = msg->position.x;
+        target_y_ = msg->position.y;
     }
 
     void stopCallback(const std_msgs::msg::Bool::SharedPtr msg)

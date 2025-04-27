@@ -1,6 +1,7 @@
 /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles/uninstall.dir
 /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles/serial_package_uninstall.dir
 /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles/UART_Node.dir
+/home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles/OdometryNode.dir
 /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles/test.dir
 /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles/edit_cache.dir
 /home/carpe-bleue/ros2_ws/build/serial_package/CMakeFiles/rebuild_cache.dir

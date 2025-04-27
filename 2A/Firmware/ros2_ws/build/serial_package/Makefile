@@ -210,6 +210,43 @@ UART_Node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/UART_Node.dir/build.make CMakeFiles/UART_Node.dir/build
 .PHONY : UART_Node/fast
 
+#=============================================================================
+# Target rules for targets named OdometryNode
+
+# Build rule for target.
+OdometryNode: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OdometryNode
+.PHONY : OdometryNode
+
+# fast build rule for target.
+OdometryNode/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OdometryNode.dir/build.make CMakeFiles/OdometryNode.dir/build
+.PHONY : OdometryNode/fast
+
+src/OdometryNode.o: src/OdometryNode.cpp.o
+.PHONY : src/OdometryNode.o
+
+# target to build an object file
+src/OdometryNode.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OdometryNode.dir/build.make CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.o
+.PHONY : src/OdometryNode.cpp.o
+
+src/OdometryNode.i: src/OdometryNode.cpp.i
+.PHONY : src/OdometryNode.i
+
+# target to preprocess a source file
+src/OdometryNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OdometryNode.dir/build.make CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.i
+.PHONY : src/OdometryNode.cpp.i
+
+src/OdometryNode.s: src/OdometryNode.cpp.s
+.PHONY : src/OdometryNode.s
+
+# target to generate assembly for a file
+src/OdometryNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OdometryNode.dir/build.make CMakeFiles/OdometryNode.dir/src/OdometryNode.cpp.s
+.PHONY : src/OdometryNode.cpp.s
+
 src/UART_Node.o: src/UART_Node.cpp.o
 .PHONY : src/UART_Node.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... serial_package_uninstall"
 	@echo "... uninstall"
+	@echo "... OdometryNode"
 	@echo "... UART_Node"
+	@echo "... src/OdometryNode.o"
+	@echo "... src/OdometryNode.i"
+	@echo "... src/OdometryNode.s"
 	@echo "... src/UART_Node.o"
 	@echo "... src/UART_Node.i"
 	@echo "... src/UART_Node.s"

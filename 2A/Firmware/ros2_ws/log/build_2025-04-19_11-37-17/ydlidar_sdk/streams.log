@@ -1,0 +1,132 @@
+[0.072s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk': /usr/bin/cmake /home/carpe-bleue/ros2_ws/src/ydlidar_sdk -DCMAKE_INSTALL_PREFIX=/home/carpe-bleue/ros2_ws/install/ydlidar_sdk
+[0.098s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.099s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.099s]   CMake.
+[0.100s] 
+[0.101s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.101s]   CMake that the project does not need compatibility with older versions.
+[0.102s] 
+[0.102s] [0m
+[0.760s] -- The C compiler identification is GNU 11.4.0
+[1.032s] -- The CXX compiler identification is GNU 11.4.0
+[1.069s] -- Detecting C compiler ABI info
+[1.382s] -- Detecting C compiler ABI info - done
+[1.409s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.411s] -- Detecting C compile features
+[1.413s] -- Detecting C compile features - done
+[1.427s] -- Detecting CXX compiler ABI info
+[1.763s] -- Detecting CXX compiler ABI info - done
+[1.791s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.792s] -- Detecting CXX compile features
+[1.794s] -- Detecting CXX compile features - done
+[1.797s] -- Current platform: Linux
+[1.801s] [0mCMake Deprecation Warning at CMakeLists.txt:58 (cmake_policy):
+[1.802s]   The OLD behavior for policy CMP0053 will be removed from a future version
+[1.802s]   of CMake.
+[1.803s] 
+[1.803s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[1.804s]   policies are deprecated and that a policy should be set to OLD only under
+[1.804s]   specific short-term circumstances.  Projects should be ported to the NEW
+[1.804s]   behavior and not rely on setting a policy to OLD.
+[1.805s] 
+[1.805s] [0m
+[1.805s] [0mCMake Deprecation Warning at CMakeLists.txt:61 (cmake_policy):
+[1.806s]   The OLD behavior for policy CMP0037 will be removed from a future version
+[1.806s]   of CMake.
+[1.806s] 
+[1.806s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[1.807s]   policies are deprecated and that a policy should be set to OLD only under
+[1.807s]   specific short-term circumstances.  Projects should be ported to the NEW
+[1.807s]   behavior and not rely on setting a policy to OLD.
+[1.808s] 
+[1.808s] [0m
+[1.808s] [0mCMake Deprecation Warning at CMakeLists.txt:64 (cmake_policy):
+[1.809s]   The OLD behavior for policy CMP0043 will be removed from a future version
+[1.809s]   of CMake.
+[1.809s] 
+[1.809s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[1.810s]   policies are deprecated and that a policy should be set to OLD only under
+[1.810s]   specific short-term circumstances.  Projects should be ported to the NEW
+[1.810s]   behavior and not rely on setting a policy to OLD.
+[1.811s] 
+[1.811s] [0m
+[1.812s] -- Could NOT find SWIG (missing: SWIG_EXECUTABLE SWIG_DIR) 
+[1.923s] -- Found PythonInterp: /usr/bin/python3.10 (found version "3.10.12") 
+[2.005s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+[2.690s] -- Found GTest: /usr/lib/aarch64-linux-gnu/cmake/GTest/GTestConfig.cmake (found version "1.11.0")  
+[2.691s] [0mCMake Deprecation Warning at core/CMakeLists.txt:1 (cmake_minimum_required):
+[2.691s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[2.692s]   CMake.
+[2.692s] 
+[2.692s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.693s]   CMake that the project does not need compatibility with older versions.
+[2.693s] 
+[2.693s] [0m
+[2.720s] [0mCMake Deprecation Warning at examples/CMakeLists.txt:2 (cmake_minimum_required):
+[2.720s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[2.721s]   CMake.
+[2.721s] 
+[2.721s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.721s]   CMake that the project does not need compatibility with older versions.
+[2.722s] 
+[2.722s] [0m
+[2.731s] [0mCMake Deprecation Warning at cmake/install_package.cmake:101 (cmake_policy):
+[2.731s]   The OLD behavior for policy CMP0026 will be removed from a future version
+[2.731s]   of CMake.
+[2.732s] 
+[2.732s]   The cmake-policies(7) manual explains that the OLD behaviors of all
+[2.732s]   policies are deprecated and that a policy should be set to OLD only under
+[2.733s]   specific short-term circumstances.  Projects should be ported to the NEW
+[2.733s]   behavior and not rely on setting a policy to OLD.
+[2.733s] Call Stack (most recent call first):
+[2.733s]   CMakeLists.txt:176 (install_package)
+[2.734s] 
+[2.734s] [0m
+[2.741s] [33mCMake Warning (dev) at cmake/install_package.cmake:191 (install):
+[2.741s]   Policy CMP0062 is not set: Disallow install() of export() result.  Run
+[2.741s]   "cmake --help-policy CMP0062" for policy details.  Use the cmake_policy
+[2.741s]   command to set the policy and suppress this warning.
+[2.742s] 
+[2.742s]   The file
+[2.742s] 
+[2.743s]     /home/carpe-bleue/ros2_ws/build/ydlidar_sdk/ydlidar_sdkTargets.cmake
+[2.743s] 
+[2.743s]   was generated by the export() command.  It should not be installed with the
+[2.744s]   install() command.  Use the install(EXPORT) mechanism instead.  See the
+[2.744s]   cmake-packages(7) manual for more.
+[2.744s] 
+[2.744s] Call Stack (most recent call first):
+[2.745s]   CMakeLists.txt:176 (install_package)
+[2.745s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.745s] [0m
+[2.773s] -- 
+[2.774s] -- +===========================================================================+
+[2.774s] -- |         Resulting configuration for                             |
+[2.775s] -- +===========================================================================+
+[2.775s] --  _________________________ PLATFORM _____________________________
+[2.775s] --  Host                        : Linux5.15.0-1076-raspiaarch64
+[2.775s] --  Is the system big endian?   :  No 
+[2.776s] --  Word size (32/64 bit)       : 64
+[2.776s] --  CMake version               : 3.22.1
+[2.777s] --  CMake generator             : Unix Makefiles
+[2.777s] --  CMake build tool            : /usr/bin/gmake
+[2.777s] --  Compiler                    : GNU
+[2.777s] --  Configuration               : 
+[2.778s] -- 
+[2.778s] --  __________________________ OPTIONS _____________________________
+[2.778s] --  Build YDLidar-SDK as a shared library?　　 :  No 
+[2.779s] --  Build Examples?　　　　　　　　　　　　　　 : Yes 
+[2.779s] --  Build C Sharp API?　　　　　　　　　　　　 :  No 
+[2.779s] --  Build TEST?  			　　　 :  No 
+[2.779s] -- 
+[2.780s] --  _________________________ INSTALL _____________________
+[2.780s] --  Install prefix                    : /home/carpe-bleue/ros2_ws/install/ydlidar_sdk
+[2.780s] -- 
+[2.780s] --  _______________________ WRAPPERS/BINDINGS ______________________
+[2.781s] --  Python bindings (pyydlidar)   :  No 
+[2.781s] --   - dep: Swig found?       :  No [Version: ]
+[2.781s] --   - dep: PythonLibs found?  : Yes [Version: 3.10.12]
+[2.782s] -- 
+[2.782s] -- Configuring done
+[2.914s] -- Generating done
+[2.954s] -- Build files have been written to: /home/carpe-bleue/ros2_ws/build/ydlidar_sdk
