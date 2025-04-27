@@ -25,10 +25,6 @@ Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lan
    >- ydlidar_launch.py : renvoie les distances prises en considération par le lidar.
 <image src="https://github.com/user-attachments/assets/174b4c74-a171-4f48-ac5a-31af73da478c" alt="image" width=300/>
 
-  
-- ecran_code_2425 : projet permettant d'afficher sur un écran lcd le plateau de jeu de la coupe de France. 
-<image src="https://github.com/user-attachments/assets/786938ef-1c37-4f8c-b087-20cfafe1b13b" alt="image" width=300/>
-
 -tirette : la tirette est associée à un gpio input et la pi en fait un topic binaire permettant de lancer un bag en début de partie <br/>
 <img src="https://github.com/user-attachments/assets/65d34960-c1c1-4513-9c7e-b8fa18f0437f" width="300" />
 
@@ -38,6 +34,9 @@ Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lan
   - servo_ares_board : code qui permet de contrôler les servos moteurs.
 
   - stepper_ares : code qui récupère le message en uart et qui contrôle les stepper.
+  
+  - ecran_code_2425 : projet permettant d'afficher sur un écran lcd le plateau de jeu de la coupe de France. 
+<image src="https://github.com/user-attachments/assets/786938ef-1c37-4f8c-b087-20cfafe1b13b" alt="image" width=300/>
 
 
 
