@@ -7,7 +7,7 @@ Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lan
 
 # Contenu
 
-- ros2_ws : le workspace ROS actuellement sur la pi4 (booté avec Ubuntu 22.04 et utilisant ROS2 
+- ros2_ws : le workspace ROS actuellement sur la pi4 (booté avec Ubuntu 22.04 et utilisant ROS2) : lien https://github.com/AresEnsea/2425_Projet2A_AresCFR/tree/a82bbcb8feb8a41b16a1ad06d5899020270ff6f9/2A/Firmware/ros2_ws
   >- serial_node.py : on envoie une succession de chiffre (messages de 8 chiffres) en UART vers la STM
   >- serial_node_2.py : on envoie le message en fonction de l'input fait sur le clavier ce qui permet de controller par exemple la base roulante à distance
   >- serial_node_3.py : semblable à la node précédente mais on enrgistre en plus le message envoyé à la stm dans un rosbag pour pouvoir le rejouer ensuite (on créé notre propre topic "keyboard_commands")
