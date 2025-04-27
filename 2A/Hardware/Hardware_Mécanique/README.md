@@ -94,6 +94,26 @@ Elles sont proche du routeur fixé par ses mounting holes sur la plaque du haut.
 
 Le cable management est encore en cours car dépend de l'utilisation ou non de PCbs. Cependant nous faisont ça le plus proprement possible avec de la gaine tréssée et de la gaine thermo.
 
+##Tour Caméra :
+![image](https://github.com/user-attachments/assets/198940c0-bfeb-4345-b5b8-375380a9c578)
+
+Pour la vison nous avons réalisé une tour en 3 parties :
+- La base:
+![image](https://github.com/user-attachments/assets/04d46014-13c5-4adc-9976-67ba431a42c8)
+
+Cette base est fixé à la table de jeux par vis (un écrou est incrusté dans le print) :
+![image](https://github.com/user-attachments/assets/e9fc3b24-3447-4b56-bbf0-9660aa2046b7)
+
+- La jonction :
+![image](https://github.com/user-attachments/assets/2ef263b6-9d80-4b51-8823-58e0318fc107)
+Cette Jonction possède un embout mal pour s'encastrer dans la base et un embout femelle pour accueillir la tête avec la caméra.
+
+- Tête :
+![image](https://github.com/user-attachments/assets/6ed388a7-fcac-488b-8368-b5fc3aec2854)
+
+La tête possède un trou pour fixer les caméras de l'équipe vision. 
+Globalement cette tour est pratique car tout a été réfléchis pour qu'elle s'imprime sans support. Des lignes sur les côtés indiquent comment relier les parties de la tour. Il est ainsi plus aisé de la désassembler pour son transport. Les tolérences ont été calculées de manière à ce que les pièces soient facile à s'assembler et pratique pour orienter les caméras. 
+
 Dans l'ensemble nous avons répondu aux demandes de chacune des équipes tout en respectant les règles de la compétition. Le robot est assemblé !
 
 
