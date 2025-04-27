@@ -35,6 +35,8 @@ Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lan
 -tirette : la tirette est associée à un gpio input et la pi en fait un topic binaire permettant de lancer un bag en début de partie <br/>
 <img src="https://github.com/user-attachments/assets/65d34960-c1c1-4513-9c7e-b8fa18f0437f" width="300" />
 
+-cfr_mot2 : code pour la "carte mère", la carte redistribue le message reçue de la py dans les autres stm.
+
 
 
 
