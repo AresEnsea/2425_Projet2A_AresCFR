@@ -37,6 +37,10 @@ Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lan
 
 -cfr_mot2 : code pour la "carte mère", la carte redistribue le message reçue de la py dans les autres stm.
 
+- servo_ares_board : code qui permet de contrôler les servos moteurs.
+
+-stepper : code qui récupère le message en uart et qui contrôle les stepper.
+
 
 
 
