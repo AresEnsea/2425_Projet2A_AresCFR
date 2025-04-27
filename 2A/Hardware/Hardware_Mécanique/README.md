@@ -88,6 +88,12 @@ Le plus simple avec la place qu'il nous reste est de placé le routeur et les an
 
 Elles sont proche du routeur fixé par ses mounting holes sur la plaque du haut. Un angle de 90° est mis entre les antennes comme demandé par l'équipe réseau. 
 
+## Cable Management :
+
+![WhatsApp Image 2025-04-27 à 22 39 31_3f12c18c](https://github.com/user-attachments/assets/c969fd0a-094e-448a-92ae-9e772f1adcc0)
+
+Le cable management est encore en cours car dépend de l'utilisation ou non de PCbs. Cependant nous faisont ça le plus proprement possible avec de la gaine tréssée et de la gaine thermo.
+
 Dans l'ensemble nous avons répondu aux demandes de chacune des équipes tout en respectant les règles de la compétition. Le robot est assemblé !
 
 
