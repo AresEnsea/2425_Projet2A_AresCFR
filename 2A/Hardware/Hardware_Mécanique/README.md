@@ -129,6 +129,8 @@ Cette Jonction possède un embout mal pour s'encastrer dans la base et un embout
 La tête possède un trou pour fixer les caméras de l'équipe vision. 
 Globalement cette tour est pratique car tout a été réfléchis pour qu'elle s'imprime sans support. Des lignes sur les côtés indiquent comment relier les parties de la tour. Il est ainsi plus aisé de la désassembler pour son transport. Les tolérences ont été calculées de manière à ce que les pièces soient facile à s'assembler et pratique pour orienter les caméras. 
 
+## Conclusion
+
 Dans l'ensemble nous avons répondu aux demandes de chacune des équipes tout en respectant les règles de la compétition. Le robot est assemblé !
 
 
