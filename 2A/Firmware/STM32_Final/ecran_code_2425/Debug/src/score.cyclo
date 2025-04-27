@@ -1,0 +1,2 @@
+../src/score.c:23:6:score	1
+../src/score.c:50:6:HAL_UART_RxCpltCallback	40
