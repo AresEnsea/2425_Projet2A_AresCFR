@@ -6,9 +6,6 @@ Ici le dossier Firmware du Github de la Coupe de France 2025 d'Ares, il regroupe
 Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lancent : poser la bannière, démarrage du package LiDAR. Ensuite l'action du robot reste simple : il suit le chemin indiqué par la jetson, exécute l'action de poser ou de prendre les canettes/planches et recommence. La fin de l'opération cannettes/planches sera vérifiée grâce à des switch. 
 
 # Contenu
-- CFR_G474RET6 : le projet STM32CubeIDE que nous implémenteront ultérieurement dans le microprocesseur (G474RET6) du pcb, pour le moment il contient simplement le pinout
-- STM32_Pi_Connexion : contient le projet qui STM32CubeIDE qui permet la connexion UART entre une STM32CubeIDE L476RG (avant de pouvoir utiliser le PCB) et une raspberry pi4
-- STM32_moteurs : contient le projet STM32CubeIDE qui délivre deux PWM pour faire tourner des moteurs
 
 - ros2_ws : le workspace ROS actuellement sur la pi4 (booté avec Ubuntu 22.04 et utilisant ROS2 
   >- serial_node.py : on envoie une succession de chiffre (messages de 8 chiffres) en UART vers la STM
@@ -35,11 +32,12 @@ Au démarrage du robot, regroupé sous l'action Init, plusieurs fonctions se lan
 -tirette : la tirette est associée à un gpio input et la pi en fait un topic binaire permettant de lancer un bag en début de partie <br/>
 <img src="https://github.com/user-attachments/assets/65d34960-c1c1-4513-9c7e-b8fa18f0437f" width="300" />
 
--cfr_mot2 : code pour la "carte mère", la carte redistribue le message reçue de la py dans les autres stm.
+- code stm : 
+  - cfr_mot2 : code pour la "carte mère", la carte redistribue le message reçue de la py dans les autres stm.
 
--servo_ares_board : code qui permet de contrôler les servos moteurs.
+  - servo_ares_board : code qui permet de contrôler les servos moteurs.
 
--stepper_ares : code qui récupère le message en uart et qui contrôle les stepper.
+  - stepper_ares : code qui récupère le message en uart et qui contrôle les stepper.
 
 
 
