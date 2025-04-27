@@ -32,13 +32,18 @@ La projection verticale de cette plaque inférieure combinée à celle des méca
   Nous avons opté pour ce système de déploiement car il reste relativement simple et efficace, il était nécessaire de plier ou d'enrouler la bannière car la réglementation impose une largeur et une longueur de bannière trop grandes pour etre stockées dans le robot comme tel.
   La partie du haut se déploiera par le même mécanisme mais uniquement quand le robot enverra la commande au servo moteur. Ainsi la bannière sera proprement déployeée. Le robot n'aura plus qu'à se déconnecté en roulant de l'autre côté de la bannière, ce qui déconnectera les pins header relié à la carte stm. 
 
-![image](https://github.com/user-attachments/assets/7d14aec5-ddd7-40d0-9cb9-9021474d7b22)
+![image](https://github.com/user-attachments/assets/be71b908-b71c-48ec-9c25-01bfbd73b470)
 
-Vous pouvez voir ci dessus la partie qui sera accrochée sur le bord de l'aire de jeu. La bannière y sera attachée entre les deux différentes plaques maintenues par un système de vis écrou. Les rebords extrudés de la partie grise ainsi que du bas de l'accroche de la partie bleue serviront à mieux maintenir la bannière enroulée lors de l'accroche du porte bannière sur le rebord de la table, et autoriser ensuite la chute du mécanisme de déploiement. On peut également y voir le trou pour le servo moteur et les fils qui y sortiront. 
+Vous pouvez voir ci dessus la partie qui sera accrochée sur le bord de l'aire de jeu. La bannière y sera attachée entre les deux différentes plaques maintenues par un système de vis écrou. Les rebords extrudés de la partie grise ainsi que du bas de l'accroche de la partie bleue serviront à mieux maintenir la bannière enroulée lors de l'accroche du porte bannière sur le rebord de la table, et autoriser ensuite la chute du mécanisme de déploiement. On peut également y voir le trou pour le servo moteur et celui où les fils sortiront. 
+
+
+
+https://github.com/user-attachments/assets/2ac68d6e-2b8b-40fc-8861-738e08470789
+
 
 ![Capturevidodu24-01-2025230203-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/7a24c7ee-1fc4-43a6-92a6-2346f90275c3)
 
-Ceci est une animation du système de déploiement de la bannière, il faut imaginer que tout comme pour le porte bannière, l'on attache la bannière en la serrant entre les plaques avec un système de vis écrous. Deux ressorts planaires de 180 degrés sont placées au sein des pivots afin d'exercer une force cherchant à déployer le mécanisme. Le mécanisme est maintenu femré en l'enroulant dans la bannière.
+Ceci est une animation du système de déploiement de la bannière, il faut imaginer que tout comme pour le porte bannière, l'on attache la bannière en la serrant entre les plaques avec un système de vis écrous. Deux ressorts planaires de 180 degrés sont placées au sein des pivots afin d'exercer une force cherchant à déployer le mécanisme. Le mécanisme du bas est maintenu fermé en l'enroulant dans la bannière tendu que celui du haut est bloqué avec le servo-moteur.
 
 ## Pinces élévatrices
 
@@ -63,4 +68,28 @@ Ce mécanisme est responsable de soulever les planches posées sur les boites de
 1. Le robot s'aligne à l'étage présent sur la table.
 2. Il fait monter le chariot élévateur jusqu'à ce que les bras atteignent les planches
 3. Il reserre alors les pinces afin d'attraper les canettes et soulève la totalité de l'étage.
+
+## Support PCB :
+
+Support pour PCB moteur, servo-moteur et stepper :
+![WhatsApp Image 2025-04-27 à 22 23 22_0c7d7915](https://github.com/user-attachments/assets/f32db625-77b3-48f3-b1bb-83cd14ad7141)
+
+Dans le cas où nous utilisons les PCBs conçus, nous avons proposé une tour à PCB qui controlent tout les moteurs du robot. Cette tour a été pensé pour qu'elle puisse réunir un maximum de PCB de la manière la plus ergonomique possible. Les PCBs s'y fixent par encastration et le support est encastré dans le bois de la base roulante. Ils sont placés stratégiquements à cotés des moteurs de chaque côté du robot. Ces pcbs sont alimentés par le pcb multiprise :
+
+![WhatsApp Image 2025-04-28 à 00 16 25_3da53bbe](https://github.com/user-attachments/assets/ebebe4a9-3a8b-46fd-878f-64203c316ff6)
+
+Ce PCB est relié à un support qui reprend sa forme et qui installé dans le robot sur un rail afin de pouvoir ajuster sa position en cas de besoin. 
+
+## Support antenne :
+
+Le plus simple avec la place qu'il nous reste est de placé le routeur et les antennes au dessus du robot :
+
+![image](https://github.com/user-attachments/assets/102ca89f-f7d4-46bf-9fa6-8a2e19974755)
+
+Elles sont proche du routeur fixé par ses mounting holes sur la plaque du haut. Un angle de 90° est mis entre les antennes comme demandé par l'équipe réseau. 
+
+Dans l'ensemble nous avons répondu aux demandes de chacune des équipes tout en respectant les règles de la compétition. Le robot est assemblé !
+
+
+
 
