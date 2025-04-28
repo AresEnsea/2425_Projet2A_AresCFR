@@ -40,6 +40,7 @@ via le WIFI.
 ### Issues :
 
 -  La V1 du PCB n'a pas été concluante suite au non fonctionnement d'un convertisseur buck. Celui-ci à été changé dans la V2.
+-  La V2 à fonctionné mais avec un problème qui faisairt que le moteur ne touranit que dans un sens. La V3 rajoute une resistance de sense entre le bras de pont et le mosfet driver. 
 
 
 ## PCB_Stepper 
