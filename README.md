@@ -13,11 +13,9 @@ Read me 1A :
 
 Read me 2A :
       https://github.com/AresEnsea/2425_Projet2A_AresCFR/blob/main/2A/README.md
-      
-<img src="https://github.com/user-attachments/assets/f719fcd2-1e79-4abe-89d7-a2176633c4ac" alt="IMG_20250124_191657" width="500"/>
-<img src="https://github.com/user-attachments/assets/cd621b2d-0ee9-4fe2-a165-46ec8f692af9" alt="WhatsApp Image 2025-04-24 à 07 14 22_3d9a94c0" width="500"/>
-<img src="https://github.com/user-attachments/assets/4440a550-a8fe-44d7-aee4-52f0814bf44d" alt="WhatsApp Image 2025-04-24 à 07 14 22_1429e30c" width="500"/>
 
+![WhatsApp Image 2025-04-28 at 09 13 59](https://github.com/user-attachments/assets/2ea9d2d0-2936-480f-9494-180a2e3422b3)
+![WhatsApp Image 2025-04-28 at 09 14 00](https://github.com/user-attachments/assets/6d05abc5-f7a7-40cd-9c5d-797f26132b66)
 
 
 https://github.com/user-attachments/assets/8da76ca9-4337-4687-90c1-276035e22721
