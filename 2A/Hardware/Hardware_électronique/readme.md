@@ -21,8 +21,9 @@ via le WIFI.
 
 
 
-## PCB_Moteur V2
-![image](https://github.com/user-attachments/assets/984a2635-1796-419c-b235-47eec7ee183f)
+## PCB_Moteur V3
+![image](https://github.com/user-attachments/assets/b463e2cb-5f65-497a-8cfb-58d749f0a646)
+
 ### Descriptopn :
  - Carte de pilotage des moteurs de la base roulante. Nous avons prévu une carte par moteur.
 
