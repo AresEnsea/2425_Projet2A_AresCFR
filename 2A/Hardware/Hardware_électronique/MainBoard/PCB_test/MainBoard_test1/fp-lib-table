@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 (fp_lib_table
   (version 7)
   (lib (name "SODIMM_260")(type "KiCad")(uri "G:/Mon Drive/Documents perso/Folie/CDF2025/Electronique/MainBoard/lib_recpt_jetson/footprints.pretty")(options "")(descr ""))
@@ -6,10 +5,3 @@
   (lib (name "CustomLibrary")(type "KiCad")(uri "C:/Users/knn64/git/2425_Maker_S2C/Hardware/S2C_motorBoard/CustomLibrary.pretty")(options "")(descr ""))
   (lib (name "Custom")(type "KiCad")(uri "C:/Users/knn64/git/2425_Maker_S2C/Hardware/PCB_PiAlim/PiAlim/Custom.pretty")(options "")(descr ""))
 )
-=======
-(fp_lib_table
-  (version 7)
-  (lib (name "SODIMM_260")(type "KiCad")(uri "G:/Mon Drive/Documents perso/Folie/CDF2025/Electronique/MainBoard/lib_recpt_jetson/footprints.pretty")(options "")(descr ""))
-  (lib (name "MainBoard")(type "KiCad")(uri "${KIPRJMOD}/MainBoard.pretty")(options "")(descr ""))
-)
->>>>>>> eca5bd43e53bee708a97bf4f1251219196013499
