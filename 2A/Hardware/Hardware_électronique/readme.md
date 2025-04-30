@@ -85,5 +85,6 @@ Le troisième constitue une sécurité au cas ou une des deux cartes utilisées 
    Les deux cartes soudées en dernières fonctionnent parfaitement (aucun problème de fonctionnement relevé).
   
 # Schéma Final du Hardware
-En suivant ce lien vous trouverez un schéma de tous les PCB ci-dessus avec câblage entre eux.
+En suivant ce lien vous trouverez un schéma de tous les PCB ci-dessus avec câblage entre eux :
+
 https://lucid.app/lucidspark/aabfef21-1fd2-40bf-9924-298b6e461ffa/view
