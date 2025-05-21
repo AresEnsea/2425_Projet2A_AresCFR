@@ -1,0 +1,359 @@
+[0.000000] (-) TimerEvent: {}
+[0.001185] (serial_package) JobQueued: {'identifier': 'serial_package', 'dependencies': OrderedDict()}
+[0.001418] (ydlidar_ros2_driver) JobQueued: {'identifier': 'ydlidar_ros2_driver', 'dependencies': OrderedDict()}
+[0.001741] (ydlidar_sdk) JobQueued: {'identifier': 'ydlidar_sdk', 'dependencies': OrderedDict()}
+[0.001899] (serial_package) JobStarted: {'identifier': 'serial_package'}
+[0.044167] (ydlidar_ros2_driver) JobStarted: {'identifier': 'ydlidar_ros2_driver'}
+[0.068814] (ydlidar_sdk) JobStarted: {'identifier': 'ydlidar_sdk'}
+[0.097978] (-) TimerEvent: {}
+[0.099244] (serial_package) JobProgress: {'identifier': 'serial_package', 'progress': 'cmake'}
+[0.104389] (serial_package) JobProgress: {'identifier': 'serial_package', 'progress': 'build'}
+[0.107307] (serial_package) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carpe-bleue/ros2_ws/build/serial_package', '--', '-j4', '-l4'], 'cwd': '/home/carpe-bleue/ros2_ws/build/serial_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.1.76 37728 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/home/carpe-bleue/ros2_ws/install/lidar_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/serial_package'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.76 37728 192.168.1.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/local/lib/python3.10/dist-packages:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk:/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_test:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble')]), 'shell': False}
+[0.122074] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'cmake'}
+[0.129791] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'build'}
+[0.134266] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver', '--', '-j4', '-l4'], 'cwd': '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.1.76 37728 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/home/carpe-bleue/ros2_ws/install/lidar_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.76 37728 192.168.1.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/local/lib/python3.10/dist-packages:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk:/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_test:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble')]), 'shell': False}
+[0.149352] (ydlidar_sdk) JobProgress: {'identifier': 'ydlidar_sdk', 'progress': 'cmake'}
+[0.155318] (ydlidar_sdk) JobProgress: {'identifier': 'ydlidar_sdk', 'progress': 'build'}
+[0.156223] (ydlidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk', '--', '-j4', '-l4'], 'cwd': '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.1.76 37728 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/home/carpe-bleue/ros2_ws/install/lidar_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.76 37728 192.168.1.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/local/lib/python3.10/dist-packages:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk:/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_test')]), 'shell': False}
+[0.198257] (-) TimerEvent: {}
+[0.299375] (-) TimerEvent: {}
+[0.400689] (-) TimerEvent: {}
+[0.502336] (-) TimerEvent: {}
+[0.603699] (-) TimerEvent: {}
+[0.704839] (-) TimerEvent: {}
+[0.805977] (-) TimerEvent: {}
+[0.907003] (-) TimerEvent: {}
+[1.008082] (-) TimerEvent: {}
+[1.109070] (-) TimerEvent: {}
+[1.209999] (-) TimerEvent: {}
+[1.214099] (serial_package) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.310146] (-) TimerEvent: {}
+[1.386676] (ydlidar_sdk) StdoutLine: {'line': b'[ 41%] Built target ydlidar_sdk\n'}
+[1.410477] (-) TimerEvent: {}
+[1.419441] (ydlidar_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target ydlidar_ros2_driver_client\n'}
+[1.424636] (ydlidar_ros2_driver) StdoutLine: {'line': b'[100%] Built target ydlidar_ros2_driver_node\n'}
+[1.483156] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[1.497552] (ydlidar_ros2_driver) JobProgress: {'identifier': 'ydlidar_ros2_driver', 'progress': 'install'}
+[1.510686] (-) TimerEvent: {}
+[1.576272] (ydlidar_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver'], 'cwd': '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.1.76 37728 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/home/carpe-bleue/ros2_ws/install/lidar_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/ydlidar_ros2_driver'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.76 37728 192.168.1.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/local/lib/python3.10/dist-packages:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk:/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_test:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble')]), 'shell': False}
+[1.578349] (ydlidar_sdk) StdoutLine: {'line': b'[ 45%] Built target et_test\n'}
+[1.580598] (ydlidar_sdk) StdoutLine: {'line': b'[ 49%] Built target gs_ota\n'}
+[1.611037] (-) TimerEvent: {}
+[1.619247] (ydlidar_sdk) StdoutLine: {'line': b'[ 52%] Built target gs_test\n'}
+[1.630210] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.631111] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/safety_node.py\n'}
+[1.635139] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_node\n'}
+[1.642114] (ydlidar_sdk) StdoutLine: {'line': b'[ 56%] Built target gs_test2\n'}
+[1.643409] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/lib/ydlidar_ros2_driver/ydlidar_ros2_driver_client\n'}
+[1.645015] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch\n'}
+[1.648087] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar.py\n'}
+[1.649299] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch_view.py\n'}
+[1.650138] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/launch/ydlidar_launch.py\n'}
+[1.650677] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params\n'}
+[1.655387] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TminiPro.yaml\n'}
+[1.657302] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X2.yaml\n'}
+[1.659117] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/GS2.yaml\n'}
+[1.660705] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G2.yaml\n'}
+[1.662057] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4.yaml\n'}
+[1.667420] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G1.yaml\n'}
+[1.669975] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/.X4.yaml.swp\n'}
+[1.671976] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TG.yaml\n'}
+[1.673564] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/ydlidar.yaml\n'}
+[1.675498] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/TEA.yaml\n'}
+[1.677945] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/X4-Pro.yaml\n'}
+[1.679485] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/params/G6.yaml\n'}
+[1.680785] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup\n'}
+[1.684778] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/startup/initenv.sh\n'}
+[1.686872] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config\n'}
+[1.689561] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/config/ydlidar.rviz\n'}
+[1.691528] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/package_run_dependencies/ydlidar_ros2_driver\n'}
+[1.698319] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/parent_prefix_path/ydlidar_ros2_driver\n'}
+[1.699214] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.sh\n'}
+[1.700460] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[1.701273] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.sh\n'}
+[1.702721] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/environment/path.dsv\n'}
+[1.703811] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.bash\n'}
+[1.704418] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.sh\n'}
+[1.704949] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.zsh\n'}
+[1.711290] (-) TimerEvent: {}
+[1.713347] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/local_setup.dsv\n'}
+[1.714573] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Installing: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.dsv\n'}
+[1.717288] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ament_index/resource_index/packages/ydlidar_ros2_driver\n'}
+[1.719490] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig.cmake\n'}
+[1.720401] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/cmake/ydlidar_ros2_driverConfig-version.cmake\n'}
+[1.721133] (ydlidar_ros2_driver) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver/share/ydlidar_ros2_driver/package.xml\n'}
+[1.730094] (ydlidar_ros2_driver) CommandEnded: {'returncode': 0}
+[1.765720] (ydlidar_sdk) StdoutLine: {'line': b'[ 60%] Built target scl_test\n'}
+[1.794616] (ydlidar_sdk) StdoutLine: {'line': b'[ 64%] Built target sdm18_test\n'}
+[1.811513] (-) TimerEvent: {}
+[1.837446] (ydlidar_sdk) StdoutLine: {'line': b'[ 68%] Built target tea_test\n'}
+[1.839015] (ydlidar_sdk) StdoutLine: {'line': b'[ 72%] Built target sdm_test\n'}
+[1.911903] (-) TimerEvent: {}
+[1.947146] (ydlidar_sdk) StdoutLine: {'line': b'[ 76%] Built target tia_test\n'}
+[1.967339] (ydlidar_ros2_driver) JobEnded: {'identifier': 'ydlidar_ros2_driver', 'rc': 0}
+[1.993278] (ydlidar_sdk) StdoutLine: {'line': b'[ 80%] Built target tmini_test\n'}
+[2.012120] (-) TimerEvent: {}
+[2.034691] (ydlidar_sdk) StdoutLine: {'line': b'[ 88%] Built target tof_test\n'}
+[2.035946] (ydlidar_sdk) StdoutLine: {'line': b'[ 88%] Built target tri_and_gs_test\n'}
+[2.110234] (serial_package) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.112390] (-) TimerEvent: {}
+[2.119379] (ydlidar_sdk) StdoutLine: {'line': b'[ 92%] Built target tri_restart\n'}
+[2.151551] (ydlidar_sdk) StdoutLine: {'line': b'[ 96%] Built target tri_test\n'}
+[2.164358] (ydlidar_sdk) StdoutLine: {'line': b'[100%] Built target lidar_c_api_test\n'}
+[2.196206] (serial_package) StdoutLine: {'line': b'-- Found rclpy: 3.3.16 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[2.198372] (serial_package) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[2.212784] (ydlidar_sdk) CommandEnded: {'returncode': 0}
+[2.214065] (-) TimerEvent: {}
+[2.218128] (ydlidar_sdk) JobProgress: {'identifier': 'ydlidar_sdk', 'progress': 'install'}
+[2.219021] (ydlidar_sdk) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk'], 'cwd': '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.1.76 37728 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/home/carpe-bleue/ros2_ws/install/lidar_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.76 37728 192.168.1.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/local/lib/python3.10/dist-packages:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk:/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_test')]), 'shell': False}
+[2.257368] (ydlidar_sdk) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.259764] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/datatype.h\n'}
+[2.260737] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/locker.h\n'}
+[2.261685] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/thread.h\n'}
+[2.265559] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/timer.h\n'}
+[2.266316] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/typedef.h\n'}
+[2.266992] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/utils.h\n'}
+[2.267772] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/v8stdint.h\n'}
+[2.268345] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/ydlidar.h\n'}
+[2.268882] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ChannelDevice.h\n'}
+[2.269429] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/DriverInterface.h\n'}
+[2.270195] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ydlidar_datatype.h\n'}
+[2.270848] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ydlidar_def.h\n'}
+[2.271288] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ydlidar_help.h\n'}
+[2.271878] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ydlidar_protocol.h\n'}
+[2.272407] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/json/cJSON.h\n'}
+[2.272917] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/math/angles.h\n'}
+[2.273442] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/network/ActiveSocket.h\n'}
+[2.273962] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/network/PassiveSocket.h\n'}
+[2.274343] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/network/SimpleSocket.h\n'}
+[2.274939] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/network/StatTimer.h\n'}
+[2.275438] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/common.h\n'}
+[2.275980] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/serial.h\n'}
+[2.276309] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/impl/unix/lock.h\n'}
+[2.276871] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/impl/unix/unix.h\n'}
+[2.277361] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/impl/unix/unix_serial.h\n'}
+[2.277935] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/CYdLidar.h\n'}
+[2.278446] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/DTSLidarDriver.h\n'}
+[2.278880] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/ETLidarDriver.h\n'}
+[2.279296] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/GSLidarDriver.h\n'}
+[2.279634] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/SDMLidarDriver.h\n'}
+[2.280016] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/TiaLidarDriver.h\n'}
+[2.280360] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/YDlidarDriver.h\n'}
+[2.280799] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/ydlidar_sdk.h\n'}
+[2.281237] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/filters/FilterInterface.h\n'}
+[2.281807] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/filters/NoiseFilter.h\n'}
+[2.282164] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/filters/StrongLightFilter.h\n'}
+[2.282515] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/ydlidar_config.h\n'}
+[2.282995] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/libydlidar_sdk.a\n'}
+[2.283315] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/pkgconfig/YDLIDAR_SDK.pc\n'}
+[2.283832] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkConfig.cmake\n'}
+[2.284310] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkTargets.cmake\n'}
+[2.284756] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkConfigVersion.cmake\n'}
+[2.285179] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/FindYDLIDAR_SDK.cmake\n'}
+[2.285661] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK\n'}
+[2.286185] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PkgConfig.pc.in\n'}
+[2.286675] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PackageConfigVersion.cmake.in\n'}
+[2.287158] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/install_package.cmake\n'}
+[2.287590] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/script_show_final_summary.cmake\n'}
+[2.287998] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PackageConfig.cmake.in\n'}
+[2.288301] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/FindPackage.cmake.in\n'}
+[2.288683] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/cmake_uninstall.cmake.in\n'}
+[2.289116] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common\n'}
+[2.289685] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common/ydlidar_parse.cmake\n'}
+[2.290169] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common/ydlidar_base.cmake\n'}
+[2.290510] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/LICENSE.txt\n'}
+[2.290845] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/README.md\n'}
+[2.291407] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc\n'}
+[2.291976] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.md\n'}
+[2.292414] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Diagram.md\n'}
+[2.292721] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar_SDK_Communication_Protocol.pdf\n'}
+[2.293009] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Tutorials.md\n'}
+[2.293438] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.html\n'}
+[2.293891] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs\n'}
+[2.294292] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs_cn.md\n'}
+[2.294608] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs.md\n'}
+[2.294919] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/General_FAQs.md\n'}
+[2.295389] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/README.md\n'}
+[2.295714] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/General_FAQs_cn.md\n'}
+[2.296173] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs_cn.md\n'}
+[2.296517] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs.md\n'}
+[2.297025] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto\n'}
+[2.297386] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_build_and_debug_using_vscode.md\n'}
+[2.297864] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_csharp_project.md\n'}
+[2.298207] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_gerenrate_vs_project_by_cmake.md\n'}
+[2.298493] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/README.md\n'}
+[2.298797] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_build_and_install.md\n'}
+[2.299256] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_solve_slow_pull_from_cn.md\n'}
+[2.299755] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_udev_rules.md\n'}
+[2.300171] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images\n'}
+[2.300471] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ydlidar_lidar_monitor.png\n'}
+[2.300863] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sequence.png\n'}
+[2.301299] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_exception.png\n'}
+[2.301662] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/cpack.png\n'}
+[2.302245] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode\n'}
+[2.302572] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode/run_tasks.jpg\n'}
+[2.303026] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode/tasks.png\n'}
+[2.303401] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_project.png\n'}
+[2.303831] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ttyUSB0.png\n'}
+[2.304163] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ttyUSB1.png\n'}
+[2.304491] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_running.png\n'}
+[2.304930] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sdk_init.png\n'}
+[2.305289] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_library.png\n'}
+[2.305634] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sdk_scanning.png\n'}
+[2.306107] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_build.png\n'}
+[2.306540] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_pull.md\n'}
+[2.306874] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLIDAR_SDK_API_for_Developers.md\n'}
+[2.307162] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials\n'}
+[2.307547] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c.md\n'}
+[2.308021] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_python.md\n'}
+[2.308347] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c++.md\n'}
+[2.308640] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/examine_the_simple_lidar_tutorial.md\n'}
+[2.309162] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_network_adapter_tutorial_c++.md\n'}
+[2.309738] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/README.md\n'}
+[2.310395] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.pdf\n'}
+[2.310893] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart\n'}
+[2.311345] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart/ydlidar_sdk_software_installation_guide.md\n'}
+[2.311806] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart/README.md\n'}
+[2.312140] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images\n'}
+[2.312440] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/EAI.png\n'}
+[2.312758] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sequence.png\n'}
+[2.313049] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/angle_q2.png\n'}
+[2.313351] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/YDLidar.jpg\n'}
+[2.313718] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_architecture.png\n'}
+[2.314036] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/frame_intensity.png\n'}
+[2.314312] (-) TimerEvent: {}
+[2.314713] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/FlowChart.png\n'}
+[2.315236] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/communication_mechanism.png\n'}
+[2.315573] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/system_workflow.png\n'}
+[2.315889] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/frame.png\n'}
+[2.316183] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_init.png\n'}
+[2.316474] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_scanning.png\n'}
+[2.316935] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/YDLidar.png\n'}
+[2.317504] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/SDK.pdf\n'}
+[2.318077] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Dataset.md\n'}
+[2.318507] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/startup/initenv.sh\n'}
+[2.327699] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/et_test\n'}
+[2.330561] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/gs_ota\n'}
+[2.334011] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/gs_test\n'}
+[2.337031] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/gs_test2\n'}
+[2.340132] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/scl_test\n'}
+[2.343119] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/sdm18_test\n'}
+[2.346431] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/sdm_test\n'}
+[2.349944] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tea_test\n'}
+[2.352888] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tia_test\n'}
+[2.356021] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tmini_test\n'}
+[2.359255] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tof_test\n'}
+[2.365034] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tri_and_gs_test\n'}
+[2.367127] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tri_restart\n'}
+[2.371135] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tri_test\n'}
+[2.375004] (ydlidar_sdk) StdoutLine: {'line': b'-- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/lidar_c_api_test\n'}
+[2.381533] (ydlidar_sdk) CommandEnded: {'returncode': 0}
+[2.406744] (serial_package) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.414475] (-) TimerEvent: {}
+[2.430881] (ydlidar_sdk) JobEnded: {'identifier': 'ydlidar_sdk', 'rc': 0}
+[2.435858] (serial_package) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.481003] (serial_package) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.514683] (-) TimerEvent: {}
+[2.535427] (serial_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.600415] (serial_package) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.614855] (-) TimerEvent: {}
+[2.715568] (-) TimerEvent: {}
+[2.816359] (-) TimerEvent: {}
+[2.867887] (serial_package) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[2.916534] (-) TimerEvent: {}
+[3.017363] (serial_package) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.018020] (-) TimerEvent: {}
+[3.028506] (serial_package) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.118225] (-) TimerEvent: {}
+[3.218910] (-) TimerEvent: {}
+[3.319623] (-) TimerEvent: {}
+[3.420355] (-) TimerEvent: {}
+[3.521020] (-) TimerEvent: {}
+[3.621725] (-) TimerEvent: {}
+[3.722448] (-) TimerEvent: {}
+[3.823167] (-) TimerEvent: {}
+[3.900594] (serial_package) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.923341] (-) TimerEvent: {}
+[4.024055] (-) TimerEvent: {}
+[4.105828] (serial_package) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[4.124274] (-) TimerEvent: {}
+[4.225068] (-) TimerEvent: {}
+[4.325751] (-) TimerEvent: {}
+[4.426408] (-) TimerEvent: {}
+[4.487337] (serial_package) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[4.487986] (serial_package) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[4.488356] (serial_package) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[4.495099] (serial_package) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[4.507299] (serial_package) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[4.514714] (serial_package) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[4.526539] (-) TimerEvent: {}
+[4.556267] (serial_package) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[4.556816] (serial_package) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[4.563589] (serial_package) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[4.570945] (serial_package) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.626733] (-) TimerEvent: {}
+[4.674339] (serial_package) StdoutLine: {'line': b'-- Generating done\n'}
+[4.699208] (serial_package) StdoutLine: {'line': b'-- Build files have been written to: /home/carpe-bleue/ros2_ws/build/serial_package\n'}
+[4.726898] (-) TimerEvent: {}
+[4.804219] (serial_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target UART_Node\x1b[0m\n'}
+[4.806104] (serial_package) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target OdometryNode\x1b[0m\n'}
+[4.827059] (-) TimerEvent: {}
+[4.899272] (serial_package) StdoutLine: {'line': b'[ 50%] Built target UART_Node\n'}
+[4.903320] (serial_package) StdoutLine: {'line': b'[100%] Built target OdometryNode\n'}
+[4.927257] (-) TimerEvent: {}
+[4.941812] (serial_package) CommandEnded: {'returncode': 0}
+[4.944519] (serial_package) JobProgress: {'identifier': 'serial_package', 'progress': 'install'}
+[4.948911] (serial_package) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/carpe-bleue/ros2_ws/build/serial_package'], 'cwd': '/home/carpe-bleue/ros2_ws/build/serial_package', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'carpe-bleue'), ('SSH_CLIENT', '192.168.1.76 37728 22'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/carpe-bleue'), ('OLDPWD', '/home/carpe-bleue/ros2_ws/src'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'carpe-bleue'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/home/carpe-bleue/ros2_ws/install/lidar_test:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('PWD', '/home/carpe-bleue/ros2_ws/build/serial_package'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '192.168.1.76 37728 192.168.1.77 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs/local/lib/python3.10/dist-packages:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'fr_FR.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/carpe-bleue/ros2_ws/install/ydlidar_sdk:/home/carpe-bleue/ros2_ws/install/ydlidar_ros2_driver:/home/carpe-bleue/ros2_ws/install/test:/home/carpe-bleue/ros2_ws/install/serial_package:/home/carpe-bleue/ros2_ws/install/ros2_serial_msgs:/home/carpe-bleue/ros2_ws/install/lidar_test:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble')]), 'shell': False}
+[4.981334] (serial_package) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.982947] (serial_package) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.984442] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/UART_Node\n'}
+[4.985200] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/OdometryNode\n'}
+[4.986699] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node.py\n'}
+[4.987333] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_2.py\n'}
+[4.988028] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_3.py\n'}
+[4.988665] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_4.py\n'}
+[4.989320] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_5.py\n'}
+[4.990034] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_6.py\n'}
+[4.990721] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart.py\n'}
+[4.991375] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart_lidar.py\n'}
+[4.992021] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart_lidar2.py\n'}
+[4.992678] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node.py\n'}
+[4.993333] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_2.py\n'}
+[4.994038] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_3.py\n'}
+[4.994734] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_4.py\n'}
+[4.995396] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_5.py\n'}
+[4.996071] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_6.py\n'}
+[4.996722] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_7.py\n'}
+[4.997371] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/keyboard_control.py\n'}
+[4.998135] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/screen_reader.py\n'}
+[4.998794] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/bagfile_stm32.py\n'}
+[4.999461] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/launch_serial_lidar.py\n'}
+[5.000106] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/launch_robot.py\n'}
+[5.000747] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/keyboard_test.py\n'}
+[5.001189] (serial_package) StdoutLine: {'line': b'-- Symlinking: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/keyboard_test_2.py\n'}
+[5.027446] (-) TimerEvent: {}
+[5.034383] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/tirette_node.py\n'}
+[5.036166] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/OdometryNode.launch.py\n'}
+[5.036828] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/UART_Node.launch.py\n'}
+[5.037522] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/combined_launch.py\n'}
+[5.038261] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/launch_robot.py\n'}
+[5.038973] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/launch_serial_lidar.py\n'}
+[5.040141] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/package_run_dependencies/serial_package\n'}
+[5.042300] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/parent_prefix_path/serial_package\n'}
+[5.043286] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.sh\n'}
+[5.044189] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.dsv\n'}
+[5.045155] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/path.sh\n'}
+[5.046078] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/path.dsv\n'}
+[5.046987] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.bash\n'}
+[5.047879] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.sh\n'}
+[5.048753] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.zsh\n'}
+[5.049628] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.dsv\n'}
+[5.050229] (serial_package) StdoutLine: {'line': b'-- Symlinking: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/package.dsv\n'}
+[5.083580] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/packages/serial_package\n'}
+[5.084355] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/cmake/serial_packageConfig.cmake\n'}
+[5.085169] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/cmake/serial_packageConfig-version.cmake\n'}
+[5.086171] (serial_package) StdoutLine: {'line': b'-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/package.xml\n'}
+[5.091422] (serial_package) CommandEnded: {'returncode': 0}
+[5.127974] (-) TimerEvent: {}
+[5.157422] (serial_package) JobEnded: {'identifier': 'serial_package', 'rc': 0}
+[5.160690] (-) EventReactorShutdown: {}

@@ -1,0 +1,55 @@
+[0.109s] Invoking command in '/home/carpe-bleue/ros2_ws/build/serial_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4
+[0.851s] [ 50%] Built target UART_Node
+[0.880s] [100%] Built target OdometryNode
+[1.010s] Invoked command in '/home/carpe-bleue/ros2_ws/build/serial_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/serial_package -- -j4 -l4
+[1.034s] Invoking command in '/home/carpe-bleue/ros2_ws/build/serial_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/serial_package
+[1.087s] -- Install configuration: ""
+[1.098s] -- Execute custom install script
+[1.110s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/UART_Node
+[1.130s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/OdometryNode
+[1.140s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node.py
+[1.143s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_2.py
+[1.146s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_3.py
+[1.155s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_4.py
+[1.161s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_5.py
+[1.161s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/serial_node_6.py
+[1.162s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart.py
+[1.165s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart_lidar.py
+[1.171s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/test_uart_lidar2.py
+[1.173s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node.py
+[1.175s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_2.py
+[1.184s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_3.py
+[1.185s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_4.py
+[1.185s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_5.py
+[1.186s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_6.py
+[1.186s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/robot_control_node_7.py
+[1.193s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/keyboard_control.py
+[1.193s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/screen_reader.py
+[1.194s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/bagfile_stm32.py
+[1.197s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/launch_serial_lidar.py
+[1.208s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/launch_robot.py
+[1.220s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/keyboard_test.py
+[1.221s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/keyboard_test_2.py
+[1.222s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/tirette_node.py
+[1.222s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/keyboard_lidar_free.py
+[1.223s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/OdometryNode.launch.py
+[1.224s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/UART_Node.launch.py
+[1.225s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/combined_launch.py
+[1.226s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/launch_robot.py
+[1.227s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/launch/launch_serial_lidar.py
+[1.228s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/package_run_dependencies/serial_package
+[1.262s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/parent_prefix_path/serial_package
+[1.270s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.sh
+[1.271s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/ament_prefix_path.dsv
+[1.274s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/path.sh
+[1.275s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/environment/path.dsv
+[1.275s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.bash
+[1.276s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.sh
+[1.276s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.zsh
+[1.276s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/local_setup.dsv
+[1.277s] -- Symlinking: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/package.dsv
+[1.320s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/ament_index/resource_index/packages/serial_package
+[1.321s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/cmake/serial_packageConfig.cmake
+[1.322s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/cmake/serial_packageConfig-version.cmake
+[1.323s] -- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/share/serial_package/package.xml
+[1.404s] Invoked command in '/home/carpe-bleue/ros2_ws/build/serial_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/carpe-bleue/ros2_ws/install/lidar_vl53l1x_processing:/opt/ros/humble /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/serial_package

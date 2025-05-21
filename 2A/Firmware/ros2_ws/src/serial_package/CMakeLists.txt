@@ -53,13 +53,19 @@ install(
     src/robot_control_node_5.py
     src/robot_control_node_6.py
     src/robot_control_node_7.py
+    src/keyboard_control.py
     src/screen_reader.py
     src/bagfile_stm32.py
     launch/launch_serial_lidar.py
     launch/launch_robot.py
+    src/keyboard_test.py
+    src/keyboard_test_2.py
     src/tirette_node.py
- 
-
+    src/keyboard_lidar_free.py 
+    src/bag_listener.py
+    src/tirette.py
+    src/bag_player_node.py
+    src/control_keyboard.py
   DESTINATION lib/${PROJECT_NAME}  # Installs to lib/serial_package
 )
 
@@ -67,6 +73,9 @@ install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME}
 )
 
+install(DIRECTORY bags
+  DESTINATION share/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

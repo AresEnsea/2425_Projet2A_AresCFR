@@ -1,0 +1,160 @@
+[0.096s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk': /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/ydlidar_sdk -- -j4 -l4
+[1.317s] [ 41%] Built target ydlidar_sdk
+[1.509s] [ 45%] Built target et_test
+[1.511s] [ 49%] Built target gs_ota
+[1.550s] [ 52%] Built target gs_test
+[1.573s] [ 56%] Built target gs_test2
+[1.696s] [ 60%] Built target scl_test
+[1.725s] [ 64%] Built target sdm18_test
+[1.768s] [ 68%] Built target tea_test
+[1.770s] [ 72%] Built target sdm_test
+[1.878s] [ 76%] Built target tia_test
+[1.924s] [ 80%] Built target tmini_test
+[1.965s] [ 88%] Built target tof_test
+[1.967s] [ 88%] Built target tri_and_gs_test
+[2.050s] [ 92%] Built target tri_restart
+[2.082s] [ 96%] Built target tri_test
+[2.095s] [100%] Built target lidar_c_api_test
+[2.143s] Invoked command in '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk' returned '0': /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/ydlidar_sdk -- -j4 -l4
+[2.155s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk': /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/ydlidar_sdk
+[2.188s] -- Install configuration: ""
+[2.190s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/datatype.h
+[2.191s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/locker.h
+[2.195s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/thread.h
+[2.196s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/timer.h
+[2.197s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/typedef.h
+[2.198s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/utils.h
+[2.198s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/v8stdint.h
+[2.199s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/base/ydlidar.h
+[2.199s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ChannelDevice.h
+[2.200s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/DriverInterface.h
+[2.201s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ydlidar_datatype.h
+[2.201s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ydlidar_def.h
+[2.202s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ydlidar_help.h
+[2.202s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/common/ydlidar_protocol.h
+[2.203s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/json/cJSON.h
+[2.203s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/math/angles.h
+[2.204s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/network/ActiveSocket.h
+[2.204s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/network/PassiveSocket.h
+[2.205s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/network/SimpleSocket.h
+[2.205s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/network/StatTimer.h
+[2.206s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/common.h
+[2.206s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/serial.h
+[2.207s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/impl/unix/lock.h
+[2.207s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/impl/unix/unix.h
+[2.208s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/core/serial/impl/unix/unix_serial.h
+[2.208s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/CYdLidar.h
+[2.209s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/DTSLidarDriver.h
+[2.209s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/ETLidarDriver.h
+[2.210s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/GSLidarDriver.h
+[2.210s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/SDMLidarDriver.h
+[2.210s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/TiaLidarDriver.h
+[2.211s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/YDlidarDriver.h
+[2.211s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/ydlidar_sdk.h
+[2.212s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/filters/FilterInterface.h
+[2.212s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/filters/NoiseFilter.h
+[2.212s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/src/filters/StrongLightFilter.h
+[2.213s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/include/ydlidar_config.h
+[2.213s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/libydlidar_sdk.a
+[2.214s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/pkgconfig/YDLIDAR_SDK.pc
+[2.214s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkConfig.cmake
+[2.215s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkTargets.cmake
+[2.215s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/lib/cmake/ydlidar_sdk/ydlidar_sdkConfigVersion.cmake
+[2.216s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/FindYDLIDAR_SDK.cmake
+[2.216s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK
+[2.217s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PkgConfig.pc.in
+[2.217s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PackageConfigVersion.cmake.in
+[2.218s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/install_package.cmake
+[2.218s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/script_show_final_summary.cmake
+[2.218s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/PackageConfig.cmake.in
+[2.219s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/FindPackage.cmake.in
+[2.219s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/cmake_uninstall.cmake.in
+[2.220s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common
+[2.220s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common/ydlidar_parse.cmake
+[2.220s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/common/ydlidar_base.cmake
+[2.221s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/LICENSE.txt
+[2.221s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/README.md
+[2.222s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc
+[2.222s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.md
+[2.223s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Diagram.md
+[2.223s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar_SDK_Communication_Protocol.pdf
+[2.223s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Tutorials.md
+[2.224s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.html
+[2.224s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs
+[2.225s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs_cn.md
+[2.225s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs.md
+[2.225s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/General_FAQs.md
+[2.226s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/README.md
+[2.226s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/General_FAQs_cn.md
+[2.226s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Hardware_FAQs_cn.md
+[2.227s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/FAQs/Software_FAQs.md
+[2.227s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto
+[2.228s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_build_and_debug_using_vscode.md
+[2.228s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_csharp_project.md
+[2.228s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_gerenrate_vs_project_by_cmake.md
+[2.229s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/README.md
+[2.229s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_build_and_install.md
+[2.230s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_solve_slow_pull_from_cn.md
+[2.230s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_udev_rules.md
+[2.230s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images
+[2.231s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ydlidar_lidar_monitor.png
+[2.231s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sequence.png
+[2.232s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_exception.png
+[2.232s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/cpack.png
+[2.233s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode
+[2.233s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode/run_tasks.jpg
+[2.233s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/vscode/tasks.png
+[2.234s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_project.png
+[2.234s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ttyUSB0.png
+[2.234s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/ttyUSB1.png
+[2.235s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_running.png
+[2.235s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sdk_init.png
+[2.236s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_library.png
+[2.236s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/sdk_scanning.png
+[2.236s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/images/csharp_build.png
+[2.237s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/howto/how_to_create_a_pull.md
+[2.237s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLIDAR_SDK_API_for_Developers.md
+[2.237s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials
+[2.238s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c.md
+[2.238s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_python.md
+[2.239s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_tutorial_c++.md
+[2.239s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/examine_the_simple_lidar_tutorial.md
+[2.240s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/tutorials/writing_lidar_network_adapter_tutorial_c++.md
+[2.240s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/README.md
+[2.241s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/YDLidar-SDK-Communication-Protocol.pdf
+[2.241s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart
+[2.242s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart/ydlidar_sdk_software_installation_guide.md
+[2.242s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/quickstart/README.md
+[2.242s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images
+[2.243s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/EAI.png
+[2.243s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sequence.png
+[2.243s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/angle_q2.png
+[2.244s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/YDLidar.jpg
+[2.244s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_architecture.png
+[2.244s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/frame_intensity.png
+[2.245s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/FlowChart.png
+[2.246s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/communication_mechanism.png
+[2.246s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/system_workflow.png
+[2.246s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/frame.png
+[2.246s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_init.png
+[2.247s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/sdk_scanning.png
+[2.247s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/images/YDLidar.png
+[2.248s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/SDK.pdf
+[2.248s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/share/YDLIDAR_SDK/doc/Dataset.md
+[2.249s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/startup/initenv.sh
+[2.258s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/et_test
+[2.261s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/gs_ota
+[2.264s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/gs_test
+[2.267s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/gs_test2
+[2.271s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/scl_test
+[2.274s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/sdm18_test
+[2.277s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/sdm_test
+[2.280s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tea_test
+[2.283s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tia_test
+[2.286s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tmini_test
+[2.290s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tof_test
+[2.295s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tri_and_gs_test
+[2.298s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tri_restart
+[2.302s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/tri_test
+[2.305s] -- Up-to-date: /home/carpe-bleue/ros2_ws/install/ydlidar_sdk/bin/lidar_c_api_test
+[2.314s] Invoked command in '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk' returned '0': /usr/bin/cmake --install /home/carpe-bleue/ros2_ws/build/ydlidar_sdk

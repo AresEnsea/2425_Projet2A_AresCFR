@@ -1,0 +1,17 @@
+[0.092s] Invoking command in '/home/carpe-bleue/ros2_ws/build/ydlidar_sdk': /usr/bin/cmake --build /home/carpe-bleue/ros2_ws/build/ydlidar_sdk -- -j4 -l4
+[0.500s] [ 41%] Built target ydlidar_sdk
+[0.725s] [ 45%] Built target gs_ota
+[0.748s] [ 49%] Built target et_test
+[0.786s] [ 52%] Built target gs_test2
+[0.799s] [ 56%] Built target gs_test
+[0.894s] [ 60%] Built target sdm18_test
+[0.914s] [ 64%] Built target scl_test
+[0.934s] [ 68%] Built target sdm_test
+[0.941s] [ 72%] Built target tea_test
+[1.073s] [ 76%] Built target tia_test
+[1.083s] [ 80%] Built target tof_test
+[1.084s] [ 84%] Built target tmini_test
+[1.130s] [ 88%] Built target tri_and_gs_test
+[1.193s] [ 92%] Built target tri_test
+[1.209s] [ 96%] Built target tri_restart
+[1.212s] [100%] Built target lidar_c_api_test
