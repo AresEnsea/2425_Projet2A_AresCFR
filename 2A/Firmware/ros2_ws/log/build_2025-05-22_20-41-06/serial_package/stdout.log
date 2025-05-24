@@ -1,0 +1,6 @@
+[ 50%] Built target OdometryNode
+[100%] Built target UART_Node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/UART_Node
+-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/OdometryNode

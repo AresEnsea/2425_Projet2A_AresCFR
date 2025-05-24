@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:20 (add_executale):
+  Unknown CMake command "add_executale".
+
+[0m
+gmake: *** [Makefile:308: cmake_check_build_system] Error 1

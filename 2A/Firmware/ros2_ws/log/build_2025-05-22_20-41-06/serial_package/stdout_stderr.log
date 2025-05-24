@@ -1,0 +1,14 @@
+[ 50%] Built target OdometryNode
+[100%] Built target UART_Node
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/UART_Node
+-- Up-to-date symlink: /home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/OdometryNode
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:204 (message):
+  ament_cmake_symlink_install_programs() can't find
+  '/home/carpe-bleue/ros2_ws/src/serial_package/scr/tirette.py'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_programs)
+  cmake_install.cmake:46 (include)
+
+[0m

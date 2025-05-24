@@ -1,0 +1,9 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_targets.cmake:59 (message):
+  ament_cmake_symlink_install_targets() called with unused/unsupported
+  arguments: tirette
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake:37 (ament_cmake_symlink_install_targets)
+  CMakeLists.txt:31 (install)
+
+[0m
+gmake: *** [Makefile:308: cmake_check_build_system] Error 1

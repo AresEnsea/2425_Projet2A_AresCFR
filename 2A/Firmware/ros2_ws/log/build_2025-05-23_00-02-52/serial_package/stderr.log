@@ -1,0 +1,8 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/ament_cmake_symlink_install_programs.cmake:39 (_install):
+  _install PROGRAMS given unknown argument "src/bag_player_node.py".
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/symlink_install/install.cmake:34 (ament_cmake_symlink_install_programs)
+  CMakeLists.txt:45 (install)
+
+[0m
+gmake: *** [Makefile:308: cmake_check_build_system] Error 1

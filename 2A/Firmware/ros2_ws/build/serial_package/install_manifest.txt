@@ -1,0 +1,3 @@
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/tirette
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/bag_player_node
+/home/carpe-bleue/ros2_ws/install/serial_package/lib/serial_package/bag_listener

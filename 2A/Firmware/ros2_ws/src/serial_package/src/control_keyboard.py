@@ -74,13 +74,19 @@ def getch_non_blocking():
 def interpret_key_command(key, node):
     command = list(node.active_command)
     if key == 'z':
-        command[0:10] = list("1060010600")
+        command[0:10] = list("1009010115")
+    elif key == 'e':
+        command[0:10] = list("1012010120")
+    elif key == 'a':
+        command[0:10] = list("1020010200")
     elif key == 's':
-        command[0:10] = list("0060000600")
+        command[0:10] = list("0008200100")
+    elif key == 'w':
+        command[0:10] = list("0010000100")
     elif key == 'q':
-        command[0:10] = list("1040000400")
+        command[0:10] = list("1015000000")
     elif key == 'd':
-        command[0:10] = list("0040010400")
+        command[0:10] = list("0000010150")
     elif key == 'r':
         return "00000000000000000000000000"
     elif key == 'u':
@@ -155,7 +161,14 @@ def main(args=None):
                 command = interpret_key_command(key, node)
 
                 if command:
-                    if not node.motor_stopped:
+                    if key == 'r':
+                        # Send twice for 'r'
+                        node.send_serial_message(command)
+                        node.publish_command(command)
+                        node.send_serial_message(command)
+                        node.publish_command(command)
+                        node.active_command = command
+                    elif not node.motor_stopped:
                         node.send_serial_message(command)
                         node.publish_command(command)
                         node.active_command = command
