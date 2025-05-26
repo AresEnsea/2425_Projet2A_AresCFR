@@ -4,6 +4,7 @@
   * @brief          : Main program for odometry and motor control of a robot
   *                  using an STM32L476 microcontroller with AMT102-V encoders.
   *                  Combines precise odometry with independent wheel control.
+  *                  Modified to address 0.06 m offset in movement.
   ******************************************************************************
   * @attention
   *
@@ -30,10 +31,11 @@
 
 /* Private defines -----------------------------------------------------------*/
 #define ENCODER_COUNTS_PER_REV 4096      // Encoder resolution (PPR * 4, PPR = 1024)
-#define WHEEL_DIAMETER 0.0762f           // Wheel diameter in meters (76.2 mm)
+#define WHEEL_DIAMETER 0.080f            // Adjusted wheel diameter in meters (80 mm, calibrated)
 #define WHEEL_BASE 0.240f                // Distance between wheels in meters
-#define WHEEL_CIRCUMFERENCE 0.2394f      // Wheel circumference (pi * diameter) in meters
+#define WHEEL_CIRCUMFERENCE (3.1416f * WHEEL_DIAMETER) // Wheel circumference (pi * diameter) in meters
 #define ENCODER_TOLERANCE 5              // Encoder tolerance for target position
+#define OFFSET_CORRECTION 1027           // Encoder count offset correction (~0.06 m)
 
 /* Private variables ---------------------------------------------------------*/
 UART_HandleTypeDef hlpuart1;             // UART for receiving commands
@@ -50,13 +52,13 @@ TIM_HandleTypeDef htim3;                 // Timer for left wheel encoder
 /* Private variables for odometry and control */
 char rx_data[27];                        // Buffer for received UART data
 float x = 0.0f;                          // Robot X position (meters)
-float y = 0.0f;                          // Atom Y position (meters)
+float y = 0.0f;                          // Robot Y position (meters)
 float theta = 0.0f;                      // Robot orientation (radians)
 int16_t prev_left = 0;                   // Previous left encoder value
 int16_t prev_right = 0;                  // Previous right encoder value
 uint32_t last_update_time = 0;           // Last control loop update time (ms)
 
-float K_p = 500.0f;                      // Proportional gain for PI controller
+float K_p = 300.0f;                      // Proportional gain for PI controller
 float K_i = 200.0f;                      // Integral gain for PI controller
 float e_sum = 0.0f;                      // Cumulative error for PI integral term
 int v_L_base = 0;                        // Base speed for left motor
@@ -65,7 +67,7 @@ uint8_t inv_L = 0;                       // Left motor direction (0 = forward, 1
 uint8_t inv_R = 0;                       // Right motor direction (0 = forward, 1 = reverse)
 bool is_straight = false;                // Flag for straight-line motion
 int s = 1;                               // Direction multiplier for straight motion (1 or -1)
-const float right_motor_compensation = 0.95f; // Right motor speed compensation factor
+const float right_motor_compensation = 0.83f; // Right motor speed compensation factor
 
 bool position_control_active = false;     // Flag for active position control
 bool control_locked = false;              // Lock control after reaching targets
@@ -94,7 +96,6 @@ static void MX_USART1_UART_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_UART5_Init(void);
 
-/* Private user code ---------------------------------------------------------*/
 /* Redirect printf to UART2 for debug output */
 int __io_putchar(int ch) {
     HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, HAL_MAX_DELAY);
@@ -190,12 +191,25 @@ int main(void)
             int inv_g = rx_data[(offset + 6) % 27] - '0';
             if (inv_g != 0 && inv_g != 1) inv_g = 0;
 
-            /* Convert target distances (mm) to encoder counts */
+            /* Reset encoders before new movement to avoid cumulative offsets */
+            __HAL_TIM_SET_COUNTER(&htim3, 0);
+            __HAL_TIM_SET_COUNTER(&htim1, 0);
+            origin_left = 0;
+            origin_right = 0;
+            prev_left = 0;
+            prev_right = 0;
+
+            /* Convert target distances (mm) to encoder counts with offset correction */
             float distance_per_count = WHEEL_CIRCUMFERENCE / ENCODER_COUNTS_PER_REV;
-            int32_t counts_D = (int32_t)((float)target_mm_D / 1000.0f / distance_per_count);
-            int32_t counts_G = (int32_t)((float)target_mm_G / 1000.0f / distance_per_count);
+            int32_t counts_D = (int32_t)((float)target_mm_D / 1000.0f / distance_per_count) - OFFSET_CORRECTION;
+            int32_t counts_G = (int32_t)((float)target_mm_G / 1000.0f / distance_per_count) - OFFSET_CORRECTION;
             target_left = origin_left + (inv_g == 0 ? counts_G : -counts_G);
             target_right = origin_right + (inv_d == 0 ? counts_D : -counts_D);
+
+            /* Log start conditions for debugging */
+            printf("Start: left=%d, right=%d, Target: left=%ld, right=%ld\r\n",
+                   (int16_t)__HAL_TIM_GET_COUNTER(&htim3), (int16_t)__HAL_TIM_GET_COUNTER(&htim1),
+                   target_left, target_right);
 
             /* Enable position control if not locked */
             if (!control_locked) {
@@ -356,6 +370,8 @@ int main(void)
                     v_L_base = 0;
                     v_R_base = 0;
                     e_sum = 0.0f;
+                    mot_maxon_both(100, !inv_R, 100, !inv_L); /* Brief reverse pulse to stop inertia */
+                    HAL_Delay(50); /* Adjust duration if needed */
                     mot_maxon_both(0, 0, 0, 0);
                     printf("Target position reached: left=%d, right=%d\r\n", curr_left, curr_right);
                 }
@@ -474,7 +490,7 @@ static void MX_UART4_Init(void)
     huart4.Init.Mode = UART_MODE_TX_RX;
     huart4.Init.HwFlowCtl = UART_HWCONTROL_NONE;
     huart4.Init.OverSampling = UART_OVERSAMPLING_16;
-    hlpuart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+    huart4.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
     huart4.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
     if (HAL_UART_Init(&huart4) != HAL_OK)
     {
