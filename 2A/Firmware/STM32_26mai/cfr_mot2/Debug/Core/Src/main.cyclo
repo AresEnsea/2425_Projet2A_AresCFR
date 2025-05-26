@@ -1,0 +1,15 @@
+../Core/Src/main.c:99:5:__io_putchar	1
+../Core/Src/main.c:108:5:main	61
+../Core/Src/main.c:399:6:SystemClock_Config	4
+../Core/Src/main.c:445:13:MX_LPUART1_UART_Init	2
+../Core/Src/main.c:467:13:MX_UART4_Init	2
+../Core/Src/main.c:490:13:MX_UART5_Init	2
+../Core/Src/main.c:513:13:MX_USART1_UART_Init	2
+../Core/Src/main.c:536:13:MX_USART2_UART_Init	2
+../Core/Src/main.c:559:13:MX_USART3_UART_Init	2
+../Core/Src/main.c:582:13:MX_TIM1_Init	3
+../Core/Src/main.c:621:13:MX_TIM2_Init	7
+../Core/Src/main.c:672:13:MX_TIM3_Init	3
+../Core/Src/main.c:709:13:MX_GPIO_Init	1
+../Core/Src/main.c:750:6:HAL_UART_RxCpltCallback	2
+../Core/Src/main.c:761:6:Error_Handler	1
