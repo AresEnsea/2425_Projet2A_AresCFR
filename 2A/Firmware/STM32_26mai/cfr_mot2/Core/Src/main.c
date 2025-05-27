@@ -31,7 +31,7 @@
 
 /* Private defines -----------------------------------------------------------*/
 #define ENCODER_COUNTS_PER_REV 4096      // Encoder resolution (PPR * 4, PPR = 1024)
-#define WHEEL_DIAMETER 0.080f            // Adjusted wheel diameter in meters (80 mm, calibrated)
+#define WHEEL_DIAMETER 0.076f            // Adjusted wheel diameter in meters (80 mm, calibrated)
 #define WHEEL_BASE 0.240f                // Distance between wheels in meters
 #define WHEEL_CIRCUMFERENCE (3.1416f * WHEEL_DIAMETER) // Wheel circumference (pi * diameter) in meters
 #define ENCODER_TOLERANCE 5              // Encoder tolerance for target position
@@ -67,7 +67,7 @@ uint8_t inv_L = 0;                       // Left motor direction (0 = forward, 1
 uint8_t inv_R = 0;                       // Right motor direction (0 = forward, 1 = reverse)
 bool is_straight = false;                // Flag for straight-line motion
 int s = 1;                               // Direction multiplier for straight motion (1 or -1)
-const float right_motor_compensation = 0.83f; // Right motor speed compensation factor
+const float right_motor_compensation = 0.81f; // Right motor speed compensation factor
 
 bool position_control_active = false;     // Flag for active position control
 bool control_locked = false;              // Lock control after reaching targets
