@@ -34,9 +34,9 @@ public:
             std::cout << "Port série ouvert avec succès !" << std::endl;
         }
         
-        // subscriber : données de vélocité / ou commande de banner , take can/planck , place can/planck
+        //subscriber : données de vélocité / ou commande de banner , take can/planck , place can/planck
         subscription_msgs_to_stm = this->create_subscription<std_msgs::msg::String>(
-          "msgs_to_stm", 10, std::bind(&UART_Node::msgs_callback, this, std::placeholders::_1));
+          "msgs_to_stm", 10, std::bind(&UART_Node::msgs_callback, this, std::placeholders::_1)); 
         
         // publisher : pour les données reçues de la STM
         publisher_data_encoder = this->create_publisher<std_msgs::msg::String>("data_encoder", 10);
@@ -44,7 +44,12 @@ public:
         // Démarrer le thread de lecture
         read_thread_ = std::thread(&UART_Node::readSerialPort, this);
 	    
-	/*
+	// autres subscribers
+        stop_sub_ = this->create_subscription<std_msgs::msg::Bool>(
+            "stop_moteur", 10, std::bind(&OdometryNode::stopCallback, this, std::placeholders::_1));
+
+        stm_pub_ = this->create_publisher<std_msgs::msg::String>("msgs_to_stm", 10);
+	    
         timer_ = this->create_wall_timer(
         std::chrono::milliseconds(500),  // 20 Hz
         [this]() {
@@ -52,10 +57,10 @@ public:
             msg->data = MESSAGE_MOTOR;
             this->msgs_callback(msg);
         });
-	*/
+	
 
     }
-
+	
     ~UART_Node() {
         running_ = false;
         if (read_thread_.joinable()) {
@@ -74,7 +79,13 @@ private:
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_data_encoder;
     std::thread read_thread_;
     std::atomic<bool> running_;
-    //rclcpp::TimerBase::SharedPtr timer_;
+
+    bool stop_motors_ = false;
+
+    rclcpp::TimerBase::SharedPtr timer_;
+
+    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_sub_;
+    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr stm_pub_;
 
     void sendData(const std::string& data) {
         if (serialPort != -1) {
@@ -92,7 +103,18 @@ private:
     void msgs_callback(const std_msgs::msg::String::SharedPtr msg) {
         sendData(msg->data);
     }
-    
+
+    void stopCallback(const std_msgs::msg::Bool::SharedPtr msg)
+    {
+        stop_motors_ = msg->data;
+        if (stop_motors_) {
+            send_command(0.0, 0.0);
+            // Réinitialiser les intégrales lors de l’arrêt
+            integral_error_ = 0.0;
+            integral_theta_ = 0.0;
+        }
+    }
+
     void readSerialPort() {
         char buffer[BUFFER_SIZE];
         std::string message;
