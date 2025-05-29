@@ -108,10 +108,9 @@ private:
     {
         stop_motors_ = msg->data;
         if (stop_motors_) {
-            send_command(0.0, 0.0);
-            // Réinitialiser les intégrales lors de l’arrêt
-            integral_error_ = 0.0;
-            integral_theta_ = 0.0;
+		auto msg = std_msgs::msg::String();
+		msg.data = "1" ; 
+		stm_pub_->publish(msg);
         }
     }
 
