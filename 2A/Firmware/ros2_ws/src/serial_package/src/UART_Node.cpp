@@ -99,9 +99,10 @@ private:
     {
         stop_motors_ = msg->data;
         if (stop_motors_) {
-		auto msg = std_msgs::msg::String();
-		msg.data = "1" ; 
-		stm_pub_->publish(msg);
+		stop_motors_ = msg->data;
+       		auto msg_to_send = std_msgs::msg::String();
+        	msg_to_send.data = stop_motors_ ? "1" : "0"; // "0" pour reprendre
+        	stm_pub_->publish(msg_to_send);
         }
     }
 
