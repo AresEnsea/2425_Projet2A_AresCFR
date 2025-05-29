@@ -49,14 +49,6 @@ public:
             "stop_moteur", 10, std::bind(&OdometryNode::stopCallback, this, std::placeholders::_1));
 
         stm_pub_ = this->create_publisher<std_msgs::msg::String>("msgs_to_stm", 10);
-	    
-        timer_ = this->create_wall_timer(
-        std::chrono::milliseconds(500),  // 20 Hz
-        [this]() {
-            auto msg = std::make_shared<std_msgs::msg::String>();
-            msg->data = MESSAGE_MOTOR;
-            this->msgs_callback(msg);
-        });
 	
 
     }
@@ -81,8 +73,6 @@ private:
     std::atomic<bool> running_;
 
     bool stop_motors_ = false;
-
-    rclcpp::TimerBase::SharedPtr timer_;
 
     rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_sub_;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr stm_pub_;
