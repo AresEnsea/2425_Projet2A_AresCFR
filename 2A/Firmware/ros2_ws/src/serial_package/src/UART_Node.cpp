@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <thread>
 #include <atomic>
+#include "std_msgs/msg/bool.hpp"
 
 #define SERIAL_PORT "/dev/serial0"
 #define BUFFER_SIZE 256
@@ -46,7 +47,7 @@ public:
 	    
 	// autres subscribers
         stop_sub_ = this->create_subscription<std_msgs::msg::Bool>(
-            "stop_moteur", 10, std::bind(&OdometryNode::stopCallback, this, std::placeholders::_1));
+            "stop_moteur", 10, std::bind(&UART_Node::stopCallback, this, std::placeholders::_1));
 
         stm_pub_ = this->create_publisher<std_msgs::msg::String>("msgs_to_stm", 10);
 	
