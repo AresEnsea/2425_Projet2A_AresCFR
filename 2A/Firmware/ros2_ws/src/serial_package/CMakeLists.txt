@@ -94,6 +94,7 @@ install(PROGRAMS
 install(FILES
   instructions_jaune.txt
   instructions_bleu.txt
+  instructions_test.txt
   DESTINATION share/${PROJECT_NAME}
 )
 
