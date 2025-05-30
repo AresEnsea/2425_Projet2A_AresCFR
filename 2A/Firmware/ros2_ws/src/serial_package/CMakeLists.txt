@@ -13,10 +13,12 @@ find_package(sensor_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(ament_index_cpp REQUIRED)
 
 # Ajouter les exécutables C++
 add_executable(UART_Node src/UART_Node.cpp)
 add_executable(OdometryNode src/OdometryNode.cpp)
+add_executable(InstructionNode src/instruction_node.cpp)
 
 # Lier les bibliothèques nécessaires
 ament_target_dependencies(UART_Node rclcpp std_msgs)
@@ -25,11 +27,13 @@ ament_target_dependencies(OdometryNode
   std_msgs
   geometry_msgs
 )
+ament_target_dependencies(InstructionNode rclcpp std_msgs ament_index_cpp)
 
 # Installer les exécutables
 install(TARGETS
   UART_Node
   OdometryNode
+  InstructionNode
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -86,6 +90,12 @@ install(PROGRAMS
   RENAME bag_listener
 )
 
+# Installer les fichiers de données
+install(FILES
+  instructions_jaune.txt
+  instructions_bleu.txt
+  DESTINATION share/${PROJECT_NAME}
+)
 
 # Installer les dossiers launch et bags
 install(DIRECTORY launch
