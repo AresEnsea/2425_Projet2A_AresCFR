@@ -1,113 +1,119 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
-#include "std_msgs/msg/bool.hpp"
+#include <chrono>
 #include <iostream>
-#include <fstream>
-#include <string>
+#include <fcntl.h>
+#include <unistd.h>
+#include <thread>
+#include <atomic>
 
-#define GPIO_PIN "17" // GPIO 17 (pin physique 11 sur Raspberry Pi 4)
+#define SERIAL_PORT "/dev/serial0"
+#define BUFFER_SIZE 256
 
 class UART_Node : public rclcpp::Node
 {
 public:
-    UART_Node()
-        : Node("UART_Node")
+    UART_Node(const std::string& port)
+        : Node("UART_Node"), serialPort(-1), running_(true)
     {
-        // Exporter le GPIO
-        std::ofstream export_file("/sys/class/gpio/export");
-        if (!export_file.is_open()) {
-            std::cerr << "Erreur : Impossible d'exporter le GPIO " << GPIO_PIN << std::endl;
+        // Ouvrir le port série en lecture et écriture
+        serialPort = open(port.c_str(), O_RDWR | O_NOCTTY | O_SYNC);
+        if (serialPort == -1) {
+            std::cerr << "Erreur : Impossible d'ouvrir le port série !" << std::endl;
             rclcpp::shutdown();
-            throw std::runtime_error("Échec de l'exportation du GPIO");
+            throw std::runtime_error("Échec de l'ouverture du port série");
+            
+        } else {
+            std::cout << "Port série ouvert avec succès !" << std::endl;
         }
-        export_file << GPIO_PIN;
-        export_file.close();
-
-        // Configurer le GPIO comme sortie
-        std::ofstream direction_file("/sys/class/gpio/gpio" GPIO_PIN "/direction");
-        if (!direction_file.is_open()) {
-            std::cerr << "Erreur : Impossible de configurer le GPIO " << GPIO_PIN << " comme sortie" << std::endl;
-            unexportGPIO();
-            rclcpp::shutdown();
-            throw std::runtime_error("Échec de la configuration du GPIO");
-        }
-        direction_file << "out";
-        direction_file.close();
-
-        std::cout << "GPIO " << GPIO_PIN << " configuré avec succès comme sortie !" << std::endl;
-
-        // Subscriber : données de vélocité ou commandes
+        
+        // subscriber : données de vélocité / ou commande de banner , take can/planck , place can/planck
         subscription_msgs_to_stm = this->create_subscription<std_msgs::msg::String>(
-            "msgs_to_stm", 10, std::bind(&UART_Node::msgs_callback, this, std::placeholders::_1));
-
-        // Publisher : pour les données (peut être utilisé si vous lisez un GPIO en entrée plus tard)
+          "msgs_to_stm", 10, std::bind(&UART_Node::msgs_callback, this, std::placeholders::_1));
+        
+        // publisher : pour les données reçues de la STM
         publisher_data_encoder = this->create_publisher<std_msgs::msg::String>("data_encoder", 10);
-
-        // Subscriber pour arrêter les moteurs
-        stop_sub_ = this->create_subscription<std_msgs::msg::Bool>(
-            "stop_moteur", 10, std::bind(&UART_Node::stopCallback, this, std::placeholders::_1));
-
-        // Publisher pour les messages STM
-        stm_pub_ = this->create_publisher<std_msgs::msg::String>("msgs_to_stm", 10);
+        
+        // Démarrer le thread de lecture
+        read_thread_ = std::thread(&UART_Node::readSerialPort, this);
+	    
     }
 
     ~UART_Node() {
-        // Écrire 0 sur le GPIO avant de quitter (par sécurité)
-        writeGPIO("0");
-        // Désexporter le GPIO
-        unexportGPIO();
-        std::cout << "GPIO " << GPIO_PIN << " désexporté." << std::endl;
+        running_ = false;
+        if (read_thread_.joinable()) {
+            read_thread_.join();
+        }
+        
+        if (serialPort != -1) {
+            close(serialPort);
+            std::cout << "Port série fermé." << std::endl;
+        }
     }
-
+  
 private:
+    int serialPort;
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr subscription_msgs_to_stm;
     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr publisher_data_encoder;
-    rclcpp::Subscription<std_msgs::msg::Bool>::SharedPtr stop_sub_;
-    rclcpp::Publisher<std_msgs::msg::String>::SharedPtr stm_pub_;
-    bool stop_motors_ = false;
+    std::thread read_thread_;
+    std::atomic<bool> running_;
 
-    void writeGPIO(const std::string& value) {
-        std::ofstream value_file("/sys/class/gpio/gpio" GPIO_PIN "/value");
-        if (!value_file.is_open()) {
-            std::cerr << "Erreur : Impossible d'écrire sur le GPIO " << GPIO_PIN << std::endl;
-            return;
-        }
-        value_file << value;
-        value_file.close();
-        std::cout << "GPIO " << GPIO_PIN << " défini à : " << value << std::endl;
-    }
-
-    void unexportGPIO() {
-        std::ofstream unexport_file("/sys/class/gpio/unexport");
-        if (unexport_file.is_open()) {
-            unexport_file << GPIO_PIN;
-            unexport_file.close();
-        }
-    }
-
-    void msgs_callback(const std_msgs::msg::String::SharedPtr msg) {
-        // Accepte uniquement "1" ou "0" pour le GPIO
-        if (msg->data == "1" || msg->data == "0") {
-            writeGPIO(msg->data);
+    void sendData(const std::string& data) {
+        if (serialPort != -1) {
+            ssize_t bytes_written = write(serialPort, data.c_str(), data.size());
+            if (bytes_written == -1) {
+                std::cerr << "Erreur lors de l'écriture sur le port série !" << std::endl;
+            }else{
+		std::cout << "Envoyé à la STM : " <<  data.c_str() << std::endl;
+	    }
         } else {
-            std::cerr << "Erreur : Message non valide pour GPIO, attendu '1' ou '0', reçu : " << msg->data << std::endl;
+            std::cerr << "Erreur : Port série non ouvert !" << std::endl;
         }
     }
-
-    void stopCallback(const std_msgs::msg::Bool::SharedPtr msg) {
-        if (stop_motors_ != msg->data) {
-            stop_motors_ = msg->data;
-            auto msg_to_send = std_msgs::msg::String();
-            msg_to_send.data = stop_motors_ ? "1" : "0";
-            stm_pub_->publish(msg_to_send);
-            writeGPIO(msg_to_send.data); // Écrire directement sur le GPIO
+    
+    void msgs_callback(const std_msgs::msg::String::SharedPtr msg) {
+        sendData(msg->data);
+    }
+    
+    void readSerialPort() {
+        char buffer[BUFFER_SIZE];
+        std::string message;
+        
+        while (running_) {
+            if (serialPort != -1) {
+                ssize_t bytes_read = read(serialPort, buffer, BUFFER_SIZE - 1);
+                
+                if (bytes_read > 0) {
+                    buffer[bytes_read] = '\0';  // Terminer la chaîne
+                    
+                    // Traiter les données reçues
+                    for (int i = 0; i < bytes_read; i++) {
+                        if (buffer[i] == '\n' || buffer[i] == '\r') {
+                            // Fin du message, le publier s'il n'est pas vide
+                            if (!message.empty()) {
+                                auto msg = std_msgs::msg::String();
+                                msg.data = message;
+                                publisher_data_encoder->publish(msg);
+                                std::cout << "Reçu de la STM: " << message << std::endl;
+                                message.clear();
+                            }
+                        } else {
+                            message += buffer[i];
+                        }
+                    }
+                } else if (bytes_read < 0) {
+                    std::this_thread::sleep_for(1ms);  // Éviter la surcharge CPU en cas d'erreur
+                }
+            } else {
+                std::this_thread::sleep_for(100ms);  // Éviter la surcharge CPU si le port est fermé
+            }
         }
     }
 };
 
 int main(int argc, char *argv[]) {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<UART_Node>());
+    rclcpp::spin(std::make_shared<UART_Node>(SERIAL_PORT));
     rclcpp::shutdown();
     return 0;
 }
