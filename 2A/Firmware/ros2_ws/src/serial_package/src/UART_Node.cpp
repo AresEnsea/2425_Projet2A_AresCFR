@@ -72,6 +72,10 @@ private:
     }
     
     void msgs_callback(const std_msgs::msg::String::SharedPtr msg) {
+	if (msg->data == "#") {
+		RCLCPP_INFO(this->get_logger(), "Séparateur '#' reçu, ignoré.");
+		return;
+	}
         sendData(msg->data);
     }
     
